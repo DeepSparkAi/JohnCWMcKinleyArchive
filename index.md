@@ -530,4 +530,4 @@ Wald, R. M.
 
 \end{document}
 
-% [PASTE THE UPDATED LATEX PROVIDED ABOVE HERE
+
