@@ -530,4 +530,16 @@ Wald, R. M.
 
 \end{document}
 
+\end{document}
+````
+
+</details>
+````
+
+(`\end{document}`, then a newline, then the closing triple-backtick fence, then a blank line, then `</details>`.)
+
+**One secondary thing worth flagging while you're in there:** the H1 title contains a Markdown link with the literal text `[index.md](http://index.md)` — wait, that's in your message to me, not the file. Disregard. The file itself is clean apart from the unterminated fence.
+
+Once you close the fence, the `<details>`/`<summary>` collapsible will behave correctly and the LaTeX will stay contained inside its box without bleeding into the rest of the page.
+
 
