@@ -28,6 +28,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 <details>
 <summary><b>Click to view Raw LaTeX Source</b></summary>
+  
 ```latex
 \documentclass[12pt,letterpaper,onecolumn]{article}
 
