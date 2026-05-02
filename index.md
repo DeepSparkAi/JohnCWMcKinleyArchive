@@ -1,3 +1,8 @@
+---
+layout: default
+title: John Christian William McKinley LaTeX Archive
+---
+
 # John Christian William McKinley LaTeX Archive
 **ORCID:** [0009-0005-7097-5035](https://orcid.org/0009-0005-7097-5035)
 
