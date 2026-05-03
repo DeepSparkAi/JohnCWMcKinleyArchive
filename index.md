@@ -8753,7 +8753,459 @@ J.~C.~W. McKinley, ``Why the Timeless Light Model Deserves Scientific Considerat
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
 
+% --- Packages ---
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{orcidlink}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage[most]{tcolorbox}
+\tcbset{colback=gray!5,colframe=black,boxrule=0.6pt,arc=2mm}
+\usepackage{tikz}
+
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+% --- Custom Box ---
+\newtcolorbox{lawbox}[1]{breakable,title={#1},fonttitle=\bfseries}
+
+% --- Theorems ---
+\newtheorem{postulate}{Postulate}
+\newtheorem{axiom}{Axiom}
+
+% --- Title ---
+\title{Hilbert Space is the Quantum Platform: \\
+Recasting Mathematical Formalism as Ontological Substrate}
+
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{August 27, 2025}
+
+\begin{document}
+\maketitle
+\begingroup\renewcommand\thefootnote{}\footnotetext{This version published at
+\href{https://doi.org/10.5281/zenodo.16976818}{https://doi.org/10.5281/zenodo.16976818}.}\endgroup
+
+
+
+\begin{abstract}
+Standard physics situates quantum states in Hilbert space---an abstract mathematical domain with no physical counterpart. This paper claims that Hilbert space is not merely formal but corresponds to the Quantum Platform (QP), a timeless, out-of-universe substrate from which spacetime dynamics are deployed. By reframing Hilbert space as ontologically real, we reinterpret collapse, entanglement across arbitrary distances, and the emergence of spacetime itself as delayed renderings of timeless instructions. A contrast is drawn between Hilbert space as ``just math'' and QP as causal substrate. We integrate this with the Timeless Light Model (TLM) axioms and bridge laws, derive key implications (e.g., collapse as rendering, entanglement as timeless instructions), and outline falsifiable predictions (e.g., achromatic delay asymmetries at \(10^{-15}\) s). Implications for quantum foundations and relativity are explored, situated among relational QM and wavefunction realism.
+\end{abstract}
+
+\section{Introduction}
+Hilbert space in standard quantum mechanics is widely treated as a mathematical convenience, a formal trick that encodes probabilities without physical existence. Yet entanglement correlations across light-years suggest that the structure of Hilbert space is not optional but essential. If so, it may be more than mathematics: it may be the mathematical shadow of a real causal substrate, which we identify as the Quantum Platform (QP). The central thesis of this paper is that Hilbert space \emph{is} QP---a timeless ontological layer senior to spacetime.
+
+This recasting aligns with the Timeless Light Model (TLM) \cite{mckinley2025tlmv2}, where quanta are frameless state-change ticks resolved in QP and rendered with delay in observer frames. We draw on TLM axioms to ground the ontology, derive implications for collapse and entanglement, and propose testable predictions. Section \ref{sec:standard} reviews Hilbert space in standard QM; Section \ref{sec:qp} introduces QP ontology; Section \ref{sec:tlm} integrates TLM axioms and derivations; Section \ref{sec:implications} explores consequences; Section \ref{sec:predictions} details falsifiability; Section \ref{sec:context} contextualizes among foundations; and Section \ref{sec:conclusion} concludes.
+
+\section{Hilbert Space in Standard Physics}
+\label{sec:standard}
+
+\subsection{The Formalism}
+A quantum state is represented as a vector
+\[
+|\psi\rangle \in \mathcal{H},
+\]
+where \(\mathcal{H}\) is a Hilbert space with inner product structure. Entanglement arises as tensor product states, e.g.,
+\[
+|\psi\rangle = \alpha |00\rangle + \beta |11\rangle,
+\]
+and measurement as projection operators \(P = |\phi\rangle \langle \phi|\). Dynamics follow unitary evolution \(U(t) = e^{-iHt/\hbar}\).
+
+\subsection{Collapse as Bookkeeping}
+Standard interpretations (e.g., Copenhagen) treat collapse as an instantaneous update to \(|\psi\rangle\) without physical propagation, tolerated as long as no faster-than-light signaling occurs \cite{bell1964}. In epistemic views like QBism, states are agent beliefs \cite{fuchs2017}, while realist interpretations (e.g., Everett) treat the wavefunction as ontological but multiversal \cite{wallace2012}.
+
+This abstractness leaves open questions: Why does Hilbert structure enable nonlocality? What physical mechanism enforces collapse?
+
+\section{Recasting Hilbert Space as Quantum Platform}
+\label{sec:qp}
+
+We propose that Hilbert space is not abstract but isomorphic to the Quantum Platform: a timeless substrate external to spacetime. Wavefunctions are instructions authored in QP, collapse is delayed rendering, and entanglement is timeless co-resolution.
+
+\begin{postulate}[Hilbert Space = QP]
+Hilbert space \(\mathcal{H}\) is the mathematical representation of the Quantum Platform. 
+Wavefunctions \(|\psi\rangle\) are ontologically real as timeless instructions.
+\end{postulate}
+
+We further assert that the QP is the \emph{complete and full ontology} of what 
+standard physics has dismissed as ``mathematics only'' Hilbert space. 
+That is, every formal structure of \(\mathcal{H}\)---inner products, basis 
+decompositions, and tensor products---has ontological meaning as 
+properties of the timeless substrate. Hilbert space is not merely symbolic 
+notation but the visible mathematical shadow of QP itself.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[
+  >=Latex, node distance=4cm and 2cm,
+  box/.style={draw, rounded corners, thick, align=center, inner sep=6pt, font=\small, text width=6cm}
+]
+
+% Left box: Standard Hilbert
+\node[box, fill=blue!10] (hilbert) {Hilbert Space (Standard View) \\
+\textbf{``Mathematics only''} \\
+\begin{itemize}
+\item Abstract probability calculus
+\item No physical substrate
+\item Collapse = bookkeeping update
+\end{itemize}};
+
+% Right box: QP ontology
+\node[box, fill=green!10, right=of hilbert] (qp) {Quantum Platform (TLM) \\
+\textbf{Complete and full ontology} \\
+\begin{itemize}
+\item Timeless causal substrate
+\item Wavefunctions = real instructions
+\item Collapse = delayed rendering into spacetime
+\end{itemize}};
+
+% Arrow between them
+\draw[->, thick] (hilbert) -- node[midway, above, font=\footnotesize\bfseries]{Actuality} (qp);
+
+\end{tikzpicture}
+\caption{Recasting Hilbert space: what mainstream physics dismisses as ``mathematics only'' is, in the Timeless Light Model, best interpreted as the mathematical presentation of a timeless Quantum Platform,
+with inner products, phases, and tensor structure reflecting genuine substrate constraints.}
+\label{fig:recast}
+\end{figure}
+
+In QP ontology, collapse is not mysterious: the instruction was timelessly resolved, and the appearance of simultaneity across light-years is an artifact of delayed spacetime rendering.
+
+\section{Integration with Timeless Light Model (TLM)}
+\label{sec:tlm}
+
+TLM \cite{mckinley2025tlmv2} provides the axiomatic foundation for QP as Hilbert space, with quanta as frameless ticks resolved in QP and rendered in the Spacetime Deployment Frame (SDF).
+
+\subsection{TLM Axioms}
+Key axioms from TLM v2.0 \cite{mckinley2025tlmv2}:
+
+\begin{axiom}[Quanta are Frameless]
+Quanta exist only as state-change ticks (emission E: down-tick; absorption A: up-tick), with no proper time, rest frame, or path.
+\end{axiom}
+
+\begin{axiom}[Frames Belong to Observers]
+Frames are local clocks and rulers obeying GR/SR, rendering quanta as causal movies.
+\end{axiom}
+
+Bridge laws connect QP to SDF:
+- Mass-Delay Duality: \( T \cdot m = \hbar / c^2 \), relating time delay \(T\) to mass \(m\).
+- Causal Resolution Constancy: \( T \cdot C_s = 1 \), enforcing invariant causal pacing.
+
+These map Hilbert vectors in QP to delayed projections in frames.
+
+\subsection{Derivations from QP Ontology}
+TLM derives GR/QM effects by treating QP (Hilbert) as the timeless layer.
+
+\subsubsection{Time Dilation and Redshift}
+For effective mass \( m_{\text{eff}} = \gamma m_0 \):
+
+\[
+T(\gamma) = \frac{\hbar}{c^2 \gamma m_0} = \frac{T_0}{\gamma},
+\]
+
+matching SR dilation \cite{mckinley2025tlmv2}. Gravitational redshift: \( m_{\text{eff}} \approx m_0 (1 + \phi / c^2) \),
+
+\[
+\frac{\Delta \nu}{\nu} \approx \frac{\Delta \phi}{c^2}.
+\]
+
+In QP, this is timeless mass-delay resolved without propagation.
+
+\subsubsection{Wavefunction from Frame Geometry}
+Wavefunctions emerge as frame deformations: Path contributions \(\exp(iS / \hbar)\) with action \( S = \int (\frac{1}{2} m v^2 - V) \, dt \), yielding the Schrödinger equation:
+
+\[
+i\hbar \partial_t \psi = \left[ -\frac{\hbar^2}{2m} \nabla^2 + V \right] \psi.
+\]
+
+QP resolves the state timelessly; frames render \( |\psi|^2 \) statistics \cite{mckinley2025tlmv2}.
+
+\subsubsection{Collapse as Rendering}
+From Frame Display Law \cite{mckinley2025framedisplay}: Forward field \(\psi_f = U(t, t_E) |E\rangle\), backward \(\psi_b = U(t, t_A)^\dagger |A^*\rangle\), EA amplitude \(\psi_{EA} \propto \psi_b \cdot \psi_f\). Collapse is QP resolution rendered without retrocausality, via ABL conditional \( P(k | E, A^*) \propto | \langle A^* | \Pi_k | E \rangle |^2 \).
+
+\subsubsection{Ontology of Matter}
+Particles require FRAME-YES (deployment) and CHARGE-YES (gauge coupling) toggles in QP \cite{mckinley2025ontology}. Energy-delay link: \( E = mc^2 \), with \(\omega \propto 1/T\). Proton mass \( m_p \approx 938 \, \mathrm{MeV}/c^2 \) from gluon loops amplifying \(\omega\).
+
+Foundational equations \cite{mckinley2025foundeqs}: \( T \cdot m = \hbar / c^2 \), \( T \cdot C_s = 1 \), with QP as timeless layer.
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Toy Model: Stern--Gerlach as QP Rendering}
+
+Consider a spin-$\tfrac12$ particle entering a Stern--Gerlach (SG) magnet oriented along $\hat z$.
+In the standard formalism the input state $|\psi\rangle=\alpha\,|{+z}\rangle+\beta\,|{-z}\rangle$
+evolves unitarily to a joint state of spin and transverse motional modes:
+\[
+U_{\mathrm{SG}}\,\big(|\psi\rangle\otimes|{\rm beam}\rangle\big)
+=\alpha\,|{+z}\rangle\otimes|{\rm up}\rangle
++\beta\,|{-z}\rangle\otimes|{\rm down}\rangle.
+\]
+A position measurement then ``collapses'' the state by projecting onto
+$|{\rm up}\rangle$ or $|{\rm down}\rangle$.
+
+\paragraph{QP interpretation.}
+In the QP ontology, the joint vector
+\[
+|\Psi\rangle_{\rm QP}=\alpha\,|{+z}\rangle\otimes|{\rm up}\rangle
++\beta\,|{-z}\rangle\otimes|{\rm down}\rangle
+\]
+is a single timeless instruction. Collapse is not a propagation in spacetime; it is
+the \emph{render} of that instruction into a spacetime deployment frame (SDF).
+Let $\mathcal{R}_t:\mathcal{H}_{\rm QP}\to\mathcal{O}({\rm SDF})$ denote the frame--render map at lab time $t$.
+Then the observed outcome at the detector is
+\[
+o_t=\mathcal{R}_t\!\left(|\Psi\rangle_{\rm QP}\right)\in\{{\rm up,\,down}\},
+\quad
+\mathbb{P}({\rm up})=\|\alpha\|^2,\;\;\mathbb{P}({\rm down})=\|\beta\|^2.
+\]
+No superluminal influence is involved: outcome statistics are locally Born and
+non--signaling, while the correlation of spin and position is the co--resolution of one
+QP instruction. Conditioning on a later absorber $A$ (e.g., a slit or screen region)
+is naturally expressed by the EA amplitude
+\[
+\mathcal{A}_{EA}(k)\propto\langle A^*^*|\Pi_k|E\rangle,
+\]
+so that the probe would register conditional frequencies consistent with the EA amplitude without enabling retro-signaling [1].
+Any probe is a frame-side event; it cannot alter the timeless QP instruction but only conditions the render.
+
+\paragraph{}
+The following TikZ sketch places the QP instruction above the SG splitting and shows
+render arrows into the two detector channels.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[>=Latex, node distance=1.6cm and 1.8cm]
+  \tikzstyle{qp}=[draw, rounded corners, thick, fill=green!7, align=center, inner sep=4pt]
+  \tikzstyle{det}=[draw, rounded corners, thick, fill=gray!10, align=center, inner sep=4pt, minimum width=14mm, minimum height=6mm]
+  \node[qp] (QP) {QP instruction\\$\alpha\,|{+z}\rangle\!\otimes\!|{\rm up}\rangle+\beta\,|{-z}\rangle\!\otimes|{\rm down}\rangle$};
+  \node[det, below left=1.2cm and 2.5cm of QP] (UP) {detector:\\ up};
+  \node[det, below right=1.2cm and 2.5cm of QP] (DN) {detector:\\ down};
+  \draw[->, very thick] (QP.south west) -- (UP.north);
+  \draw[->, very thick] (QP.south east) -- (DN.north);
+  \node[draw, thick, rounded corners, fill=blue!7, align=center, inner sep=3pt, below=0.9cm of QP] (SG) {Stern--Gerlach\\(frame apparatus)};
+  \draw[dashed] (UP.north) -- (SG.west);
+  \draw[dashed] (DN.north) -- (SG.east);
+\end{tikzpicture}
+\caption{Stern--Gerlach in QP: one timeless joint instruction renders as a single spacetime outcome (up or down) within the lab frame; no propagation of collapse is required.}
+\label{fig:stern-gerlach}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\section{Implications for Physics}
+\label{sec:implications}
+
+\begin{enumerate}
+    \item Hilbert space ceases to be abstract and becomes causal, resolving nonlocality: Entangled \(|\psi\rangle = \alpha |00\rangle + \beta |11\rangle\) is a single timeless QP instruction.
+    \item Relativity remains intact: No signals faster than \(c\); correlations are timeless.
+    \item Foundations unify: GR/QM subordinate to QP, with spacetime emergent from delay.
+\end{enumerate}
+
+Advantages: Dissolves measurement problem (collapse as rendering); explains entanglement without hidden variables.
+
+Criticisms: Speculative (Occam's razor: Why QP if Hilbert suffices? Response: Empirical residuals demand physical substrate; tests distinguish).
+
+\vspace{1cm}
+
+\noindent\textbf{Occam and ontology.}
+A frequent objection is that adding a Quantum Platform multiplies entities beyond necessity.
+Our reply is that the opposite occurs: retaining a Hilbert space that is declared mathematics only
+forces a non-ontological arena that nevertheless carries the full burden of correlations, phases,
+and tensor structure. Interpreting that same structure as the complete and full ontology of a timeless substrate
+reduces the number of primitives: the math is not a second thing in addition to reality, it is the visible
+footprint of reality. On balance this is the simpler hypothesis.
+
+
+
+
+
+
+
+
+
+
+
+% =======================
+% FIGURE: Entanglement Interpretations (Copenhagen vs Everett vs QP)
+% Drop this anywhere after your packages. Requires tikz with arrows.meta, positioning.
+% =======================
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=1.2cm and 1.2cm,
+  panel/.style={draw, rounded corners, very thick, inner sep=6pt, align=center, fill=gray!3},
+  title/.style={font=\bfseries\small, align=center, text width=4.8cm},
+  boxtext/.style={font=\footnotesize, align=left, text width=4.8cm},
+  dot/.style={circle, draw, fill=white, inner sep=1pt, minimum size=4mm},
+  render/.style={rectangle, draw, rounded corners, fill=white, inner sep=2pt, minimum width=8mm, minimum height=5mm},
+  note/.style={font=\scriptsize, align=center}
+]
+
+% Panel 1: Copenhagen
+\node[panel, minimum width=5.2cm, minimum height=9cm] (p1) {};
+\node[title] at ($(p1.north)+(0,-0.5cm)$) {Copenhagen (collapse)};
+% schematic
+\node[dot, label=below:{\scriptsize source S}] (S1) at ($(p1.north)+(0,-2.8cm)$) {};
+\node[render, label=below:{\scriptsize A}] (A1) [left=1.5cm of S1] {};
+\node[render, label=below:{\scriptsize B}] (B1) [right=1.5cm of S1] {};
+\draw[->, thick] (S1) -- (A1);
+\draw[->, thick] (S1) -- (B1);
+% dashed "update"
+\draw[dashed, ->] (A1.north) to[bend left=15] node[note, above]{non-signaling\\state update} (B1.north);
+% bullets
+\node[boxtext] (t1) at ($(p1.south)+(0,2.65cm)$) {%
+\begin{itemize}\setlength\itemsep{2pt}
+\item Single joint state in Hilbert space
+\item Local measurement updates the global state
+\item No controllable FTL signal
+\end{itemize}
+};
+
+% Panel 2: Everett
+\node[panel, minimum width=5.2cm, minimum height=9cm, right=.5cm of p1] (p2) {};
+\node[title] at ($(p2.north)+(0,-0.5cm)$) {Everett (many worlds)};
+% schematic
+\node[dot, label=below:{\scriptsize source S}] (S2) at ($(p2.north)+(0,-1.8cm)$) {};
+\node[dot, fill=black!10, minimum size=3mm] (BRC) [below=0.8cm of S2] {};
+\draw[thick] (S2) -- (BRC);
+\node[render, label=below:{\scriptsize A\(_1\)}] (A21) [left=1.5cm of BRC] {};
+\node[render, label=below:{\scriptsize B\(_1\)}] (B21) [right=1.5cm of BRC] {};
+\node[render, label=below:{\scriptsize A\(_2\)}] (A22) [left=1.5cm of BRC, yshift=-1.0cm] {};
+\node[render, label=below:{\scriptsize B\(_2\)}] (B22) [right=1.5cm of BRC, yshift=-1.0cm] {};
+\draw[->, thick] (BRC) -- (A21);
+\draw[->, thick] (BRC) -- (B21);
+\draw[->, thick] (BRC) -- (A22);
+\draw[->, thick] (BRC) -- (B22);
+\node[boxtext] (t2) at ($(p2.south)+(0,2.65cm)$) {%
+\begin{itemize}\setlength\itemsep{2pt}
+\item Unitary evolution only, no collapse
+\item Observer and apparatus branch
+\item Correlations by branch alignment
+\end{itemize}
+};
+
+% Panel 3: QP Rendering
+\node[panel, minimum width=5.2cm, minimum height=9cm, right=.5cm of p2] (p3) {};
+\node[title] at ($(p3.north)+(0,-0.5cm)$) {QP (timeless co-resolution)};
+% QP cloud substitute
+\node[draw, densely dotted, thick, rounded corners, fill=green!7, minimum width=4.6cm, minimum height=1.0cm, align=center, font=\scriptsize] (QP) at ($(p3.north)+(0,-2.2cm)$) {Quantum Platform\\timeless instruction \(|\psi\rangle\)};
+% renders
+\node[render, label=below:{\scriptsize A}] (A3) at ($(p3.north)+(-1.6cm,-3.4cm)$) {};
+\node[render, label=below:{\scriptsize B}] (B3) at ($(p3.north)+( 1.6cm,-3.4cm)$) {};
+\draw[->, thick] (QP.south west) -- (A3);
+\draw[->, thick] (QP.south east) -- (B3);
+\node[note] at ($(p3.north)+(0,-1.1cm)$) {render into one spacetime frame};
+\node[boxtext] (t3) at ($(p3.south)+(0,2.65cm)$) {%
+\begin{itemize}\setlength\itemsep{2pt}
+\item One timeless instruction in QP
+\item Collapse equals render, not propagation
+\item No FTL signal, correlations by co-resolution
+\end{itemize}
+};
+
+\end{tikzpicture}
+\caption{Entanglement, three views. Left: Copenhagen uses a non-signaling update of a global state. Middle: Everett uses branching with no collapse. Right: QP treats the joint state as a timeless instruction co-resolved and rendered at both sites within a single spacetime frame.}
+\label{fig:entanglement-compare}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Falsifiability and Predictions}
+\label{sec:predictions}
+
+The Timeless Light Model (TLM) offers several falsifiable predictions that diverge from standard quantum mechanics (QM) and general relativity (GR). These provide concrete experimental and observational tests that could confirm or refute the model.
+
+\begin{itemize}
+\item \textbf{Entangled Photon Phase Correlations:} 
+The model predicts residual phase correlations in entangled photons,
+\[
+\Delta \phi \sim \frac{Gm}{c^3},
+\]
+which lie outside the predictions of standard QM.
+
+\item \textbf{Achromatic Delay Asymmetries:} 
+In high-energy entanglement experiments, TLM predicts achromatic (wavelength-independent) delay asymmetries.
+These would appear as timing residuals on the order of $10^{-15}$ seconds,
+testable with state-of-the-art optical clocks placed near dense mass sources.
+
+\item \textbf{Non-Gaussian CMB Tails:} 
+The model predicts non-Gaussian tails in the Cosmic Microwave Background (CMB) power spectrum at very small angular scales ($\ell \sim 10^6$), arising from the timeless instruction structure. Such deviations would not be expected under $\Lambda$CDM + GR alone.
+
+\item \textbf{Gravitational Wave Phase Signatures:} 
+After subtracting the primary signal predicted by GR from gravitational-wave data,
+the model predicts subtle micro-step residuals in the phase,
+a distinctive signature of delayed rendering.
+\end{itemize}
+
+If none of these effects are observed to the stated precision, the TLM would be empirically falsified.
+
+Falsifiers: No residuals in VLBI lensing; orphan quanta; retrocausal signaling.
+
+\section{Broader Contextualization}
+\label{sec:context}
+
+This ontology echoes relational QM (Hilbert as relational [Rovelli, 1996]) and wavefunction realism (ontological states [Wallace, 2012]) but adds timeless QP seniority, distinguishing from epistemic views (QBism [Fuchs, 2017]) or multiverses. Unlike Wheeler-Feynman (advanced waves [WheelerFeynman1945]), TLM uses ontological pairing without retrocausality.
+
+\section{Conclusion}
+\label{sec:conclusion}
+Hilbert space is not ``just math.'' It is the mathematical footprint of the Quantum Platform: a timeless, out-of-universe space generating spacetime phenomena. Recognizing Hilbert space as QP reframes collapse, entanglement, and the ontology of physics itself, with testable implications from TLM.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+\bibitem{einstein1935} A. Einstein, B. Podolsky, and N. Rosen, \emph{Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?}, Phys. Rev. 47, 777 (1935).
+\bibitem{bell1964} J. S. Bell, \emph{On the Einstein Podolsky Rosen Paradox}, Physics 1, 195 (1964).
+\bibitem{mckinley2025tlmv2} J. C. W. McKinley, \emph{Timeless Light Model (TLM v2.0): Frameless Quanta, Framed Observers, and Bridge Laws}, Zenodo (2025). DOI: 10.5281/zenodo.16934697.
+\bibitem{mckinley2025framedisplay} J. C. W. McKinley, \emph{Frame Display Law for TLM v2.0: EA-conditioned Rendering in a Single Spacetime Deployment Frame}, Zenodo (2025). DOI: 10.5281/zenodo.16936105.
+\bibitem{mckinley2025ontology} J. C. W. McKinley, \emph{Ontology of Matter in the Timeless Light Model: From FRAME–CHARGE Toggles to Particles}, Zenodo (2025). DOI: 10.5281/zenodo.16939101.
+\bibitem{mckinley2025foundeqs} J. C. W. McKinley, \emph{Foundational Equations and Axiomatic Structure of the Timeless Light Model: A Synthesis Across Sixty Papers and Working Notes}, Zenodo (2025). DOI: 10.5281/zenodo.16187719.
+\bibitem{rovelli1996} C. Rovelli, Relational quantum mechanics, Int. J. Theor. Phys. 35, 1637 (1996).
+\bibitem{wallace2012} D. Wallace, \emph{The Emergent Multiverse: Quantum Theory according to the Everett Interpretation}, Oxford University Press (2012).
+\bibitem{fuchs2017} C. A. Fuchs, Notwithstanding Bohr, the reasons for QBism, Mind and Matter 15, 245 (2017).
+\bibitem{WheelerFeynman1945} J. A. Wheeler and R. P. Feynman, Interaction with the absorber as the mechanism of radiation, Rev. Mod. Phys. 17, 157 (1945).
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -8813,7 +9265,224 @@ J.~C.~W. McKinley, ``Why the Timeless Light Model Deserves Scientific Considerat
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
 
+% ------- Packages -------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\tcbset{colback=gray!5,colframe=black,boxrule=0.6pt,arc=2mm}
+\newtcolorbox{lawbox}[1]{breakable,title={#1},fonttitle=\bfseries}
+
+
+% ====== Theorems/Defs ======
+\newtheorem{definition}{Definition}
+\newtheorem{postulate}{Postulate}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+
+
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage{orcidlink}
+\usepackage{booktabs} % For better tables
+
+\title{The Emission Delay Law: A General Principle for the Realization of Quanta in the Timeless Light Model}
+
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{September 1, 2025}
+
+\begin{document}
+\maketitle
+
+\begingroup
+  \footnotetext[1]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17032235}{https://doi.org/10.5281/zenodo.17032235}.}
+\endgroup
+
+
+
+\begin{abstract}
+The Timeless Light Model (TLM) reinterprets quanta not as propagating entities but as timeless, holistic transactions within a fundamental Quantum Platform (QP). A core tenet of this model is that no quantum can be realized without a compatible paired condition (e.g., an absorber). This raises a foundational question: what happens to an excited state in an absorber-free environment? This paper answers by introducing the Emission Delay Law (EDL), a universal principle for all quanta. The EDL states that an excited state persists until a compatible paired condition becomes available, enabling the quantum transaction. The time an observer measures for this persistence is the "emission delay." This law is a necessary consequence of the TLM framework, providing a clear, falsifiable mechanism for quantum realization that applies to all quanta in all scenarios.
+\end{abstract}
+
+
+\section{Introduction}
+
+The Timeless Light Model (TLM) posits that quantum events are holistic, timeless transactions within a fundamental Quantum Platform (QP), which are then rendered into our observer-dependent Spacetime Deployment Frame (SDF) \cite{McKinley2025a}. A key principle, the Generalized Pairing Law (GPL), asserts that \textbf{no quantum is emitted without a paired condition} to complete the transaction and satisfy conservation laws \cite{McKinley2025b}.
+
+This principle, while logically robust, benefits from a clarifying mechanism when considering its ultimate consequences. For example, in a thought experiment with a single excited atom in an otherwise empty universe, the GPL implies the atom could never decay. This apparent prohibition requires a more dynamic formulation. To resolve this, we introduce the \textbf{Emission Delay Law (EDL)} as a general and necessary extension of the GPL. The EDL states that an excited state persists until a paired condition becomes available. This reframes the situation from an absolute prohibition to a conditional, delayed realization, providing a consistent mechanism for all quantum events.
+
+
+
+
+
+\section{Core Laws for All Quanta}
+
+\begin{definition}[Paired Condition]
+A paired condition is any physical state or process that, together with an emission, completes all conservation laws. For a photon, this is an available electromagnetic mode; for an electron, an available final state consistent with the Pauli exclusion principle and selection rules; for a phonon, a thermal bath or coupled vibrational modes.
+\end{definition}
+
+\begin{theorem}[Generalized Pairing Law (GPL)]
+The realization of any quantum is a holistic transaction that occurs if and only if a compatible paired condition exists \cite{McKinley2025b}.
+\end{theorem}
+
+This leads to the new, clarifying law governing the timing of all quantum events.
+
+\begin{theorem}[Emission Delay Law (EDL)]
+For any quantum, if an excited state exists but no compatible paired condition is available, the state persists until one becomes available, enabling holistic resolution in the QP. The duration of this persistence, as measured in the SDF, is the emission delay.
+\end{theorem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Timeless Light Model Foundations}
+
+TLM is built on a two-layer ontology \cite{McKinley2025c}:
+\begin{itemize}
+    \item \textbf{Quantum Platform (QP):} A timeless, spaceless substrate where all quantum events (for photons, phonons, etc.) are holistic, pre-resolved instructions.
+    \item \textbf{Spacetime Deployment Frame (SDF):} The observer's 4D spacetime reality, where QP instructions are rendered with delays, creating the illusion of propagation and causality.
+\end{itemize}
+
+For any massless quantum like a photon, its path in the SDF is a null geodesic where proper time is zero ($d\tau = 0$), reinforcing the TLM concept of a timeless transaction in the QP. The EDL extends this logic by introducing a pre-realization delay in the SDF, which represents the time spent waiting for the conditions of the timeless transaction to be met.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Implications and Distinctions}
+
+The EDL implies that the realization of any quantum event is dynamically conditioned by the state of the surrounding universe.
+\begin{itemize}
+    \item \textbf{Philosophically}, this reduces the ontology of "free particles" and reinforces a relational view of quantum mechanics \cite{Rovelli1996}.
+    \item \textbf{It differs from the Wheeler-Feynman absorber theory} as it posits a timeless transaction in the QP, not one mediated by advanced waves or requiring retrocausality within spacetime \cite{Wheeler1945}.
+\end{itemize}
+
+
+
+
+
+
+\section{Derivation of the Emission Delay Law}
+
+The Emission Delay Law (EDL) follows directly from the Generalized Pairing Law (GPL) and the foundational principles of quantum mechanics, integrated within the Timeless Light Model (TLM). We derive it step by step, showing that the absence of a paired condition causes the excited-state lifetime to diverge, manifesting as persistence until conditions allow resolution.
+
+\subsection{Step 1: Quantum Transition Rates from GPL}
+
+From GPL, the realization of a quantum requires a compatible final state to complete conservation laws. In time-dependent perturbation theory, the emission rate from an excited initial state $|i\rangle$ (energy $E_i$) to final states $|f\rangle$ (energy $E_f$) is governed by Fermi's golden rule:
+
+\[
+W = \frac{2\pi}{\hbar} \sum_{f} |M_{fi}|^2 \rho_f(E) \delta(E_f + \hbar\omega - E_i),
+\]
+
+where:
+- $M_{fi}$ is the transition matrix element, requiring nonzero coupling to the final state,
+- $\rho_f(E)$ is the density of states (DOS) for final states, representing the availability of paired conditions,
+- $\delta(E_f + \hbar\omega - E_i)$ enforces energy conservation for the emission of a quantum with energy $\hbar\omega$,
+- The sum is over all accessible $f$ satisfying GPL compatibility.
+
+This rate $W$ is the probability per unit time for the holistic transaction to resolve.
+
+\subsection{Step 2: Absence of Paired Condition}
+
+If no compatible paired condition exists, the density of available final states $\rho_f(E)$ tends to zero. The lifetime $\tau = 1/W$ diverges as $W \to 0$. Thus, the excited state persists until the environmental conditions change to make a paired condition available.
+
+\subsection{Step 3: Dynamic Resolution and Emission Delay}
+
+In a time-evolving system, if the environment changes such that a paired condition becomes available (e.g., $\rho_f(E) > 0$), then $W$ becomes finite, and resolution (emission) can occur. The duration of persistence before this change, as measured in the observer's Spacetime Deployment Frame (SDF), is the emission delay $\tau_{\text{delay}}$.
+
+In TLM, this delay is framed ontologically:
+- In the timeless Quantum Platform (QP), the instruction remains unresolved until the holistic unit (emitter-paired condition) is complete.
+- Rendering into SDF introduces delays via bridge laws, such as mass-delay duality:
+
+\[
+T \cdot m = \frac{\hbar}{c^2},
+\]
+
+where $T$ is the instructional delay (proper-time resistance), linking the persistence to the system's mass and causal structure. For massless quanta (e.g., photons), the null geodesic ($ds^2 = 0$) ensures no internal time, but the pre-realization delay $\tau_{\text{delay}}$ is observer-dependent.
+
+\subsection{Step 4: Universality Across Quanta}
+
+The derivation holds for all quanta:
+- \textbf{Photons}: The availability of final states is described by the local density of optical states (LDOS). The lifetime diverges in the limit LDOS $\to 0$; in practice, it should increase dramatically in a photonic bandgap material.
+- \textbf{Electrons}: For processes like beta decay or tunneling, if accessible final states are Pauli-blocked at the transition energy, the effective $\rho_f(E)$ tends to 0, and the initial state persists.
+- \textbf{Phonons}: A phonon's paired condition is a thermal bath or coupled vibrational modes. In a mechanically isolated system at low temperature, the absence of available modes suppresses thermal transport.
+- This generalizes to all bosons and fermions via the appropriate statistics in $\rho_f(E)$.
+
+This confirms the EDL as a universal consequence: an emission delay occurs if no compatible paired condition is available, with the lifetime diverging as $\tau \propto 1/\rho_f(E)$.
+
+Falsifiability: Measure a finite transition rate $W > 0$ in an environment where the density of compatible final states effectively vanishes at the transition.
+
+
+
+
+
+\section{Empirical Predictions and Falsifiability}
+
+The EDL is a general law, yielding specific tests for different quanta.
+\begin{itemize}
+    \item \textbf{Photons:} The excited-state lifetime of an emitter should diverge in the limit of vanishing local density of optical states (LDOS); in a photonic bandgap material it should be strongly extended \cite{Haroche2013}.
+    \item \textbf{Phonons:} Heat transport in cryogenically isolated nanostructures should be suppressed if there is no available thermal bath or coupled modes to act as a sink for phonons.
+    \item \textbf{Cosmology:} The evolution of absorber density (and thus the effective LDOS on a cosmological scale) in the early universe could influence emission patterns, potentially leaving signatures in the CMB, such as primordial non-Gaussianity \cite{Planck2016}.
+\end{itemize}
+The theory would be falsified by observing any quantum emission in a verifiably isolated environment where the density of compatible final states effectively vanishes.
+
+\section{Conclusion}
+
+The Emission Delay Law (EDL) is a universal and necessary principle within the Timeless Light Model. It clarifies that the requirement of a paired condition for emission manifests as a conditional delay, not an absolute prohibition. Arising from the logical consequences of the TLM in isolated systems, the EDL provides a consistent and falsifiable mechanism for the realization of all quantum transactions. It strengthens the TLM framework by offering a clear rule governing how and when timeless events in the QP are rendered into our observable reality.
+
+\begin{thebibliography}{9}
+
+\bibitem{McKinley2025a}
+J. C. W. McKinley, \textit{Timeless Light Model (TLM v2.0): Frameless Quanta, Framed Observers, and Bridge Laws}, Preprint (2025). \href{https://doi.org/10.5281/zenodo.16934697}{DOI: 10.5281/zenodo.16934697}
+
+\bibitem{McKinley2025b}
+J. C. W. McKinley, \textit{Generalized Pairing Law: No Quantum Emission Without an Absorber}, Preprint (2025). \href{https://doi.org/10.5281/zenodo.16892099}{DOI: 10.5281/zenodo.16892099}
+
+\bibitem{McKinley2025c}
+J. C. W. McKinley, \textit{The Quantum Platform as Frame Generator: Ontology, Anatomy, and Dark Matter Implications in TLM}, Preprint (2025). \href{https://doi.org/10.5281/zenodo.16788735}{DOI: 10.5281/zenodo.16788735}
+
+\bibitem{Rovelli1996}
+C. Rovelli, \textit{Relational Quantum Mechanics}, International Journal of Theoretical Physics \textbf{35}, 1637 (1996). \href{https://doi.org/10.1007/BF02302261}{DOI: 10.1007/BF02302261}
+
+\bibitem{Wheeler1945}
+J. A. Wheeler \& R. P. Feynman, \textit{Interaction with the Absorber as the Mechanism of Radiation}, Reviews of Modern Physics \textbf{17}, 157 (1945). \href{https://doi.org/10.1103/RevModPhys.17.157}{DOI: 10.1103/RevModPhys.17.157}
+
+\bibitem{Haroche2013}
+S. Haroche, \textit{Nobel Lecture: Controlling photons in a box and exploring the quantum-to-classical boundary}, Reviews of Modern Physics \textbf{85}, 1083 (2013). \href{https://doi.org/10.1103/RevModPhys.85.1083}{DOI: 10.1103/RevModPhys.85.1083}
+
+\bibitem{Planck2016}
+Planck Collaboration, \textit{Planck 2015 results. XVII. Constraints on primordial non-Gaussianity}, Astronomy \& Astrophysics \textbf{594}, A17 (2016). \href{https://doi.org/10.1051/0004-6361/201525836}{DOI: 10.1051/0004-6361/201525836}
+
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -8828,6 +9497,112 @@ J.~C.~W. McKinley, ``Why the Timeless Light Model Deserves Scientific Considerat
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
+
+% ===== Packages =====
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+% ===== Metadata =====
+\title{Dark Energy as Expansion Within GR: A Timeless Light Model Statement}
+\usepackage{orcidlink}
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{August 30, 2025}
+
+\begin{document}
+\maketitle
+
+
+\begingroup
+  \footnotetext[0]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17010816}{https://doi.org/10.5281/zenodo.17010816}.}
+\endgroup
+
+
+\begin{abstract}
+The Timeless Light Model (TLM)\cite{mckinley2025tlmr} accepts dark energy not as a separate substance or mysterious field, but as an intrinsic feature of the spacetime deployment rules already contained within General and Special Relativity. Just as mass--energy curves space, expansion may itself be understood as a built-in aspect of the relativistic framework. This short statement aligns TLM with those prior proposals that treat accelerated expansion as a cosmological constant or geometric term, rather than as exotic energy. This integration simplifies TLM's ontology by subordinating expansion to existing GR rules, potentially yielding testable residuals in cosmic microwave background or gravitational wave data.
+
+
+\end{abstract}
+
+\section{Introduction}
+In mainstream cosmology, the term ``dark energy'' refers to the observed accelerated expansion of the universe \cite{Riess1998,Perlmutter1999}. The dominant model, $\Lambda$CDM, interprets this as arising from a cosmological constant $\Lambda$ term in Einstein’s equations \cite{Einstein1917,Weinberg1989,Carroll2001}. In this view, no additional ``stuff'' is needed: expansion is simply part of the rules of General Relativity, the same way curvature is sourced by stress--energy.
+
+\section{TLM Perspective}
+The Timeless Light Model (TLM)\cite{mckinley2025tlmr} emphasizes that spacetime is a delayed deployment layer, with all phenomena projected from timeless instructions. Within that framework, cosmic expansion is not caused by a separate field but emerges as part of the deployment geometry of the Spacetime Deployment Frame (SDF). 
+
+Thus, TLM adopts the simplest possible position: accelerated expansion should be treated as part of the relativistic structure itself, not as an extra substance. In the same way that ``mass bends space,'' expansion is a geometric rule within the system of GR/SR.
+
+\section{Prior Proposals}
+This perspective echoes several historical and modern treatments:
+\begin{itemize}
+    \item Einstein’s original introduction of $\Lambda$ as a geometric constant in 1917 \cite{Einstein1917}.
+    \item Modern reviews that interpret dark energy as simply a cosmological constant \cite{Weinberg1989,Carroll2001,Peebles2003}.
+    \item Approaches that stress the sufficiency of $\Lambda$ as a parameter of GR, without invoking exotic quintessence or modified gravity.
+\end{itemize}
+
+\section{Conclusion}
+TLM accepts dark energy as nothing more than expansion built into the rules of relativity---an intrinsic constant of the deployment geometry. This position connects TLM with the long tradition of interpreting $\Lambda$ not as a mysterious fluid, but as the simplest extension of GR itself, amenable to tests via horizon-scale phase shifts as outlined in TLM predictions.
+
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+
+\bibitem{Riess1998}
+A.~G. Riess et al. 
+\newblock Observational evidence from supernovae for an accelerating universe and a cosmological constant.
+\newblock {\em Astronomical Journal}, 116:1009, 1998.
+\newblock \href{https://doi.org/10.1086/300499}{doi:10.1086/300499}.
+
+\bibitem{Perlmutter1999}
+S.~Perlmutter et al.
+\newblock Measurements of $\Omega$ and $\Lambda$ from 42 high-redshift supernovae.
+\newblock {\em Astrophysical Journal}, 517:565, 1999.
+\newblock \href{https://doi.org/10.1086/307221}{doi:10.1086/307221}.
+
+\bibitem{Einstein1917}
+A.~Einstein.
+\newblock Cosmological Considerations on the General Theory of Relativity.
+\newblock {\em Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften}, 1917.
+\newblock English translation available at \href{https://en.wikisource.org/wiki/Cosmological_Considerations_on_the_General_Theory_of_Relativity}{Wikisource}.
+
+\bibitem{Weinberg1989}
+S.~Weinberg.
+\newblock The cosmological constant problem.
+\newblock {\em Reviews of Modern Physics}, 61:1--23, 1989.
+\newblock \href{https://doi.org/10.1103/RevModPhys.61.1}{doi:10.1103/RevModPhys.61.1}.
+
+\bibitem{Carroll2001}
+S.~M. Carroll.
+\newblock The cosmological constant.
+\newblock {\em Living Reviews in Relativity}, 4:1, 2001.
+\newblock \href{https://doi.org/10.12942/lrr-2001-1}{doi:10.12942/lrr-2001-1}.
+
+\bibitem{Peebles2003}
+P.~J.~E. Peebles and B.~Ratra.
+\newblock The cosmological constant and dark energy.
+\newblock {\em Reviews of Modern Physics}, 75:559--606, 2003.
+\newblock \href{https://doi.org/10.1103/RevModPhys.75.559}{doi:10.1103/RevModPhys.75.559}.
+
+\bibitem{mckinley2025tlmr}
+J.~C.~W. McKinley.
+\newblock  A Review of the Timeless Light Model: Foundations, Derivations, and Empirical Predictions.
+\newblock {\em Zenodo}, July 2025.
+\newblock \href{https://doi.org/10.5281/zenodo.16958221}{doi:10.5281/zenodo.16958221}
+
+
+
+
+\end{thebibliography}
+
+\end{document}
 
 ```
 
@@ -15904,7 +16679,269 @@ Spin and particle properties from CI‑ARC topology (e.g., Möbius for spin‑½
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
 
+% ------- Packages -------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning}
+\usepackage{hyperref} % keep this last
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+% ------- Title -------
+\title{Frame Display Law for TLM v2.0:\\
+EA-conditioned Rendering in a Single Spacetime Deployment Frame}
+\author{John C. W. McKinley \\ Independent Researcher \\ 
+\href{https://orcid.org/0009-0005-7097-5035}{0009-0005-7097-5035}}
+\date{August 24, 2025}
+
+% ------- Boxes -------
+\newtcolorbox{lawbox}[1]{enhanced,breakable,
+  colback=white,colframe=black,boxrule=0.7pt,
+  sharp corners, left=8pt,right=8pt,top=8pt,bottom=8pt,
+  title={#1}}
+\newtcolorbox{notebox}[1]{enhanced,breakable,
+  colback=white,colframe=black,boxrule=0.6pt,
+  sharp corners, left=6pt,right=6pt,top=6pt,bottom=6pt,
+  title={#1}}
+
+% ------- Theorem-like -------
+\newtheorem{proposition}{Proposition}
+
+
+
+
+\begin{document}
+\maketitle
+\begingroup\renewcommand\thefootnote{}\footnotetext{This version published at
+\href{https://doi.org/10.5281/zenodo.16936105}{https://doi.org/10.5281/zenodo.16936105}.}\endgroup
+
+
+
+\begin{abstract}
+In the Timeless Light Model v2.0, quanta are frameless ticks and the wavefunction belongs to the observer frame. This short paper states a precise \emph{Frame Display Law} for rendering emitter-absorber movies once the absorber \( A^* \) is ontically fixed in the Quantum Platform. The law uses only standard frame-side propagators, a time-symmetric conditioning on \( (E,A^*) \), and a display rule that draws \( c \)-limited rays along stationary-phase ridges of the EA amplitude. Pacing is governed by the bridge laws \( T\,m=\hbar/c^2 \) and \( T\,C_s=1 \). The result preserves no-retrocausal signaling while matching ordinary optics \cite{BornWolf,FeynmanHibbs}, post-selection statistics via ABL \cite{Aharonov1964}, and the time-symmetric use of advanced solutions familiar from Wheeler-Feynman \cite{WheelerFeynman1945,WheelerFeynman1949}.
+\end{abstract}
+
+\section{Introduction and stance}
+\label{sec:intro}
+TLM v2.0 separates ontology and rendering. Quanta are frameless state-change ticks recorded in a timeless Quantum Platform (QP). Movies, paths, and probabilities are properties of a \emph{Spacetime Deployment Frame} (SDF). In this stance the wavefunction is a \emph{frame amplitude}, not a photon property. When an emission \( E \) and a realized absorber \( A^* \) are a completed pair, the frame renders a causal movie consistent with geometry and records. This paper codifies that rendering as a frame-side law and contrasts it with standard time-symmetric machinery \cite{Aharonov1964,WheelerFeynman1945,WheelerFeynman1949} while remaining compatible with SR and GR pacing \cite{Einstein1905,WaldGR} and with the author’s prior TLM statements \cite{McKinleyQuantaGlobal2025,McKinleyQTransfer2025,McKinleyPairingLaw2025,McKinleyQPlatformFrame2025,McKinleyWFDisambig2025}.
+
+\clearpage
+
+\begin{notebox}{Notation}
+\begin{itemize}
+  \item \( G \): geometry in the SDF, including metric, boundaries, media, apertures.
+  \item \( |E\rangle \) at time \( t_E \): source state that seeds the forward field.
+  \item \( |A^*\rangle \) at time \( t_A \): realized absorber state that seeds the backward field.
+  \item \( R^* \): recorded tags such as polarization, timing windows, which-way flags.
+  \item \( U(t,t_0) \): standard frame-side propagator for the chosen dynamics.
+  \item Bridge laws: \( T\,m=\hbar/c^2 \) and \( T\,C_s=1 \) pace the rendered movie \cite{McKinleyQTransfer2025,McKinleyQuantaGlobal2025}.
+\end{itemize}
+\end{notebox}
+
+\section{Ontic pairing and domain of the law}
+\label{sec:setup}
+\textbf{Pairing axiom.} Only completed pairs \( (E,A^*) \) are written to QP. Once written, the always-was consistency applies. The SDF never needs to choose an outcome; it conditions on \( A^* \) already realized in QP, then renders the unique movie consistent with \( G \) and \( R^* \) \cite{McKinleyPairingLaw2025,McKinleyQPlatformFrame2025}.
+
+\section{Frame Display Law}
+\label{sec:law}
+\begin{lawbox}{{Frame Display Law (EA-conditioned rendering)}}
+\textbf{Setup in a single SDF that spans \( E \) and \( A^* \).} Inputs: geometry \( G \), source state \( |E\rangle \) at \( t_E \), realized absorber \( |A^*\rangle \) at \( t_A \), and record sector \( R^* \).
+
+\medskip
+\textbf{1. Forward field (retarded).}
+\[
+\psi_f(x,t)=U(t,t_E)\,|E\rangle.
+\]
+Solve with the standard SDF propagator over \( G \) for the relevant equation set \cite{BornWolf,FeynmanHibbs}.
+
+\medskip
+\textbf{2. Backward field (advanced or adjoint).}
+\[
+\psi_b(x,t)=U(t,t_A)^{\dagger}\,|A^*\rangle.
+\]
+Time-symmetric use of adjoint solutions is standard in pre- and post-selected formalisms and absorber-style constructions \cite{Aharonov1964,WheelerFeynman1945,WheelerFeynman1949}.
+
+\medskip
+\textbf{3. EA amplitude conditioned on \( A^* \) and records.}
+\[
+\psi_{EA}(x,t)\propto\big(\psi_b(x,t)\big)\,\big(\psi_f(x,t)\big)\quad\text{restricted to sector } R^*.
+\]
+Interpretation: \( \psi_{EA} \) is a frame amplitude used for rendering. It is not a physical field carried by the photon.
+
+\medskip
+\textbf{4. Display rule.}
+\begin{itemize}
+  \item \emph{Display events, photon-like:} draw \( c \)-limited ray segments along the ridge or stationary-phase curves of \( |\psi_{EA}(x,t)| \). If multiple stationary branches exist, the rendered branch must be consistent with \( R^* \) \cite{BornWolf,FeynmanHibbs}.
+  \item \emph{Non-display events, entanglement or tunneling:} show only correlated endpoints. No trajectory is rendered.
+\end{itemize}
+Rendered paths are movie artifacts inside the SDF. The frameless tick has no path.
+
+\medskip
+\textbf{5. Tomography consistency.}
+For hypothetical intermediate projectors \( \{\Pi_k\} \),
+\[
+P(k\,|\,E,A^*)\propto|\langle A^*|\,\Pi_k\,|E\rangle|^2.
+\]
+This is the ABL conditional; any probe would register conditional frequencies consistent with the EA amplitude without enabling retro-signaling \cite{Aharonov1964}.
+
+\medskip
+\textbf{6. Pacing by bridge laws.}
+Displayed delays, phases, and energy bookkeeping obey
+\[
+T\,m=\hbar/c^2,\qquad T\,C_s=1,
+\]
+so that SR or GR timing, redshift, and eikonal optics along the rendered branch are reproduced \cite{Einstein1905,WaldGR,McKinleyQTransfer2025,McKinleyQuantaGlobal2025}.
+\end{lawbox}
+
+\section{Worked micro-examples}
+\label{sec:examples}
+
+\paragraph{Double-slit with post-selected pixel.}
+Let \( |E\rangle \) seed a Huygens forward field through two slits, and let \( |A^*\rangle \) be the realized pixel on the screen. The product \( \psi_{EA} \) exhibits fringes. The movie draws a \( c \)-limited ray along a stationary-phase ridge that reaches the pixel, consistent with any polarization or timing tags in \( R^* \). Which-way records collapse cross-terms by sector restriction \cite{BornWolf,FeynmanHibbs}.
+
+\paragraph{Gravitational lens with multi-branch geometry.}
+With lensing geometry \( G \) that allows several stationary optical paths, \( |\psi_{EA}| \) has multiple ridges. The display renders the branch consistent with \( R^* \) and paces relative delays by the bridge laws, matching time-delay lens phenomenology \cite{WaldGR}.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[scale=1.0,>=Latex]
+  % Axes
+  \draw[->] (-0.2,0) -- (8,0) node[right]{screen coordinate};
+  \draw[->] (0,-0.2) -- (0,4) node[above]{intensity schematic};
+  % Two-slit envelope (schematic fringes)
+  \foreach \x in {0.5,1.0,...,7.5}{
+    \pgfmathsetmacro{\y}{2.2 + 1.6*sin(360*(\x/1.5))}
+    \fill (\x, 0) circle (0.015);
+    \draw[opacity=0.25] (\x,0) -- (\x, {0.2+0.8*max(0,\y)});
+  }
+  % Mark a realized pixel A*
+  \draw[red,very thick] (6.0,0) -- (6.0,3.0);
+  \node[red] at (6.0,3.3) {$A^*$};
+  % Stationary-phase branch as a ray segment
+  \draw[blue,thick,->] (1.0,0.5) .. controls (2.0,1.2) and (4.0,2.2) .. (6.0,3.0);
+  \node[blue] at (4.0,2.6) {stationary-phase ridge};
+  % Labels
+  \node at (1.0,-0.4) {slits};
+  \node at (6.0,-0.4) {screen};
+\end{tikzpicture}
+\caption{EA-conditioned rendering for a post-selected pixel \( A^* \). The frame draws a \( c \)-limited ray along a stationary-phase ridge of \( |\psi_{EA}| \). The tick itself has no path.}
+\label{fig:ea}
+\end{figure}
+
+\section{Consistency and no-retro signaling}
+\label{sec:consistency}
+The time-symmetric construction is strictly frame-side and conditional on the completed pair \( (E,A^*) \). The ABL frequency law in Section \ref{sec:law} ensures that any inserted tomography would have produced statistics consistent with \( |\psi_{EA}|^2 \) without enabling retrocausal communication \cite{Aharonov1964}. The QP provides ontic completeness, while the SDF provides causal deployment \cite{McKinleyQPlatformFrame2025}.
+
+\section{Bridge laws and pacing}
+\label{sec:bridge}
+The bridge laws
+\[
+T\,m=\hbar/c^2,\qquad T\,C_s=1
+\]
+fix pacing. They underwrite the observed clocking of the rendered movie, including Doppler and gravitational redshifts and the eikonal phase picked by stationary-phase selection \cite{Einstein1905,WaldGR,McKinleyQTransfer2025,McKinleyQuantaGlobal2025}. The laws do not modify standard equations of motion; they constrain how the SDF deploys them as a movie.
+
+\section{Falsifiable consequences}
+\label{sec:falsifiable}
+\begin{itemize}
+  \item \textbf{Display versus non-display.} Experiments that toggle which-way records \( R^* \) must convert rendered-path movies into endpoint-only displays with no residual sub-trajectory artifacts. Residuals would falsify the display rule \cite{BornWolf}.
+  \item \textbf{Tomography neutrality.} Inserting weak or partial tomography upstream must yield conditional frequencies consistent with the ABL law when post-selecting \( A^* \), and no change in unconditional upstream rates \cite{Aharonov1964}.
+  \item \textbf{Stationary-phase rendering.} In multi-branch optics and lensing, the rendered branch statistics must match stationary-phase ridges of \( |\psi_{EA}| \) subject to sector restrictions \( R^* \) \cite{BornWolf}.
+\end{itemize}
+
+\section{Discussion and conclusion}
+\label{sec:conclusion}
+The Frame Display Law is not new dynamics. Steps 1 to 2 use ordinary SDF propagators. Step 3 is a time-symmetric conditioning on the realized absorber and records. Step 4 translates amplitude terrain into movies by a stationary-phase display rule. Step 5 guarantees tomography consistency without retrocausal signaling. Step 6 paces the movie with bridge laws. In sum: pre-resolve by constraints -> compute forward and back -> multiply and condition -> render ridges -> pace by the bridges.
+
+\bigskip
+\noindent\textbf{One-line slogan.} Pre-resolve by constraints -> compute forward and back -> multiply and condition -> render ridges -> pace by the bridges.
+
+\bigskip
+\noindent\textbf{Acknowledgments.} Thanks to readers of the TLM v2.0 series for requesting a compact statement of the frame-side display rule.
+
+\begin{thebibliography}{99}
+
+\bibitem{Aharonov1964}
+Y. Aharonov, P. G. Bergmann, and J. L. Lebowitz,
+Time Symmetry in the Quantum Process of Measurement,
+\emph{Physical Review} 134 (1964): B1410--B1416.
+\href{https://doi.org/10.1103/PhysRev.134.B1410}{doi:10.1103/PhysRev.134.B1410}.
+
+\bibitem{WheelerFeynman1945}
+J. A. Wheeler and R. P. Feynman,
+Interaction with the Absorber as the Mechanism of Radiation,
+\emph{Reviews of Modern Physics} 17 (1945): 157--181.
+\href{https://doi.org/10.1103/RevModPhys.17.157}{doi:10.1103/RevModPhys.17.157}.
+
+\bibitem{WheelerFeynman1949}
+J. A. Wheeler and R. P. Feynman,
+Classical Electrodynamics in Terms of Direct Interparticle Action,
+\emph{Reviews of Modern Physics} 21 (1949): 425--433.
+\href{https://doi.org/10.1103/RevModPhys.21.425}{doi:10.1103/RevModPhys.21.425}.
+
+\bibitem{BornWolf}
+M. Born and E. Wolf,
+\emph{Principles of Optics}, 7th ed.,
+Cambridge University Press, 1999.
+
+\bibitem{FeynmanHibbs}
+R. P. Feynman and A. R. Hibbs,
+\emph{Quantum Mechanics and Path Integrals},
+McGraw-Hill, 1965.
+
+\bibitem{Einstein1905}
+A. Einstein,
+On the Electrodynamics of Moving Bodies,
+\emph{Annalen der Physik} 17 (1905): 891--921.
+(English translations widely available.)
+
+\bibitem{WaldGR}
+R. M. Wald,
+\emph{General Relativity},
+University of Chicago Press, 1984.
+
+% ----- Author's TLM papers with DOIs -----
+
+\bibitem{McKinleyQuantaGlobal2025}
+J. C. W. McKinley,
+Quanta are Global, Frames are Local: A Rosetta Statement of the Timeless Light Model (v1.0),
+Zenodo (2025).
+\href{https://doi.org/10.5281/zenodo.16917106}{doi:10.5281/zenodo.16917106}.
+
+\bibitem{McKinleyQTransfer2025}
+J. C. W. McKinley,
+The Quanta Transfer Law (v1.0),
+Zenodo (2025).
+\href{https://doi.org/10.5281/zenodo.16897573}{doi:10.5281/zenodo.16897573}.
+
+\bibitem{McKinleyPairingLaw2025}
+J. C. W. McKinley,
+Generalized Pairing Law: No Quantum Emission Without an Absorber,
+Zenodo (2025).
+\href{https://doi.org/10.5281/zenodo.16892099}{doi:10.5281/zenodo.16892099}.
+
+\bibitem{McKinleyQPlatformFrame2025}
+J. C. W. McKinley,
+Quantum Platform as Frame Generator,
+Zenodo (2025).
+\href{https://doi.org/10.5281/zenodo.16788735}{doi:10.5281/zenodo.16788735}.
+
+\bibitem{McKinleyWFDisambig2025}
+J. C. W. McKinley,
+Timeless Light Model vs Wheeler–Feynman Absorber Theory: A Disambiguation (v5.0),
+Zenodo (2025).
+\href{https://doi.org/10.5281/zenodo.16924316}{doi:10.5281/zenodo.16924316}.
+
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -16333,6 +17370,265 @@ J.~C.~W. McKinley.
 
 ```latex
 
+
+\documentclass[12pt,onecolumn]{article}
+
+% ---------- Encoding & fonts ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ---------- Layout ----------
+\usepackage[a4paper,margin=1in]{geometry}
+
+% ---------- Math ----------
+\usepackage{amsmath,amssymb}
+\usepackage{chngcntr}
+\AtBeginDocument{\numberwithin{equation}{section}}
+
+% ---------- Graphics & drawing ----------
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ---------- Links (load last) ----------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+
+
+
+
+
+% ---------------------------------
+\title{Gravitons as Quantum Platform Geometry Instructions: A Timeless-Light Interpretation of Gravitational Wave Quanta}
+\author{John C. W. McKinley \\ Independent Researcher \\ \href{https://orcid.org/0009-0005-7097-5035}{0009-0005-7097-5035}}
+\date{August 10, 2025}
+
+
+% ---------------------------------
+% DOC
+% ---------------------------------
+\begin{document}
+\maketitle
+
+\renewcommand{\thefootnote}{}
+\footnotetext[1]{This version published at \href{https://doi.org/10.5281/zenodo.16788039}{doi.org/10.5281/zenodo.16788039.}}
+
+
+
+
+
+
+
+
+\begin{abstract}
+In standard quantum field theory, the \emph{graviton} is a hypothetical massless spin-2 boson mediating gravity. In the Timeless Light Model (TLM), within its Quantum Platform (QP) framework, gravitational waves are not ripples \emph{in} spacetime but the spacetime-deployment trace of a timelessly resolved geometric change. We propose a reinterpretation: the ``graviton'' corresponds not to a propagating particle, but to the minimum indivisible \emph{geometry-change instruction unit} recorded in the QP after successful event resolution. This preserves observational signatures of gravitational waves while replacing transmission with deployment, easing conceptual tensions between General Relativity (GR) and quantum theory and yielding discrete, testable predictions via residual analysis of LIGO-Virgo-KAGRA (LVK) data.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+In quantum field theory, forces are often modeled via particle-like excitations: photons for electromagnetism, gluons for the strong force, and \( W \), \( Z \) bosons for the weak interaction. Gravity, when approached via linearized quantization of metric perturbations, is assigned a massless spin-2 boson dubbed the \emph{graviton} \cite{weinberg1972gravitation,maggiore2007gravitational}. To date, no experiment has directly detected gravitons, and reconciling a quantum particle picture with GR's smooth curvature remains conceptually strained.
+
+Within the Timeless Light Model (TLM) and its Quantum Platform (QP) framing \cite{mckinley2025tlmcore}, events are resolved timelessly; only successful resolutions are written to the QP, and the observed world is a Spacetime Deployment Frame (SDF)---a delayed rendering of those instructions. Prior TLM work reinterprets gravitational waves as SDF manifestations of QP geometry realignments. Here we advance a specific claim: the graviton is not a spacetime traveler but an indivisible \emph{geometry instruction} recorded in the QP, whose SDF rollout collectively appears as a gravitational wave.
+
+\section{Related Work}\label{sec:related}
+Standard searches for gravitons are limited by the extreme weakness of gravitational coupling. A single graviton would carry energy \( E = h f \), with \( f \) the wave frequency; at astrophysical frequencies (\(\sim 100\ \text{Hz}\)), this energy is so small that direct detection would require a detector of planetary mass operating for cosmic timescales \cite{dyson2013gravitonlimits}. For this reason, graviton searches in practice rely on indirect constraints, such as limits on the dispersion of gravitational waves from LIGO-Virgo-KAGRA observations, which bound any graviton mass to \( m_g < 1.73 \times 10^{-23} \, \text{eV}/c^2 \) (from recent 2025 analyses of farthest BBHs) \cite{Mastrogiovanni2025}. These constraints assume a spacetime-propagating particle. The QP reinterpretation advanced here avoids the infeasibility of direct detection by recasting the ``graviton'' as a quantized deployment unit whose aggregate SDF manifestation is already within the reach of current detectors.
+
+\section{Standard View of Gravitons}\label{sec:standard}
+In linearized GR, small perturbations \( h_{\mu\nu} \) to the Minkowski background propagate at \( c \) as waves. Canonical quantization of these perturbations yields quanta with:
+\begin{itemize}
+    \item Zero rest mass,
+    \item Spin 2 with two helicity states,
+    \item Energy and momentum consistent with propagation at \( c \).
+\end{itemize}
+On this view, gravitational radiation carries energy through spacetime continuously, and in principle consists of many gravitons whose coherent superposition yields the classical wave.
+
+\section{TLM/QP Reinterpretation}\label{sec:tlm}
+The TLM posits:
+\begin{enumerate}
+    \item All outcomes are resolved timelessly in the QP.
+    \item Only successful outcomes are recorded; unresolved possibilities leave no record.
+    \item The SDF is a delayed, causal deployment (rendering) of QP instructions.
+\end{enumerate}
+From this vantage:
+\begin{itemize}
+    \item A ``graviton'' is the minimal QP \emph{geometry-change instruction} that alters curvature relations among SDF frames.
+    \item It does not propagate \emph{in} spacetime; e.g., its apparent arrival is the SDF's local deployment of a pre-resolved QP state.
+    \item Observed gravitational waves are the aggregate SDF playback of many such indivisible instruction units, which can approximate smooth waveforms at macroscopic scales.
+\end{itemize}
+
+\section{Implications}\label{sec:implications}
+\subsection{Discrete Geometry Changes}\label{subsec:discrete}
+If the QP encodes curvature realignments as indivisible units, then a gravitational wave should exhibit a lower bound on detectable strain increments---a quantization threshold \(\Delta h\). In the continuum limit (many units), observed signals appear smooth; but sufficiently precise data may reveal stepwise microstructure.
+
+\subsection{Energy Accounting}\label{subsec:energy}
+In GR, gravitational-wave energy is continuous. In the QP view, energy quanta correspond to instruction units and may connect to discrete microstate accounting at horizons \cite{bekenstein1973bhentropy}. This suggests a bridge from geometry-instruction counts to entropy bounds (e.g., with instruction counts analogous to black hole microstates).
+
+\section{Observational Program and Falsifiability}\label{sec:tests}
+A concrete test with existing detectors (LIGO/Virgo/KAGRA), including recent O4 data, is:
+\begin{enumerate}
+    \item Select a high-SNR compact-binary coalescence, e.g., using publicly available GWTC data.
+    \item Fit the best continuous GR waveform.
+    \item Subtract to obtain a residual \( r(t) \) in strain.
+    \item Apply step-detection (CUSUM, matched step banks, or Bayesian changepoint) to search for statistically significant plateaus of height \( \Delta h \) persisting over coherent intervals.
+\end{enumerate}
+A reproducible detection of non-instrumental, stepwise strain increments consistent across detectors and polarization reconstructions would support the instruction-quantization hypothesis; conversely, strong upper bounds on \( \Delta h \) would constrain or refute it.
+
+\section{Visualization}\label{sec:viz}
+
+\begin{figure}[h!]
+\centering
+
+\begin{tikzpicture}[scale=1.0]
+    % QP node
+    \node[draw, thick, fill=blue!10, rounded corners, minimum width=4.8cm, minimum height=1.8cm] (qp) at (0,+2)
+        {Quantum Platform (QP)\\ \small Timeless instruction record};
+
+    % Graviton unit
+    \node[draw, thick, fill=yellow!25, rounded corners, minimum width=3.2cm, minimum height=1.0cm] (unit) at (0,-0.5)
+        {Graviton (TLM)\\ \small geometry-change unit};
+
+    % SDF node
+    \node[draw, thick, fill=green!10, rounded corners, minimum width=7.2cm, minimum height=1.8cm] (sdf) at (0,-3)
+        {Spacetime Deployment Frame (SDF)\\ \footnotesize Wave = deployed geometry instructions};
+
+    % Arrows with labels
+    \draw[->, thick] (qp.south) -- (unit.north) node[midway, right] {deployment};
+    \draw[->, thick] (unit.south) -- (sdf.north);
+\end{tikzpicture}
+
+\caption{Schematic: QP records indivisible geometry-change instructions; the SDF renders them as an apparently continuous gravitational wave.}
+\label{fig:qp-sdf}
+\end{figure}
+
+\section{Conclusion}\label{sec:conclusion}
+This reinterpretation of gravitons as timeless QP geometry instructions resolves key tensions in quantum gravity while preserving GR phenomenology. By predicting discrete strain microstructures in LVK data, it offers falsifiable tests that could validate or refine the TLM. Future work may explore links to entropy and deployment bounds in broader unification efforts.
+
+\appendix
+\section{Derivation of a Discrete Strain Signature}\label{app:discrete}
+\subsection{Linearized GR Baseline}\label{app:baseline}
+Write the metric as
+\begin{equation}
+g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \quad \lvert h_{\mu\nu} \rvert \ll 1,
+\end{equation}
+with the transverse-traceless (TT) gauge waveform
+\begin{equation}
+h_{ij}(t) = h_0 \cos\!\big( \omega t + \phi \big)\, e_{ij},
+\end{equation}
+where \( e_{ij} \) is the polarization tensor.
+
+\subsection{Quantized Deployment Model}\label{app:model}
+Assume the SDF renders geometry-change instructions as indivisible increments of size \( \Delta h \) applied at deployment times \( t_n \). Then
+\begin{equation}
+h_{ij}(t) = \sum_{n=1}^{N} \Delta h \; e_{ij} \; \Theta(t - t_n),
+\end{equation}
+where \( \Theta \) is the Heaviside function. For large \( N \) with appropriately spaced \( t_n \), this approximates a smooth waveform; for sufficiently fine data, step structure may be resolvable.
+
+\subsection{Minimum Detectable Step}\label{app:mds}
+Let \( \sigma_{\text{noise}} \) denote the detector RMS strain noise in the relevant band and \( M \) the number of coherent cycles integrated. A rough detectability bound is
+\begin{equation}
+\Delta h_{\min} \gtrsim \frac{\sigma_{\text{noise}}}{\sqrt{M}}.
+\end{equation}
+In optimal LIGO bands, \( \sigma_{\text{noise}} \sim 10^{-22} \). High-SNR events increase \( M \), lowering detectable \( \Delta h_{\min} \).
+
+\subsection{Search Procedure}\label{app:search}
+Given data \( d(t) \), fit a continuous GR waveform \( h_{\text{GR}}(t) \), compute the residual \( r(t) = d(t) - h_{\text{GR}}(t) \), and test for stepwise behavior via:
+\begin{itemize}
+    \item CUSUM or Bayesian changepoint analysis for amplitude plateaus,
+    \item Matched filtering against a bank of quantized step templates,
+    \item Cross-detector coincidence in step times \( t_n \) and heights \( \Delta h \).
+\end{itemize}
+Instrumental artifacts must be vetoed via standard detector characterization.
+
+\section{Figure: Continuous vs Stepwise Waveform}\label{app:figure}
+\begin{figure}[h!]
+\centering
+\resizebox{0.95\linewidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=6cm,
+    xlabel={Time \( t \)},
+    ylabel={Strain \( h(t) \)},
+    axis lines=left,
+    legend style={at={(0.5,-0.2)},anchor=north,legend columns=-1},
+    ymin=-1.2, ymax=1.2,
+    xmin=0, xmax=6.5,
+    xtick=\empty, ytick=\empty,
+    domain=0:6.28,
+    samples=200,
+    grid=minor
+]
+% GR smooth waveform
+\addplot[blue, thick] {sin(deg(x))};
+\addlegendentry{GR: Continuous Wave}
+
+% TLM stepwise waveform (refined for better sin approximation)
+\addplot[red, thick, mark=*, mark options={scale=0.4, fill=red}]
+coordinates {
+(0,0) (0.52,0) (0.52,0.5) (1.05,0.5) (1.05,0.866) (1.57,0.866) (1.57,1.0) (2.09,1.0) (2.09,0.866) (2.62,0.866) (2.62,0.5) (3.14,0.5)
+(3.14,0) (3.67,0) (3.67,-0.5) (4.19,-0.5) (4.19,-0.866) (4.71,-0.866) (4.71,-1.0) (5.24,-1.0) (5.24,-0.866) (5.76,-0.866) (5.76,-0.5) (6.28,-0.5)
+};
+\addlegendentry{TLM: Stepwise Deployment}
+\end{axis}
+\end{tikzpicture}%
+}% <-- close resizebox here
+\caption{Continuous (GR) versus stepwise (TLM) gravitational waveforms. The step height \( \Delta h \) represents an indivisible geometry-change instruction.}
+\label{fig:step-vs-sine}
+\end{figure}
+
+
+\section*{Acknowledgments}
+The author thanks readers of prior TLM manuscripts for feedback connecting gravitational-wave phenomenology to deployment granularity.
+
+\begin{thebibliography}{9}
+
+\bibitem{weinberg1972gravitation}
+S. Weinberg,
+\textit{Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity}.
+Wiley, 1972.
+
+\bibitem{maggiore2007gravitational}
+M. Maggiore,
+\textit{Gravitational Waves: Theory and Experiments}.
+Oxford University Press, 2007.
+
+\bibitem{mckinley2025tlmcore}
+J. C. W. McKinley,
+``Resolving Wave-Particle Duality Through the Proposed Timeless Light Model: Photons as Timeless Instructions and Waves as Deployed Delay,''Zenodo (2025), DOI:\href{https://doi.org/10.5281/zenodo.16510862}{10.5281/zenodo.16510862}.
+
+\bibitem{bekenstein1973bhentropy}
+J. D. Bekenstein,
+``Black Holes and Entropy,''
+\textit{Phys. Rev. D} \textbf{7}, 2333--2346 (1973).
+
+\bibitem{dyson2013gravitonlimits}
+F. Dyson,
+``Is a Graviton Detectable?,''
+\textit{International Journal of Modern Physics A} \textbf{28}, 1330041 (2013).
+
+\bibitem{LVK2021tests}
+The LIGO Scientific Collaboration, the Virgo Collaboration, and the KAGRA Collaboration,
+``Tests of general relativity with GWTC-3,''
+\textit{Phys. Rev. D} \textbf{104}, 022004 (2021),
+arXiv:\href{https://arxiv.org/abs/2112.06861}{2112.06861}.
+
+\bibitem{Mastrogiovanni2025}
+S. Mastrogiovanni,
+``Population and cosmological properties of compact binary coalescences detected by the LIGO, Virgo and KAGRA collaborations,''
+Presentation at CERN, May 2025,
+\url{https://indico.cern.ch/event/1482718/contributions/6428005/attachments/3072107/5435133/Mastrogiovanni.pdf}.
+
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -16362,7 +17658,376 @@ J.~C.~W. McKinley.
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
 
+% ---------------------------------
+% PACKAGES & SETUP
+% ---------------------------------
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+\tikzset{>=Latex, box/.style={draw,rounded corners,thick,align=center}}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+\usepackage[dvipsnames]{xcolor}      % safe colors; optional but nice
+\usepackage[most]{tcolorbox}         % loads core + common libraries
+\tcbuselibrary{breakable,skins}      % allow page breaks + titles/skins
+
+
+% Keep hyperref LAST
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+% ---------------------------------
+% TITLE
+% ---------------------------------
+\title{\textbf{The Frame as Master: A Unified Foundation for the Timeless Light Model}}
+
+
+\author{John C. W. McKinley \\ Independent Researcher \\ \href{https://orcid.org/0009-0005-7097-5035}{0009-0005-7097-5035}}
+\date{August 9, 2025}
+
+
+% ---------------------------------
+% DOC
+% ---------------------------------
+\begin{document}
+\maketitle
+
+\renewcommand{\thefootnote}{}
+\footnotetext[1]{This version published at \href{https://doi.org/10.5281/zenodo.16787219}{doi.org/10.5281/zenodo.16787219.}}
+
+
+% --- ABSTRACT ---
+\begin{abstract}
+We propose that the fundamental physical actor in both General Relativity (GR) and Quantum Mechanics (QM) is not the particle, the field, or the wavefunction — but the \emph{frame}. In the Timeless Light Model (TLM), a frame is the minimal unit of spacetime deployment: a definable position and state in which pre-resolved instructions from the Quantum Platform (QP) are rendered. By making the frame the \emph{master controller of reality}, all observed physics emerges from the relationships and timing of two frame classes: massless frames ($m=0,\; T=0$) and mass-bearing frames ($m>0,\; T>0$), governed by the Mass–Delay Law $T\,m=1$ and the causal rendering law $T\,C_s=1$. This principle unifies GR’s geometry and QM’s instantaneous phenomena without altering accepted predictions, while providing causal clarity for effects such as entanglement, gravitational lensing, and the twin paradox.
+\end{abstract}
+
+% --- INTRODUCTION ---
+\section{Introduction}\label{sec:intro}
+General Relativity is built on a profound idea: physical law is the same in every inertial frame, and gravity is the geometry of spacetime. Yet, the frame itself is treated as a passive coordinate system --- a backdrop rather than a driver. The Timeless Light Model reframes the role of the frame: it is not a label for where things happen; it is where and how reality happens.
+
+We elevate the frame from a passive reference to the \emph{primary causal agent}. This builds directly on the familiar reference frame of relativity (\href{https://doi.org/10.1002/andp.19163540702}{Einstein, 1916})---a local coordinate system defining position, motion, and observation---but empowers it as the active renderer of timeless instructions. Frames are the smallest meaningful stages for instruction deployment from the Quantum Platform (QP)\footnote{Earlier drafts and some priors used ``Photon Instruction Layer (PIL)''; we standardize on QP per the synthesis (McKinley, 2025), DOI: 10.5281/zenodo.16187719.} --- the timeless layer that pre-resolves all events. A frame may be \emph{massless}, deploying its instructions instantaneously, or \emph{mass-bearing}, deploying them with delay proportional to its mass. This binary distinction reproduces both the time dilation and geometry of GR, and the nonlocal correlations (\href{https://doi.org/10.1103/PhysicsPhysiqueFizika.1.195}{Bell, 1964})  of QM, without contradiction. This builds on prior reinterpretations of photons as timeless connections (McKinley, 2025; \href{https://doi.org/10.5281/zenodo.16510862}{doi:10.5281/zenodo.16510862}) and horizons as infinite delay loci \href{https://doi.org/10.5281/zenodo.16730926}{doi:10.5281/zenodo.16730926}, resolving Newtonian instabilities \href{https://doi.org/10.5281/zenodo.15826480}{doi:10.5281/zenodo.15826480}.
+
+By taking the frame as master, we achieve a unified ontology: all of physics is frame physics. This perspective complements relational interpretations of quantum mechanics (\href{https://doi.org/10.1007/BF02302261}{Rovelli, 1996}).
+
+
+
+
+
+% --- DEFINITION ---
+
+\section{Definition of a Frame}\label{sec:def}
+A \textbf{frame} in TLM is the same reference frame central to relativity: a local system defining position, orientation, and state relative to which physical laws are measured. However, in TLM it is elevated to the smallest unit of spacetime deployment in the Spacetime Deployment Frame (SDF); the receiver and renderer of a Quantum Platform instruction; classified by mass:
+$m=0$ (massless) or $m>0$ (mass-bearing).
+\begin{tcolorbox}[colback=gray!10,colframe=gray!50,title=Note on Ontological Structure]
+The frame is treated as a blackbox component: its "contents" are emergent from the rendered instruction, including state properties like energy or momentum. It holds no innate metadata beyond its classification and position, ensuring minimality while avoiding an ontological void. Time-like effects (e.g., GR/SR metadata) arise solely during SDF deployment, not in the QP.
+\end{tcolorbox}
+
+Massless frames have $T=0$
+ (no deployment delay: \emph{timeless} in SDF); mass-bearing frames have T>0
+ according to
+\begin{equation}
+  T \, m = \frac{\hbar}{c^2} \qquad \text{(general form)},,
+  \label{eq:Tm}
+\end{equation}
+
+
+
+\noindent Throughout we adopt natural units $\hbar=c=1$, so $T\,m=1$, meaning mass imposes inversely proportional deployment delay. We also use the causal rendering law
+\begin{equation}
+  T\,C_s = 1.
+  \label{eq:TCs}
+\end{equation}
+Here $C_s$ is the causal rate (deployment rate) of the frame.
+
+
+
+% --- AXIOMS ---
+\section{Axioms of Frame Physics}\label{sec:axioms}
+\begin{enumerate}
+  \item \textbf{Frame Primacy.} Frames, not particles or waves, are the fundamental physical actors.\footnote{This primacy extends the standard reference frame of GR/SR, where frames are passive observers, to active controllers in TLM---rendering QP instructions while preserving local invariance.}
+  \item \textbf{Instruction Precedence.} All frame states are the deployed result of pre-resolved instructions from the QP (ontologically senior to SDF).
+  \item \textbf{Mass--Delay Law.} $T\,m=\hbar/c^2$ (natural units $T\,m=1$) governs deployment delay at the frame level; together with $T\,C_s=1$.
+  \item \textbf{Connectivity Without Travel.} Photon-like ``paths'' are timeless connections between frames; intermediate SDF points are rendered geometry, not ontic waypoints.
+  \item \textbf{Single-Absorber Principle.} Each photon-like instruction resolves to exactly one absorption frame.
+  \item \textbf{Gravity as Frame Interaction.} Mass-induced delay gradients change relationships between frames, reproducing GR effects.
+  \item \textbf{Frame Independence.} Initial frames are independent; apparent histories arise from QP instruction linking.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Deriving $T\,m=\hbar/c^2$ (natural units $T\,m=1$) at the Frame Level}\label{sec:derivation}
+In TLM, the effect of mass is to introduce deployment delay $T$ for instruction realization in the SDF. Define the causal rate $C_s\equiv 1/T$. The Mass--Delay Law in its general form is $T\,m=\hbar/c^2$; adopting natural units ($\hbar=c=1$) recovers $T\,m=1$. Together with the causal rendering law $T\,C_s=1$, this formalizes the deployment kinematics at the frame level as presented in the TLM synthesis (McKinley, 2025; DOI:10.5281/zenodo.16187719). Thus $m=0\Rightarrow T=0$ (instantaneous deployment) while large $m$ implies long delay.
+
+% --- FRAME TYPES ---
+\section{Massless vs.~Mass-Bearing Frames}\label{sec:types}
+\subsection{Massless Frames ($m=0$)}\label{subsec:massless}
+Timeless, instantaneous connections; responsible for quantum nonlocality, photon behavior, and correlations outside SDF time.
+
+\subsection{Mass-Bearing Frames ($m>0$)}\label{subsec:massive}
+Subject to GR-like delays, curvature effects, and finite propagation constraints; responsible for gravitational interaction, time dilation, and inertial effects.
+
+% --- DIAGRAM ---
+\section{Frame Map Diagram}\label{sec:diagram}
+\begin{figure}[htbp]
+  \centering
+  \resizebox{0.95\linewidth}{!}{%
+  \begin{tikzpicture}[node distance=2.2cm, every node/.style={font=\normalsize}]
+    % Quantum Platform
+    \node[box, fill=blue!10, text width=5.2cm] (QP)
+      { \textbf{Quantum Platform (QP)}\\[2pt] Pre-resolved timeless instructions };
+
+    % Frame split
+    \node[box, fill=yellow!12, below left=1.6cm and 4.0cm of QP, text width=4.6cm] (Massless)
+      { \textbf{Massless Frame}\\[2pt] $m=0,\; T=0$\\[1pt] (Timeless) };
+    \node[box, fill=orange!12, below right=1.6cm and 4.0cm of QP, text width=4.8cm] (Massive)
+      { \textbf{Mass-Bearing Frame}\\[2pt] $m>0,\; T>0$\\[1pt] (Delayed) };
+
+    % GR and QM boxes
+    \node[box, fill=green!12, below=2.6cm of Massless, text width=5.6cm] (QM)
+      { \textbf{Quantum Mechanics}\\[2pt] Instantaneous connections\\[1pt] (e.g., entanglement, collapse) };
+    \node[box, fill=red!12, below=2.6cm of Massive, text width=5.8cm] (GR)
+      { \textbf{General Relativity}\\[2pt] Geometry of delayed frames\\[1pt] (e.g., gravity, time dilation) };
+
+    % Arrows from QP
+    \draw[->, thick] (QP.south west) to[out=260, in=90] (Massless.north);
+    \draw[->, thick] (QP.south east) to[out=280, in=90] (Massive.north);
+
+    % Arrows to GR/QM
+    \draw[->, thick] (Massless.south) -- (QM.north);
+    \draw[->, thick] (Massive.south) -- (GR.north);
+
+    % Double arrow between GR and QM
+    \draw[<->, dashed, thick] (QM.east) -- (GR.west)
+      node[midway, above, sloped] {Unified by Frame Axioms};
+
+    % Legend
+    \node[align=left, text width=11.5cm, below=2cm of $(QM)!0.5!(GR)$] (Legend) {
+      \textbf{Legend:}\\[-2pt]
+      1.\; QP = Timeless instruction source\\
+      2.\; Massless frame: $m=0$, $T=0$\\
+      3.\; Mass-bearing frame: $T\,m=1$\\
+      4.\; GR and QM emerge from the same frame system
+    };
+  \end{tikzpicture}}
+  \caption{Schematic of QP-driven frame split and emergent GR/QM behavior.}
+  \label{fig:frame-map}
+\end{figure}
+
+% --- STRESS TEST TABLE ---
+\section{Stress Test Against Paradoxes}\label{sec:stress}
+\begin{center}
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{p{3.2cm} p{5.2cm} p{6.1cm}}
+  \toprule
+  \textbf{Phenomenon} & \textbf{Standard GR/QM View} & \textbf{Frame-as-Master Resolution} \\
+  \midrule
+  Twin Paradox & Time dilation from velocity & Proper-time accrual differs due to velocity-induced delay multipliers $\Gamma(v)$; resolves asymmetry via frame delay accounting. \\
+  EPR Entanglement & Nonlocal collapse & Outcomes share a massless-frame connection outside SDF time; no superluminal signaling. \\
+  Gravitational Lensing & Light follows curved spacetime & Apparent bending from delay-geometry in SDF projection of a timeless connection; matches Shapiro-type integrals. \\
+  Black Hole Horizon & Infinite time dilation & $T\to\infty$ near horizon in SDF; QP resolution remains well-defined. \\
+  Cosmic Redshift & Expanding space stretches wavelength & Destination-frame recession lowers rendered frequency via geometric deployment. \\
+  Wavefunction Collapse & Probabilistic collapse & Instruction resolves into a mass-bearing frame with finite $T$; superposition persists for massless links. \\
+  Shapiro Delay & Light slows near mass & Extra latency is a line integral of $-\Phi/c^2$ along the projected path (achromatic in vacuum). \\
+  Inertia / Simultaneity & Relative motion alters simultaneity & Differences in instruction sequencing across frames fix simultaneity conventions. \\
+  Vacuum Energy & Virtual particles in vacuum & Ephemeral frames are not written back as lasting absorptions; no persistent deployment. \\
+  Holographic Principle & 3D from a boundary & Frames emerge as projections from a QP boundary layer; consistent with information bounds. \\
+  Single-Photon Splitting & Beam-splitter paradox & Single-Absorber Principle: one instruction $\Rightarrow$ one absorption frame only. \\
+  \bottomrule
+  \end{tabular}
+\end{center}
+\noindent\footnotesize\emph{Note:} Predictions align with delay-based causality, preventing Newtonian failures (\href{https://doi.org/10.5281/zenodo.16750632}{doi:10.5281/zenodo.16750632}).  Contrasts with Newtonian absolute time (\href{https://doi.org/10.5479/sil.52126.39088015628399}{Newton, 1687}), as resolved in priors.
+\normalsize
+
+
+
+% --- IMPLICATIONS ---
+\section{Implications and Predictions}\label{sec:implications}
+\begin{itemize}
+  \item All physical phenomena can be re-expressed as frame interactions over $T$ fields.
+  \item The $m=0$ vs.~$m>0$ split predicts measurable differences in propagation and correlation without modifying accepted equations.
+  \item Frame-centric modeling may suggest new experimental falsifiability conditions for TLM 
+  consistent with empirical confrontations of GR (\href{https://doi.org/10.12942/lrr-2014-4}{Will, 2014}; \href{https://www.wiley.com/en-us/Gravitation+and+Cosmology%3A+Principles+and+Applications+of+the+General+Theory+of+Relativity-p-9780471925675}{Weinberg, 1972}), such as horizon-scale phase shifts in gravitational waves (as predicted in the BH prior, \href{https://doi.org/10.5281/zenodo.16730926}{doi:10.5281/zenodo.16730926}; consistent with entropic-gravity arguments in \href{https://doi.org/10.1103/PhysRevLett.75.1260}{Jacobson, 1995}) and photon reinterpretations resolving wave--particle duality (McKinley, 2025; \href{https://doi.org/10.5281/zenodo.16510862}{doi:10.5281/zenodo.16510862}; see also \href{https://doi.org/10.1103/PhysRevLett.116.061102}{Abbott et\,al., 2016}).
+\end{itemize}
+
+% --- CONCLUSION ---
+\section{Conclusion}\label{sec:conclusion}
+By making the frame the master controller of reality, the Timeless Light Model unifies GR and QM under a single causal ontology. Massless and mass-bearing frames, governed by the Mass–Delay and causal rendering laws, explain both the instantaneous phenomena of QM and the geometric effects of GR as projections of the same underlying instruction system.
+
+% =========================
+% ======== APPENDICES =====
+% =========================
+\appendix
+
+% --- APPENDIX A ---
+\section{Glossary of Terms}\label{app:glossary}
+{\footnotesize\emph{Entropy note:} We use $S = k_B \ln |H(t)|$ per the TLM synthesis.\par}\vspace{0.3em}
+\begin{description}
+  \item[Quantum Platform (QP):] Timeless, ontologically senior layer from which all spacetime events are pre-resolved before deployment into the SDF.
+  \item[Spacetime Deployment Frame (SDF):] The projected 4D geometry in which frames appear to observers; the stage for observable GR/QM effects.
+  \item[Frame:] Minimal unit of deployment in the SDF. Receives instructions from QP and renders them as physical events.
+  \item[Massless Frame:] $m=0$, $T=0$; instantaneous deployment; exists outside SDF time.
+  \item[Mass-Bearing Frame:] $m>0$, $T>0$; deployment delay obeys $T\,m=1$.
+  \item[Mass--Delay Law:] $T$ (delay) and $m$ (mass) are inversely proportional: $T\,m=1$.
+  \item[Causal Rendering Law:] $T\,C_s=1$ with $C_s$ the causal (deployment) rate.
+  \item[Instruction Resolution:] QP finalizing a frame's state before it appears in the SDF.
+  \item[Timeless Connection:] A link between two frames in QP that appears as a finite-speed path in SDF.
+  \item[Single-Absorber Principle:] Each photon-like instruction resolves to exactly one absorption frame.
+\end{description}
+
+% --- APPENDIX B ---
+\section{Rigorous Mathematical Derivations}\label{app:math}
+\subsection{Derivation of $T\,m=1$ from Causal Invariance}\label{app:deriv}
+Assume the Quantum Platform maintains a constant \emph{causal rate} $C_s$ for a given frame state:
+\begin{equation}
+  C_s = \frac{\text{\# of resolved instructions}}{\text{unit of QP causal time}}.\label{eq:CsDef}
+\end{equation}
+Let $T$ be the deployment delay of that frame in the SDF. Identifying deployment rate with causal rate yields $C_s=1/T$ and thus
+\begin{equation}
+  m = \frac{1}{T} \quad \Rightarrow \quad T\,m = 1.\label{eq:TmDerive}
+\end{equation}
+
+\subsection{Limits: Massless and Infinite-Mass Frames}\label{app:limits}
+For $m\to 0$, $T\to 0$ (instantaneous deployment, matching vanishing photon proper time in SR). For $m\to \infty$, $T\to \infty$ (deployment frozen in SDF; horizon-like behavior).
+
+\subsection{Mapping to GR and QM}\label{app:map}
+In GR, proper time obeys $\mathrm{d}\tau = \sqrt{g_{\mu\nu}\,\mathrm{d}x^\mu\,\mathrm{d}x^\nu}$. In TLM, parameterize deployment with $\lambda$ and write
+\begin{equation}
+  \mathrm{d}\tau = \frac{1}{C_s}\,\mathrm{d}\lambda = T\,\mathrm{d}\lambda,\label{eq:tauCs}
+\end{equation}
+so curvature or velocity modify $T$ to reproduce dilation effects. In QM, superpositions persist as massless connections (no $T$ penalty) until an absorption resolves to a mass-bearing frame (finite $T$).
+
+\subsection{Photon Connection Without Ontic Travel}\label{app:photon}
+Let $F_e$ and $F_a$ denote emission and absorption frames with $T=0$. In QP they are linked timelessly. The SDF projection renders an apparent path of length $L$ at speed $c$; the “travel” is geometric rendering, not ontic motion between intermediate frames.
+
+\subsection{Residual Phase Predictions}\label{app:residual}
+SDF projection is a geometric transform of QP resolutions; small changes to intermediate mass-bearing frames produce residual phases between linked endpoints. Interferometers should register tiny, geometry-predictable phase shifts synchronized with gravitational potential variations or GW strain.
+
+% --- APPENDIX C ---
+\section{Causal Diagram of the Frame-as-Master Model}\label{app:diagram}
+\begin{center}
+  \resizebox{0.95\linewidth}{!}{%
+  \begin{tikzpicture}[node distance=2cm, >=latex, thick]
+    % QP
+    \node[draw, rounded corners, fill=blue!10, text width=4.2cm, align=center] (QP) {Quantum Platform (QP) \\ Timeless, pre-resolved instructions};
+    % Frame split
+    \node[draw, rounded corners, fill=yellow!10, below left=2cm and 3.5cm of QP, text width=4cm, align=center] (Massless) {Massless Frame \\ $m=0$, $T=0$ \\ Instantaneous deployment};
+    \node[draw, rounded corners, fill=orange!10, below right=2cm and 3.5cm of QP, text width=4cm, align=center] (Massive) {Mass-Bearing Frame \\ $m>0$, $T>0$ \\ Delayed deployment};
+    % Mass-delay law box
+    \node[draw, rounded corners, fill=gray!10, below=2.5cm of QP, text width=4.8cm, align=center] (Law) {Mass–Delay Law \\ $T\,m=1$ \\ (Natural units)};
+    % Outputs
+    \node[draw, rounded corners, fill=green!10, below=3cm of Massless, text width=4.8cm, align=center] (QM) {Quantum Mechanics Limit \\ Instantaneous correlations \\ Nonlocal effects};
+    \node[draw, rounded corners, fill=red!10, below=3cm of Massive, text width=4.8cm, align=center] (GR) {General Relativity Limit \\ Time dilation, curvature \\ Finite propagation speed};
+    % Arrows
+    \draw[->] (QP.south west) -- (Massless.north);
+    \draw[->] (QP.south east) -- (Massive.north);
+    \draw[->] (QP.south) -- (Law.north);
+    \draw[->] (Massless.south) -- (QM.north);
+    \draw[->] (Massive.south) -- (GR.north);
+    % Unification
+    \draw[<->, dashed] (QM.east) -- (GR.west) node[midway, above, sloped] {Unified by Frame Physics};
+    % Notes
+    \node[below=1cm of GR, text width=12cm, align=left] (Legend) {\textbf{Summary:} QP resolves events; frames deploy them. The mass class sets $T$ via $T\,m=1$, yielding QM (massless) and GR (mass-bearing) behaviors as projections of one system.};
+  \end{tikzpicture}}
+\end{center}
+
+% --- APPENDIX D ---
+\section{Worked Examples in Frame Physics}\label{app:examples}
+\noindent Datasets and observing catalogs referenced herein include LVK GWTC-3 (\href{https://doi.org/10.1103/PhysRevX.13.041039}{Abbott et\,al., 2023}).
+\subsection{Notation and Laws Used}\label{app:notation}
+We use natural units $(\hbar=c=1)$ unless otherwise noted; in these units the general law $T\,m=\hbar/c^2$ reduces to $T\,m=1$. We use deployment-level laws
+\begin{align}
+  T\,m &= 1, \label{eq:TmOne}\\
+  T\,C_s &= 1. \label{eq:TCsOne}
+\end{align}
+With deployment parameter $\lambda$,
+\begin{equation}
+  \mathrm{d}\tau = \frac{1}{C_s}\,\mathrm{d}\lambda = T\,\mathrm{d}\lambda.\label{eq:tauLaw}
+\end{equation}
+\paragraph{Velocity-induced delay.} In SR, $\gamma(v)=1/\sqrt{1-v^2/c^2}$. Treat velocity as delay multiplier $\Gamma(v)\equiv\gamma(v)$ and $T(v)=\Gamma(v)\,T_0$.
+\paragraph{Potential-induced delay.} In a weak, static potential $\Phi(\mathbf{x})$ with $|\Phi|/c^2\ll1$,
+\begin{equation}
+  \mathrm{d}\tau \approx \left(1+\frac{\Phi}{c^2}\right)\mathrm{d}t \;\Rightarrow\; T(\mathbf{x}) \approx T_0\left(1-\frac{\Phi}{c^2}\right)^{-1},\label{eq:weakfieldT}
+\end{equation}
+so $\delta T/T_0 \approx -\,\Phi/c^2$ to first order.
+
+\subsection{Twin Paradox as Frame-Delay Accounting}\label{app:twin}
+Twin A remains inertial; twin B travels at constant speed $v$, turns around, returns. Let the total coordinate duration in A’s frame be $t$. Using \eqref{eq:tauLaw} with $\lambda=t$ and $T(v)=T_0/\gamma(v)$:
+\begin{align}
+  \tau_A &= \int_0^{t} T_0\,\mathrm{d}t = t\,T_0,\\
+  \tau_B &= \int_0^{t} \frac{T_0}{\gamma(v)}\,\mathrm{d}t = \frac{t}{\gamma(v)}\,T_0.
+\end{align}
+Hence $\Delta \tau = t\,T_0\big(1-1/\gamma(v)\big)$.
+
+\subsection{Shapiro Delay as a Line Integral of Frame Delay}\label{app:shapiro}
+A massless connection (projected light ray) grazes a mass $M$ at impact parameter $b$. From \eqref{eq:weakfieldT}, the extra deployment delay along path $\mathcal{C}$ is
+\begin{equation}
+  \Delta t = -\frac{1}{c^3}\int_{\mathcal{C}} \Phi(\mathbf{x})\,\mathrm{d}\ell \approx \frac{2GM}{c^3}\ln\!\left(\frac{4 r_e r_r}{b^2}\right),\label{eq:shapiro}
+\end{equation}
+matching the GR Shapiro delay.
+
+\subsection{Interferometric Residual from Time-Varying Delay}\label{app:interf}
+For monochromatic frequency $\omega$ and two arms sampling different delay fields $T_1(t),T_2(t)$, the phase difference is
+\begin{equation}
+  \Delta\phi(t) = \omega\int \big[\delta T_1-\delta T_2\big]\,\frac{\mathrm{d}\ell}{c} \sim \omega\,\frac{L}{c}\,\alpha\,h_{\mathrm{rms}},\label{eq:phiScaling}
+\end{equation}
+if a metric strain $h(t)$ induces fractional modulation $\delta T/T_0 \sim \alpha\,h(t)$.
+
+% --- REFERENCES ---
+\section*{References}\label{sec:refs}
+\begin{enumerate}
+  \item C. Rovelli, ``Relational quantum mechanics,'' \emph{International Journal of Theoretical Physics}, 35, 1637 (1996). \href{https://doi.org/10.1007/BF02302261}{doi:10.1007/BF02302261}.
+  \item T. Jacobson, ``Thermodynamics of Spacetime: The Einstein Equation of State,'' \emph{Phys. Rev. Lett.}, 75, 1260 (1995). \href{https://doi.org/10.1103/PhysRevLett.75.1260}{doi:10.1103/PhysRevLett.75.1260}.
+  \item B. P. Abbott et\,al., ``Observation of Gravitational Waves from a Binary Black Hole Merger,'' \emph{Phys. Rev. Lett.}, 116, 061102 (2016). \href{https://doi.org/10.1103/PhysRevLett.116.061102}{doi:10.1103/PhysRevLett.116.061102}.
+  \item R. Abbott et al. (LIGO Scientific, Virgo, and KAGRA Collaborations), ``GWTC-3: Compact Binary Coalescences Observed by LIGO and Virgo During the Second Part of the Third Observing Run,'' \emph{Phys. Rev. X}, 13, 041039 (2023). \href{https://doi.org/10.1103/PhysRevX.13.041039}{doi:10.1103/PhysRevX.13.041039}.
+  \item J. C. W. McKinley, \emph{Foundational Equations and Axiomatic Structure of the Timeless Light Model: A Synthesis Across Sixty Papers and Working Notes (v1.0)} (2025). \href{https://doi.org/10.5281/zenodo.16187719}{doi:10.5281/zenodo.16187719}.
+  \item J. C. W. McKinley, \emph{Resolving Wave–Particle Duality Through the Proposed Timeless Light Model: Photons as Timeless Instructions and Waves as Deployed Delay} (2025). \href{https://doi.org/10.5281/zenodo.16510862}{doi:10.5281/zenodo.16510862}.
+  \item J. C. W. McKinley, \emph{Falsifiable Prediction of Horizon-Scale Phase Shifts in Gravitational Waves from the Timeless Light Model} (2025). \href{https://doi.org/10.5281/zenodo.16730926}{doi:10.5281/zenodo.16730926}.
+\item J. C. W. McKinley, \emph{The Failure of the Newtonian Holodeck: Why a Universe Without Relativity Cannot Sustain Itself} (2025). \href{https://doi.org/10.5281/zenodo.16750632}{doi:10.5281/zenodo.16750632}.
+
+\item J. C. W. McKinley, \emph{Causality Without Light Speed: Reframing c as Structure, Not Law} (2025). \href{https://doi.org/10.5281/zenodo.15826480}{doi:10.5281/zenodo.15826480}.
+
+\item S. Weinberg, \emph{Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity} (John Wiley \& Sons, New York, 1972). \href{https://www.wiley.com/en-us/Gravitation+and+Cosmology%3A+Principles+and+Applications+of+the+General+Theory+of+Relativity-p-9780471925675}{Link}.
+
+
+
+
+
+
+
+
+
+
+  
+\end{enumerate}
+
+\end{document}
 ```
 
 </details>
@@ -16392,6 +18057,581 @@ J.~C.~W. McKinley.
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+
+\documentclass[12pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% --- Title ---
+
+
+
+
+
+
+
+\title{{Frame Pair Stretch and the ZeroSpace Postulate \\in the Timeless Light Model}}
+
+\author{John C. W. McKinley \\ Independent Researcher \\ \href{https://orcid.org/0009-0005-7097-5035}{0009-0005-7097-5035}}
+\date{August 7,  2025}
+
+\begin{document}
+\maketitle
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[1]{This version published at \href{https://doi.org/10.5281/zenodo.16777862}{doi.org/10.5281/zenodo.16777862.}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{abstract}
+In the Timeless Light Model (TLM), photons are reinterpreted as timeless instructions issued on a Quantum Platform (QP) rather than as in-spacetime particles. This paper introduces the \emph{ZeroSpace Postulate}: photons possess no ontic worldline in the Spacetime Deployment Frame (SDF) but may project observable deployment traces consistent with General Relativity (GR). By treating photons as \emph{frame-pair connectors}---timeless links between emission and absorption frames---we resolve the paradox of how a photon ``knows'' its destination over billions of years of apparent travel. We formalize the deployment map \(\Pi\), derive its optical-metric reduction, present worked examples (Shapiro delay, gravitational lensing, FLRW redshift), and propose precise observational falsifiability criteria. We connect cosmic-scale frame pair stretch to laboratory-scale ``tiny frames'' seen in high-energy accelerators, offering a unified conceptual framework with testable predictions.
+\end{abstract}
+
+\section{Introduction and Motivation}
+\label{sec:intro}
+
+In the standard General Relativity (GR) deployment frame---here called the \emph{Spacetime Deployment Frame} (SDF)---the trajectory of a photon is described as a null geodesic connecting an emission event to an absorption event~\cite{Einstein1916}. While this description is consistent with all observed phenomena, it leaves open a subtle but critical puzzle when considered in light of the \emph{Timeless Light Model} (TLM)~\cite{McKinley2025_TLM,McKinley2025_Cs}: how can a photon, which experiences zero proper time, ``know'' its eventual destination over cosmological distances and timescales?
+
+The traditional account implicitly embeds the photon entirely \emph{in} the SDF, granting it an in-frame ontic status that accrues no proper time but is still ``present'' in the deployment layer for billions of years. This raises conceptual difficulties when integrated with a timeless instruction framework: if the photon is an instruction issued on a timeless Quantum Platform (QP), why should it have any extended in-SDF existence at all?
+
+We propose a resolution through the \textbf{ZeroSpace Postulate}. In this view, a photonic instruction exists entirely outside the SDF in its essence---possessing no worldline substance---while still producing an \emph{observable deployment trace} in the SDF. This trace obeys all GR constraints, including null propagation and local Lorentz invariance, but is ontologically distinct from the instruction itself.
+
+By treating the photon as a \emph{frame-pair connector} between an emission frame and an absorption frame, we circumvent the ``13.8 billion-year travel'' paradox: the photon does not \emph{traverse} the SDF in time; rather, its deployment trace is a projection of a timeless endpoint-pairing into the SDF geometry. The apparent stretching of frame pairs across expanding space---what we call \emph{frame pair stretch}---is thus a property of the deployment geometry, not a sign of in-SDF photon substance.
+
+\paragraph{Lab-Scale Analogy: Tiny Frames in Accelerators.}
+In the TLM/ZeroSpace framework, an SDF \emph{frame} is a spacetime locus carrying its own clock rate and metric relations. High-energy accelerator experiments, such as those at CERN, provide an instructive analogue: no matter how much energy is applied, a massive particle never reaches \(c\). Instead, its SDF frame becomes increasingly time-dilated relative to the lab frame, and its spatial projection stretches asymptotically toward the lightcone without ever lying upon it~\cite{Peacock1999}. 
+
+In our language, this is a \emph{tiny frame}---a frame with such extreme dilation that, from the SDF viewpoint, it is tightly compressed against the causal boundary set by \(c\), but still distinct from a photon’s ZeroSpace projection. Just as cosmological expansion stretches the projection between emission and absorption frames for photons, accelerator physics stretches the separation between a massive particle’s instantaneous SDF frame and the massless limit it can never attain. 
+
+This analogy highlights the frame-pair structure: for massive particles, the two ends of the frame-pair (present state and lightlike limit) never coincide; for photons, the endpoints \((\mathcal{E},\mathcal{A})\) are paired in ZeroSpace and projected into SDF already at the causal boundary.
+
+\section{ZeroSpace Postulate and the Deployment Map}
+\label{sec:zerospace}
+
+\subsection{Postulates}
+\label{subsec:postulates}
+\paragraph{P0 (TLM context).}
+All observable spacetime phenomena in the GR deployment layer (SDF) are delayed resolutions of timeless instructions issued on a Quantum Platform (QP). Photons are not spacetime objects; ``photon'' denotes an instruction whose proper time is undefined on QP and zero in SDF~\cite{McKinley2025_TLM}.
+
+\paragraph{P1 (ZeroSpace).}
+Each photonic instruction possesses a \emph{ZeroSpace quality}: it remains outside the SDF in its essence (no worldline, no in-frame ontic substrate) while permitting a \emph{deployment trace} to appear in SDF that satisfies GR constraints (local Lorentz invariance; null propagation).
+
+\paragraph{P2 (Endpoints-first).}
+Instructions are specified by endpoint data on QP: an emission event class \(\mathcal{E}\) and an absorption event class \(\mathcal{A}\) (possibly distributions). Endpoints are timelessly paired on QP; no retrocausality is entailed because QP lacks time.
+
+\paragraph{P3 (Delay law).}
+Deployment obeys the causal rendering law
+\begin{equation}
+\label{eq:delaylaw}
+T \cdot C_s = 1,
+\end{equation}
+where \(T\) is deployment delay (SDF time-like), and \(C_s\) is the causal rate of the rendering engine (QP-side, timeless parameter). For massive systems the companion balance \(T \cdot m = 1\) describes mass-bound delay~\cite{McKinley2025_Cs}.
+
+\subsection{Deployment Map}
+\label{subsec:deployment-map}
+Let \((\mathcal{M}, g_{\mu\nu})\) be the SDF spacetime. A photonic instruction \(I\) with ZeroSpace quality is projected into SDF via a \emph{deployment map}
+\begin{equation}
+\Pi: \; (I; \mathcal{E}, \mathcal{A}; g_{\mu\nu}) \mapsto \Gamma_I \subset \mathcal{M},
+\end{equation}
+where \(\Gamma_I\) is a null curve family consistent with the metric and boundary data. Concretely, \(\Gamma_I\) is any extremal of the \emph{deployment functional}
+\begin{equation}
+\label{eq:deployment-functional}
+\mathcal{D}[\gamma; g] \;=\; \int_{\gamma} \lambda(g, x) \, d\ell,
+\end{equation}
+subject to \(\gamma(0)\in \mathcal{E}\) and \(\gamma(1)\in \mathcal{A}\), with \(\lambda\) chosen so that Euler--Lagrange equations enforce \(g_{\mu\nu}\dot{\gamma}^\mu \dot{\gamma}^\nu = 0\) (null) and reproduce standard GR propagation including Shapiro delay~\cite{Shapiro1964}. In stationary spacetimes, \(\mathcal{D}\) reduces to Fermat’s principle in curved space (optical metric)~\cite{Schneider1992,BlandfordNarayan1992}.
+
+\paragraph{Lemma (Worldline appearance without worldline substance).}
+Although \(I\) has no ontic worldline in QP, the image \(\Gamma_I\) is a null geodesic (or bundle) in SDF. Thus the instruction can ``travel in SDF while not being of SDF.''
+
+\subsection{Observable Consequences}
+\label{subsec:consequences}
+
+\paragraph{(C1) Redshift without photon aging.}
+Define the SDF wavevector \(k^\mu\) tangent to \(\Gamma_I\) and the emitter/absorber four-velocities \(u^\mu_{\rm em}, u^\mu_{\rm ab}\). Observed frequencies are
+\begin{equation}
+\omega_{\rm em} = -k_\mu u^\mu_{\rm em},\qquad
+\omega_{\rm ab} = -k_\mu u^\mu_{\rm ab}.
+\end{equation}
+The ratio \(\omega_{\rm ab}/\omega_{\rm em}\) (cosmological, Doppler, gravitational) is entirely SDF-geometric; no photon proper-time accumulation is needed. ZeroSpace carries an immutable instruction; redshift arises from the projection \(\Pi\) acting through \(g_{\mu\nu}\) along \(\Gamma_I\)~\cite{Peacock1999}.
+
+\paragraph{(C2) Lensing and path selection.}
+Multiple extremals of \(\mathcal{D}\) yield multiple images/paths (gravitational lensing). The ZeroSpace instruction selects all admissible \(\Gamma_I\) consistent with boundary classes \((\mathcal{E},\mathcal{A})\); observed multiplicity is a property of \(\Pi\) and \(g_{\mu\nu}\), not of an in-spacetime photon substance~\cite{Schneider1992,BlandfordNarayan1992}.
+
+\paragraph{(C3) Coherence and phase.}
+Interference arises from the deployment-phase
+\begin{equation}
+\Phi[\gamma] \;=\; \int_{\gamma} k_\mu \, dx^\mu,
+\end{equation}
+a purely SDF quantity. ZeroSpace enforces endpoint coherence rules; \(\Pi\) supplies path-dependent phases, reproducing standard optics and QFT limits.
+
+\paragraph{(C4) Causality and the speed limit.}
+ZeroSpace never transmits superluminal \emph{signals} in SDF. For any two events \(p,q \in \mathcal{M}\), \(\Pi\) only yields support on null (or, for media, subluminal effective) trajectories. Hence the SDF light-cone structure is preserved though the instruction itself resides outside it.
+
+\subsection{Schematic}
+\label{subsec:schematic}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % SDF plane
+  \draw[fill=gray!10, rounded corners] (-4,-1.2) rectangle (4,2.2);
+  \node at (.5,-.7) {\small SDF (GR deployment layer)};
+  % Emission and absorption
+  \filldraw (-3,0) circle (1.5pt) node[left] {\small Emission $E$};
+  \filldraw (3,1.6) circle (1.5pt) node[right] {\small Absorption $A$};
+  % Null-like path
+  \draw[thick] (-3,0) .. controls (-1.5,0.8) and (1.2,0.9) .. (3,1.6);
+  % QP cloud
+  \draw[dashed, rounded corners] (-4,2.8) rectangle (4,4.2);
+  \node at (0,3.7) {\small QP (ZeroSpace: outside SDF)};
+  % Instruction arrows
+  \draw[->, thick, dashed] (0,2.9) -- (-2.6,0.2) node[midway,left] {\scriptsize $\Pi^\dagger$ sets endpoints};
+  \draw[->, thick, dashed] (0,2.9) -- (2.6,1.3) node[near start,right] {\scriptsize $\Pi$ deploys $\Gamma_I$};
+\end{tikzpicture}
+\caption{ZeroSpace instruction (QP) projecting a null deployment trace \(\Gamma_I\) into SDF between endpoint classes \((\mathcal{E},\mathcal{A})\).}
+\label{fig:zerospace-schematic}
+\end{figure}
+
+\section{From ZeroSpace to Fermat: The Optical-Metric Derivation}
+\label{sec:optical-metric}
+
+We now make \S\ref{subsec:deployment-map} explicit by reducing the deployment functional \(\mathcal{D}\) to Fermat’s principle in GR for the relevant spacetimes, thereby fixing the concrete form of \(\Pi\) in the SDF~\cite{Schneider1992,BlandfordNarayan1992,Peacock1999}.
+
+\subsection{Static spacetimes: exact reduction to Fermat}
+\label{subsec:static-optical}
+Let the SDF be a static spacetime with line element
+\begin{equation}
+\label{eq:static-metric}
+ds^2 \;=\; -V(\mathbf{x})^2\, dt^2 \;+\; h_{ij}(\mathbf{x})\,dx^i dx^j, \qquad \partial_t V=0, \ \partial_t h_{ij}=0,
+\end{equation}
+where \(V>0\) is the lapse and \(h_{ij}\) is the spatial metric on the \(t=\)const slices. For a null deployment trace \(\Gamma_I\) we have \(ds^2=0\), hence
+\begin{equation}
+\label{eq:null-condition-static}
+0\;=\;-V^2 dt^2 + h_{ij}\,dx^i dx^j
+\quad\Rightarrow\quad
+dt \;=\; \frac{1}{V(\mathbf{x})}\,\sqrt{h_{ij}\,dx^i dx^j}.
+\end{equation}
+Integrating between endpoint classes \(\mathcal{E}\to\mathcal{A}\) along a spatial curve \(\gamma\) yields the SDF travel time
+\begin{equation}
+\label{eq:travel-time}
+T[\gamma] \;=\; \int_{\gamma} \frac{1}{V(\mathbf{x})}\,\sqrt{h_{ij}\,dx^i dx^j}
+\;=\; \int_{\gamma} n(\mathbf{x})\, d\ell_h,
+\end{equation}
+where \(n(\mathbf{x}) \equiv 1/V(\mathbf{x})\) and \(d\ell_h=\sqrt{h_{ij}\,dx^i dx^j}\). Thus
+\begin{equation}
+\label{eq:fermats-functional}
+\mathcal{D}[\gamma;g] \;\equiv\; T[\gamma] \;=\; \int_\gamma n(\mathbf{x})\, d\ell_h,
+\end{equation}
+and its extremals obey Fermat’s principle in curved space:
+\begin{equation}
+\delta T[\gamma] = 0
+\quad\Longleftrightarrow\quad
+\gamma \ \text{is a geodesic of the optical metric}\
+\tilde{h}_{ij} \equiv n(\mathbf{x})^2\, h_{ij}.
+\end{equation}
+Hence the ZeroSpace deployment map \(\Pi\) reduces, in static SDF sectors, to selecting spatial geodesics of \(\tilde{h}_{ij}\) with endpoint constraints. The resulting spacetime lifts are null geodesics.
+
+\paragraph{Shapiro delay (weak field).}
+For a weak, static field \(V(\mathbf{x})\simeq 1+\Phi(\mathbf{x})\) with \(|\Phi|\ll 1\), \(n(\mathbf{x})\simeq 1-\Phi\). Along a nearly straight path,
+\begin{equation}
+\Delta T \;\equiv\; T - T_0 \;\simeq\; -\int_\gamma \Phi(\mathbf{x})\, d\ell
+\end{equation}
+recovers the standard logarithmic enhancement for point-mass potentials (the Shapiro time delay)~\cite{Shapiro1964}.
+
+\subsection{Stationary spacetimes: optical geometry with shift}
+\label{subsec:stationary-optical}
+For stationary spacetimes one may write
+\begin{equation}
+ds^2 \;=\; -V^2 (dt - \omega_i dx^i)^2 + h_{ij}\,dx^i dx^j,
+\end{equation}
+with time-independent \(V,\omega_i,h_{ij}\). The null condition gives a generalized Fermat functional
+\begin{equation}
+\label{eq:stationary-fermats}
+T[\gamma] \;=\; \int_\gamma \Big[ \omega_i(\mathbf{x})\,\dot{x}^i \;+\; n(\mathbf{x})\,\sqrt{h_{ij}\,\dot{x}^i \dot{x}^j}\Big] d\lambda,
+\end{equation}
+whose extremals reproduce the correct SDF null geodesics including gravitomagnetic effects. Again, \(\Pi\) extremizes \(T[\gamma]\) under endpoint constraints.
+
+\subsection{Cosmology (FLRW): scale-factor optics}
+\label{subsec:flrw-optics}
+For spatially flat FLRW,
+\begin{equation}
+ds^2=-dt^2 + a(t)^2\,\delta_{ij}dx^i dx^j,
+\end{equation}
+null curves satisfy \(dt = a(t)\,|d\mathbf{x}|\). The deployment time between emission \(t_{\rm em}\) and absorption \(t_{\rm ab}\) is
+\begin{equation}
+T[\gamma]=\int_{t_{\rm em}}^{t_{\rm ab}} dt = \int_\gamma a(t)\,|d\mathbf{x}|,
+\end{equation}
+i.e., Fermat with an \emph{effective} index \(n_{\rm FLRW}(t)=a(t)\) acting on comoving space. Redshift then follows purely from SDF expansion, with no photon aging in ZeroSpace (see Appendix~\ref{app:redshift}).
+
+\section{Geometric-Optics Map and the Null Constraint}
+\label{sec:eikonal}
+In the geometric-optics limit, the field takes the form \(\Psi = A\,e^{i S/\epsilon}\), \(k_\mu\equiv \nabla_\mu S\). The eikonal equation
+\begin{equation}
+\label{eq:eikonal}
+g^{\mu\nu}k_\mu k_\nu = 0
+\end{equation}
+encodes the null constraint of \(\Gamma_I\). Rays are integral curves of \(k^\mu\), and their projections extremize the Fermat functionals above. The ZeroSpace instruction fixes endpoint classes and coherence conditions; \(\Pi\) supplies the SDF phase accumulation
+\begin{equation}
+\Phi[\gamma] \;=\; \int_\gamma k_\mu dx^\mu,
+\end{equation}
+governing interference and lensing multiplicities.
+
+\section{Worked Examples of the Deployment Functional}
+\label{sec:worked-examples}
+
+\subsection{Shapiro Delay in a Weak, Static Schwarzschild Field}
+\label{subsec:shapiro}
+Consider a point mass \(M\) with Schwarzschild radius \(r_s=2GM\) and an asymptotically flat, static region. In isotropic weak field \(V(\mathbf{x}) \simeq 1+\Phi(\mathbf{x})\), \(\Phi(\mathbf{x})=-GM/r\). The optical index is \(n(\mathbf{x})=1/V \simeq 1-\Phi \simeq 1+GM/r\). For an unperturbed straight path with impact parameter \(b\), the excess travel time is
+\begin{equation}
+\Delta T_{\rm Shapiro}
+\simeq \int_{-\infty}^{\infty}\!\Big[n(\mathbf{x})-1\Big]\, d\ell
+\;=\; \int_{-\infty}^{\infty}\!\frac{GM}{\sqrt{b^2+z^2}}\,dz
+\;=\; 2GM \ln\!\left(\frac{4 z_{\rm max}}{b}\right),
+\end{equation}
+where \(z\) is the coordinate along the asymptotic line of sight and \(z_{\rm max}\) regulates the logarithm (cancels in relative delays). Between two endpoints at radii \(r_{\rm em}\) and \(r_{\rm ab}\) with closest approach \(b\), the standard form is
+\begin{equation}
+\Delta T_{\rm Shapiro}
+= 2GM \ln\!\left(\frac{r_{\rm em}+r_{\rm ab}+D}{r_{\rm em}+r_{\rm ab}-D}\right),
+\qquad
+D \equiv \sqrt{(r_{\rm em}+r_{\rm ab})^2 - b^2},
+\end{equation}
+matching GR to leading post-Newtonian order~\cite{Shapiro1964}. In TLM, this delay is \(\Delta T = \delta \mathcal{D}\) from \(\Pi\) and does not imply photon aging in ZeroSpace.
+
+\subsection{Thin-Lens Time-Delay Surface and Fermat Potential}
+\label{subsec:thin-lens}
+Let \(D_d, D_s, D_{ds}\) be angular-diameter distances to lens, to source, and lens-to-source (SDF geometry). In the thin-lens limit, the arrival-time functional (Fermat surface) for image angle \(\boldsymbol{\theta}\) and source angle \(\boldsymbol{\beta}\) is~\cite{Schneider1992,BlandfordNarayan1992}
+\begin{equation}
+\tau(\boldsymbol{\theta}) \;=\;
+\frac{D_d D_s}{2 D_{ds}}\; \big|\boldsymbol{\theta}-\boldsymbol{\beta}\big|^2
+\;-\; \psi(\boldsymbol{\theta}),
+\qquad
+\psi(\boldsymbol{\theta}) \equiv \frac{D_d D_s}{D_{ds}}\,\hat{\psi}(\boldsymbol{\theta}),
+\end{equation}
+where \(\hat{\psi}\) is the scaled 2D lens potential (\(\nabla_{\!\theta}^2 \psi = 2\kappa\), with convergence \(\kappa\)). Stationary points satisfy
+\begin{equation}
+\nabla_{\!\theta}\tau(\boldsymbol{\theta}) = 0
+\quad\Longleftrightarrow\quad
+\boldsymbol{\beta} = \boldsymbol{\theta} - \nabla_{\!\theta}\psi(\boldsymbol{\theta})
+\end{equation}
+(the lens equation). Relative delays between images \(i,j\) are
+\begin{equation}
+\Delta t_{ij} \;=\; \frac{1+z_d}{c}\,\Big[\,\tau(\boldsymbol{\theta}_i)-\tau(\boldsymbol{\theta}_j)\,\Big],
+\end{equation}
+with \(z_d\) the lens redshift (set \(c=1\) in natural units). In TLM, multiplicity and \(\Delta t\) arise from multiple extremals of \(\mathcal{D}\) selected by endpoint classes \((\mathcal{E},\mathcal{A})\).
+
+\subsection{FLRW Example: Comoving Distance and Cosmological Redshift}
+\label{subsec:flrw-ex}
+In spatially flat FLRW, \(ds^2=-dt^2+a(t)^2 d\mathbf{x}^2\). For a null ray, \(dt = a(t)\,|d\mathbf{x}|\). The comoving distance to redshift \(z\) is
+\begin{equation}
+\chi(z) \;=\; \int_{t(z)}^{t_0}\frac{dt}{a(t)}
+\;=\; \int_{0}^{z}\frac{dz'}{H(z')},
+\qquad
+H(z) \equiv \frac{\dot{a}}{a}.
+\end{equation}
+Angular-diameter and luminosity distances follow:
+\begin{equation}
+D_A(z)=\frac{\chi(z)}{1+z}, \qquad D_L(z)=(1+z)\,\chi(z).
+\end{equation}
+Observed frequency scales as \(\omega \propto a^{-1}\), i.e.
+\begin{equation}
+1+z=\frac{a(t_0)}{a(t_{\rm em})},
+\end{equation}
+a pure property of the SDF deployment through \(\Pi\); the ZeroSpace instruction does not age~\cite{Peacock1999}.
+
+\subsection{Phase Difference for Two Admissible Deployments}
+\label{subsec:phase-two-paths}
+For two admissible deployment traces \(\gamma_1,\gamma_2\) connecting the same endpoint classes, the SDF phase gap is
+\begin{equation}
+\Delta \Phi
+=\int_{\gamma_2} k_\mu dx^\mu - \int_{\gamma_1} k_\mu dx^\mu
+=\omega\,\Delta T \;-\; \int_{\gamma_2-\gamma_1}\!\!\!\mathbf{k}\cdot d\mathbf{x},
+\end{equation}
+which, in the stationary thin-lens limit, reduces to \(\Delta \Phi \propto \tau(\boldsymbol{\theta}_2)-\tau(\boldsymbol{\theta}_1)\). Interference thus probes \(\mathcal{D}\) directly (e.g., fringes in strongly lensed quasars).
+
+\section{Geodesics of the Optical Metric}
+\label{sec:tikz-optical}
+
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.05]
+  % Background SDF panel
+  \draw[fill=gray!8, rounded corners] (-4.5,-2.3) rectangle (4.5,2.6);
+  \node at (.7,2.2) {\small SDF (optical geometry view)};
+
+  % Lens mass
+  \shade[ball color=black!60] (0,0) circle (0.25);
+  \node[below right] at (0.28,-0.05) {\scriptsize Lens \(M\)};
+
+  % Equipotential / index contours (n=1+GM/r stylized)
+  \foreach \r in {0.7,1.1,1.6,2.2,3.0}{
+    \draw[gray!50] (0,0) circle (\r);
+  }
+  \node[gray!60] at (2.3,-1.8) {\scriptsize \(n(\mathbf{x})=1+\frac{GM}{r}\) (schematic)};
+
+  % Two optical geodesics (bent rays) from emitter to absorber
+  \fill (-4,-1.2) circle (1.2pt) node[left] {\small Emitter \(\mathcal{E}\)};
+  \fill (4,1.8) circle (1.2pt) node[right] {\small Absorber \(\mathcal{A}\)};
+
+  \draw[thick] (-4,-1.2) .. controls (-1.8,-0.6) and (1.2,0.2) .. (4,1.8);
+  \draw[thick] (-4,-1.2) .. controls (-2.2,0.4) and (0.9,0.9) .. (4,1.8);
+
+  % Time-delay annotation
+  \draw[->] (1.5,0.6) -- (2.6,1.3);
+  \node at (2.0,1.6) {\scriptsize different \(\tau(\boldsymbol{\theta})\)};
+
+  % QP / ZeroSpace box floating above
+  \draw[dashed, rounded corners] (-2.8,3.4) rectangle (2.8,4.6);
+  \node at (0,4.35) {\small QP (ZeroSpace)};
+  \draw[->, dashed] (0,3.4) -- (-3.2,-1.1) node[midway, left] {\scriptsize set endpoints};
+  \draw[->, dashed] (0,3.4) -- (3.2,1.7) node[near start, right] {\scriptsize deploy \(\Gamma_I\)};
+\end{tikzpicture}
+\caption{Optical-metric picture: rays are geodesics of \(\tilde{h}_{ij}=n^2 h_{ij}\). Multiple stationary paths between \(\mathcal{E}\) and \(\mathcal{A}\) yield lensing and relative delays. ZeroSpace sets endpoints; \(\Pi\) deploys SDF traces.}
+\label{fig:optical-metric-fig}
+\end{figure}
+
+\section{Observational Tie-Ins and Falsifiability}
+\label{sec:obs-tieins}
+
+\subsection{Strong-Lens Time-Delay Cosmography}
+\label{subsec:tdc}
+For lensed quasars/SNe with image angles \(\{\boldsymbol{\theta}_i\}\), measured delays \(\Delta t_{ij}\) estimate the Fermat-surface gaps
+\begin{equation}
+\Delta t_{ij}^{\rm obs} \;=\; \frac{1+z_d}{c}\,\Big[\tau(\boldsymbol{\theta}_i)-\tau(\boldsymbol{\theta}_j)\Big] \;+\; \delta t_{ij}^{\rm sys}.
+\end{equation}
+\textbf{TLM/ZeroSpace test:} residuals about an optical-metric model should be explained by SDF geometry alone. Parameterize any geometry-independent step as
+\begin{equation}
+\Delta \Phi_{ij}^{\rm res} \;=\; \alpha_\star \, N_{ij}, \qquad \alpha_\star \in \mathbb{R}, \ N_{ij}\in\mathbb{Z},
+\end{equation}
+with \(\alpha_\star=0\) under pure \(\Pi\). Joint fits over lenses bound \(|\alpha_\star|\) (phase-step residual); a nonzero, frequency-independent \(\alpha_\star\) indicates extra deployment structure beyond \(\mathcal{D}[\gamma;g]\)~\cite{Schneider1992,BlandfordNarayan1992}.
+
+\subsection{Solar-System and Pulsar Shapiro Stacks}
+\label{subsec:pulsar-shapiro}
+Two clean regimes probe \(\Delta T=\delta\mathcal{D}\) directly:
+\begin{enumerate}
+\item \textbf{Solar-system radar/spacecraft links} during superior conjunction: measure \(\Delta T_{\rm Shapiro}\) vs.\ impact parameter \(b\) and compare to the post-Newtonian \(\ln(4r/b)\) law~\cite{Shapiro1964}.
+\item \textbf{Binary pulsars \& PTA lines of sight} grazing massive bodies: stack excess arrival times as a function of closest approach.
+\end{enumerate}
+\textbf{TLM/ZeroSpace expectation:} residuals scale purely with SDF potential; ZeroSpace contributes no additional time-of-flight beyond \(\mathcal{D}\). Any repeatable, potential-independent offset \(\Delta T_\star\) falsifies \(\alpha_\star=0\).
+
+\subsection{FLRW Expansion: SN, BAO, and Strong-Lens Delays}
+\label{subsec:flrw-obs}
+Cosmological redshift and timing are encoded in SDF via
+\begin{equation}
+1+z=\frac{a(t_0)}{a(t_{\rm em})}, \qquad D_A=\frac{\chi(z)}{1+z}, \qquad D_L=(1+z)\chi(z).
+\end{equation}
+\textbf{TLM/ZeroSpace test:} any evidence that photon \emph{aging} affects flux dilution or spectral drift (beyond SDF \(a(t)\)) would violate ZeroSpace. Cross-check time-delay distances from strong lenses with SN/BAO-inferred distances; look for a geometry-independent phase/time offset~\cite{Peacock1999,Schneider1992,BlandfordNarayan1992}.
+
+\subsection{FRB and Multiband Arrival Comparisons}
+\label{subsec:frb-mm}
+Fast radio bursts (FRBs) provide broadband arrival curves. After subtracting plasma dispersion (\(\propto \nu^{-2}\)), the gravitational (metric) part is achromatic.
+\textbf{TLM/ZeroSpace test:} stack residuals across frequencies; achromatic, \emph{constant} offsets \(\Delta T_\star\) correlated only with endpoint classes would challenge \(\Pi\)-only deployment.
+
+\subsection{Multimessenger Phase Lags (GW--EM)}
+\label{subsec:gw-em}
+For events with GW and EM counterparts, define
+\begin{equation}
+\Delta t_{\rm GW-EM} \equiv t_{\rm EM}-t_{\rm GW} \;=\; \big[\mathcal{D}_{\rm EM}-\mathcal{D}_{\rm GW}\big]/c \;+\; \delta t_{\rm src}.
+\end{equation}
+\textbf{TLM/ZeroSpace prediction:} modulo source physics \(\delta t_{\rm src}\), the difference is fully geometric (different effective indices/paths); no extra ZeroSpace latency. Consistent bounds across multiple events constrain any universal offset.
+
+\subsection{Polarization Endpoint-Selection Tests}
+\label{subsec:polarization}
+Endpoint-class rules in ZeroSpace imply that analyzer settings restrict admissible \(\Gamma_I\). In delayed-choice/which-way variants, standard visibility relations must be recovered solely via SDF phase \(\Phi[\gamma]\) and endpoint constraints---no in-spacetime collapse dynamics. Deviations in fringe visibility not attributable to \(k^\mu\) transport would falsify the map \(\Pi\).
+
+\subsection{Summary: Two Knobs to Constrain}
+\label{subsec:knobs}
+\begin{align}
+\alpha_\star &: \ \text{geometry-independent \emph{phase-step} residual (should be }0\text{)};\\
+\Delta T_\star &: \ \text{geometry-independent \emph{time-step} residual (should be }0\text{)}.
+\end{align}
+Both are predicted zero in pure ZeroSpace+\(\Pi\). Global, multi-domain fits (lensing, Shapiro, FRB, GW--EM) should yield \(|\alpha_\star|,|\Delta T_\star| \to 0\) within uncertainties; persistent nonzero values falsify the current deployment postulate or identify missing SDF terms.
+
+\section{Conclusion: Frame Pair Stretch in ZeroSpace}
+\label{sec:conclusion}
+
+The ZeroSpace model reframes the photon not as an in-SDF traveler, but as a timeless connection between two SDF frames---one at emission, one at absorption---whose deployment trace is fully determined by SDF geometry and the endpoint constraints set in the QP. 
+
+Under this view:
+\begin{itemize}
+\item \textbf{Frame pairs are primary.} The emission frame and the absorption frame are timelessly paired on the QP; the SDF expansion, curvature, and potentials dictate how these frames are \emph{projected apart} in the deployment layer.
+\item \textbf{Stretch is geometric, not ontic.} What appears as the gradual ``stretching'' of separation between frames over cosmic time is a change in their SDF projection, not any change to the ZeroSpace connection itself.
+\item \textbf{Delays are rendered, not traversed.} All observable delays---cosmological redshift, Shapiro delay, lensing time-lags---are properties of the deployment map \(\Pi\) acting through SDF geometry. No proper-time elapses for the instruction.
+\item \textbf{Causality is preserved.} Although the instruction exists outside SDF lightcones, its projection \(\Gamma_I\) never violates the causal structure of the deployment layer.
+\end{itemize}
+
+The resulting picture preserves every tested prediction of GR while supplying a causal-ontological framework consistent with a timeless instruction platform. It also yields a concrete falsifiability program: any repeatable, geometry-independent phase- or time-step residual (\(\alpha_\star\) or \(\Delta T_\star\)) across domains---strong lensing, Shapiro delay, FRB dispersion-subtracted arrival times, GW--EM phase lags---would falsify the current postulate. If confirmed, the ZeroSpace + frame pair stretch model offers a way to unify the null-geodesic phenomenology of GR with a deeper, timeless substrate for causation~\cite{McKinley2025_TLM,McKinley2025_Cs}.
+
+%====================================================
+\appendix
+\section{Rigorous Derivations}
+\label{app:rigorous}
+
+\subsection{Derivation of the Optical-Metric Fermat Principle}
+\label{app:optical-fermats}
+Start with a static SDF metric:
+\[
+ds^2 = -V(\mathbf{x})^2\, dt^2 + h_{ij}(\mathbf{x})\,dx^i dx^j
+\]
+For a null path, \(ds^2=0\) implies:
+\[
+V(\mathbf{x})^2 dt^2 = h_{ij} dx^i dx^j
+\]
+Taking \(t\) increasing along the ray:
+\[
+dt = \frac{\sqrt{h_{ij}dx^i dx^j}}{V(\mathbf{x})} \equiv n(\mathbf{x})\,d\ell_h
+\]
+Integrating between endpoints gives:
+\[
+T[\gamma] = \int_\gamma n(\mathbf{x})\, d\ell_h
+\]
+This is Fermat’s principle with \(n(\mathbf{x})\) as the refractive index and \(\tilde{h}_{ij} = n^2 h_{ij}\) as the optical metric. Extremals of \(T[\gamma]\) in \(\tilde{h}_{ij}\) are spatial geodesics whose spacetime lifts are null geodesics.
+
+\subsection{Redshift Without Photon Aging}
+\label{app:redshift}
+Let \(k^\mu\) be the null wavevector and \(u^\mu\) the observer 4-velocity. Measured frequency is:
+\[
+\omega = -k_\mu u^\mu
+\]
+In a stationary spacetime with timelike Killing vector \(\xi^\mu\):
+\[
+E = -k_\mu \xi^\mu \quad\text{is conserved}
+\]
+For static observers \(u^\mu = \xi^\mu / \|\xi\| = \xi^\mu / V\), we have:
+\[
+\omega = \frac{E}{V(\mathbf{x})}
+\]
+Thus:
+\[
+\frac{\omega_{\rm ab}}{\omega_{\rm em}} = \frac{V(\mathbf{x}_{\rm em})}{V(\mathbf{x}_{\rm ab})}
+\]
+No proper-time accrual is needed; the ratio is purely geometric.
+
+\subsection{Shapiro Delay from Optical Index}
+In weak field \(V\simeq 1+\Phi\), \(n\simeq 1-\Phi\). For a point mass \(\Phi=-GM/r\) and straight path with impact \(b\):
+\[
+\Delta T_{\rm Shapiro} \simeq \int_{-\infty}^{\infty} \frac{GM}{\sqrt{b^2+z^2}}\, dz = 2GM \ln\!\left(\frac{4z_{\rm max}}{b}\right)
+\]
+Matching the post-Newtonian result to leading order~\cite{Shapiro1964}.
+
+\subsection{Thin-Lens Fermat Surface}
+For lens-plane coordinates \(\boldsymbol{\theta}\), source position \(\boldsymbol{\beta}\):
+\[
+\tau(\boldsymbol{\theta}) = \frac{D_d D_s}{2 D_{ds}}|\boldsymbol{\theta}-\boldsymbol{\beta}|^2 - \psi(\boldsymbol{\theta})
+\]
+Stationary points satisfy the lens equation:
+\[
+\boldsymbol{\beta} = \boldsymbol{\theta} - \nabla_{\!\theta} \psi
+\]
+Relative delays:
+\[
+\Delta t_{ij} = \frac{1+z_d}{c}\big[\tau(\boldsymbol{\theta}_i)-\tau(\boldsymbol{\theta}_j)\big]
+\]
+
+\subsection{Phase Differences for Multiple Paths}
+In geometric optics:
+\[
+\Phi[\gamma] = \int_\gamma k_\mu dx^\mu
+\]
+For two admissible paths \(\gamma_1,\gamma_2\):
+\[
+\Delta \Phi = \Phi[\gamma_2] - \Phi[\gamma_1]
+\]
+Interference intensity \(I \propto |e^{i\Phi_1}+e^{i\Phi_2}|^2\) depends only on SDF geometry and endpoints.
+
+%====================================================
+\section*{Glossary of Terms and Symbols}
+\addcontentsline{toc}{section}{Glossary}
+\begin{description}
+\item[SDF (Spacetime Deployment Frame)] The GR manifold \((\mathcal{M},g_{\mu\nu})\) in which all observable phenomena are deployed. SDF geometry determines apparent delays, redshift, and curvature effects.
+\item[QP (Quantum Platform)] Ontologically senior layer in TLM, existing outside spacetime. Issues timeless instructions (e.g., photon endpoint pairings) that are later rendered into the SDF.
+\item[ZeroSpace] The property of an instruction to remain entirely outside the SDF in its essence, while permitting an SDF-compliant projection (\(\Gamma_I\)) consistent with GR null propagation.
+\item[Frame Pair Stretch] Apparent increase in SDF separation between emission and absorption frames over cosmic expansion, even though the underlying ZeroSpace connection is unchanging.
+\item[$\mathcal{E},\mathcal{A}$] Emission and absorption endpoint classes, defined on QP; paired timelessly before any SDF deployment.
+\item[$\Pi$] Deployment map from QP endpoint data and SDF geometry to an SDF null-geodesic trace \(\Gamma_I\).
+\item[$\Gamma_I$] Null curve (or bundle) in SDF representing the projection of a ZeroSpace instruction.
+\item[$g_{\mu\nu}$] Metric tensor of the SDF.
+\item[$T$] Deployment delay in the SDF; the observable interval between emission and absorption events.
+\item[$C_s$] Causal rendering rate in TLM; satisfies \(T\cdot C_s = 1\) for photons/instructions.
+\item[$m$] Mass in TLM; satisfies \(T\cdot m = 1\) for massive systems.
+\item[$n(\mathbf{x})$] Optical index in a static SDF sector; \(n=1/V\) where \(V\) is the lapse function.
+\item[$\tilde{h}_{ij}$] Optical metric: \(\tilde{h}_{ij}=n^2 h_{ij}\), where \(h_{ij}\) is the spatial metric.
+\item[$k^\mu$] Null wavevector along \(\Gamma_I\).
+item[\(\Phi[\gamma]\)] Phase accumulated along SDF path \(\gamma\).
+\item[$\alpha_\star$] Geometry-independent phase-step residual, predicted \(=0\) in pure ZeroSpace+\(\Pi\).
+\item[$\Delta T_\star$] Geometry-independent time-step residual, predicted \(=0\) in pure ZeroSpace+\(\Pi\).
+\end{description}
+
+%====================================================
+\begin{thebibliography}{99}
+
+\bibitem{Einstein1916}
+A.~Einstein, ``Die Grundlage der allgemeinen Relativitätstheorie,'' \emph{Annalen der Physik}, vol.~49, pp.~769--822, 1916.
+
+\bibitem{Shapiro1964}
+I.~I.~Shapiro, ``Fourth Test of General Relativity,'' \emph{Phys.\ Rev.\ Lett.}, vol.~13, no.~26, pp.~789--791, 1964.
+
+\bibitem{Schneider1992}
+P.~Schneider, J.~Ehlers, E.~E.~Falco, \emph{Gravitational Lenses}. Springer-Verlag, 1992.
+
+\bibitem{BlandfordNarayan1992}
+R.~D.~Blandford, R.~Narayan, ``Cosmological applications of gravitational lensing,'' \emph{Ann.\ Rev.\ Astron.\ Astrophys.}, vol.~30, pp.~311--358, 1992.
+
+\bibitem{Peacock1999}
+J.~A.~Peacock, \emph{Cosmological Physics}. Cambridge University Press, 1999.
+
+\bibitem{McKinley2025_TLM}
+J.~C.~W.~McKinley, ``Resolving Wave-Particle Duality Through the Proposed Timeless Light Model: Photons as Timeless Instructions and Waves as Deployed Delay,'' Zenodo, DOI:\href{https://doi.org/10.5281/zenodo.16510862}{doi.org/10.5281/zenodo.16510862}, 2025.
+
+
+\bibitem{McKinley2025_Cs}
+J.~C.~W.~McKinley, ``Clarifying $C_s$: Deployment Rate, Delay, and Simulation Parameters in the Timeless Light Model,'' Zenodo, DOI:\href{https://doi.org/10.5281/zenodo.15817350}{doi.org/10.5281/zenodo.15817350}, 2025.
+
+\end{thebibliography}
+
+\end{document}
+
+
+
 
 ```
 
@@ -24837,7 +27077,978 @@ Spin and particle properties from CI‑ARC topology (e.g., Möbius for spin‑½
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[11pt]{article}
 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, geometry}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{cleveref}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+\geometry{margin=1in}
+\linespread{1.15}
+\numberwithin{equation}{section}
+\bibliographystyle{apsrev4-2}
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{law}[axiom]{Law}
+\newtheorem{remark}[axiom]{Remark}
+
+\title{
+Quantum Platform as Causal Senior: \\General Relativity as Rendered Projection
+
+}
+
+\author{John C. W. McKinley \\ Independent Researcher \\ \href{https://orcid.org/0009-0005-7097-5035}{0009-0005-7097-5035}}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+\renewcommand{\thefootnote}{}
+\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.15960343}{doi:10.5281/zenodo.15960343}.}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+
+
+
+
+
+\begin{abstract}
+We propose a conservative reformulation of physical causality under the Timeless Light Model (TLM). In this model, quantum phenomena such as tunneling, entanglement, and wavefunction collapse originate from a foundational, timeless instruction structure called the \textit{Quantum Platform} (Q). These quantum instructions either resolve instantaneously, outside of spacetime constraints, or are projected into the delayed, observable framework of classical General Relativity (GR). This projection is denoted $Q_{\text{GR}}$, the Spacetime Deployment Frame (SDF). Our formulation preserves all empirical predictions of GR and QM but reorganizes their relationship: \textbf{quantum mechanics is causally senior to GR, and GR arises as a rendered projection of quantum logic}. No new physics is introduced; rather, known phenomena are given a clarified causal structure.
+\end{abstract}
+
+\begin{tcolorbox}[
+  colback=blue!3!white,
+  colframe=blue!75!black,
+  title=Core Thesis: GR is Governed by the Quantum Platform (Q)
+]
+
+\textbf{We propose that General Relativity (GR) arises as a rendered projection of timeless quantum instructions.} 
+Every classical spacetime phenomenon — from motion to curvature to cosmological expansion — is the result of energy-based deployment events.
+
+\medskip
+\noindent
+\textit{Clarification on GR Emergence:} \\ 
+This model proposes that GR phenomena (e.g., curvature, motion, mass interactions) are rendered from \( Q \) when local energy conditions are met. 
+
+\textbf{In contrast to theories that attempt to quantize spacetime geometry itself, the Timeless Light Model treats spacetime as a rendered projection of pre-resolved causal instructions.} 
+
+\textit{Note on Causal Direction:} While we fully resolve the apparent circularity later in Section~\ref{sec:causalhierarchy} by clarifying that \( Q \) does not react to conditions in the SDF, it is important to prevent misreadings at this stage.
+
+\textbf{This formulation is a projection into the SDF, not a physical constraint on \( Q \).} The Quantum Platform remains timeless and resolved; the energy condition simply expresses when a pre-resolved instruction becomes visible in the rendered frame.
+
+\begin{itemize}
+  \item \( \Delta E_{\text{SDF}} \) is the energy drop at the classical, GR-observable level,
+  \item and \( Q \) is the timeless Quantum Platform, which governs when and how instructions are rendered into the SDF.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  colback=blue!3!white,
+  colframe=blue!75!black,
+  title=Implications
+]
+
+\textbf{Implications:}
+\begin{itemize}
+  \item \textit{Unification}: GR emerges as a rendered projection of quantum-governed triggers.
+  \item \textit{Resolution of Paradoxes}: Wavefunction collapse, entanglement, and cosmogenesis are no longer violations of classical physics, but results of instructional deployment.
+  \item \textit{Falsifiability}: Predicts observable thresholds in tunneling and entangled system behavior.
+\end{itemize}
+
+This framework unifies quantum mechanics and general relativity by subordinating the apparent smoothness of spacetime to a higher-order quantum control logic: the Quantum Platform.
+
+\end{tcolorbox}
+
+\section{Introduction}
+
+Quantum Mechanics (QM) and General Relativity (GR) have long stood as the two dominant frameworks of modern physics. Each has delivered astonishing predictive success within its domain: GR governs the behavior of mass, curvature, and large-scale structure; QM governs the probabilistic and discrete dynamics of particles and fields. However, these two domains remain conceptually and structurally separate, leading to a persistent lack of unified theory.
+
+This paper presents the foundational architecture of the Timeless Light Model (TLM), where quantum mechanics is causally senior to general relativity, with GR emerging as a rendered projection of timeless instructions in the Quantum Platform (Q). A companion paper~\cite{mckinley2025quantized} explores potential observational consequences, such as threshold-triggered effects mimicking quantized curvature.
+
+
+The tension between GR and QM has been noted since the early days of modern physics. As Einstein famously resisted the indeterminacy of quantum theory, remarking that “God does not play dice with the universe”~\cite{einstein}, he maintained a preference for continuous, deterministic laws of nature. In contrast, Richard Feynman embraced quantum probability, arguing that it was not just a mathematical trick but a reflection of how nature truly operates. Feynman described quantum mechanics as “the best description of nature we have”~\cite{feynman}, despite its baffling implications. This paper navigates that historical tension by proposing a structural hierarchy: both Einstein’s deterministic geometry and Feynman’s probabilistic amplitudes are valid — but the latter gives rise to the former through a controlled rendering process.
+
+We suggest a different path. Rather than attempting to merge GR and QM through quantized geometry or extra dimensions, we propose a hierarchical realignment: \textbf{QM is not subordinate to GR; it is its source}. The behaviors governed by GR are not incompatible with QM — they are the displayed universe sourced from it.
+
+The Timeless Light Model (TLM), originally developed to explain the unusual behavior of photons and delay~\cite{mckinley2025_causal, mckinley2025_causalrate}, is here extended to a general framework of causal hierarchy. What we observe as spacetime — mass, motion, gravity, light — is a delayed execution of selected Q instructions, denoted $Q_{\text{GR}}$. These projected instructions define what we call the \textit{Spacetime Deployment Frame} (SDF).
+
+In this model, spacetime is not a container but an \textit{experiential display}. It is the visual rendering of quantum logic under causal delay. The universe thus consists of two structurally distinct but causally linked components:
+\begin{equation}
+    \text{Universe} = Q + Q_{\text{GR}} \quad \text{where} \quad Q_{\text{GR}} \equiv \text{SDF}
+\end{equation}
+
+\textbf{Foundational Delay–Rate Law.} \\
+The rendering process that determines how and when instructions from Q appear in the SDF is governed by a delay–rate invariant:
+
+\begin{equation}
+T \cdot C_s = 1
+\end{equation}
+
+This delay–rate invariant was introduced as a causal rendering law in prior work~\cite{mckinley2025_causalrate}.
+
+Here:
+\begin{itemize}
+  \item \( T \) is the delay (in seconds) between a timeless resolution in Q and its rendered appearance in the SDF,
+  \item \( C_s \) is the causal deployment rate (in s\(^{-1}\)) — a measure of how quickly the instruction is deployed.
+\end{itemize}
+
+For instructions with \( T = 0 \) (e.g., tunneling or entanglement), the causal rate \( C_s = \infty \): these events are rendered without delay. For high-delay instructions (e.g., massive objects), \( C_s \) becomes small, indicating a slow deployment. This law grounds the model's treatment of mass, time, and rendering priority in a simple, testable invariant.
+
+\subsection{Bootstrapping the First Frame}
+\label{sec:bootstrap}
+
+In the Timeless Light Model, the apparent paradox of a first rendering — such as the Big Bang — is resolved by the timeless structure of the instruction set \( Q \). The earliest rendered instruction does not require a pre-existing SDF with energy deltas; instead, it is a logically complete instruction whose conditions are trivially satisfied in the absence of delay. From the observer's point of view, this first projection appears as the start of history. From Q’s perspective, it simply always was.
+
+This resolves the “chicken-and-egg” problem by reclassifying triggers not as temporal causes but as conditional gates within an eternally resolved instruction set. Rendering is delayed. Instruction is not.
+
+\paragraph{Causal Note: No Reaction, Only Constraint.}
+The Quantum Platform \( Q \) is not constrained by time and does not react to conditions in the SDF. Instead, it contains all instructions timelessly. When we describe an instruction as “triggered by an energy drop,” we mean that its rendering into the Spacetime Deployment Frame (SDF) occurs only under those constraints — not that Q waits or observes. The SDF is the delayed resolution layer, not the cause of instruction. In this view, the entire deployment structure is timelessly resolved and only "experienced" as contingent or responsive within the rendered frame.
+
+\section{The Quantum Platform (Q)}
+
+We define Q as a dimensionless, "always was, always will be" instruction set that contains all the causal logic required to generate physical reality. Q does not unfold in time, nor does it exist in space. It is not a field, not a waveform, and not a particle. Instead, Q is the source of all resolutions — instantaneous or delayed — that manifest as events in the observable universe.
+
+Quantum events that appear strange from a relativistic standpoint — such as tunneling, entanglement, and wavefunction collapse — are natural in this framework. They are not propagations through space, but \textit{instruction resolutions} governed by Q. Some instructions resolve in such a way that they manifest within the spacetime framework (Q\textsubscript{GR}); others resolve entirely within Q, leaving no spacetime trail but still participating causally.
+
+Crucially, Q is not hypothetical. Its necessity is inferred from the observed violation of relativistic constraints by quantum phenomena. In TLM, the behavior of photons — traveling without time; collapsing without continuity — already points to a time free resolution layer. We now generalize that principle to all of quantum mechanics.
+
+The \textbf{Quantum Platform} (QPlatform, QP, Q) is the \emph{flat-time version of the universe} — a timefree, fully connected causal structure that encodes the entire reality’s instruction set as a static whole. It is the deeper, more fundamental layer, \emph{senior to General Relativity} and the spacetime framework.
+
+From the QPlatform’s instructions, the \textbf{Spacetime Deployment Frame (SDF)} emerges by introducing \emph{delay} through the set of spacetime rules that transform the flat, instantaneous causal relations into the curved, time-evolving experience described by General Relativity.
+
+Symbolically:
+\[
+\boxed{
+Q + \text{Delay} = GR(SDF)
+}
+\]
+where
+\begin{itemize}
+    \item \( Q \) represents the QPlatform: the universe in flat, timeless form,
+    \item \text{Delay} is the introduction of time as a deployment parameter necessary for experience,
+    \item \( GR(SDF) \) is the resulting curved spacetime, the deployed universe as experienced and observed.
+\end{itemize}
+
+
+
+
+\paragraph{Relation to Prior Work.}
+A previous paper introduced a quantized rendering hypothesis, proposing that General Relativity observables might emerge from discrete threshold events governed by energy drop conditions (\(\Delta E_{\text{SDF}} \geq Q_k\)). That version emphasized falsifiability by predicting observable quantization noise in gravitational behavior. In contrast, the present paper abstracts from specific quantization claims and instead focuses on the architectural structure of the Quantum Platform as the primary controller of all rendered spacetime phenomena. Readers interested in experimental implications may consult the related work at~\cite{mckinley2025quantized}.
+
+
+
+
+
+
+
+\section{The Layered Structure of Reality: From the Timeless QPlatform to Emergent Spacetime}
+
+A core insight of the Timeless Light Model (TLM) is that the universe comprises two fundamentally different ontological layers. We express the universe as the sum of these layers:
+\begin{equation}
+    \text{Universe} = U_{\text{Platform}} + U_{\text{subGR}} = U_{\text{ZeroTime}} + U_{\text{RelativityTime}}.
+\end{equation}
+
+Here, \(U_{\text{Platform}}\) (also called \(U_{\text{ZeroTime}}\)) is the \emph{timeless quantum instruction layer}, or \emph{QPlatform (Q)}, which exists outside of time and contains the complete set of pre-resolved instructions governing all physical phenomena. The second layer, \(U_{\text{subGR}}\) (or \(U_{\text{RelativityTime}}\)), is the \emph{subordinate, emergent relativistic spacetime universe} that we experience, where time, causality, and mass manifest as delayed, rendered effects.
+
+The existence of \(U_{\text{Platform}}\) introduces a second ontological surprise analogous to the discovery of relativistic time. Just as General Relativity revealed that time is not absolute but relative and malleable, the TLM reveals that beneath this relativistic time layer lies a domain where \emph{time does not exist at all} — a timeless foundation underpinning reality.
+
+We postulate a hierarchical causal relationship linking these layers:
+\begin{equation}
+    U_{\text{Platform}} \quad \longrightarrow \quad \text{Blackbox Controller} \quad \longrightarrow \quad U_{\text{subGR}}.
+\end{equation}
+
+The \textbf{Blackbox Controller} is the causal interpreter or deployment mechanism that reads and executes instructions from the timeless QPlatform to produce the emergent spacetime universe \(U_{\text{subGR}}\). By characterizing this controller as a ``black box,'' we confess that the precise mechanism of this causal translation remains unknown. It is an epistemic boundary: while we can observe and describe \(U_{\text{subGR}}\), the internal operations of the Blackbox Controller and the timeless QPlatform remain hidden from direct observation.
+
+This layered model elegantly captures the counterintuitive aspects of modern physics: the \emph{unexpected nature of relativistic time} and the \emph{even more unexpected nature of timelessness} underlying it. Rather than being paradoxes, these surprises become natural consequences of a universe structured as a timeless quantum platform whose instructions are causally deployed into a relativistic spacetime movie.
+
+Many physical constants and dualities emerge naturally from this framework. In particular, the fundamental relation between mass \(m\) and deployment delay \(T\) is expressed as
+\begin{equation}
+    T \cdot m = 1,
+\end{equation}
+where \(T\) represents the causal deployment delay of instructions from \(U_{\text{Platform}}\) into \(U_{\text{subGR}}\). This expresses the reciprocal relationship between mass and delay in rendering spacetime effects.
+
+Similarly, the causal speed \(C_s\) and the deployment delay satisfy
+\begin{equation}
+    T \cdot C_s = 1,
+\end{equation}
+establishing a universal causal speed limit intrinsic to the deployment process, distinct from the observed speed of light \(c\).
+
+These dual laws unify the emergent spacetime properties as consequences of the fundamental timeless instruction execution.
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[
+        node distance=3cm,
+        box/.style={
+            rectangle, 
+            draw, 
+            thick, 
+            minimum width=5cm, 
+            minimum height=2cm,
+            align=center,
+            fill=gray!10
+        },
+        arrow/.style={
+            thick,
+            -{Latex[length=3mm, width=2mm]},
+        }
+    ]
+        % Nodes
+        \node[box] (qplatform) {\Large \textbf{QPlatform (Q)}\\ \small Timeless Instruction Layer\\ \(U_{\text{Platform}} = U_{\text{ZeroTime}}\)};
+        
+        \node[box, below=of qplatform] (blackbox) {\Large \textbf{Blackbox Controller}\\ \small Causal Interpreter / Deployment Engine};
+
+        \node[box, below=of blackbox] (subgr) {\Large \textbf{Emergent Spacetime}\\ \small Relativistic Universe Layer\\ \(U_{\text{subGR}} = U_{\text{RelativityTime}}\)};
+
+        % Arrows
+        \draw[arrow] (qplatform) -- (blackbox) node[midway,right,xshift=5pt] {\Large \(\longrightarrow\)};
+        \draw[arrow] (blackbox) -- (subgr) node[midway,right,xshift=5pt] {\Large \(\longrightarrow\)};
+        
+        % Labels for equations
+        \node[align=center, right=5cm of blackbox, text width=6cm] (eqs) {
+            \Large \textbf{Key Relations:}\\[8pt]
+            \(T \cdot m = 1\)\\
+            \(T \cdot C_s = 1\)\\[8pt]
+            \(\text{Universe} = U_{\text{Platform}} + U_{\text{subGR}}\)
+        };
+
+    \end{tikzpicture}
+    \caption{Layered structure of the universe in the Timeless Light Model. The timeless QPlatform provides fundamental instructions that the Blackbox Controller causally deploys, producing the emergent relativistic spacetime layer.}
+    \label{fig:layered-universe-tikz}
+\end{figure}
+
+This conceptual model provides a fertile ground for interpreting quantum phenomena such as entanglement, instantaneous correlations, and gravitational effects as reflections of the deployment process from the timeless QPlatform through the Blackbox Controller.
+
+\section{The Black Box of Spacetime Curvature: Recognizing the Unknown Mechanism in General Relativity}
+
+General Relativity (GR) revolutionized our understanding of gravity by describing it as the curvature of spacetime caused by mass and energy. The Einstein field equations,
+\begin{equation}
+    G_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu},
+\end{equation}
+relate the geometry of spacetime, encoded in the Einstein tensor \(G_{\mu\nu}\), to the distribution of mass-energy represented by the stress-energy tensor \(T_{\mu\nu}\). These equations have been spectacularly successful in predicting phenomena ranging from the precession of Mercury’s orbit to gravitational waves.
+
+However, despite this success, GR is fundamentally a \emph{descriptive} theory. It tells us \emph{what} spacetime curvature is and how it responds to mass-energy, but it does not explain \emph{how} or \emph{why} spacetime physically bends. There is no underlying microphysical or causal mechanism specified that mediates this bending.
+
+In essence, the process by which mass-energy \emph{causally} generates curvature is a \textbf{black box} within current physical theory. The mathematical formalism treats the metric and curvature as fundamental dynamical entities without revealing their ontological origin or causal generation.
+
+The Timeless Light Model (TLM) explicitly acknowledges this epistemic boundary by introducing the concept of the \textbf{Blackbox Controller}, a causal interpreter that mediates between the timeless instruction layer (\(U_{\text{Platform}}\), or QPlatform) and the emergent spacetime layer (\(U_{\text{subGR}}\)). This controller executes timeless quantum instructions and causally deploys them into the relativistic spacetime we observe, producing the geometry and dynamics described by GR.
+
+This recognition of the black box:
+
+\begin{itemize}
+    \item Highlights a fundamental gap in our understanding of gravity and spacetime.
+    \item Provides a conceptual framework to investigate \emph{how} spacetime curvature emerges causally from more fundamental principles.
+    \item Aligns with analogous situations in physics where descriptive theories precede mechanistic explanations, such as quantum mechanics before quantum field theory or beyond.
+\end{itemize}
+
+By naming and embracing the Blackbox Controller, the TLM offers a roadmap to deepen the foundations of physics beyond the classical description of spacetime curvature, potentially uniting gravity with quantum phenomena under a common causal architecture.
+
+Although some models propose that General Relativity must itself be quantized, our framework treats GR as a rendered illusion — emerging from the deployment of timeless, pre-resolved quantum instructions. Any apparent quantization of spacetime curvature would be a side-effect of instruction thresholds, not a fundamental trait of GR itself.
+
+\bigskip
+
+\noindent\textbf{Summary Equation:}
+
+\begin{equation}
+    G_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}
+    \quad \Longrightarrow \quad
+    \text{Curvature Emerges via Blackbox Controller from } U_{\text{Platform}}.
+\end{equation}
+
+\section{Lay Summary: What the Model Predicts}
+
+A new quantum instruction is triggered instantly from outside of time. This instruction then causes something to “appear” in the observable universe.
+
+\begin{itemize}
+  \item A photon appears.
+  \item A quantum state resolves.
+  \item A correlated pair is deployed.
+  \item A particle bypasses a barrier.
+  \item An entire domain renders, e.g. Big Bang.
+\end{itemize}
+
+This framework treats our universe as a deployment zone, where instructions from a timeless layer are rendered only when specific trigger conditions are met.
+
+\section{Hypothesis: All General Relativity Observables Are Rendered via Q-Platform Instructions}
+
+\textbf{Proposal.} General Relativity (GR) observables — including motion, curvature, time dilation, gravitational waves, and expansion — are not fundamental. Rather, they are \textbf{rendered as projection events} governed by the Quantum Platform (Q). Each observable arises as an energy condition is met in the classical deployment level.
+
+\textbf{Compatibility with Existing Theory.}
+\begin{itemize}
+  \item Quantum Field Theory discretizes particle interactions; this model extends similar structure to classical fields (e.g., gravity).
+  \item The apparent smoothness of GR emerges from high-frequency, high-density deployments — analogous to how continuous images arise from digital pixels.
+\end{itemize}
+
+\textbf{Testable Predictions.}
+\begin{itemize}
+  \item \textbf{Tunneling and entanglement thresholds:} Look for minimum energy drops required to trigger quantum behaviors in low-energy regimes.
+  \item \textbf{Delayed spacetime response:} Search for Planck-scale lags in curvature formation or gravitational wave propagation under controlled, high-mass, low-temperature conditions.
+\end{itemize}
+
+\textbf{Implication.} GR is not a fundamental continuum but an experiential rendering of Q instructions. The smooth laws of Einstein's equations emerge in a paced fashion, tamped down from "instant" to the appreciable speeds to which we are accustomed in the GR universe.
+
+\begin{tcolorbox}[colback=gray!5!white, colframe=black!40!white, 
+  title=On “Triggers” and Timeless Logic, 
+  sharp corners=south, fonttitle=\bfseries, boxrule=0.5pt]
+
+Though we speak of the Quantum Platform (Q) as "responding" to energy drops in the Spacetime Deployment Frame (SDF), this is not a temporal reaction. Q is timeless. Therefore, it does not wait, sense, or change. What we call a “trigger” is actually a conditional rendering — like a logical gate that already includes all future and past conditions in its structure.
+
+Ignorance implies time: a "before" and "after" of knowing. But Q knows all things simultaneously. So the appearance of an event after a drop in energy is not Q reacting — it's Q already containing that conditional outcome, which is only made visible to us when the SDF state aligns with its activation condition.
+
+\end{tcolorbox}
+
+\section{The GR Projection: $Q_{\text{GR}}$ and the Spacetime Deployment Frame}
+
+While Q encodes the total causal logic of the universe, only a subset of these instructions manifest in the delayed, curved, observable domain we associate with General Relativity. This subset is referred to as $Q_{\text{GR}}$, and it defines the \textbf{Spacetime Deployment Frame (SDF)}.
+
+$Q_{\text{GR}}$ is not a portion of Q in a spatial or energetic sense, but a \textit{projection} — a rendered deployment — that obeys delay, locality, and curvature. These are the familiar behaviors of clocks, lightcones, and gravitational interaction. What is experienced as spacetime is thus an \textit{output} of Q logic, constrained and presented in a deployable, measurable format.
+
+This projection behaves exactly as GR predicts because it is \textit{constrained to do so}. TLM does not modify the equations of general relativity; it simply asserts that their deployment occurs \textit{after} a Q instruction renders into the SDF.
+
+It is important to emphasize that under the Timeless Light Model, General Relativity is not a substrate or geometrical entity that exists independently. Rather, it is a logic system — a rulebook — embedded within the Quantum Platform (Q) that governs how certain causal instructions are rendered into the delayed, curved format we associate with classical experience. In this sense, GR is not what is rendered — it is the formal logic by which delay and curvature are made visible.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  node distance=1.6cm,
+  every node/.style={font=\small, align=center},
+  box/.style={
+    rectangle, draw=black, thick, 
+    minimum width=3cm, minimum height=1.2cm, 
+    text width=3cm, inner sep=6pt
+  },
+  arrow/.style={->, thick}
+]
+
+\node[box, fill=gray!10] (instruction) {Timeless Instruction \\ in QPlatform};
+
+\node[box, fill=blue!10, below=of instruction, xshift=-2.8cm] (instant) {Instantaneous Deployment \\ \( T = 0 \), \( C_s = \infty \) \\ e.g., Entanglement, Tunneling};
+\node[box, fill=blue!20, below=of instruction, xshift=2.8cm] (delayed) {Delayed Deployment \\ \( T > 0 \), \( C_s < \infty \) \\ e.g., Photons, Gravity};
+
+\node[box, fill=gray!20, below=of instant] (Qonly) {Appears only in Q \\ (Not visible in spacetime)};
+\node[box, fill=gray!25, below=of delayed] (QGR) {Appears in Q\(_\text{GR}\) = SDF \\ (Visible: light, motion)};
+
+\draw[arrow] (instruction) -- (instant);
+\draw[arrow] (instruction) -- (delayed);
+\draw[arrow] (instant) -- (Qonly);
+\draw[arrow] (delayed) -- (QGR);
+
+\end{tikzpicture}
+\caption{Instructions originate in the timeless Quantum Platform (Q). Some are rendered instantaneously and remain outside the observable SDF (e.g., entanglement), while others deploy with delay and appear in the rendered GR frame (Q\(_\text{GR}\)).}
+\label{fig:instruction-deployment-types}
+\end{figure}
+
+\paragraph{Clarifying Roles: Instructions Remain Primary.}
+The timeless instructions are the foundational entities in the Timeless Light Model. They encode a timeless transition from start to end condition, fully resolved within the Quantum Platform (Q). All rendered phenomena in the Spacetime Deployment Frame (SDF) are delayed manifestations of these instructions.
+
+The action principle formalism offers a potential mathematical description of how a resolved instruction becomes visible: it treats deployment as constrained by a timeless action quantity \( \mathcal{A}_{\text{ins}} \), which reaches a critical value under specific energy conditions in the SDF. This formalism does not determine which instruction is chosen — all instructions in Q are already written — but rather when each becomes observable.
+
+Thus, we distinguish between \textbf{instructions as ontology} (what exists timelessly in Q) and \textbf{deployment as mechanism} (how it becomes visible in the rendered frame). The instruction is not a probability amplitude or a potential event — it is a completed causal instruction. Deployment mechanisms like the action principle are tools to describe when that instruction appears in delayed experience.
+
+Q contains only fully resolved causal instructions — each defining a start-to-end instruction that was, is, and always will be true. If it is in Q, it landed. There is no “unrendered possibility space.”
+
+Q is not a menu. It is the record of everything that always was.
+
+\section{Timeless Light Model (TLM) --- Core Axioms}
+\label{sec:tlm_axioms}
+
+\subsection{Redefinition of Instructions}
+\label{sec:instructions}
+
+\begin{axiom}[Instruction as State Transition]
+The instruction is defined as the timeless, outcome-final instruction encoding a transition from a \emph{Start Condition} to an \emph{End Condition} in the underlying quantum control platform (QPlatform). Formally:
+\[
+\text{Instruction} : \quad \mathcal{S} \longrightarrow \mathcal{E}
+\]\textit{...a completed mapping in logical space from a start condition \( \mathcal{S} \) to a resolved end state \( \mathcal{E} \), with no time elapsed between them.}
+
+where
+\begin{itemize}
+    \item \(\mathcal{S}\) = Start Condition (timeless initial state vector),
+    \item \(\mathcal{E}\) = End Condition (timeless final state vector).
+\end{itemize}
+The instruction is thus a mapping encoding the difference between \(\mathcal{E}\) and \(\mathcal{S}\), which is timeless and non-probabilistic.
+\end{axiom}
+
+\begin{remark}
+This redefinition replaces prior parameterizations with a simpler, conceptually clearer state-difference operator.
+\end{remark}
+
+\subsection{Fundamental Axioms and Laws}
+
+\begin{axiom}[Time-Flat Senior Reality]
+The underlying quantum control platform (QPlatform) is a \emph{time-flat} reality layer, where start and end conditions exist timelessly and are \textbf{prior} to any deployment of time or spacetime structure. This is the senior layer to General Relativity (GR).Q encodes all rendering conditions without respect to time; SDF states do not influence Q but manifest as filtered projections.
+
+
+\[
+\text{QPlatform (Time-Flat)} \quad \xrightarrow[\text{deployment}]{\text{with delay}} \quad \text{GR (Time-Stretched)}
+\]
+\end{axiom}
+
+\begin{law}[Projection of Timeless Reality]
+The classical curved spacetime described by GR emerges as a delayed \emph{projection} or \emph{deployment} of the timeless QPlatform instructions into a spacetime framework parameterized by time:
+\[
+\text{FLAT} + \text{TIME} = \text{GR}
+\]
+Where:
+\begin{itemize}
+    \item \textbf{FLAT} = Timeless, non-deploying instruction layer (QPlatform),
+    \item \textbf{TIME} = The deployment delay or rendering parameter,
+    \item \textbf{GR} = The emergent curved spacetime experience.
+\end{itemize}
+\end{law}
+
+\begin{law}[No Fundamental Probabilities]
+Probabilities do not exist fundamentally in the QPlatform. All quantum measurement randomness and wavefunction collapse are artifacts arising in the \textbf{GR layer} as consequences of delayed projection from the timeless, deterministic QPlatform.
+\[
+\text{Probability}_{\text{QM}} = \text{Artifact}_{\text{GR}}
+\]
+\end{law}
+
+\begin{law}[Delayed Playback and Phenomenological Laws]
+The TLM phenomenological laws such as
+\[
+T \cdot m = 1 \quad \text{and} \quad T \cdot C_s = 1
+\]
+remain valid as descriptions of the delayed playback process, linking delay \(T\), mass \(m\), and causal speed \(C_s\) as emergent parameters of the deployment of timeless instructions into spacetime.
+\end{law}
+
+\begin{axiom}[GR as Emergent Deployment, Not Separate Ontology]
+General Relativity is not a separate ontological layer but an emergent \emph{rendering} of the QPlatform instructions:
+\[
+Q + Q_{\text{subGR}} = \text{Reality as Experienced}
+\]
+where \(Q\) is the timeless instruction platform and \(Q_{\text{subGR}}\) is the deployment function generating the GR experience.
+\end{axiom}
+
+\subsection{Summary}
+
+\begin{itemize}
+    \item The instruction is now explicitly a \textbf{timeless state transition} from \(\mathcal{S}\) to \(\mathcal{E}\).
+    \item The universe’s fundamental description lies in the \textbf{timeless QPlatform}, and spacetime with time arises as a \textbf{deployed rendering}.
+    \item QM measurement randomness and probabilities are not fundamental but emerge in the GR frame.
+    \item The existing TLM formulas describe this \textbf{display and delay} phenomenologically.
+    \item The GR universe is thus the “movie” generated by projecting the timeless “film” of the QPlatform.
+\end{itemize}
+
+\section{Two Classes of Quantum Events}
+
+The TLM categorizes quantum events based on whether they render into the SDF (becoming part of $Q_{\text{GR}}$) or remain resolved solely within Q:
+
+\begin{itemize}
+  \item \textbf{Timeless/Instantaneous Events:} tunneling, entanglement, wavefunction collapse
+  \begin{itemize}
+    \item Not delayed
+    \item Not curved
+    \item Not observable as spacetime motion, but causal
+  \end{itemize}
+
+  \item \textbf{Delayed/Observable Events:} photons, mass, gravity, classical force dynamics
+  \begin{itemize}
+    \item Appear in time
+    \item Behave under curvature
+    \item Observable in classical GR experiments
+  \end{itemize}
+\end{itemize}
+
+Both categories originate from Q, but only the latter become part of the visible display that physics traditionally measures.
+
+\section{Reinterpreting Known Phenomena Under the TLM}
+\label{sec:phenomena}
+
+The Timeless Light Model offers a clarified causal explanation for many quantum phenomena that appear counterintuitive under a GR-first worldview. By reordering the hierarchy—placing the Quantum Platform (Q) above the observable spacetime frame—we reinterpret key observations as follows:
+
+\subsection{Entanglement}
+Entangled particles exhibit correlations that defy spacetime-local models. In the TLM, this is no paradox: both particles are resolved jointly at the level of Q. No signal travels between them; instead, they share a common instruction origin. Because Q is not embedded in spacetime, its resolutions are not subject to relativistic separation or communication constraints.
+
+\subsection{Quantum Tunneling}
+Tunneling events, such as electrons appearing across a potential barrier, are not mysterious in Q. There is no “travel” through the barrier—only an instruction that resolves endpoints consistent with boundary conditions. The apparent violation of classical conservation is an illusion of SDF logic being bypassed by a non-delayed Q resolution.
+
+\subsection{Wavefunction Collapse}
+Rather than modeling collapse as a mysterious, observer-triggered process, TLM treats it as the finalization of a Q instruction into the SDF. The probabilities encoded in quantum amplitudes are resolved at the Q level, and the “collapse” is simply the deployment of that resolution into the spacetime frame.
+
+\subsection{Photon Travel}
+Photons are massless and experience no proper time. In TLM, this is reinterpreted as evidence that photon behavior is a resolved instruction: an instruction rendered into the SDF with an apparent emission and absorption, but no internal passage. Their “travel” is a delayed deployment of an instruction with no time component.
+
+\subsection{The Big Bang}
+Under TLM, the Big Bang is not a spacetime-contained event. It is the earliest injection of Q instructions into the SDF. From the perspective of Q, it is simply one resolution pattern among many; from the SDF viewpoint, it marks the beginning of time. This interpretation sidesteps paradoxes about origin and singularities by relocating causal authority to Q.
+
+\paragraph{Initial Deployment: No Need for a Prior Frame.}
+The first instruction — corresponding to what we call the Big Bang — is not the result of an SDF-based energy drop. It is simply the first rendered instruction whose conditions are met within the logical structure of \( Q \). From the timeless platform’s perspective, this instruction was always true. From within the SDF, it appears to begin history. The apparent "start" is just the earliest observable rendering — not the beginning of logic.
+
+\section{Causal Hierarchy and the TLM Equation}
+\label{sec:causalhierarchy}
+
+\subsection{Causal Clarification: No Reaction, Only Rendering}
+
+It may appear that the Timeless Light Model (TLM) faces a bootstrap problem: if instructions are only rendered when a condition in the Spacetime Deployment Frame (SDF) is met, then how can the SDF exist in the first place?
+
+The resolution lies in the timeless nature of the Quantum Platform \( Q \), which contains all instructions, including their rendering conditions, eternally. Q does not “respond” to events in the SDF. Instead, it encodes which instructions render \emph{as if triggered by} SDF constraints — a view experienced from within the delayed deployment frame.
+
+Thus, the SDF is not the cause of instruction activation, but the \textit{appearance} of rendered instructions whose conditions were always satisfied in Q. This preserves logical consistency, eliminates causal loops, and aligns with the model’s founding principle: that Q is senior to time, experience, and all rendered history.
+
+The \textit{first} instruction is the one whose conditions are satisfied with minimal delay (e.g., \( T \to 0 \)), 
+self-consistently encoded within \( Q \). 
+
+Formally, \( Q \) is the fixed point of a timeless operator \( \Omega \) such that:
+
+\[
+Q = \Omega(Q)
+\]
+
+where \( \Omega \) encodes all instruction deployments whose rendering conditions are satisfied within the structure of \( Q \) itself.
+
+The Timeless Light Model reframes the longstanding tension between General Relativity (GR) and Quantum Mechanics (QM) by introducing a causal hierarchy:
+
+\begin{itemize}
+  \item \textbf{Quantum mechanics is not subordinate to GR.}
+  \item GR phenomena are "time-expansions"—rendered effects—of deeper quantum logic.
+  \item Spacetime is not the stage of physics; it is a surface-level rendering of quantum instruction sets.
+\end{itemize}
+
+This leads directly to the structural equation of the TLM framework:
+
+\begin{equation}
+\text{Universe} = Q + Q_{\text{GR}} \quad \text{where} \quad Q_{\text{GR}} \equiv \text{SDF}
+\end{equation}
+
+
+Here:
+\begin{itemize}
+  \item $Q$ is the \textbf{Quantum Platform}: timeless, dimensionless, and instructionally complete.
+  \item $Q_{\text{GR}}$ is the \textbf{projected subset} of Q that manifests with observable delay and curvature.
+  \item The SDF is simply the experiential frame in which $Q_{\text{GR}}$ is rendered.
+\end{itemize}
+\medskip
+\noindent
+\textbf{Definition of Terms:}
+
+\begin{itemize}
+  \item \( Q \): The \textbf{Quantum Platform}, an extra-spacetime, dimensionless layer that holds all pre-resolved causal instructions. It is the full set of possible instructions — causal instructions — that define physical outcomes, whether or not they are rendered in observable form.
+  
+  \item \( Q_{\text{GR}} \): The rendered subset of \( Q \) that appears within the observable universe. It includes only those instructions that are deployed into the Spacetime Deployment Frame (SDF), obeying delay, curvature, and relativistic structure. By definition: 
+  \[
+  Q_{\text{GR}} \equiv \text{SDF}
+  \]
+  This means the visible universe is not the full quantum structure, but a projected subset of it.
+\end{itemize}
+
+
+
+\subsection{Hierarchy}
+This causal hierarchy allows us to retain all predictive behavior of both GR and QM without attempting to geometrize quantum effects. Instead of trying to fit quantum phenomena inside spacetime, we reinterpret spacetime as an artifact of quantum control. Entanglement, tunneling, and wavefunction collapse no longer appear “non-local”—they are simply non-deployed.
+
+This perspective clarifies that GR is not a rival to QM, nor its completion, but its experiential rendering. TLM does not eliminate GR; it places it within a deeper logical architecture.
+
+We define \textbf{rendering} as a surjective map 
+\[
+R : Q \to \text{SDF}
+\]
+where \( R(\text{Instruction}_k) \) is defined if and only if the condition holds. However, this condition is embedded within the structure of \( Q \), not derived from or influenced by the SDF.
+
+
+\subsection{Timeless Constraint Functional and Variational Rendering}
+\label{sec:variational_rendering}
+
+We define rendering as a timeless variational principle over logical space rather than over classical spacetime trajectories.
+
+Let an instruction connect a start condition \( \mathcal{S} \) to an end condition \( \mathcal{E} \). Then rendering occurs when the following condition holds:
+
+\[
+\delta \mathcal{A}(\mathcal{S}, \mathcal{E}) = 0 
+\quad \text{subject to} \quad 
+\int_{\text{SDF}} \Delta E \, dV 
+\]
+
+Here:
+\begin{itemize}
+  \item \( \delta \mathcal{A}(\mathcal{S}, \mathcal{E}) = 0 \) expresses that the action-like functional \( \mathcal{A} \) is extremized — not over spacetime paths but over logical transitions defined in \( Q \),
+  \item The integral is evaluated in the spacetime deployment frame (SDF), representing the accumulated energy shift during rendering.
+\end{itemize}
+
+Although the energy condition is evaluated in the SDF, the extremum is pre-resolved in the timeless Quantum Platform \( Q \), meaning the system’s instructional future already “knows” when and where it is rendered.
+
+\medskip
+
+This structure allows us to derive the fundamental rendering delay law:
+
+\[
+T \cdot C_s = 1
+\]
+
+Here:
+\begin{itemize}
+  \item \( T \) is the emergent delay (or time) experienced during deployment,
+  \item \( C_s \) is the rendering rate or causal velocity of instruction resolution from \( Q \),
+  \item The product is invariant, reflecting a conservation principle between delay and rendering rate across all instructions.
+\end{itemize}
+
+This formulation shows how classical experience arises as a projection from timeless logic — delay (\( T \)) is not fundamental, but a byproduct of instructional rendering under constraints.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  node distance=2cm and 3cm,
+  every node/.style={font=\small, align=center},
+  box/.style={rectangle, draw=black, thick, minimum width=2.8cm, minimum height=1.2cm, text width=2.8cm},
+  arrow/.style={->, thick}
+]
+
+% Nodes
+\node[box, fill=gray!10] (Q) {Quantum Platform\\ \( Q \)\\ (timeless logic)};
+\node[box, fill=blue!10, below=of Q] (cond) {Conditional Visibility};
+\node[box, fill=blue!15, below=of cond] (QGR) {Rendered Subset\\ \( Q_{\text{GR}} \)};
+\node[box, fill=gray!15, below=of QGR] (SDF) {Spacetime Deployment Frame\\ (observables: mass, motion, light)};
+
+% Arrows
+\draw[arrow] (Q) -- (cond) node[midway, right=5pt] {\footnotesize conditional visibility};
+\draw[arrow] (cond) -- (QGR) node[midway, right=5pt] {\footnotesize instruction in force};
+\draw[arrow] (QGR) -- (SDF) node[midway, right=5pt] {\footnotesize delayed rendering};
+
+\end{tikzpicture}
+\caption{Causal deployment flow: instructions existing outside a time bound universe, in \( Q \) are conditionally made visible, which then project into \( Q_{\text{GR}} \) and appear as classical observables in the Spacetime Deployment Frame (SDF).}
+\label{fig:q-deployment-diagram}
+\end{figure}
+
+\section{Comparison with Existing Unification Models}
+\label{sec:comparisons}
+
+Efforts to unify General Relativity (GR) and Quantum Mechanics (QM) have led to a number of theoretical frameworks — most notably, loop quantum gravity (LQG), string theory, and causal set theory. Each introduces profound ideas but carries significant philosophical and technical baggage that the Timeless Light Model (TLM) seeks to avoid.
+
+\paragraph{Loop Quantum Gravity (LQG).}
+LQG attempts to quantize spacetime itself by discretizing geometry at the Planck scale. While this honors quantum discreteness, it still treats GR as the foundational substrate being quantized — implying that space and time are primary. In contrast, TLM treats GR as a *projection*, not a platform. The emergence in TLM applies to deployment events, not geometry, and arises from timeless causal logic rather than a fluctuating spacetime lattice.
+
+\paragraph{String Theory.}
+String theory posits one-dimensional vibrating objects in 10+ dimensions to unify forces. Though mathematically rich, it remains unfalsifiable, introduces metaphysical structures (extra dimensions, branes, supersymmetry), and has failed to produce definitive experimental predictions. TLM introduces no such entities. It preserves all known equations and restructures their causal ordering, yielding a falsifiable model grounded in instructional delay and deployment.
+
+\paragraph{Causal Set Theory.}
+Causal set theory aligns somewhat with TLM in treating spacetime as emergent from discrete events. However, it lacks a mechanism for when and why those events occur. TLM fills this gap via instructions rendered when energy conditions are realized — rooted in the structure of the Quantum Platform.
+
+\paragraph{Conclusion.}
+Whereas most unification models attempt to stitch GR and QM together within the same ontological layer, TLM sidesteps this by recognizing a causal hierarchy. GR is not adjusted — it is subordinated. The observable universe becomes a rendered surface, not a fluctuating field, and no new particles or dimensions are needed.
+
+\paragraph{Timeless and Configuration Space Approaches.}
+Several existing models have explored physics without a fundamental time parameter, or in terms of configuration space rather than spacetime. Barbour's "The End of Time"~\cite{barbour2000} introduced the idea that time may be an illusion arising from change, proposing a physics built from relative configurations. More recent work by Gryb and Thébault~\cite{gryb2018} formalizes quantum gravity in timeless configuration space using path integrals that bypass standard temporal evolution.
+
+TLM differs by proposing a distinct structure: rather than treating configuration as primary, it introduces a \textit{Quantum Platform} \( Q \) which contains timeless causal instructions. These are only projected into experience (the SDF) when energetic conditions are met. Whereas other models often focus on symmetry reduction or shape dynamics, TLM emphasizes instructional deployment as the mechanism of manifestation — giving rise to delay, time, and gravity as side effects of instruction activation.
+
+Similarly, work like Giacomini et al.~\cite{giacomini2022} investigates the emergence of 3+1D spacetime from entanglement structure. TLM is compatible with this vision, but reframes the source of structure not as informational entanglement alone, but as instruction-level selection and rendering from a timeless substrate.
+
+\section{Benefits of the Timeless Light Model}
+\label{sec:benefits}
+
+The Timeless Light Model (TLM) does not attempt to replace established physics—it reorganizes it. By positioning quantum causality as the foundational layer and spacetime as a rendered projection, the TLM provides the following advantages:
+
+\subsection{Resolves Conceptual Paradoxes}
+Phenomena such as entanglement, tunneling, and instantaneous wavefunction collapse, which appear paradoxical under spacetime-first models, are straightforward under TLM. These effects are not propagations; they are resolutions. Their “speed” is irrelevant because they never traverse space—they bypass it.
+
+\subsection{Preserves All Empirical Predictions}
+TLM changes no equations of GR or QM. It retains the Schrödinger equation, Einstein's field equations, quantum field dynamics, and path integrals exactly as they are. What it changes is their causal interpretation: all observable dynamics are the outcome of instruction resolution at the level of Q.
+
+\subsection{Offers a Unified Causal Framework}
+Instead of attempting to quantize gravity or curve Hilbert space, TLM treats the GR domain as a resolved interface—$Q_{\text{GR}}$—projected from Q. This sidesteps incompatibility by removing the false assumption that GR and QM must meet on the same ontological footing.
+
+\subsection{Eliminates the Need for New Entities}
+There are no new particles, forces, or extra dimensions proposed. TLM does not rely on branes, strings, supersymmetry, or hidden variables. It accepts existing mathematical predictions but organizes them into a coherent causal hierarchy.
+
+\subsection{Accommodates Future Discoveries}
+If new quantum effects are discovered that do not obey GR-style propagation, they fit naturally into the TLM as Q-level instructions. Conversely, any newly discovered gravitational behavior that fits within GR would automatically be interpreted as part of $Q_{\text{GR}}$.
+
+\subsection{Clarifies the Role of Time}
+Rather than assuming time as a background parameter, TLM derives temporal experience from the delay between Q instruction and SDF deployment. Mass, gravity, and entropy all emerge from these delays. The photon’s "no time" quality and the behavior of black holes gain a coherent frame.
+
+\subsection{Positions Quantum Mechanics as Causally Senior}
+This reframing provides a clean answer to the unification problem: QM is not puzzling—GR is a consequence of it. Spacetime becomes the rendered narrative, not the author.
+
+\section{Open Questions and Future Work}
+\label{sec:openquestions}
+
+While the Timeless Light Model offers a clarified causal framework, it also opens new avenues of investigation. Several unresolved questions remain, some of which may be testable through careful interpretation of existing experiments or future observations:
+
+\subsection{Timeless Logic and Philosophical Foundations}
+
+A key area for future refinement lies in the formalization of timeless logic — specifically, how causal instructions can be coherently defined without reference to a time-ordered substrate. While the current model uses functional constraints (e.g., \( \delta \mathcal{A}(\mathcal{S}, \mathcal{E}) = 0 \)) to simulate this structure, a deeper logical foundation is needed.
+
+We anticipate future work will explore:
+\begin{itemize}
+  \item \textbf{Modal logic frameworks} that distinguish between necessity, possibility, and pre-resolution in a timeless context.
+  \item \textbf{Eternalism}, as discussed in the philosophy of physics, where all events are fixed in a four-dimensional structure — compatible with the Quantum Platform’s resolved totality.
+  \item \textbf{Instructional consistency logic}, potentially akin to constraint satisfaction in computation, but adapted for a non-temporal rendering substrate.
+\end{itemize}
+
+These explorations aim to provide a rigorous account of how logical causality, rendered delay, and experiential emergence can coexist in a framework that does not presuppose time as a fundamental parameter.
+
+\subsection{Nature and Selection of Q Instructions}
+What governs which quantum instructions are rendered into the Spacetime Deployment Frame (SDF) and which remain undeployed? Is there a formal selection mechanism for $Q \rightarrow Q_{\text{GR}}$ transitions? This may involve constraints analogous to action minimization or entropy optimization but occurring outside time.
+
+\subsection{Micro Black Hole Distributions}
+
+TLM reframes so-called “dark matter” as an observational symptom of unilluminated, high-delay causal deployments — specifically, rendered instructions that possess mass but no photon-linked instruction. These photon-silent deployments behave gravitationally, but do not emit or absorb light. The result is a gravitational field pattern that resembles a distribution of micro black holes: compact, high-delay mass concentrations that evade electromagnetic detection but curve spacetime in measurable ways. If this interpretation is correct, we should expect to find detectable patterns of gravitational influence consistent with a granular field — not a smooth dark matter halo. Future experiments in gravitational lensing precision, frame-dragging anomalies, or fine-structure deviations in galactic rotation curves may expose these micro black hole distributions, offering a falsifiable signature of TLM's instructional architecture.
+
+\subsection{Entropy and Information Flow}
+If mass and energy are projections from Q, then thermodynamic entropy may need reinterpretation as an effect of instruction delay, rather than disorder. Similarly, information loss in black holes might be reframed as non-deployed Q arcs—still present, but inaccessible in SDF terms.
+
+\subsection{The Q--SDF Interface}
+The precise mechanics of deployment---how resolved instructions in Q appear as delayed events in $Q_{\text{GR}}$---remain an open area for formalization. While the Timeless Light Model (TLM) rejects the need for spacetime-based dynamics in its senior layer, it invites a rendering framework that translates timeless causal arcs into observable experience.
+
+\paragraph{Toward a Formal Deployment Structure.}
+While a full deployment formalism is beyond the scope of this paper, we propose a preliminary candidate framework grounded in causally triggered resolution:
+
+\begin{enumerate}
+  \item \textbf{Instruction Action Principle:} Each instruction exists in Q as a resolved transition from a start state \( \mathcal{S} \) to an end state \( \mathcal{E} \). Deployment into the Spacetime Deployment Frame (SDF) occurs not because the arc is chosen, but because its conditions are satisfied. This can be formalized as a constraint-satisfaction principle over a timeless action variable \( \mathcal{A}_{\text{ins}} \). Deployment occurs when:
+  \[
+    \delta \mathcal{A}_{\text{ins}} = 0
+  \]
+  subject to energy conditions in the SDF. The calculus involved is not over paths in spacetime, but over instruction fulfillment under causal constraint.
+
+  \item \textbf{Rendering Gate Formalism:} Rather than invoking projection from a superposition, we define a rendering function \( R_k \) associated with each instruction type. This function determines when a resolved instruction arc becomes visible in the SDF:
+  \[
+    R_k(\text{Instruction}_k) =
+    \begin{cases}
+      \text{SDF Event} & \text{if condition met} \\
+      \varnothing & \text{otherwise}
+    \end{cases}
+  \]
+  This reflects the TLM claim that all instructions are already finalized in Q, and their visibility in the classical frame is governed by delay and conditional deployment—not probabilistic choice or amplitude collapse.
+\end{enumerate}
+
+These frameworks suggest that a mathematical bridge from the “always-resolved” logic of Q to the rendered experience of the SDF may be constructed using constraint-based or variational logic, without invoking time-evolution or quantum superposition. The challenge is not to find which instructions are selected, but to define when they appear.
+
+\subsection{Testing the Hierarchy}
+Is it possible to empirically demonstrate the causal seniority of quantum instruction? Phenomena such as delayed choice experiments, quantum erasure, or novel forms of non-locality may offer opportunities to falsify classical-first assumptions and support the TLM hierarchy.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The Timeless Light Model (TLM) offers a structural clarification of modern physics: rather than viewing General Relativity and Quantum Mechanics as competing or incompatible domains, we propose a causal ordering in which quantum instruction is primary. The Quantum Platform (Q) contains all causal logic, while observable physics—mass, light, motion, curvature—are rendered projections into the Spacetime Deployment Frame (SDF), denoted $Q_{\text{GR}}$.
+
+This view requires no changes to existing equations, introduces no new particles, and preserves all testable predictions of GR and QM. What it provides is a coherent frame: quantum phenomena such as entanglement and tunneling are not anomalies—they are evidence of Q’s "forever and never" instruction set operating outside spacetime constraints. Meanwhile, classical GR effects are not foundational—they are delayed renderings.
+
+The key unification is not mathematical but causal. We do not attempt to force GR and QM into a shared substrate; we instead recognize one as the logical source of the other. This reframing offers a path forward that honors both traditions of physics while pointing to a simpler underlying structure:
+
+\begin{equation}
+\text{Universe} = Q + Q_{\text{GR}} \quad \text{with} \quad Q_{\text{GR}} \equiv \text{SDF}
+\end{equation}
+
+In this model, the universe is not merely a dynamic arena but a projected rendering—an experiential projection of a deeper, time free logic. Future research may refine the formal structure of this projection, quantify instruction resolution, and test the limits of classical observability. The source of the GR universe may already be shaping what we see.
+
+\footnote{“Projection” is used here in the mathematical sense: a mapping from timeless instruction space (Q) to a delayed, rendered experiential domain (SDF). It implies neither illusion nor computational simulation unless specified.}
+
+
+
+
+\section{Glossary}
+\addcontentsline{toc}{section}{Glossary}
+
+\begin{description}
+
+  \item[Instruction:]
+  A discrete, "pre-time-factor" instruction issued from the Quantum Platform (Q) that defines a complete causal event, such as a photon emission, entangled pair deployment, or tunneling event. These do not propagate — they resolve either instantly or with delay into the Spacetime Deployment Frame (SDF).
+
+
+
+  \item[Q (Quantum Platform):]
+  A dimensionless layer, senior to time, containing the full set of causal instructions that govern physical reality. Q contains only the instructions that actually landed.
+
+  \item[Deployment:]
+The conditional appearance of a timeless instruction in the observable universe, typically rendered in the Spacetime Deployment Frame (SDF). Deployment does not imply computation or simulation—it is the manifestation of a pre-resolved instruction under experiential constraints.
+
+\item[Rendering:]
+The process of mapping a resolved instruction from the Quantum Platform (Q) into the Spacetime Deployment Frame (SDF). Rendering introduces delay and curvature into otherwise timeless causal instructions. The term is metaphorical and does not imply digital or anthropomorphic mechanics.
+
+
+  \item[$Q_{\text{GR}}$:]
+  The rendered subset of Q that manifests as classical physics — specifically, General Relativity (GR) behaviors. It includes mass, curvature, motion, and other phenomena that obey delayed deployment. By definition, \( Q_{\text{GR}} \equiv \text{SDF} \).
+
+  \item[SDF (Spacetime Deployment Frame):]
+  The observable domain of deployed instructions. All experiences of time, gravity, curvature, and light take place within the SDF. It is not fundamental but a rendered surface of deeper quantum logic.
+
+  \item[Instruction Hash:]
+  A shorthand reference to the encoded state of a system's instructional configuration in Q. Instruction hashes are used to track identity, entropy, and re-resolution conditions of deployed instructions. Analogous to cryptographic hashes, they provide a compact causal signature of a physical state.
+
+  \item[Photon-Silent Mass:]
+  A rendered instruction that exerts gravitational influence but carries no electromagnetic interaction pathway. In TLM, such mass is composed of high-delay, photon-unlinked instructions — often interpreted observationally as dark matter or, more precisely, as micro black hole distributions.
+
+  \item[Timeless Resolution:]
+  The process by which an instruction in Q becomes complete without temporal propagation. Timeless resolutions include entanglement, tunneling, and wavefunction collapse. From the SDF perspective, these appear instantaneous or non-local; from Q’s perspective, they are simply resolved.
+
+\end{description}
+
+
+
+\appendix
+\section{\texorpdfstring{Probabilities as Artifacts of Spacetime Rendering}{Probabilities as Artifacts}}
+\label{appendix:probability}
+
+The Timeless Light Model (TLM) asserts that quantum probabilities — as commonly understood in the Born rule — do not exist fundamentally in the Quantum Platform (Q). Rather, they emerge as artifacts of delayed deployment into the Spacetime Deployment Frame (SDF). In this view, the appearance of probabilistic behavior reflects the constraints and blindness inherent in the rendered frame, not indeterminacy in the underlying causal logic.
+
+\subsection{A.1 The Born Rule as a GR-Localized Estimate}
+
+In standard quantum mechanics, the Born rule states that the probability \( P \) of measuring a system in state \( \psi_i \) is given by:
+
+\[
+P_i = |\langle \psi_i | \Psi \rangle|^2
+\]
+
+This is understood as an intrinsic uncertainty within the wavefunction \( \Psi \), resolved only upon measurement. Under the TLM, this interpretation is reversed: the complete outcome is already determined by an instruction in Q. The Born rule simply quantifies the distribution of *rendered experiences* across possible deployments consistent with different energy and boundary conditions in the SDF.
+
+\subsection{A.2 Instructional Finality vs Rendering Uncertainty}
+
+In the Quantum Platform, all instructions are resolved: there is no branching, probability, or interference — only a complete mapping from \( \mathcal{S} \rightarrow \mathcal{E} \). However, not all instructions are rendered into the SDF. The probability structure arises from the observer’s ignorance of which pre-resolved instruction is being deployed at the moment of rendering.
+
+Let \( \mathcal{H}_\text{Q} \) be the set of all valid instructions in Q consistent with the initial condition \( \mathcal{S} \), and let \( \mathcal{H}_\text{SDF} \subset \mathcal{H}_\text{Q} \) be the subset rendered within a given spacetime configuration. Then the apparent probability \( P_i \) of outcome \( i \) is:
+
+\[
+P_i = \frac{|\mathcal{H}_i|}{|\mathcal{H}_\text{SDF}|}
+\]
+
+where \( \mathcal{H}_i \subset \mathcal{H}_\text{SDF} \) includes only those instructions that render as outcome \( i \) within the SDF. This statistical structure reflects ignorance due to delay and limited frame rendering — not fundamental randomness.
+
+\subsection{A.3 Measurement as Deployment Filtering}
+
+Quantum measurement is therefore reinterpreted as a filter on instruction rendering: among all timelessly valid instructions in Q, only one is projected into the SDF based on boundary constraints. The Born probabilities express how likely a given outcome is to be rendered, given these spacetime-level filters — not how likely it is to “occur” in Q.
+
+\subsection{A.4 Collapse as a Resolution Already Chosen}
+
+In TLM, there is no collapse. The so-called “collapse” is simply the deployment of an already finalized instruction into the SDF. The probabilistic appearance comes from the delayed and filtered rendering process — a kind of spacetime myopia. This aligns with the idea that what we call chance is merely a delayed resolution we have not yet observed — not a fundamental trait of nature.
+
+\subsection{A.5 Consequences for Quantum Theory}
+
+This interpretation carries several implications:
+
+\begin{itemize}
+  \item The Born rule remains valid as a predictive tool, but not as an ontological claim.
+  \item Decoherence, interference, and probabilistic amplitudes are emergent visualizations of instructional filtering under delay, not fundamental randomness.
+  \item The wavefunction is not an evolving object in time, but a rendered summary of potential deployments consistent with the local SDF state.
+\end{itemize}
+
+In sum, the TLM treats quantum probabilities not as primary facts, but as experiential estimates derived from the delayed rendering of fully determined instructional logic. From the perspective of Q, the outcome was never uncertain. From within the SDF, it always seems to be.
+
+
+
+
+
+
+
+\begin{thebibliography}{99}
+
+
+\bibitem{einstein}
+A.~Einstein, quoted in ``Albert Einstein: Philosopher-Scientist,'' ed. P.~A.~Schilpp, Open Court Publishing (1949).
+
+\bibitem{feynman}
+R.~P.~Feynman, ``The Character of Physical Law,'' MIT Press (1965).
+
+
+\bibitem{mckinley2025_causal}
+J.~C.~W.~McKinley,
+\textit{Causality Without Light Speed: Reframing \( c \) as a Derived, Not Fundamental, Limit}, 
+Zenodo (2025). doi:\href{https://doi.org/10.5281/zenodo.15826480}{10.5281/zenodo.15826480}
+
+\bibitem{mckinley2025_causalrate}
+J.~C.~W.~McKinley,
+\textit{Clarifying Causal Rate: The Instructional Delay Law \( T \cdot C_s = 1 \)}, 
+Zenodo (2025). doi:\href{https://doi.org/10.5281/zenodo.15817350}{10.5281/zenodo.15817350}
+
+\bibitem{mckinley2025quantized}
+J.~C.~W.~McKinley, ``Unified Physics by Subordination of GR to QM: A Layered Reality Framework,'' Zenodo (2025), \href{https://doi.org/10.5281/zenodo.15956986}{doi:10.5281/zenodo.15956986}.
+
+
+
+\bibitem{barbour2000}
+J.~Barbour, \textit{The End of Time: The Next Revolution in Physics}, Oxford University Press (2000).
+
+\bibitem{gryb2018}
+S.~Gryb and K.~Thébault, ``Quantum gravity in timeless configuration space,'' \textit{Classical and Quantum Gravity} 35, 035004 (2018). arXiv:\href{https://arxiv.org/abs/1706.08875}{1706.08875}.
+
+\bibitem{giacomini2022}
+F.~Giacomini, A.~R.~H.~Smith, and Č.~Brukner, ``A model of quantum spacetime,'' \textit{Nature Communications} 13, 1196 (2022). arXiv:\href{https://arxiv.org/abs/2207.01005}{2207.01005}.
+
+
+\end{thebibliography}
+
+
+\appendix
+\section{Rigorous Derivations in the TLM Framework}
+\label{appendix:derivations}
+
+The following derivations formalize key relationships implied by the Timeless Light Model (TLM). Each draws from causal invariants and deployment logic described throughout the main text.
+
+\subsection{A.1 Delay–Energy Relation from Deployment Invariant}
+\label{appendix:delay-energy}
+
+We begin with the delay–rate law introduced in Section~\ref{sec:causalhierarchy}:
+
+\begin{equation}
+T \cdot C_s = 1
+\end{equation}
+
+where \( T \) is the rendering delay (in seconds) and \( C_s \) is the causal deployment rate (in s\(^{-1}\)).
+
+Assume the deployment rate is proportional to the local energy drop in the Spacetime Deployment Frame (SDF):
+
+\begin{equation}
+C_s = \alpha \cdot \Delta E_{\text{SDF}}
+\end{equation}
+
+with \( \alpha \) a proportionality constant (units: [s·J]\(^{-1}\)). Substituting:
+
+\begin{equation}
+T \cdot (\alpha \cdot \Delta E_{\text{SDF}}) = 1 \quad \Rightarrow \quad T = \frac{1}{\alpha \cdot \Delta E_{\text{SDF}}}
+\end{equation}
+
+\paragraph{Interpretation.}
+A larger energy drop in the SDF causes a faster rendering of the corresponding instruction. Zero-delay events (e.g., tunneling or entanglement) correspond to divergent energy drops from the Q perspective. High-delay events (e.g., classical mass or curvature) result from low-energy rendering conditions.
+
+\subsection{A.2 Triggered Curvature as Discrete Deployment Effect}
+\label{appendix:triggered-curvature}
+
+In Einstein's field equations (simplified scalar form), curvature is proportional to energy:
+
+\begin{equation}
+R \propto T_{\mu\nu} \propto E
+\end{equation}
+
+TLM reframes spacetime curvature as the rendered outcome of instruction events. Curvature appears as instructions are rendered under energy conditions in the SDF.
+
+\paragraph{Interpretation.}
+What GR treats as continuous curvature is, in TLM, the result of densely packed deployment events. This suggests potential observables such as lags in curvature formation, detectable in high-precision gravitational wave or frame-dragging measurements.
+
+\subsection{A.3 Instruction Hash Cardinality as Entropy}
+\label{appendix:entropy-hash}
+
+Define the instruction hash \( \mathcal{H}(t) \) as the set of currently deployable instructions in the system at time \( t \). TLM reframes entropy as a function of instructional diversity:
+
+\begin{equation}
+S(t) = k_B \cdot \ln |\mathcal{H}(t)|
+\end{equation}
+
+If the system evolves such that \( \mathcal{H}(t + \delta t) = \mathcal{H}(t) \cup \delta \mathcal{H} \), then:
+
+\begin{equation}
+\Delta S = k_B \cdot \ln \left( \frac{|\mathcal{H}(t + \delta t)|}{|\mathcal{H}(t)|} \right)
+= k_B \cdot \ln \left( 1 + \frac{|\delta \mathcal{H}|}{|\mathcal{H}(t)|} \right)
+\end{equation}
+
+Assuming \( |\delta \mathcal{H}| \ll |\mathcal{H}(t)| \), we apply the approximation \( \ln(1 + x) \approx x \):
+
+\begin{equation}
+\Delta S \approx k_B \cdot \frac{|\delta \mathcal{H}|}{|\mathcal{H}(t)|}
+\end{equation}
+
+\paragraph{Interpretation.}
+Entropy is reinterpreted not as disorder, but as the informational richness of deployable quantum instructions. Thermodynamic behavior corresponds to the growth in active instruction space under Q.
+
+\end{document}
 ```
 
 </details>
