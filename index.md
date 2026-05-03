@@ -1,7 +1,8 @@
 ---
 layout: default
 title: John Christian William McKinley LaTeX Archive
-render_with_liquid: false
+---
+{% raw %}
 ---
 
 # John Christian William McKinley LaTeX Archive
@@ -2248,5 +2249,6 @@ Wald, R. M.
 ```
 
 </details>
+{% endraw %}
 
 ---
