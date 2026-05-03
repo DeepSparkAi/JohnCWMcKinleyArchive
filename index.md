@@ -1,6 +1,7 @@
 ---
 layout: default
 title: John Christian William McKinley LaTeX Archive
+render_with_liquid: false
 ---
 
 # John Christian William McKinley LaTeX Archive
