@@ -60,12 +60,12 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 ---
 
-## The Canon
+## The Papers
 
 ### [2026] A Minimal Structural Statement of the Timeless Light Model (v3.921)
 *The definitive bedrock statement of the model's interpretive constraints and minimal canon.*
 *   **Official Record:** [Zenodo DOI: 10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)
-*   **Status:** Published (February 2026 Canon)
+*   **Status:** Published (February 7, 2026)
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
