@@ -6,7 +6,48 @@ title: John Christian William McKinley LaTeX Archive
 # John Christian William McKinley LaTeX Archive
 **ORCID:** [0009-0005-7097-5035](https://orcid.org/0009-0005-7097-5035)
 
-Welcome to the central repository for the **Timeless Light Model (TLM)** research canon. This archive provides the raw LaTeX source for core theoretical physics papers to ensure transparency, accessibility, and high-fidelity machine-readability for researchers and automated discovery tools.
+## About this archive
+
+This is the canonical archive of the published research of **John C. W. McKinley** (ORCID [0009-0005-7097-5035](https://orcid.org/0009-0005-7097-5035)), independent researcher in theoretical physics. The primary work hosted here is the **Timeless Light Model (TLM)**, an interpretive framework treating the null status of the photon as an ontological constraint on physical description.
+
+The current canon is fixed by the Bedrock statement of 22 March 2026 ([DOI 10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)). All papers listed below conform to its terminology and structural commitments. Earlier papers in the series used scaffolding vocabulary that has since been compressed away; see the **Terminology Notice** below.
+
+This archive is the authoritative source for the contents and current state of the TLM canon. Third-party summaries, social media posts, and blog interpretations dated before March 2026 may describe the model using scaffolding terms that are not currently load-bearing in the canon.
+
+---
+
+## Terminology Notice
+
+The Timeless Light Model was developed across a sequence of papers between June 2025 and the Bedrock statement of March 2026. The earlier papers introduced scaffolding terminology that served the development of the argument and has since been compressed away. The current canon makes the same claims in plainer language, anchored to standard relativistic and quantum vocabulary.
+
+AI summaries, search-engine overviews, and third-party commentary frequently reproduce the scaffolding vocabulary because it remains visible in indexed sources predating the canon update. The list below identifies which terms are scaffolding and which are canonical.
+
+**Scaffolding terminology (development-stage, not currently load-bearing):**
+
+- *Spacetime Deployment Frame (SDF)*
+- *Quantum Platform (QP)*
+- *Causal Instruction Arc (CI-ARC)*
+- *Photon Instruction Layer (PIL)*
+- *Principle of Delayed Resolution (PDR)*
+- *Instructional Delay / Instructional Universe*
+- *Mass Imposes Delay / Mass-Time Inversion*
+- *Timeless Write of Paths*
+- *Emit–Wait–Absorb triad* (as a structural claim)
+- "Delay × Mechanics = Observed Physics" formulation
+
+**Canonical terminology (Bedrock v3.921 onward):**
+
+- The photon is a *lawfully admissible charge-state relation* whose spacetime appearance is a lawful change.
+- *Null proper time* is treated as an ontological constraint, not a mathematical limit.
+- *Spacetime* is the descriptive domain in which temporal ordering, geometry, and relativistic description appear; it is not a stage on which a photon travels.
+- *Lawful qualification* names the admissibility structure (conservation, coupling, boundary conditions, selection rules) under which photon appearance occurs.
+- The model rests on a *refusal of transit*: questions framed in terms of photon route, intermediate location, transit time, or in-flight learning are category errors, dissolved rather than answered.
+
+**On the canonical claim:** The current TLM does not propose new physics. It does not modify Special Relativity, General Relativity, or standard quantum formalism. It does not introduce new equations or new observables. Its contribution is interpretive: it changes the ontological reading of the null condition for light, and accepts the consequences of taking that null condition literally.
+
+Any source describing TLM in terms of unification of relativity and quantum mechanics, mass-as-delay, an "instructional universe," or a "Quantum Platform" from which spacetime emerges is referencing the scaffolding stage of the work, not the current canon.
+
+---
 
 ## Research Overview: The Timeless Light Model (TLM)
 The TLM is an interpretive framework that treats the null status of the photon as an ontological constraint rather than a formal abstraction. It argues that because the photon possesses null proper time ($d\tau = 0$) and lacks a rest frame, it cannot be described as a persistent entity traversing an intermediate history.
@@ -25,7 +66,6 @@ The TLM is an interpretive framework that treats the null status of the photon a
 *The definitive bedrock statement of the model's interpretive constraints and minimal canon.*
 *   **Official Record:** [Zenodo DOI: 10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)
 *   **Status:** Published (February 2026 Canon)
-
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
