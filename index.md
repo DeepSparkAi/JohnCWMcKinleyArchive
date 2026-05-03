@@ -28,7 +28,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 <details>
 <summary><b>Click to view Raw LaTeX Source</b></summary>
-  
+
 ```latex
 \documentclass[12pt,letterpaper,onecolumn]{article}
 
@@ -75,10 +75,10 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 
 \usepackage{natbib}
+\usepackage{cleveref}
 \usepackage{orcidlink}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
-\usepackage{cleveref}
 
 
 % ---------- Theorem environments ----------
@@ -101,8 +101,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 }
 
 \title{\textbf{A Minimal Structural Statement of the Timeless Light Model}}
-\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\
-Independent Researcher}
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}}
 \date{22 March 2026}
 
 \begin{document}
@@ -392,7 +391,7 @@ The null fact is already retained in the equations, but it is often abandoned in
         (1.15,3.95) -- (4.25,3.95);
     \node[align=center] at (2.7,4.28) {\scriptsize lightlike relation only};
 
-    
+
     % Main ontological statement
     \node[draw, rounded corners, align=center, fill=gray!8, inner sep=6pt]
         at (2.7,1.7)
@@ -480,18 +479,10 @@ The Timeless Light Model admits a simpler bedrock statement than earlier formula
     \item[Lawfully Admissible]\label{lad} Here ``lawfully admissible'' means consistent with the physical constraint structure already present in standard theory, including conservation, coupling, boundary, and selection-rule conditions.
 
     \item[Photon] A photon is a lawfully admissible charge-state relation whose spacetime appearance is a lawful change, not a particle in transit.
-      
+
     \item[Spacetime] The domain in which temporal ordering, duration, geometry, interval structure, and frame-dependent relativistic description appear.
     \item[Null Proper Time] The standard relativistic condition for lightlike structure, \(d\tau = 0\); in TLM, this is treated as an ontological constraint excluding an internally timed photon history.
-    
 
-
-
-
-
-
-
-    
     \item[Category Error] A question that presupposes predicates not licensed by the defining ontology. In the present context, questions about photon transit, path, or intermediate location are category errors.
 \end{description}
 
@@ -529,6 +520,6 @@ Wald, R. M.
 \end{thebibliography}
 
 \end{document}
+```
 
-
-
+</details>
