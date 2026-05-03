@@ -60,12 +60,285 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 ---
 
+
 ## The Papers
 
+### [2026] Timelessness Is the General Condition: Spacetime Is the Special Case
+*   **DOI:** [10.5281/zenodo.19771925](https://doi.org/10.5281/zenodo.19771925)
+*   **Date:** 25 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{tikz}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{orcidlink}
+\usepackage{cleveref}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Timelessness Is the General Condition}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{lemma}[proposition]{Lemma}
+
+\title{\textbf{Timelessness Is the General Condition: Spacetime Is the Special Case}}
+\author{John C. W. McKinley \orcidlink{0009-0005-7097-5035}}
+\date{April 25, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version published at \url{https://doi.org/10.5281/zenodo.19771925}.}
+
+\begin{abstract}
+This paper advances one claim: timelessness is the general condition, and
+spacetime is the special case. On this view, lawful reality is not fundamentally
+ordered by an internal timed middle. Timed sequence belongs instead to spacetime,
+the special regime in which order, geometry, and measured duration appear. The
+argument rests on three grounds: time is non-absolute in general relativity, time
+is absent in the null case, and spacetime cannot be the condition of its own
+appearance.
+\end{abstract}
+
+
+\section{Introduction}
+
+This paper advances one claim: timelessness is the general condition, and
+spacetime is the special case.
+
+The null case is where this hierarchy first becomes visible inside established
+physics. The published photon-side no-go sequence
+\citep{McKinleyNullProperTime2025,McKinleyNoRestFrame2025,McKinleyNullCurves2025,McKinleyWavefunctionNoPath2026,McKinleyRetrocausal2026}
+establishes that null proper time withholds an internally timed and spatially
+traversed photon middle. The present paper does not re-prove those restrictions.
+It treats them as the exposed form of a more general rule: timed spacetime
+sequence is not the senior condition of lawful reality, but a special regime in
+which order, geometry, and measured duration appear.
+
+That is the reversal. The universe is not best understood as a fundamentally
+timed system in which rare timeless cases occasionally appear. The order is the
+opposite. Timeless lawful relation is general. Timebound spacetime appearance is
+special.
+
+The bedrock statement of TLM \citep{McKinleyBedrock2026} already
+contains, in compressed form, the claim that some lawful physical relations are
+not governed by internal time variables. The present paper foregrounds that
+claim and establishes the resulting hierarchy---timelessness as general,
+spacetime as special---on grounds independent of the null case alone.
+
+
+\section{The Main Claim}
+
+The claim of the present paper is that timed spacetime sequence is not the
+universal default, but a special regime of observed order, duration, geometry,
+and record. Timeless lawful relation is the general condition. Spacetime is the
+special case.
+
+\begin{definition}[General condition]
+The general condition is the senior condition from which displayed special cases
+are understood.
+\end{definition}
+
+\begin{definition}[Special case]
+A special case is a constrained regime in which what is more general appears under
+added structure.
+\end{definition}
+
+\begin{proposition}
+Timeless lawful relation is the general condition, and spacetime is the special
+case.
+\end{proposition}
+
+\begin{proof}
+Time is not the senior condition of lawful reality.
+
+First, in general relativity, time is non-absolute. Measured duration varies with
+gravitational field, motion, and spacetime geometry. A feature that bends with
+the displayed regime is not the most general condition; it is a feature of that
+regime.
+
+Second, in the null case, time is absent rather than merely flexible. The photon
+has no internal proper time, no rest-frame persistence template, and no licensed
+timed middle. The published null-case no-go sequence therefore shows that lawful
+physical relation need not be internally time-ordered.
+
+Third, cosmogenesis itself cannot be treated as an event already inside ordinary
+spacetime sequence. If spacetime is what appears, then spacetime cannot also be the prior condition
+that explains its own appearance. The pre-spacetime condition is therefore not governed by ordinary spacetime
+time.
+
+Together these points establish the hierarchy. Time is non-absolute within
+spacetime, absent in the null case, and not prior to spacetime itself. It is not
+the universal container of lawful reality. Timeless lawful relation is therefore
+the general condition, and spacetime is the special case.
+\end{proof}
+
+Ordinary interpretation tends to assume that timebound sequence is basic and that
+timelessness, if admitted at all, is exceptional. The present claim reverses that
+order. Timeless lawful relation is basic. Spacetime sequence is the specialized
+regime.
+
+
+\section{Conclusion}
+
+This paper has advanced one claim: timelessness is the general condition, and
+spacetime is the special case.
+
+Time is non-absolute in general relativity, absent in the null case, and not
+prior to spacetime in the order of conditioning. Together these establish the
+hierarchy. Timed sequence is not the senior condition of lawful reality. It is
+the special regime in which order, geometry, and measured duration appear.
+
+Timelessness is general. Spacetime is special.
+
+\begin{thebibliography}{99}
+
+\bibitem{McKinleyNullProperTime2025}
+J. C. W. McKinley, \emph{Taking Null Proper Time Seriously: An Interpretive Clarification of Null Proper Time},
+Zenodo (2025). \href{https://doi.org/10.5281/zenodo.18004632}{doi:10.5281/zenodo.18004632}.
+
+\bibitem{McKinleyNoRestFrame2025}
+J. C. W. McKinley, \emph{No Rest Frame, No Persistence: A Kinematic Constraint on Photon Interpretation},
+Zenodo (2025). \href{https://doi.org/10.5281/zenodo.18005884}{doi:10.5281/zenodo.18005884}.
+
+\bibitem{McKinleyNullCurves2025}
+J. C. W. McKinley, \emph{Null Curves Without Carriers: Resolving an Ontological Tension in Relativistic Geometry},
+Zenodo (2025). \href{https://doi.org/10.5281/zenodo.18028886}{doi:10.5281/zenodo.18028886}.
+
+\bibitem{McKinleyWavefunctionNoPath2026}
+J. C. W. McKinley, \emph{Wavefunction Prediction Does Not License a Photon Path},
+Zenodo (2026). \href{https://doi.org/10.5281/zenodo.19504772}{doi:10.5281/zenodo.19504772}.
+
+\bibitem{McKinleyRetrocausal2026}
+J. C. W. McKinley, \emph{Retrocausal Objections Are Disallowed for the Photon},
+Zenodo (2026). \href{https://doi.org/10.5281/zenodo.19648209}{doi:10.5281/zenodo.19648209}.
+
+\bibitem{McKinleyBedrock2026}
+J. C. W. McKinley,
+\emph{A Minimal Structural Statement of the Timeless Light Model},
+Zenodo (2026).
+DOI:\,\href{https://doi.org/10.5281/zenodo.19167403}{10.5281/zenodo.19167403}.
+
+\end{thebibliography}
+
+\end{document}
+
+```
+
+</details>
+
+---
+
+### [2026] If a New Causal Chain Begins, a Non-Internal Contribution Exists
+*   **DOI:** [10.5281/zenodo.19752798](https://doi.org/10.5281/zenodo.19752798)
+*   **Date:** 24 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] Retrocausal Objections Are Disallowed for the Photon
+*   **DOI:** [10.5281/zenodo.19648209](https://doi.org/10.5281/zenodo.19648209)
+*   **Date:** 18 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] Iron Filings Do Not Prove Field Substance — A Short Interpretive No-Go
+*   **DOI:** [10.5281/zenodo.19639455](https://doi.org/10.5281/zenodo.19639455)
+*   **Date:** 17 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] Wavefunction Prediction Does Not License a Photon Path — A Short Interpretive No-Go
+*   **DOI:** [10.5281/zenodo.19504772](https://doi.org/10.5281/zenodo.19504772)
+*   **Date:** 12 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain
+*   **DOI:** [10.5281/zenodo.19464781](https://doi.org/10.5281/zenodo.19464781)
+*   **Date:** 7 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
 ### [2026] A Minimal Structural Statement of the Timeless Light Model (v3.921)
-*The definitive bedrock statement of the model's interpretive constraints and minimal canon.*
-*   **Official Record:** [Zenodo DOI: 10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)
-*   **Status:** Published (February 7, 2026)
+*   **DOI:** [10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)
+*   **Date:** 22 March 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -565,122 +838,11 @@ Wald, R. M.
 
 </details>
 
-### [2026] Timelessness Is the General Condition: Spacetime Is the Special Case
-*Argues for an ontological inversion: timelessness is the general condition, spacetime the special regime in which order, geometry, and measured duration appear.*
-*   **DOI:** [10.5281/zenodo.19771925](https://doi.org/10.5281/zenodo.19771925)
-*   **Date:** 25 April 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
----
-
-### [2026] If a New Causal Chain Begins, a Non-Internal Contribution Exists
-*If a new causal chain begins, a non-internal contribution to its onset exists.*
-*   **DOI:** [10.5281/zenodo.19752798](https://doi.org/10.5281/zenodo.19752798)
-*   **Date:** 24 April 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
----
-
-### [2026] Retrocausal Objections Are Disallowed for the Photon
-*Retrocausal objections require a timed intermediate subject; the photon has no such time-bearing middle.*
-*   **DOI:** [10.5281/zenodo.19648209](https://doi.org/10.5281/zenodo.19648209)
-*   **Date:** 18 April 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
----
-
-### [2026] Iron Filings Do Not Prove Field Substance — A Short Interpretive No-Go
-*Visible aggregation of iron filings into spatial patterns does not license the conclusion that the patterned region is materially occupied by a persisting substance.*
-*   **DOI:** [10.5281/zenodo.19639455](https://doi.org/10.5281/zenodo.19639455)
-*   **Date:** 17 April 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
----
-
-### [2026] Wavefunction Prediction Does Not License a Photon Path — A Short Interpretive No-Go
-*The mathematical success of the wavefunction in predicting absorption outcomes does not license the conclusion that a photon follows an intermediate spacetime path.*
-*   **DOI:** [10.5281/zenodo.19504772](https://doi.org/10.5281/zenodo.19504772)
-*   **Date:** 12 April 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
----
-
-### [2026] No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain
-*No closed system defined within a 4D Minkowski spacetime can internally determine the onset and direction of a new causal sequence.*
-*   **DOI:** [10.5281/zenodo.19464781](https://doi.org/10.5281/zenodo.19464781)
-*   **Date:** 7 April 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
----
-
-### [2026] A Minimal Structural Statement of the Timeless Light Model (v3.921)
-*Restates the minimal core of the TLM: null status of the photon as ontological constraint, with no transit-based intermediate history.*
-*   **DOI:** [10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)
-*   **Date:** 22 March 2026
-
-<details markdown="1">
-<summary><b>Click to view Raw LaTeX Source</b></summary>
-
-```latex
-
-```
-
-</details>
-
 ---
 
 ### [2025] Null Curves Without Carriers: Resolving an Ontological Tension in Relativistic Geometry
-*Null curves represent direct lightlike relations in spacetime, not the histories of persisting carriers.*
 *   **DOI:** [10.5281/zenodo.18028886](https://doi.org/10.5281/zenodo.18028886)
-*   **Date:** 22 December 2025 [CONFIRM]
+*   **Date:** 22 December 2025
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -694,9 +856,8 @@ Wald, R. M.
 ---
 
 ### [2025] Taking Null Proper Time Seriously: An Interpretive Clarification of Null Proper Time
-*Null proper time is to be read as an ontological constraint, not as a mathematical limit to be narrated around.*
 *   **DOI:** [10.5281/zenodo.18004632](https://doi.org/10.5281/zenodo.18004632)
-*   **Date:** 22 December 2025 [CONFIRM]
+*   **Date:** 22 December 2025
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -710,9 +871,8 @@ Wald, R. M.
 ---
 
 ### [2025] No Rest Frame, No Persistence: A Kinematic Constraint on Photon Interpretation
-*The absence of a photon rest frame withholds the ordinary kinematic resources for identity-through-time and forbids a persisting-traveler interpretation.*
 *   **DOI:** [10.5281/zenodo.18005884](https://doi.org/10.5281/zenodo.18005884)
-*   **Date:** 21 December 2025 [CONFIRM]
+*   **Date:** 21 December 2025
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -726,9 +886,8 @@ Wald, R. M.
 ---
 
 ### [2025] The Timeless Light Model: A Minimal Interpretive Completion of Relativistic Constraints
-*Introduces the TLM as an interpretive completion of standard relativistic structure rather than a replacement formalism.*
 *   **DOI:** [10.5281/zenodo.18012564](https://doi.org/10.5281/zenodo.18012564)
-*   **Date:** 21 December 2025 [CONFIRM]
+*   **Date:** 21 December 2025
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -738,3 +897,1355 @@ Wald, R. M.
 ```
 
 </details>
+
+---
+
+### [2025] From Limit to Cause: c as Baseline Delay in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17393350](https://doi.org/10.5281/zenodo.17393350)
+*   **Date:** 19 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Timeless Means No Sequence: Clarifying the Emit–Wait–Absorb Triad in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17389830](https://doi.org/10.5281/zenodo.17389830)
+*   **Date:** 19 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Timeless Write of Paths: Interference as a Lawful Deployment in the Timeless Light Model (TLM)
+*   **DOI:** [10.5281/zenodo.17393412](https://doi.org/10.5281/zenodo.17393412)
+*   **Date:** 19 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Wait Phase and Interference: Timeless Rules Creating Quantum Patterns
+*   **DOI:** [10.5281/zenodo.17383869](https://doi.org/10.5281/zenodo.17383869)
+*   **Date:** 18 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Timeless Means No Sequence: Clarifying the Emit–Wait–Absorb Triad in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17388300](https://doi.org/10.5281/zenodo.17388300)
+*   **Date:** 18 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Redefining Zero: The Extra-Universal State and the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17336219](https://doi.org/10.5281/zenodo.17336219)
+*   **Date:** 12 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Time-Free Photons and Extra-Universal Nothingness: Addressing Speed and Existence Queries in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17337263](https://doi.org/10.5281/zenodo.17337263)
+*   **Date:** 12 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Unmanned Quantum Platform: Timeless Origin of Instruction and Conservation in the TLM
+*   **DOI:** [10.5281/zenodo.17329404](https://doi.org/10.5281/zenodo.17329404)
+*   **Date:** 11 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Wait Phase and Creator-Law Framework in the Timeless Light Model (TLM v3.0)
+*   **DOI:** [10.5281/zenodo.17284109](https://doi.org/10.5281/zenodo.17284109)
+*   **Date:** 7 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Wait Phase in the Timeless Light Model (TLM v3.0): Explaining a Timeless Checkpoint for Novices and Experts
+*   **DOI:** [10.5281/zenodo.17291452](https://doi.org/10.5281/zenodo.17291452)
+*   **Date:** 7 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Absorption-Only Evidence: Photons and Causal Instructions Exist Outside Spacetime
+*   **DOI:** [10.5281/zenodo.17275105](https://doi.org/10.5281/zenodo.17275105)
+*   **Date:** 5 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] No In-Between: Photon Knowledge and Energy Transfer in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17274555](https://doi.org/10.5281/zenodo.17274555)
+*   **Date:** 5 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] What Crosses the Cosmos? Timeless Photon Instructions vs. Traveling Particles
+*   **DOI:** [10.5281/zenodo.17247906](https://doi.org/10.5281/zenodo.17247906)
+*   **Date:** 1 October 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Bridge Laws in the Timeless Light Model: From Timeless Instructions to Rendered Spacetime
+*   **DOI:** [10.5281/zenodo.17240091](https://doi.org/10.5281/zenodo.17240091)
+*   **Date:** 30 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Whose Frame is it Anyway? — On Photon Timelessness, Proper Time, and the Observer's Illusion
+*   **DOI:** [10.5281/zenodo.17239624](https://doi.org/10.5281/zenodo.17239624)
+*   **Date:** 30 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Photon as Instruction, Not Traveler: Emission, Absorption, and the Myth of Flight
+*   **DOI:** [10.5281/zenodo.17221119](https://doi.org/10.5281/zenodo.17221119)
+*   **Date:** 28 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Photon Thought Experiments and the Timeless Ontology: Why Photons and Quanta Are "Not Here"
+*   **DOI:** [10.5281/zenodo.17216652](https://doi.org/10.5281/zenodo.17216652)
+*   **Date:** 27 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Why It Matters if a Marble Arrives Before Its Light: Causality and the Fragility of a Lawful Universe
+*   **DOI:** [10.5281/zenodo.17205431](https://doi.org/10.5281/zenodo.17205431)
+*   **Date:** 26 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Gravity is Geometry. Reality Obeys Rules. Not the Newtonian Holodeck.
+*   **DOI:** [10.5281/zenodo.17197557](https://doi.org/10.5281/zenodo.17197557)
+*   **Date:** 25 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Photon Proper Time: The Understated Invariant of Special Relativity
+*   **DOI:** [10.5281/zenodo.17190047](https://doi.org/10.5281/zenodo.17190047)
+*   **Date:** 24 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Massless Things Do Not Experience Time
+*   **DOI:** [10.5281/zenodo.17173126](https://doi.org/10.5281/zenodo.17173126)
+*   **Date:** 22 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] If the Quantum Platform Is a Math Layer: An Interpretive Addendum to the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17169440](https://doi.org/10.5281/zenodo.17169440)
+*   **Date:** 21 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Space Will Collapse to Protect c
+*   **DOI:** [10.5281/zenodo.17164585](https://doi.org/10.5281/zenodo.17164585)
+*   **Date:** 20 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Causal Chain in the Timeless Light Model: Mass as Drag, Frame as Causal Site, Quantum Platform as Cause
+*   **DOI:** [10.5281/zenodo.17139863](https://doi.org/10.5281/zenodo.17139863)
+*   **Date:** 16 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Time Travel is Real: Forwards But Not Backwards
+*   **DOI:** [10.5281/zenodo.17140029](https://doi.org/10.5281/zenodo.17140029)
+*   **Date:** 16 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Unlimited Rocket Acceleration and Time Travel to the Future
+*   **DOI:** [10.5281/zenodo.17139392](https://doi.org/10.5281/zenodo.17139392)
+*   **Date:** 16 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Why the Timeless Light Model is Not Obviously False
+*   **DOI:** [10.5281/zenodo.17118184](https://doi.org/10.5281/zenodo.17118184)
+*   **Date:** 15 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Rules and Executions: Mathematics as Perfect Code, Physics as Finite Information
+*   **DOI:** [10.5281/zenodo.17115196](https://doi.org/10.5281/zenodo.17115196)
+*   **Date:** 14 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Delay-Engineered Maneuverability: A Timeless Light Model Interpretation of "Tic Tac" UAP Kinematics
+*   **DOI:** [10.5281/zenodo.17111402](https://doi.org/10.5281/zenodo.17111402)
+*   **Date:** 12 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Why Rockets Can't Go Faster Than Light
+*   **DOI:** [10.5281/zenodo.17083607](https://doi.org/10.5281/zenodo.17083607)
+*   **Date:** 9 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Illusion and Invariant: Making Sense of Time Dilation — Reciprocity, Simultaneity, and Proper Time
+*   **DOI:** [10.5281/zenodo.17083276](https://doi.org/10.5281/zenodo.17083276)
+*   **Date:** 8 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Mass Slows Time. Speed Slows Time. Concept, Derivations, and Evidence
+*   **DOI:** [10.5281/zenodo.17083288](https://doi.org/10.5281/zenodo.17083288)
+*   **Date:** 8 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Hilbert Space as Frame Representation: A Timeless Light Model Reinterpretation
+*   **DOI:** [10.5281/zenodo.17070118](https://doi.org/10.5281/zenodo.17070118)
+*   **Date:** 6 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] From Descriptive Laws to Falsifiable Predictions: Testing the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17017852](https://doi.org/10.5281/zenodo.17017852)
+*   **Date:** 1 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Handling Event Magnitude in the Timeless Light Model: A Minimal QP→SDF Instruction Interface
+*   **DOI:** [10.5281/zenodo.17033795](https://doi.org/10.5281/zenodo.17033795)
+*   **Date:** 1 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The "No Mid-Flight Energy" Principle: Operational Consistency and Ontological Implications for the Timeless Light Model (TLM)
+*   **DOI:** [10.5281/zenodo.17018871](https://doi.org/10.5281/zenodo.17018871)
+*   **Date:** 1 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Emission Delay Law: A General Principle for the Realization of Quanta in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17032235](https://doi.org/10.5281/zenodo.17032235)
+*   **Date:** 1 September 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Dark Energy as Expansion Within GR: A Timeless Light Model Statement
+*   **DOI:** [10.5281/zenodo.17010816](https://doi.org/10.5281/zenodo.17010816)
+*   **Date:** 30 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Minimum Frame Size: Discrete Deployment Limits in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.17009716](https://doi.org/10.5281/zenodo.17009716)
+*   **Date:** 30 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Photons Not in the Universe: An Axiomatic Derivation from Masslessness and Non-Travel
+*   **DOI:** [10.5281/zenodo.17010029](https://doi.org/10.5281/zenodo.17010029)
+*   **Date:** 30 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Mathematical Shadows of the Quantum Platform: From Trick to Ontology
+*   **DOI:** [10.5281/zenodo.16977344](https://doi.org/10.5281/zenodo.16977344)
+*   **Date:** 27 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] A Review of the Timeless Light Model: Foundations, Derivations, and Empirical Predictions
+*   **DOI:** [10.5281/zenodo.16958221](https://doi.org/10.5281/zenodo.16958221)
+*   **Date:** 26 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Test Menu for the Timeless Light Model (TLM)
+*   **DOI:** [10.5281/zenodo.16957884](https://doi.org/10.5281/zenodo.16957884)
+*   **Date:** 26 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Frame Display Law for TLM v2.0: EA-conditioned Rendering in a Single Spacetime Deployment Frame
+*   **DOI:** [10.5281/zenodo.16936105](https://doi.org/10.5281/zenodo.16936105)
+*   **Date:** 24 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Ontology of Matter in the Timeless Light Model: From FRAME–CHARGE Toggles to Particles
+*   **DOI:** [10.5281/zenodo.16939101](https://doi.org/10.5281/zenodo.16939101)
+*   **Date:** 24 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Timeless Light Model (TLM v2.0): Frameless Quanta, Framed Observers, and Bridge Laws
+*   **DOI:** [10.5281/zenodo.16934697](https://doi.org/10.5281/zenodo.16934697)
+*   **Date:** 23 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Timeless Light Model vs Wheeler–Feynman Absorber Theory: A Disambiguation
+*   **DOI:** [10.5281/zenodo.16924316](https://doi.org/10.5281/zenodo.16924316)
+*   **Date:** 22 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Quanta are Global, Frames are Local: A Rosetta Statement of the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.16917106](https://doi.org/10.5281/zenodo.16917106)
+*   **Date:** 21 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Binary Law of Quanta: Location as a Timeless Choice
+*   **DOI:** [10.5281/zenodo.16913425](https://doi.org/10.5281/zenodo.16913425)
+*   **Date:** 20 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] TLM Addendum: Minimal Formalism and a Decisive Null Test
+*   **DOI:** [10.5281/zenodo.16909382](https://doi.org/10.5281/zenodo.16909382)
+*   **Date:** 20 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Two Decrees for a Rendered Universe: Charge and Frame-in-Higgs as Sufficient Generators of the Standard Model within the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.16914685](https://doi.org/10.5281/zenodo.16914685)
+*   **Date:** 20 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Unified Quantization Principle: GR, SR, and QM as Quantized Deployments of Binary Quanta
+*   **DOI:** [10.5281/zenodo.16913967](https://doi.org/10.5281/zenodo.16913967)
+*   **Date:** 20 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Generalized Pairing Law: No Quantum Emission Without an Absorber
+*   **DOI:** [10.5281/zenodo.16893165](https://doi.org/10.5281/zenodo.16893165)
+*   **Date:** 18 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Quanta Transfer Law
+*   **DOI:** [10.5281/zenodo.16897573](https://doi.org/10.5281/zenodo.16897573)
+*   **Date:** 18 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The One Blind Spot That Hid Three Simple Solutions: A Testable Reinterpretation of Photon Ontology Outside Spacetime
+*   **DOI:** [10.5281/zenodo.16871293](https://doi.org/10.5281/zenodo.16871293)
+*   **Date:** 14 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] From Endpoint Pairing to Frame Splitting: Absorption-Frame Motion in the Timeless Light Framework
+*   **DOI:** [10.5281/zenodo.16791636](https://doi.org/10.5281/zenodo.16791636)
+*   **Date:** 10 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Gravitons as Quantum Platform Geometry Instructions: A Timeless-Light Interpretation of Gravitational Wave Quanta
+*   **DOI:** [10.5281/zenodo.16788039](https://doi.org/10.5281/zenodo.16788039)
+*   **Date:** 10 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Quantum Platform as Frame Generator: Ontology, Anatomy, and Dark Matter Implications in TLM
+*   **DOI:** [10.5281/zenodo.16788735](https://doi.org/10.5281/zenodo.16788735)
+*   **Date:** 10 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Frame as Master: A Unified Foundation for the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.16787219](https://doi.org/10.5281/zenodo.16787219)
+*   **Date:** 9 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] At Some Point, You Have to Make Room for a Creator of the Universe—Whether It Be God, Gods, or Unicorn Dreams
+*   **DOI:** [10.5281/zenodo.16757589](https://doi.org/10.5281/zenodo.16757589)
+*   **Date:** 7 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Frame Pair Stretch and the ZeroSpace Postulate in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.16777862](https://doi.org/10.5281/zenodo.16777862)
+*   **Date:** 7 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Why Rockets Can't Go Faster Than Light
+*   **DOI:** [10.5281/zenodo.16758093](https://doi.org/10.5281/zenodo.16758093)
+*   **Date:** 7 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Failure of the Newtonian Holodeck: Why a Universe Without Relativity Cannot Sustain Itself
+*   **DOI:** [10.5281/zenodo.16750632](https://doi.org/10.5281/zenodo.16750632)
+*   **Date:** 5 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Photon as a Timeless, Spaceless Energy Transfer
+*   **DOI:** [10.5281/zenodo.16735683](https://doi.org/10.5281/zenodo.16735683)
+*   **Date:** 4 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] A Falsifiable Prediction of Non-Gaussian Tails in the CMB from Timeless Quantum Physics
+*   **DOI:** [10.5281/zenodo.16730256](https://doi.org/10.5281/zenodo.16730256)
+*   **Date:** 3 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Falsifiable Prediction of Horizon-Scale Phase Shifts in Gravitational Waves from the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.16730926](https://doi.org/10.5281/zenodo.16730926)
+*   **Date:** 3 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Why the Timeless Light Model Deserves Scientific Consideration: A Foundational Framework with Derivations, Critiques, and Experimental Proposals
+*   **DOI:** [10.5281/zenodo.16724187](https://doi.org/10.5281/zenodo.16724187)
+*   **Date:** 2 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Mass Imposes Delay, Wavefunctions Define Terrain: A Two-Filter Ontology of Reality
+*   **DOI:** [10.5281/zenodo.16672398](https://doi.org/10.5281/zenodo.16672398)
+*   **Date:** 1 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] No Carrier Needed: Photon Instructions as Direct Energy State Transfers Without Propagation
+*   **DOI:** [10.5281/zenodo.16666652](https://doi.org/10.5281/zenodo.16666652)
+*   **Date:** 1 August 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Light as Absent: Reclassifying the Photon as a Timeless Instruction
+*   **DOI:** [10.5281/zenodo.16627550](https://doi.org/10.5281/zenodo.16627550)
+*   **Date:** 31 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Deriving Cornerstone Equations from TLM Axioms: Entropic Bridges to GR and QM
+*   **DOI:** [10.5281/zenodo.16596589](https://doi.org/10.5281/zenodo.16596589)
+*   **Date:** 30 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Resolving Wave-Particle Duality Through the Proposed Timeless Light Model: Photons as Timeless Instructions and Waves as Deployed Delay
+*   **DOI:** [10.5281/zenodo.16510862](https://doi.org/10.5281/zenodo.16510862)
+*   **Date:** 28 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Photon Out of Time: Why Light Experiences No Time—and What That Means for Physics
+*   **DOI:** [10.5281/zenodo.16479322](https://doi.org/10.5281/zenodo.16479322)
+*   **Date:** 27 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Spacelessness as a Consequence of Timelessness in the Quantum Platform of the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.16350754](https://doi.org/10.5281/zenodo.16350754)
+*   **Date:** 23 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Stop Pretending General Relativity Is Conservative: Why Timeless Models Deserve a Seat at the Table
+*   **DOI:** [10.5281/zenodo.16261059](https://doi.org/10.5281/zenodo.16261059)
+*   **Date:** 21 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Foundational Equations and Axiomatic Structure of the Timeless Light Model: A Synthesis Across Sixty Papers and Working Notes
+*   **DOI:** [10.5281/zenodo.16187719](https://doi.org/10.5281/zenodo.16187719)
+*   **Date:** 20 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Photon's Exile: A GR-Based Proof That Light Is Not in Spacetime
+*   **DOI:** [10.5281/zenodo.16076902](https://doi.org/10.5281/zenodo.16076902)
+*   **Date:** 18 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Unified Physics by Subordination of GR to QM: Version 4.0 – Instructional Photons and Causal Rendering
+*   **DOI:** [10.5281/zenodo.16019797](https://doi.org/10.5281/zenodo.16019797)
+*   **Date:** 17 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Quantum Platform as Causal Senior: General Relativity as Rendered Projection
+*   **DOI:** [10.5281/zenodo.15960343](https://doi.org/10.5281/zenodo.15960343)
+*   **Date:** 16 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Unified Physics by Subordination of GR to QM: A Layered Reality Framework
+*   **DOI:** [10.5281/zenodo.15956986](https://doi.org/10.5281/zenodo.15956986)
+*   **Date:** 16 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Unified Physics by Subordination of GR to QM: Quantum Phenomena as the Generator of the Classical Universe
+*   **DOI:** [10.5281/zenodo.15868624](https://doi.org/10.5281/zenodo.15868624)
+*   **Date:** 12 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Causality Without Light Speed: Reframing c as Structure, Not Law
+*   **DOI:** [10.5281/zenodo.15826480](https://doi.org/10.5281/zenodo.15826480)
+*   **Date:** 7 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Clarifying Cs: Deployment Rate, Delay, and Simulation Parameters in the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.15817350](https://doi.org/10.5281/zenodo.15817350)
+*   **Date:** 6 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Causal Instruction Arcs and the Timeless Light Model: A Unified Framework for Physics and Cosmology
+*   **DOI:** [10.5281/zenodo.15813253](https://doi.org/10.5281/zenodo.15813253)
+*   **Date:** 5 July 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Gravitational Waves as Synchronization Events: A Testable Prediction from the Timeless Light Model
+*   **DOI:** [10.5281/zenodo.15770287](https://doi.org/10.5281/zenodo.15770287)
+*   **Date:** 29 June 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Observer-Dependent Spacetime Collapse as a Relational Artifact of the Spacetime Deployment Frame
+*   **DOI:** [10.5281/zenodo.15770329](https://doi.org/10.5281/zenodo.15770329)
+*   **Date:** 29 June 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] On a Postulated Mass-Time Action Principle: A Novel Approach to Quantum Gravity
+*   **DOI:** [10.5281/zenodo.15770207](https://doi.org/10.5281/zenodo.15770207)
+*   **Date:** 29 June 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Mass-Time Invariant: A Causal Reinterpretation of Relativistic Spacetime Conservation Laws
+*   **DOI:** [10.5281/zenodo.15769918](https://doi.org/10.5281/zenodo.15769918)
+*   **Date:** 29 June 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Principle of Delayed Resolution: A Teleological Framework for Unifying Physical Mechanics
+*   **DOI:** [10.2139/ssrn.5310483](https://doi.org/10.2139/ssrn.5310483)
+*   **Date:** 26 June 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] DELAY TO C: A Fundamental Law Unifying Physics — Paper and Video Transcript
+*   **DOI:** [10.5281/zenodo.17392978](https://doi.org/10.5281/zenodo.17392978)
+*   **Date:** 22 June 2025
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
