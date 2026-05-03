@@ -436,7 +436,179 @@ J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset an
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt]{article}
 
+% Encoding and fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Layout
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% Math and theorem environments
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{proposition}{Proposition}
+
+% Bibliography and links
+\usepackage[numbers,sort&compress]{natbib}
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{orcidlink}
+\usepackage{cleveref}
+
+% Header
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Wavefunction Prediction Does Not License a Photon Path}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+
+\title{\textbf{Wavefunction Prediction Does Not License a Photon Path}\\
+\large A Short Interpretive No-Go}
+\author{John C. W. McKinley
+\orcidlink{0009-0005-7097-5035}}
+\date{April 12, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begingroup
+\footnotetext{\scriptsize This version published at \url{https://doi.org/10.5281/zenodo.19504772}.}
+\endgroup
+
+
+\begin{abstract}
+This paper makes one narrow interpretive no-go claim. The mathematical success of
+the wavefunction in predicting lawful absorption outcomes does not license the
+conclusion that a photon follows an intermediate spacetime path between endpoints.
+For the photon, relativistic null structure withholds the ordinary timelike template of
+internal duration, traversed route, and intermediate history. The wavefunction assigns
+amplitudes---mathematical quantities whose combination determines the probabilities of
+observed outcomes---and organizes the lawful structure of absorption events without
+thereby describing where the photon is in between.
+
+\end{abstract}
+
+\section{Introduction}
+
+This paper is narrow by design. It does not revise quantum mechanics, alter quantum field
+theory, or introduce a new dynamical law. It makes a single interpretive claim about what
+may be inferred from wavefunction prediction in the photon case.
+
+The target is not the wavefunction as mathematics. Its predictive success is not in dispute.
+The target is the extra step from successful prediction of lawful absorption outcomes
+to the claim that the formalism thereby tells us where the photon is in between, or what intermediate
+spacetime path it follows between endpoints.
+
+
+That step is not licensed. For the photon, relativistic null structure---the lightlike case
+in relativity, in which no proper time elapses along the path\footnote{\scriptsize See footnote \ref{fn:lightlike}.} and no rest frame exists for
+the photon---withholds the ordinary timelike template of internal duration, traversed route,
+and intermediate history. Prediction of an absorption point is not identification of an
+intermediate photon path.
+
+The same point covers interference, here understood as the patterned enhancement and
+suppression of detector outcomes under fixed experimental conditions. Repeated trials under
+fixed experimental conditions yield stable patterns in localized detector outcomes, and
+standard quantum theory accounts for those patterns through the combination of quantum
+amplitudes. What does not follow is that the lawfully weighted regions in the formalism
+identify where the photon is in between. Lawful outcome structure is not path ontology.
+
+The broader null-case restriction used here has already been developed elsewhere:
+null proper time withholds an internal photon duration
+\cite{McKinleyNullProperTime}, the absence of a rest frame withholds the
+standard persistence template \cite{McKinleyNoRestFrame}, null curves do not
+supply carrier histories \cite{McKinleyNullCurves}, and the minimal structural
+statement of the Timeless Light Model compresses those restrictions into the
+claim that the photon is not a particle in transit \cite{McKinleyBedrock}.
+
+\section{The No-Go}
+
+\begin{proposition}
+The mathematical success of the wavefunction in predicting lawful absorption
+outcomes does not license the conclusion that a photon follows an intermediate spacetime
+path between endpoints.
+\end{proposition}
+
+\begin{proof}
+The wavefunction contributes to the calculation of amplitudes, probabilities, and
+outcome structure. That establishes predictive success. It does not by itself establish that
+the formalism describes where a photon is between emission and absorption.
+
+In the photon case, the added path claim is further blocked by relativistic null structure.
+For a photon, no proper time elapses along the
+null path\footnote{\label{fn:lightlike} \scriptsize A path of this kind has zero spacetime interval, written $ds^2 = 0$, which implies that no proper time elapses along it, written $d\tau = 0$. Here $\tau$ (tau)
+denotes proper time, that is, the time recorded by a clock traveling with the object,
+and $d$ denotes an infinitesimal increment. In relativity, a path with this zero-interval
+character is called \textit{null} or \textit{lightlike}. This is what is meant here by
+\textit{relativistic null structure}. For a photon, it means there is no elapsed internal
+time along the path itself. In that sense, the null case withholds the ordinary timelike
+template of an internally unfolding middle.}, no rest frame is available, and thus the ordinary timelike
+template of internal duration, traversed route, and intermediate history is withheld. There is
+therefore no internally timed or spatially traversed middle for the wavefunction to describe.
+
+The same point covers interference, including approaches in which all
+mathematically allowed routes between endpoints enter the calculation. In such
+approaches, the routes function as terms contributing to the predicted outcome,
+not as trajectories assigned to a persisting physical carrier.
+
+Hence the mathematical success of the wavefunction in predicting lawful absorption
+outcomes does not license the conclusion that a photon follows an intermediate spacetime
+path between endpoints.
+\end{proof}
+
+
+\section{Conclusion}
+
+The result is interpretive clarity. The mathematical success of the wavefunction in
+predicting lawful absorption outcomes does not by itself justify the conclusion that a
+photon follows an intermediate spacetime path between endpoints, because in the photon
+case relativistic null structure already withholds the ordinary timelike template of an
+internally timed and spatially traversed middle.
+
+
+The wavefunction may continue to govern amplitudes, interference structure, and detector
+statistics without being turned into a description of where the photon is in between.
+What is removed is only the unlicensed inference from predictive success to transit ontology.
+
+\begin{thebibliography}{99}
+
+
+\bibitem{McKinleyNullProperTime}
+J.~C.~W.~McKinley,
+\textit{Taking Null Proper Time Seriously: An Interpretive Clarification of Null Proper Time},
+Zenodo (2025).
+DOI: \href{https://doi.org/10.5281/zenodo.18004632}{10.5281/zenodo.18004632}.
+
+\bibitem{McKinleyNoRestFrame}
+J.~C.~W.~McKinley,
+\textit{No Rest Frame, No Persistence: A Kinematic Constraint on Photon Interpretation},
+Zenodo (2025).
+DOI: \href{https://doi.org/10.5281/zenodo.18005884}{10.5281/zenodo.18005884}.
+
+\bibitem{McKinleyNullCurves}
+J.~C.~W.~McKinley,
+\textit{Null Curves Without Carriers: Resolving an Ontological Tension in Relativistic Geometry},
+Zenodo (2025).
+DOI: \href{https://doi.org/10.5281/zenodo.18028886}{10.5281/zenodo.18028886}.
+
+\bibitem{McKinleyBedrock}
+J.~C.~W.~McKinley,
+\textit{A Minimal Structural Statement of the Timeless Light Model},
+Zenodo (2026).
+DOI: \href{https://doi.org/10.5281/zenodo.19167403}{10.5281/zenodo.19167403}.
+
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -451,7 +623,132 @@ J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset an
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,onecolumn]{article}
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm}
+
+
+
+
+
+\usepackage{natbib}
+\usepackage{orcidlink}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage{cleveref}
+\usepackage{fancyhdr}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{Onset and Direction}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\title{\Large\textbf{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain}\\
+\large A Structural No-Go Result}
+\author{John C. W. McKinley\,\orcidlink{0009-0001-0878-8047}}
+\date{7 April 2026}
+
+
+\begin{document}
+\maketitle
+
+
+
+
+\begingroup
+\renewcommand{\thefootnote}{}
+
+\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.19464781}{\color{blue}https://doi.org/10.5281/zenodo.19464781}.}
+ 
+\endgroup
+
+
+\begin{abstract}
+This note states a structural no-go claim. No closed physical system internally fixes both the onset of a new causal chain and the lawful target toward which it proceeds when multiple lawful targets are open. A closed physical description may govern lawful evolution once a process is underway, and it may specify which targets are lawfully available. What it does not by itself supply is a sufficient internal fixing condition that determines both why a new chain begins at one definite moment rather than not yet and why one lawful target is realized rather than another. The purpose of the note is not to add machinery, but to block the mistaken identification of lawful structure with actual fixation.
+\end{abstract}
+
+
+
+\section*{Introduction}
+This note makes explicit a structural distinction that is often blurred: lawful propagation within a closed physical description is not the same as internal fixation of the onset of a new causal chain and the direction it takes. The paper’s target is not lawful evolution as such, but the mistake of treating lawful structure as though it already fixed definite onset and definite direction.
+
+\section*{Statement}
+
+The thesis of this note is simple:
+
+\begin{quote}
+\textbf{Core Thesis.} No closed physical system internally fixes the onset and direction of a new causal chain among multiple lawful possibilities.
+\end{quote}
+
+Let $S(t)$ denote a closed physical state description of a system over some interval. Suppose that, at a definite moment $t^\ast$, a new causal chain begins and that more than one lawful continuation is physically admissible. The claim is that the closed description does not itself fix either the onset of that chain or its realized direction.
+
+\begin{definition}[Closed physical system]
+A \emph{closed physical system} is a system whose description contains only the laws, state-terms, and causal resources internal to the system itself.
+\end{definition}
+
+\begin{definition}[Onset]
+The \emph{onset} of a new causal chain is the definite fact that the chain begins at $t^\ast$ rather than not yet.
+\end{definition}
+
+
+\begin{definition}[Direction]
+The \emph{direction} of a new causal chain is the realized lawful target toward which it proceeds.
+\end{definition}
+
+\begin{proposition}[No-go for internal fixation in closed systems]
+No closed physical system internally fixes the onset and direction of a new causal chain among multiple lawful possibilities.
+\end{proposition}
+
+\begin{proof}
+Assume for contradiction that a closed physical system internally fixes both the onset and the direction of a new causal chain. Then the closed description must contain a sufficient internal fixing condition that determines both why the chain begins at $t^\ast$ rather than not yet and why one lawful continuation is realized rather than another.
+
+That requirement cannot be met in either of the only available ways.
+
+First, if the alleged fixing condition is identified with some prior internal state, differentiation, or lawful structure, then the work of fixation has only been moved earlier. The same question immediately reappears: what internally fixes the relevance of that prior condition, and what internally fixes its realized outcome rather than another? Relocation is not resolution.
+
+Second, if the closed description is said to provide only laws of propagation or a set of admissible continuations, then no sufficient internal fixing condition has been supplied at all. Propagation governs how a chain unfolds once underway. Admissibility specifies what may occur. Neither fixes the definite onset of a new chain or its realized direction.
+
+So the closed description yields either displaced fixation or no fixation. Neither gives internal fixation of both onset and direction. This contradicts the assumption. Therefore no closed physical system internally fixes the onset and direction of a new causal chain among multiple lawful possibilities.
+\end{proof}
+
+\begin{remark}[Propagation is not onset]
+A closed physical description may govern lawful evolution once a chain is underway. That is not the same as fixing the onset of a new chain.
+\end{remark}
+
+\begin{remark}[Admissibility is not direction]
+A closed physical description may specify multiple lawful continuations. That is not the same as fixing which continuation is realized.
+\end{remark}
+
+\begin{remark}[Relocation is not resolution]
+Reassigning the work of fixation to earlier internal structure does not solve the problem. It restates it at an earlier point.
+\end{remark}
+
+\begin{remark}[Scope]
+This note addresses only whether a closed physical description internally fixes the onset and direction of a new causal chain.
+\end{remark}
+
+\section*{Falsifier}
+
+This claim fails only if a closed physical description is exhibited that internally fixes both (i) the onset of a new causal chain and (ii) its realized direction among multiple lawful alternatives, without merely relocating either task to prior internal structure and without reducing the claim to propagation rules or admissibility conditions alone.
+
+\section*{Conclusion}
+
+Closed systems may contain laws, states, and lawful possibilities. That is not yet an internal fixing condition. The claim of the present note is that no closed physical description, taken strictly as closed, internally fixes both the onset and the direction of a new causal chain.
+\end{document}
 ```
 
 </details>
