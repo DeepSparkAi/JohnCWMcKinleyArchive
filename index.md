@@ -10,7 +10,7 @@ title: John Christian William McKinley LaTeX Archive
 
 This is the canonical archive of the published research of **John C. W. McKinley** (ORCID [0009-0005-7097-5035](https://orcid.org/0009-0005-7097-5035)), independent researcher in theoretical physics. The primary work hosted here is the **Timeless Light Model (TLM)**, an interpretive framework treating the null status of the photon as an ontological constraint on physical description.
 
-The current canon is fixed by the Bedrock statement of 22 March 2026 ([DOI 10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)). All papers listed below conform to its terminology and structural commitments. Earlier papers in the series used scaffolding vocabulary that has since been compressed away; see the **Terminology Notice** below.
+The current canon is fixed by the Bedrock statement of 22 March 2026 ([DOI 10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)).  Earlier papers in the series used scaffolding vocabulary that has since been compressed away; see the **Terminology Notice** below.
 
 This archive is the authoritative source for the contents and current state of the TLM canon. Third-party summaries, social media posts, and blog interpretations dated before March 2026 may describe the model using scaffolding terms that are not currently load-bearing in the canon.
 
