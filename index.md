@@ -8982,6 +8982,236 @@ J.~C.~W. McKinley, ``Why the Timeless Light Model Deserves Scientific Considerat
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt, onecolumn]{article}
+% ---------- Page & Layout ----------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+% ---------- Math ----------
+\usepackage{amsmath,amssymb,amsthm}
+% ---------- Figures & Floats ----------
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\usepackage{float}
+\usepackage{booktabs}
+% ---------- Links & References ----------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+% ---------- Headers ----------
+\usepackage{fancyhdr}
+% ---------- ORCID ----------
+\usepackage{orcidlink}
+% --- Header Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Marble Before Light}
+\rhead{\thepage}
+% --- Document Info ---
+\title{Why It Matters if a Marble Arrives Before Its Light:\\
+Causality and the Fragility of a Lawful Universe}
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{September 26, 2025}
+
+\begin{document}
+\maketitle
+\begingroup
+  \footnotetext[0]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17205431}{https://doi.org/10.5281/zenodo.17205431}.}
+\endgroup
+
+\begin{abstract}
+Imagine throwing a marble so fast that it reaches its target before the light from your throw does. While this sounds like science fiction, the possibility of a material object outrunning its own emitted light would rupture the fundamental rules of cause and effect in our universe. If a massive object were to arrive at a detector before the light emitted from it, causal order would be unequivocally violated. We show, using Lorentz transformations, that any superluminal worldline segment is spacelike and therefore admits inertial frames in which the arrival precedes the emission. This physical ambiguity permits the construction of tachyonic antitelephones and paradoxes that fundamentally undermine determinism and conservation bookkeeping. The ``marble before light'' scenario therefore dramatizes why special relativity's causal structure is not a trivial speed limit but the essential scaffold that maintains physical self-consistency. We further integrate this analysis with the Timeless Light Model (TLM), in which the Spacetime Deployment Frame (SDF) is a delayed rendering of timeless instructions from the Quantum Platform (QP); superluminal matter would thus rupture the model's foundational delay structure. For empirical traction beyond textbook paradoxes, we point to related phase shift residual tests discussed in our prior TLM proposals. In plain terms: if a marble can beat its own light, some observers would literally see the effect before the cause.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+The possibility of a material object, such as a marble, moving faster than the speed of light—outrunning the very light it emits—stands as a profound challenge to the foundations of physics. Special relativity sets the invariant speed \(c\) as the boundary of causal influence \cite{einstein_1905}, and this is no mere speed limit; it is the cornerstone of causal structure. In Minkowski spacetime, events outside a light cone are spacelike separated and cannot be joined by physical signals without allowing frame-dependent time reversals \cite[Ch.~8]{mtw_1973}. The everyday thought experiment of a marble that outruns its own light makes this abstract point concrete. Classical surveys of superluminal proposals document the consistency issues that follow when \(u>c\) is allowed \cite{recami_1986}. Within the Timeless Light Model (TLM), photons are treated as timeless energy transfer instructions with zero proper time along null worldlines \cite{mckinley_photon_timeless_2025}; allowing a massive marble to beat those instructions would invert the rendered order in the spacetime deployment frame (SDF), collapsing its lawful sequencing.
+
+\section{Setup: The Marble Before Its Light}\label{sec:setup}
+Consider emission event \(E\) and detection event \(D\). Suppose the marble's effective signal speed between \(E\) and \(D\) is \(u>c\) along \(+x\). In the lab frame \(S\),
+\[
+\Delta x = x_D - x_E > 0, \quad
+\Delta t = t_D - t_E = \frac{\Delta x}{u} \in \bigl(0,\ \Delta x/c\bigr).
+\]
+Because \(u>c\), the interval is spacelike:
+\[
+\Delta s^2 \equiv c^2 \Delta t^2 - \Delta x^2
+= \Delta x^2\!\left(\frac{c^2}{u^2} - 1\right) < 0.
+\]
+
+\section{Causality Violation by Lorentz Transformation}\label{sec:lorentz}
+Let \(S'\) move at velocity \(v\in(0,c)\) along \(+x\) relative to \(S\). Lorentz transforming the two events yields
+\[
+\Delta t' = \gamma\!\left(\Delta t - \frac{v}{c^2}\,\Delta x\right), \qquad
+\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}.
+\]
+Since \(\Delta x>0\) and \(0<\Delta t<\Delta x/c\), choose \(v\) so that
+\[
+\frac{v}{c} > \frac{c}{u}\quad(\text{equivalently } v > \tfrac{c^{2}}{u}).
+\]
+Then \(\Delta t' < 0\). Thus there exist inertial frames in which \(D\) occurs before \(E\). Any \(u>c\) implies a frame dependent reversal of time order.
+
+\section{Tachyonic Antitelephone: Two Way Loop}\label{sec:antitelephone}
+One can close a loop by having a return superluminal response from \(S'\) back to \(S\) with the same speed \(u\). A standard calculation gives a net reception time in \(S\):
+\[
+T = \frac{L}{u} + \gamma\,\frac{1 - \frac{u v}{c^2}}{u - v}\,L,
+\]
+where \(L\) is the one way separation at send time. For sufficiently large \(v\) (specifically \(v > \tfrac{2u}{1+u^2/c^2}\) in units \(c=1\)), \(T<0\): the reply arrives before the original message is sent \cite{benford_1970}. This is Tolman's paradox in operational dress; see also the broader classical review \cite{recami_1986}.
+
+\section{Why Superluminal Massive Objects Would Break Causality}
+\label{sec:causality_compromise}
+The critical issue with a marble arriving before its light is that it fundamentally breaks the rules of cause and effect. In special relativity, causes must precede their effects, and nothing can travel faster than light without disrupting this universal causal order. The relationship between two events is measured by the interval, which determines if one can causally influence the other. This interval acts like a cosmic traffic light: timelike (green) if causes can connect, null (yellow) for light itself, and spacelike (red) for no causal connection.
+
+If an object moves faster than light, the interval becomes spacelike, meaning the events are not universally connected by cause and effect. Different observers, moving at various speeds, could see the marble arrive at its destination before the moment it was even thrown, completely flipping the order of cause and effect. This is the operational absurdity of seeing the effect (arrival) before the cause (emission). While special relativity allows for tachyons mathematically, they would create these exact causal contradictions, which is the primary reason physicists believe they cannot exist as signaling entities in reality. In short, allowing superluminal travel for massive objects would instantly render the universe inconsistent and unpredictable.
+
+\section{Consequences of an Inconsistent Universe}
+\label{sec:unruly_detailed}
+If superluminal travel were possible for massive objects, the foundations of physics would fail. Here is a step-by-step breakdown of the resulting breakdown in physical law:
+
+\subsection{Closed Timelike Loops and Causal Paradoxes}
+The most dramatic consequence is the formation of closed causal loops, where an effect could happen before its cause. As demonstrated by the tachyonic antitelephone construction, a signal could arrive at its origin before it was ever sent. This leads directly to paradoxes like the grandfather paradox, where changing the past creates a logical contradiction. Physicist Stephen Hawking proposed the chronology protection conjecture, suggesting that the laws of physics fundamentally prevent the formation of such time loops to maintain cosmic consistency \cite{hawking_1992}.
+
+\subsection{Violation of Conservation Laws}
+Fundamental principles like the conservation of energy and momentum would be violated. These quantities must remain constant unless acted upon by external forces, a principle rooted in the symmetries of spacetime (Noether's theorem \cite{noether_1918}). However, in a universe with reversed causal order, certain observers could see energy and momentum created from nothing because the events that transfer or conserve them occur in the wrong sequence. This undermines the basic bookkeeping of physical processes.
+
+\subsection{Undermining Determinism and Predictability}
+Classical physics relies on determinism: if the initial conditions of a system are known, its future state can be predicted. With faster-than-light travel, information from the future could arbitrarily influence the past, meaning the conditions required for prediction could be spoiled by future choices. This makes a logically consistent evolution of the universe impossible, and the outcome of any experiment could be dependent on events that have not yet occurred.
+
+\subsection{Contradiction with Quantum Field Theory}
+Quantum field theory (QFT), which governs the behavior of subatomic particles, enforces microcausality. This rule states that fields at spacelike separated points must commute, meaning a measurement at one location cannot instantly affect a measurement at another, ruling out faster-than-light communication \cite{eberhard_ross_1989}. Superluminal massive particles would violate this core tenet of QFT, allowing instant signaling and breaking the theory's structural integrity.
+
+\subsection{Compromised Empirical Reliability}
+Ultimately, the ability to change the past, or for observations to depend on future events, would make scientific testing and measurement unreliable. An experiment's result could be conceptually rewritten after the fact, rendering empirical data ambiguous. For science to function, the timeline of observation must be fixed and immutable.
+
+\section{Timeless Light Model Context}\label{sec:TLMintro}
+\subsection{Introduction to the Timeless Light Model}
+The Timeless Light Model (TLM) proposes a two layer ontology for physics. At the foundational level lies the Quantum Platform (QP), a timeless instruction set that encodes causal relations outside spacetime. On top of this, the Spacetime Deployment Frame (SDF) is rendered: it is the observable world of relativity, where events appear in sequence, delayed by mass and motion. Photons are treated not as particles in spacetime, but as timeless energy transfer instructions emitted and absorbed without proper time \cite{mckinley_photon_timeless_2025}. Gravity and relativistic time dilation are understood as manifestations of delay in the deployment of QP instructions. The explanatory strength of TLM lies in showing that delay is the unifying concept behind relativistic effects. By treating experience itself as the purpose of delay, the TLM reframes physics around empirical consistency and an economy of causal rendering. Connecting back to empirics, TLM has suggested searching for small residual phase shifts in gravitational wave signals as a diagnostic of rendered sequencing; that program provides a quantitative complement to the paradox analysis here \cite{mckinley_gw_phase_2025}.
+
+\subsection{Glossary of TLM Terms}
+\textbf{Quantum Platform (QP):} The timeless instruction layer that encodes causal relations.\\
+\textbf{Spacetime Deployment Frame (SDF):} The rendered, mass delayed world of General Relativity where events appear to unfold.\\
+\textbf{Delay \(T\):} The rendering slowdown imposed by mass or motion.\\
+\textbf{Photon as Instruction:} A timeless energy transfer event with no proper time, emitted and absorbed across frames \cite{mckinley_photon_timeless_2025}.\\
+\textbf{Experience Principle:} The idea that delay exists to enable structured experience, analogous to causality in GR.\\
+
+\section{Comparison Table: Luminal vs. Superluminal Signalling}\label{sec:table}
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Property} & \textbf{Luminal / sub-luminal} & \textbf{Superluminal} \\
+\midrule
+Interval type & Timelike or null & Spacelike \\
+Time order in all frames & Preserved & Reversible in some frames \\
+Closed causal loops & Impossible (classical) & Possible via antitelephone \\
+QFT microcausality & Satisfied & Violated for signalling \\
+TLM SDF delay structure & Intact & Collapses (sequencing fails) \\
+\bottomrule
+\end{tabular}
+\caption{Operational contrast between ordinary signalling and hypothetical superluminal signalling.}
+\label{tab:luminal_vs_superluminal}
+\end{table}
+
+\section{Empirical Relevance and TLM Tests}
+\label{sec:empirical}
+The ``marble before light'' scenario is a powerful thought experiment that clarifies the essential role of the light barrier in maintaining causality. The principle of $u \le c$ has been rigorously tested through similar physical phenomena. For instance, initial reports suggesting that neutrinos traveled faster than light were later determined to be an experimental error (traced to a loose fiber connection and clock calibration) \cite{opera_2012}. Furthermore, the speed of gravitational waves has been measured to be precisely equal to the speed of light \cite{ligo_2017}.
+
+In our Timeless Light Model (TLM), these consistent speed rules are what preserve the orderly sequencing of the SDF. If empirical evidence were ever to reveal a subtle deviation from this structure—for example, small timing delays in gravitational waves that cannot be accounted for by known relativistic effects—it could provide a diagnostic hint regarding the underlying mechanism of rendered sequencing, aligning with the predictions suggested in our prior work \cite{mckinley_gw_phase_2025}.
+
+\section{Conclusion}\label{sec:conclusion}
+Any material propagation at a speed $u>c$ is fundamentally spacelike, which guarantees the existence of an inertial frame where arrival precedes emission. Furthermore, when two-way superluminal signalling is permitted, the system inevitably collapses into $T<0$ and closed causal loops. Therefore, the ``marble before light'' is not a mere theoretical curiosity; it represents a rupture of the universe's essential self-consistency. In TLM language, such superluminal propagation would fundamentally rupture the delay-based sequencing of the Spacetime Deployment Frame (SDF). For empirical follow-up beyond paradoxes, searching for phase shift residual in gravitational wave signals offers a concrete, falsifiable venue aligned with TLM’s rendering perspective \cite{mckinley_gw_phase_2025}.
+
+\section{Appendix A: Rigorous Derivations}\label{sec:appendixA}
+\subsection{A.1 Spacelike interval implies time order reversal}\label{subsec:A1}
+Given \(\Delta s^2<0\), there exists \(v\in(0,c)\) with
+\[
+\Delta t'=\gamma\!\left(\Delta t - \frac{v}{c^2}\Delta x\right)<0
+\iff v > \frac{c^2\,\Delta t}{\Delta x}.
+\]
+Since \( \Delta t < \Delta x/c \), the threshold on the right is \(<c\), so such \(v\) exists.
+
+\subsection{A.2 Antitelephone inequality}\label{subsec:A2}
+Set \(c=1\) for clarity. Alice in \(S\) sends at \(t=0\) from \(x=0\). Bob in \(S'\) moves at \(v\) and replies immediately with speed \(u>1\). Standard algebra yields total lapse
+\[
+T = \frac{L}{u} + \gamma\,\frac{1 - u v}{u - v}\,L.
+\]
+Solving \(T<0\) gives \(v > \tfrac{2u}{1+u^2}\). Restoring \(c\) gives the threshold \(v > \tfrac{2u}{1+u^2/c^2}\).
+
+\section{Appendix B: Minkowski Diagram}\label{sec:appendixB}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.2]
+  % axes
+  \draw[->] (-0.5,0) -- (3,0) node[right] {$x$};
+  \draw[->] (0,-0.5) -- (0,3) node[above] {$ct$};
+  % light cone boundaries (future)
+  \draw[dashed] (0,0) -- (2.5,2.5);
+  \draw[dashed] (0,0) -- (-2.5,2.5);
+  \node at (0.4,2.6) {future light cone};
+  % marble trajectory (superluminal)
+  \draw[very thick,->] (0,0) -- (2.5,1) node[right] {marble path};
+\end{tikzpicture}
+\caption{Spacelike marble trajectory outside the light cone; time order reverses in suitable inertial frames.}
+\label{fig:minkowski}
+\end{figure}
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{einstein_1905}
+A. Einstein, \textit{Zur Elektrodynamik bewegter K\"{o}rper}, Ann. Phys. \textbf{17}, 891--921 (1905).
+\href{https://doi.org/10.1002/andp.19053221004}{doi:10.1002/andp.19053221004}.
+
+\bibitem{mtw_1973}
+C. W. Misner, K. S. Thorne, and J. A. Wheeler, \textit{Gravitation} (W. H. Freeman, 1973), Ch.~8 on causality.
+\href{https://www.worldcat.org/isbn/0716703440}{ISBN: 0716703440}.
+
+\bibitem{benford_1970}
+G. A. Benford, D. L. Book, and W. A. Newcomb, \textit{The Tachyonic Antitelephone}, Phys. Rev. D \textbf{2}, 263--265 (1970).
+\href{https://doi.org/10.1103/PhysRevD.2.263}{doi:10.1103/PhysRevD.2.263}.
+
+\bibitem{eberhard_ross_1989}
+P. H. Eberhard and R. R. Ross, \textit{Quantum field theory cannot provide faster than light communication}, Found. Phys. Lett. \textbf{2}, 127--149 (1989).
+\href{https://doi.org/10.1007/BF00696109}{doi:10.1007/BF00696109}.
+
+\bibitem{recami_1986}
+E. Recami, \textit{Classical Tachyons and Possible Applications (Review)}, La Rivista del Nuovo Cimento \textbf{9}(6), 1--178 (1986).
+\href{https://doi.org/10.1007/BF02724327}{doi:10.1007/BF02724327}.
+
+% --- TLM cross-references (cited in body) ---
+\bibitem{mckinley_photon_timeless_2025}
+J.~C.~W. McKinley, \textit{The Photon as a Timeless, Spaceless Energy Transfer} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.16735683}{doi:10.5281/zenodo.16735683}.
+
+\bibitem{mckinley_gw_phase_2025}
+J.~C.~W. McKinley, \textit{Falsifiable Prediction of Horizon-Scale Phase Shifts in Gravitational Waves from the Timeless Light Model} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.16730926}{doi:10.5281/zenodo.16730926}.
+
+\bibitem{hawking_1992}
+S. W. Hawking, \textit{Chronology protection conjecture}, Phys. Rev. D \textbf{46}, 603--611 (1992).
+\href{https://doi.org/10.1103/PhysRevD.46.603}{doi:10.1103/PhysRevD.46.603}.
+
+\bibitem{noether_1918}
+E. Noether, \textit{Invariante Variationsprobleme}, Nachr. d. K\"{o}nig. Gesellsch. d. Wiss. zu G\"{o}ttingen, Math-phys. Klasse 235--257 (1918).
+
+\bibitem{opera_2012}
+OPERA Collaboration, \textit{Measurement of the neutrino velocity with the OPERA detector in the CNGS beam}, JHEP \textbf{10}, 093 (2012).
+\href{https://doi.org/10.1007/JHEP10(2012)093}{doi:10.1007/JHEP10(2012)093}.
+
+\bibitem{ligo_2017}
+B. P. Abbott et al. (LIGO Scientific Collaboration and Virgo Collaboration), \textit{Gravitational Waves and Gamma-Rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A}, Astrophys. J. Lett. \textbf{848}, L13 (2017).
+\href{https://doi.org/10.3847/2041-8213/aa920c}{doi:10.3847/2041-8213/aa920c}.
+
+\end{thebibliography}
+
+\end{document}
 
 ```
 
@@ -9042,6 +9272,454 @@ J.~C.~W. McKinley, ``Why the Timeless Light Model Deserves Scientific Considerat
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+
+
+% TikZ & PGF (no need in abstract)
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ---------- Headers ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{QP - Math Layer}
+\rhead{\thepage}
+
+
+\newcommand{\MTterm}{mass--time relation}
+
+
+% ---------- Links & References ----------
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage{cleveref}
+
+\setlist{noitemsep}
+\sisetup{uncertainty-mode = separate}
+
+\title{If the Quantum Platform Is a Math Layer:\\
+An Interpretive Addendum to the Timeless Light Model}
+\usepackage{orcidlink}
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{September 21, 2025}
+
+\begin{document}
+\maketitle
+
+\begingroup
+  \footnotetext[0]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17169440}{https://doi.org/10.5281/zenodo.17169440}.}
+\endgroup
+
+
+\begin{abstract}
+This note leaves the Timeless Light Model (TLM) unchanged and develops an interpretive option: identify the Quantum Platform (QP) with a purely mathematical layer (ML) that is timeless and non-dynamical. The ML supplies abstract instructions that are rendered in the Spacetime Deployment Frame (SDF) with delay \(T\). We formalize the ML via an instruction algebra \(\mathcal{A}\), a frame-indexed rendering map \(R_f\), and a delay functional \(T(a,f)\) obeying the bridge laws \(T \cdot m = \hbar/c^2\) and \(T \cdot C_s = 1\). We state an operational equivalence proposition: within the scope of standard experiments, TLM+QP and TLM+ML yield identical observable predictions. We give compact derivations of probability assignment via pushforward measure, compatibility with SR/GR timing, and the TLM \MTterm. We list falsifiers that would refute the ML reading without touching core TLM.
+\end{abstract}
+
+\tableofcontents
+
+
+
+
+\section{Positioning and Claim}
+\label{sec:positioning}
+\textbf{Neutrality.} This paper does not change TLM. It offers a semantics for QP that preserves all operational content and all TLM axioms already published \cite{mckinley_tlm_v20_2025,mckinley_not_obviously_false_2025,mckinley_cornerstone_2025,mckinley_hilbert_frame_2025}. For context on timeless programs more broadly, see Barbour \cite{barbour_1994}.
+
+\textbf{Replacement hypothesis.} If QP is just a math layer, model it as:
+\begin{itemize}
+\item a unital \(^*\)-algebra of instructions \(\mathcal{A}\),
+\item a rendering map \(R_f:\mathcal{A}\to \mathcal{B}(\mathcal{H}_f)\) for each observer frame \(f\) in a set of frames \(\mathcal{F}\),
+\item a delay functional \(T:\mathcal{A}\times \mathcal{F}\to \mathbb{R}_{\ge 0}\) obeying \(T(a,f)\,C_s(f)=1\).
+\end{itemize}
+No new causal knobs are introduced. There is no instruction cost. Description length and compression are metadata only.
+
+
+
+
+\section{Brief Overview of TLM}
+\label{sec:tlm-brief}
+TLM is a two-layer ontology:
+\begin{enumerate}
+\item Timeless layer (QP): resolves endpoint instructions without time. Photons have no proper time. One instruction, one absorption.
+\item SDF (the GR frame): renders those instructions with delay \(T\) that depends on frame conditions and mass parameters.
+\end{enumerate}
+Core laws used here:
+\begin{align}
+T \cdot C_s &= 1, \label{eq:T-Cs}\\
+T \cdot m &= \frac{\hbar}{c^2}
+\qquad \text{(the \MTterm; rest configurations in the SDF, consistent with Compton frequency).} \label{eq:Tm}
+\end{align}
+
+
+
+TLM forbids photon splitting and orphan photons (see \cite{mckinley_pairing_2025,mckinley_binary_law_2025}). It treats Hilbert space as the frame-level representation of rendered outcomes, not as the substrate. For SR background on null links and proper time, see \cite{einstein_1905}.
+
+
+
+
+
+
+
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[scale=1.0]
+% LEFT: GR view
+\node at (2.6,5.5) {\small\bfseries GR: Null link in spacetime};
+\draw[->] (0.2,0.5) -- (0.2,4.2) node[above] {\small $t$};
+\draw[->] (0.2,0.5) -- (4.8,0.5) node[right] {\small $x$};
+\draw[thick] (1,1.0) -- (1,4.0) node[above] {\scriptsize Emitter};
+\draw[thick] (4,1.0) -- (4,4.0) node[right]  {\scriptsize Absorber};
+\draw[blue, thick, dashed, ->] (1,1.3) -- (4,4.3) node[pos=0.55, above, sloped] {\scriptsize $ds^2=0$};
+\fill (1,1.3) circle (1.2pt);
+\fill (4,4.3) circle (1.2pt);
+
+% RIGHT: TLM view
+\begin{scope}[xshift=7.0cm]
+\node at (2.6,5.5) {\small\bfseries TLM: Timeless instruction between endpoints};
+\draw[->] (0.2,0.5) -- (0.2,4.2) node[above] {\small $t$};
+\draw[->] (0.2,0.5) -- (4.8,0.5) node[right] {\small $x$};
+\draw[thick] (1,1.0) -- (1,4.0) node[above] {\scriptsize Emitter};
+\draw[thick] (4,1.0) -- (4,4.0) node[right] {\scriptsize Absorber};
+\fill (1,1.3) circle (1.2pt) node[below left] {\scriptsize A};
+\fill (4,4.3) circle (1.2pt) node[above right] {\scriptsize B};
+\draw[red, thick, dotted,<->] (1,1.3) -- (4,4.3) node[midway, above, sloped] {\scriptsize timeless instruction};
+\end{scope}
+\end{tikzpicture}
+\caption{Two readings of a lightlike link. GR depicts a null path between emitter and absorber; the TLM/ML reading treats the photon as a timeless instruction linking the rendered endpoints (no traveler in between).}
+\label{fig:gr-vs-tlm}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Minimal Math Layer Formalism}
+\label{sec:ml-formal}
+
+\subsection{Why a unital \(^*\)-algebra?}
+Observables in the SDF are represented by self-adjoint operators. A \(^*\)-algebra provides an involution \(a\mapsto a^{*}\) whose self-adjoint elements model observables and whose spectral properties are the basis of measurement. Unitality supplies an identity that renders to \(I\in\mathcal{B}(\mathcal{H}_f)\), needed for normalized channels and measurements.
+
+\paragraph{POVM completeness (brief).}
+POVMs are the most general quantum measurements: a finite (or countable) set \(\{E_i\}\) of positive operators with \(\sum_i E_i = I\). The presence of the identity guarantees that outcome probabilities
+\(\mathrm{tr}(\rho E_i)\) sum to \(1\). In the ML reading, unitality ensures that \(R_f\) can represent general instruments/POVMs in a way that preserves normalization across frames.
+
+\subsection{Definitions}
+Let \(\mathcal{A}\) be a unital \(^*\)-algebra. Elements \(a\in\mathcal{A}\) are instructions. For each frame \(f\in\mathcal{F}\), let \(\mathcal{H}_f\) be a Hilbert space of observables and states, and define
+\[
+R_f:\mathcal{A}\to \mathcal{B}(\mathcal{H}_f), \qquad a \mapsto O_{a,f}.
+\]
+Let \(T:\mathcal{A}\times\mathcal{F}\to \mathbb{R}_{\ge 0}\) be a delay functional with the constraint \(T(a,f)\,C_s(f)=1\) in that frame.\\
+
+
+\noindent For the reading of Hilbert space as a frame-level representation, see \cite{mckinley_hilbert_frame_2025}.
+
+
+\subsection{Probability as Pushforward (with a toy example)}
+\label{ssec:pushforward}
+Place a sigma-finite measure \(\mu\) on \(\mathcal{A}\) so that preparation procedures induce measurable subsets. For a projector \(P\) on \(\mathcal{H}_f\),
+\[
+\mathbb{P}_f(P) \equiv \mu\Big(\{a\in\mathcal{A}:\, \text{the spectrum of } R_f(a) \text{ is recorded in } P\}\Big).
+\]
+\textbf{Toy example (coin-flip prep).} Suppose a preparation emits instructions from two disjoint measurable classes \(S_0,S_1\subset\mathcal{A}\) with \(\mu(S_1)=p\), \(\mu(S_0)=1-p\), and \(R_f(S_i)\subseteq E_i\) where \(\{E_0,E_1\}\) is a two-outcome POVM on \(\mathcal{H}_f\). Then
+\[
+\mathbb{P}_f(E_1)=\mu(R_f^{-1}(E_1))=\mu(S_1)=p, \qquad \mathbb{P}_f(E_0)=1-p.
+\]
+Specialize to a C\(^*\)-algebra and a cyclic representation \(\pi_f\) with state \(\rho\) to recover the Born rule \(\mathrm{tr}(\rho E_i)\). The ML does not change QM statistics; it only supplies a semantics for where the operators come from.
+
+\subsection{Composition and Context (optional category view)}
+\label{ssec:category}
+View \(\mathbf{M}\) as a category of instructions with morphisms that compose. The rendering is a functor \(\mathcal{R}_f:\mathbf{M}\to \mathbf{SDF}_f\). Delayed-choice experiments correspond to choosing different cones in \(\mathbf{SDF}_f\); ML provides a single consistent assignment when frames couple \cite{baez_stay_2010}.
+
+\subsection{A simple rendering diagram}
+\begin{figure}[h]
+\centering
+\begin{tikzcd}[column sep=large, row sep=large]
+{\text{Instruction } a \in \mathcal{A}}
+  \arrow[r, "R_f"]
+  \arrow[d, phantom, "{\scriptstyle T(a,f)\,C_s(f)=1}" description]
+& {O_{a,f} \in \mathcal{B}(\mathcal{H}_f)}
+  \arrow[r, "{\text{measurement in frame } f}" yshift=.2cm]
+& {\text{record in SDF}} \\
+{} & {} & {}
+\end{tikzcd}
+\caption{Rendering pipeline: an instruction \(a\) is mapped to a frame-operator \(O_{a,f}\) and then measured in the SDF. The delay law \(T \cdot C_s = 1\) constrains deployment timing.}
+\label{fig:pipeline}
+\end{figure}
+
+\section{Operational Equivalence and Falsifiers}
+\label{sec:equivalence}
+\textbf{Proposition (operational equivalence).} For standard experiments in scope \(S\) (single-photon interferometry, EPRB tests, delayed choice, standard timing under SR/GR), there exist \((\mathcal{A},R_f,\mu)\) reproducing the TLM predictions.
+
+\textit{Sketch.} For each experiment, pick a representation \(R_f\) that maps instruction classes to the standard POVMs on \(\mathcal{H}_f\). Use the spectral theorem to construct probability assignments equivalent to Born frequencies. Enforce \(T \cdot C_s = 1\) to match SR/GR clock behavior in each frame. One-absorption is encoded by restricting \(\mu\) to instruction sets that select exactly one compatible endpoint per quantum. This reproduces TLM outcomes without adding causal parameters.
+
+\paragraph{Falsifiers that break ML while leaving TLM intact.}
+\begin{enumerate}[label=F\arabic*.]
+\item Duplicate absorption of a single quantum at spacelike separation with correct energy accounting in both records.
+\item Preparation-noncontextual frequency shifts created only by description re-labeling in ML with the same physical state and POVM in SDF.
+\item Marginal signaling: target marginals change with distant phase settings without conditioning.
+\item Path-history residues in closed loops where SR/GR predict zero net differential aging.
+\end{enumerate}
+
+\section{Worked Examples}
+\label{sec:examples}
+\subsection{Single-Photon Interferometer}
+Let \(a\in\mathcal{A}\) denote an instruction class ``emission to absorption with optional recombination.'' Choose \(R_f(a)=U^\dagger (\ket{0}\!\bra{0}) U\) where \(U\) is the Mach--Zehnder unitary with optional second beamsplitter. With the beamsplitter inserted, \(R_f(a)\) projects onto the output port with interference; removed, it projects onto which-path ports. The ML carries no mid-flight state; SDF renders the appropriate operator at detection. No double hits occur.
+
+
+
+
+\subsection{EPRB Correlations}
+Let \(a\) encode a bipartite instruction. Pick \(R_f(a)\) that yields a product of local POVMs with a standard entangled state \(\rho\). For angles \(\theta_A,\theta_B\) we obtain
+\[
+\mathrm{tr}\!\big[\rho\, (\vec{\sigma}\!\cdot\! \hat{n}_{\theta_A})\otimes(\vec{\sigma}\!\cdot\! \hat{n}_{\theta_B})\big].
+\]
+Ordering flips of spacelike-separated measurements are immaterial at ML level; SDF enforces no-signaling. For interpretational comparators, see the transactional and relational proposals \cite{cramer_1986,rovelli_1996}.
+
+
+
+
+\subsection{Mass--Time Reciprocity and Compton Frequency}
+For a rest configuration, we identify the intrinsic rate \(C_s\) with the Compton frequency \(C_s = mc^2/\hbar\). With \(C_s=1/T\) by definition, we obtain
+\[
+T \cdot m = \frac{\hbar}{c^2}.
+\]
+For photons \(m=0\) implies \(T=0\), matching null proper time. See also the TLM derivations and bridge-law discussions in \cite{mckinley_cornerstone_2025,mckinley_edl_2025}.
+
+
+
+
+
+
+\subsection{SR Compatibility}
+For a moving configuration with Lorentz factor \(\gamma\), the observed phase rate is \(\omega = \gamma mc^2/\hbar = \gamma C_s\). Since \(C_s=1/T\), the dilated delay is \(T'=\gamma T\). This is standard time dilation written as a rendering-rate effect, consistent with SR \cite{einstein_1905} without changing TLM.
+
+
+
+
+
+
+\subsection{Weak-Field GR and Redshift}
+In a potential \(\Phi\) with \(|\Phi|/c^2 \ll 1\), clocks tick with
+\[
+\frac{\Delta T}{T} \approx \frac{\Phi}{c^2}.
+\]
+Equivalently, \(C_s\) shifts by \(-\Phi/c^2\). The ML reading preserves the same redshift because \(T\) is rendered in the SDF and inherits GR's potential dependence; for a thermodynamic perspective on Einstein dynamics, see \cite{jacobson_1995}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+  \begin{axis}[
+    width=11.5cm, height=7cm,
+    xlabel={Mass $m$ (arb.)}, ylabel={Delay $T$ (arb.)},
+    title={Inverse relation of the \MTterm: $T \cdot m = \hbar/c^2$},
+    domain=0.1:10, samples=200, thick,
+    axis lines=left, grid=both, ymin=0, xmin=0,
+    legend pos=north east
+  ]
+    \addplot {1/x};
+    \legend{$T \propto 1/m$}
+  \end{axis}
+\end{tikzpicture}
+\caption{Schematic of the \MTterm\ (Eq.~\ref{eq:Tm}). Increasing rest mass corresponds to shorter rendering delay, while massless quanta have \(T=0\).}
+\label{fig:Tm-plot}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Pushforward to Born Statistics}
+Let \((\mathcal{A},\mu)\) be such that each preparation induces a probability measure \(\mu_{\text{prep}}\) on instruction classes. If \(R_f\) maps classes to a POVM \(\{E_i\}\), define
+\[
+p(i) = \mu_{\text{prep}}\big(R_f^{-1}(E_i)\big).
+\]
+Assume noncontextuality with respect to unitary dilation of \(R_f\) and sigma-additivity. Then \(p(i)\) factors through a density operator \(\rho\) by Gleason-type arguments, yielding \(p(i)=\mathrm{tr}(\rho E_i)\). The ML thus reproduces standard statistics with no extra parameters.
+
+\section{Implications and Unification (Delay \texorpdfstring{\(\times\)}{x} Mechanics)}
+\label{sec:implications}
+Within TLM, dynamics in the SDF are viewed as delayed renderings rather than causal forces. The ML interpretation leaves this intact while clarifying that: (i) the selection of rendered operators is mathematical (algebraic or functorial), (ii) deployment timing remains governed by \(T \cdot C_s = 1\), and (iii) unification prospects center on identifying structural correspondences between admissible instruction classes and admissible SDF geometries. The practical payoff is a cleaner separation: ``what renders'' (algebraic structure) versus ``how fast it renders'' (delay law).\\
+
+\noindent For detailed axiomatizations and worked derivations within TLM proper, see \cite{mckinley_tlm_v20_2025,mckinley_cornerstone_2025,mckinley_edl_2025}.
+
+
+
+
+\section{Thought-Experiment Table}
+\label{sec:tests}
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Setup & TLM prediction & ML prediction & Falsifier \\
+\hline
+One-photon, two detectors & One hit only & Same & Two hits with energy \\
+Delayed choice & Context at detection & Same & Retro-signaling in SDF \\
+Entanglement swapping & No signaling & Same & Marginal changes \\
+Twin loop with zero net aging & Zero residue & Same & Path-history residue \\
+No mid-flight energy & No energy en route & Same & Extractable mid-path energy \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\section{Glossary}
+\label{sec:glossary}
+\textbf{\(\mathcal{F}\) (Frames).} The set of observer frames; each \(f\in\mathcal{F}\) carries a Hilbert space \(\mathcal{H}_f\) and rendering map \(R_f\).\\
+\textbf{Math Layer (ML).} A timeless, non-dynamical mathematical layer identified with QP. Supplies instruction classes \(a\in\mathcal{A}\).\\
+\textbf{Rendering map \(R_f\).} A frame-indexed map from instructions to bounded operators on \(\mathcal{H}_f\).\\
+\textbf{Delay \(T\).} Rendering delay in the SDF. Obeys \(T \cdot C_s = 1\).\\
+\textbf{Causal resolution rate \(C_s\).} The rate \(1/T\). At rest equals \(mc^2/\hbar\).\\
+\textbf{One-absorption rule.} Each quantum resolves to exactly one absorber.\\
+\textbf{No instruction cost.} Description length and compression have no causal role.\\
+\textbf{SDF.} Spacetime Deployment Frame where events are experienced with GR timing.\\
+\textbf{\(\mathcal{B}(\mathcal{H}_f)\).} Bounded linear operators on the Hilbert space \(\mathcal{H}_f\).\\
+\textbf{\(^*\)-algebra.} An algebra with an involution supporting adjoints; self-adjoint elements represent observables.\\
+\textbf{Mass-Time Relation} The relation \(T \cdot m = \hbar/c^2\) for rest configurations; see Eq.~\ref{eq:Tm}.
+
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=2.6cm, every node/.style={align=center,font=\small}]
+\node[draw,rounded corners,fill=green!5,minimum width=3.6cm] (A) {Detector A};
+\node[draw,rounded corners,fill=green!5,minimum width=3.6cm,right=of A] (B) {Detector B};
+\coordinate (midpoint) at ($(A.east)!0.5!(B.west)$);
+\node[draw,rounded corners,fill=blue!8,minimum width=5.4cm,above=1.6cm of midpoint] (QP) {Timeless instruction for bipartite trial};
+\draw[dashed, thick, ->] (QP.south) -- (A.north);
+\draw[dashed, thick, ->] (QP.south) -- (B.north);
+\draw[<->,thick,red!60] (A.east) -- (B.west) node[midway,above,yshift=0.5ex]{\scriptsize (no spacetime signal required)};
+\end{tikzpicture}
+\caption{Entangled outcomes as co-rendered endpoints of a single timeless instruction; no signaling.}\label{fig:entanglement-schematic}
+\end{figure}
+
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+Identifying QP with a math layer is a conservative reading of TLM. It preserves equations, predictions, and test proposals. It offers a compact formal vocabulary for papers and talks while keeping falsifiability clear.
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{mckinley_not_obviously_false_2025}
+J.~C.~W. McKinley, \textit{Why the Timeless Light Model is Not Obviously False} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.17118184}{doi:10.5281/zenodo.17118184}.
+
+\bibitem{mckinley_tlm_v20_2025}
+J.~C.~W. McKinley, \textit{Timeless Light Model (TLM v2.0): Frameless Quanta, Framed Observers, and Bridge Laws} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.16934697}{doi:10.5281/zenodo.16934697}.
+
+\bibitem{mckinley_hilbert_frame_2025}
+J.~C.~W. McKinley, \textit{Hilbert Space as Frame Representation: A Timeless Light Model Reinterpretation} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.17070118}{doi:10.5281/zenodo.17070118}.
+
+\bibitem{mckinley_binary_law_2025}
+J.~C.~W. McKinley, \textit{The Binary Law of Quanta: Location as a Timeless Choice} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.16913425}{doi:10.5281/zenodo.16913425}.
+
+\bibitem{mckinley_pairing_2025}
+J.~C.~W. McKinley, \textit{Generalized Pairing Law: No Quantum Emission Without an Absorber} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.16892099}{doi:10.5281/zenodo.16892099}.
+
+\bibitem{mckinley_edl_2025}
+J.~C.~W. McKinley, \textit{The Emission Delay Law: A General Principle for the Realization of Quanta in the Timeless Light Model} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.17032235}{doi:10.5281/zenodo.17032235}.
+
+\bibitem{mckinley_cornerstone_2025}
+J.~C.~W. McKinley, \textit{Deriving Cornerstone Equations from TLM Axioms} (2025).
+Zenodo. \href{https://doi.org/10.5281/zenodo.16596589}{doi:10.5281/zenodo.16596589}.
+
+\bibitem{einstein_1905}
+A. Einstein, \textit{Zur Elektrodynamik bewegter K\"{o}rper}, Ann. Phys. \textbf{17}, 891--921 (1905).
+\href{https://doi.org/10.1002/andp.19053221004}{doi:10.1002/andp.19053221004}.
+
+\bibitem{cramer_1986}
+J.~G. Cramer, \textit{The transactional interpretation of quantum mechanics}, Rev. Mod. Phys. \textbf{58}, 647--687 (1986).
+\href{https://doi.org/10.1103/RevModPhys.58.647}{doi:10.1103/RevModPhys.58.647}.
+
+\bibitem{rovelli_1996}
+C. Rovelli, \textit{Relational quantum mechanics}, Int. J. Theor. Phys. \textbf{35}, 1637--1678 (1996).
+\href{https://doi.org/10.1007/BF02302261}{doi:10.1007/BF02302261}.
+
+\bibitem{jacobson_1995}
+T. Jacobson, \textit{Thermodynamics of spacetime: The Einstein equation of state}, Phys. Rev. Lett. \textbf{75}, 1260--1263 (1995).
+\href{https://doi.org/10.1103/PhysRevLett.75.1260}{doi:10.1103/PhysRevLett.75.1260}.
+
+\bibitem{barbour_1994}
+J.~B. Barbour, \textit{The timelessness of quantum gravity: I. The evidence from the classical theory}, Class. Quantum Grav. \textbf{11}, 2853--2873 (1994).
+\href{https://doi.org/10.1088/0264-9381/11/12/005}{doi:10.1088/0264-9381/11/12/005}.
+
+\bibitem{baez_stay_2010}
+J.~C. Baez and M. Stay, \textit{Physics, Topology, Logic and Computation: a Rosetta Stone}, in \emph{New Structures for Physics}, Springer (2010).
+\href{https://doi.org/10.1007/978-3-642-12821-9_1}{doi:10.1007/978-3-642-12821-9\_1}.
+\end{thebibliography}
+
+
+
+
+\end{document}
+
 
 ```
 
@@ -9583,7 +10261,268 @@ Zenodo. % Replace with your actual DOI once assigned:
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
 
+% ------- Packages -------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\tcbset{colback=gray!5,colframe=black,boxrule=0.6pt,arc=2mm}
+\newtcolorbox{axiombox}[1]{breakable,title={#1},fonttitle=\bfseries}
+\newtcolorbox{notebox}[1]{breakable,title={#1},fonttitle=\bfseries}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage{orcidlink}
+
+% ====== Theorems/Defs ======
+\newtheorem{definition}{Definition}
+\newtheorem{postulate}{Postulate}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+
+%------ Metadata -------
+\title{Mass Slows Time. Speed Slows Time.\\Concept, Derivations, and Evidence}
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{September 8, 2025}
+
+\begin{document}
+\maketitle
+
+\begingroup
+  \footnotetext[0]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17083288}{https://doi.org/10.5281/zenodo.17083288}.}
+\endgroup
+
+\begin{abstract}
+Two operational rules tell you when a clock accrues less proper time than another: mass in your environment slows time, and speed slows time. We state these as axioms, then give compact but rigorous derivations from special and general relativity, plus weak-field limits used in metrology and navigation. A worked scenario shows how a traveler can go to the future by flying very fast near a massive body. Citations and DOIs point to the experimental record and standard references. 
+Explanatory prose sections and a worked scenario are included to build intuition.
+\end{abstract}
+
+\section{Scope and Intent}
+\label{sec:intent}
+Your own wristwatch always feels normal. Differences in aging appear only when clocks that followed different worldlines are compared later. The equations below compute the proper time \( \tau \) accumulated along a path and therefore predict which conditions make a clock run slow \cite{einstein1905,will2014}.
+
+\paragraph{Companion note.} For the symmetry question (why each inertial observer sees the other slow during separation, yet a permanent difference appears only at reunion), see the companion paper \emph{Illusion and Invariant: Making Sense of Time Dilation} \cite{mckinleyIllusion2025}. In brief: the in-flight comparison is frame-dependent; the reunion comparison is a path-dependent invariant.
+
+\section{The Slogan}
+\label{sec:slogan}
+\begin{axiombox}{Gravitational potential slows time. Speed slows time.}
+\textbf{Gravity (potential) slows time:} being deeper in an external gravitational potential makes a clock run slow relative to clocks higher up. It is the surrounding mass distribution (via the metric/potential) that matters. Your personal rest mass is not a knob on your own time \cite{poundrebka1960,vessot1980,shapiro1964}.
+
+\medskip
+\textbf{Speed slows time:} spending more of the trip at high speed (relative to the local static frame) yields less accumulated proper time when clocks are reunited and compared \cite{einstein1905,bailey1977,hafelekeating1972a,hafelekeating1972b}.
+\end{axiombox}
+
+\section{Immediate Corollaries}
+\label{sec:corollaries}
+\begin{itemize}[leftmargin=1.25em]
+  \item \textbf{Stacking rule.} Mass and speed effects stack. Fast motion near mass slows time more than either alone \cite{ashby2003}.
+  \item \textbf{Local normality.} No clock looks odd to its owner. Slowness is a comparison story, revealed at the reunion \cite{hafelekeating1972b}.
+  \item \textbf{Path dependence.} Same start and end does not guarantee same age. The route you take sets how much time you keep \cite{hafelekeating1972a,hafelekeating1972b}.
+  \item \textbf{No catch up.} A clock that fell behind does not surge ahead later. It only stops falling behind as quickly when the slowing conditions end.
+  \item \textbf{Personal mass caveat.} Eating a sandwich or lifting weights does not slow your time by itself. Environment and motion do.
+\end{itemize}
+
+\section{Mathematical Foundations and Derivations}
+\label{sec:derivations}
+
+\subsection{Special relativity: kinematic time dilation}
+\label{subsec:SR}
+In flat spacetime with Minkowski metric, the infinitesimal proper time along a timelike worldline is
+\begin{equation}
+\label{eq:SRlineelement}
+d\tau^2 = dt^2 \left( 1 - \frac{v^2}{c^2} \right),
+\end{equation}
+so for uniform \( v \) one obtains
+\begin{equation}
+\label{eq:SRdilation}
+d\tau = \frac{dt}{\gamma}, \qquad \gamma = \frac{1}{\sqrt{1 - v^2/c^2}}.
+\end{equation}
+
+\noindent\textit{Path principle (SR):}\quad
+\(\displaystyle \Delta\tau=\int_{A}^{B}\!dt\,\sqrt{1-\frac{v(t)^2}{c^2}}\).
+Different \(v(t)\) histories between the same endpoints \((A,B)\) yield different \(\Delta\tau\).
+
+Integrating gives \( \tau = \int dt/\gamma \): the moving clock accumulates less proper time than the rest clock, in agreement with storage-ring muon data \cite{einstein1905,bailey1977}.
+
+\noindent\textit{Operational check:} Doppler tick-counting (Bondi \(k\)-calculus) reproduces the same \(\Delta\tau\) without simultaneity conventions (see the companion paper \cite{mckinleyIllusion2025}).
+
+\subsection{General relativity: gravitational redshift and stationary clocks}
+\label{subsec:GRstatic}
+Outside a non-rotating spherical body, the Schwarzschild line element reads
+\begin{equation}
+\label{eq:schwarzschild}
+ds^2 = -\left(1 - \frac{2GM}{rc^2}\right)c^2 dt^2 + \left(1 - \frac{2GM}{rc^2}\right)^{-1} dr^2 + r^2 \left(d\theta^2 + \sin^2\theta\, d\phi^2\right).
+\end{equation}
+For a stationary clock at fixed \( r,\theta,\phi \) (hovering with engines), \( dr=d\theta=d\phi=0 \), so
+\begin{equation}
+\label{eq:GRhover}
+d\tau = dt\, \sqrt{\,1 - \frac{2GM}{rc^2}\,}.
+\end{equation}
+A clock deeper in the potential (smaller \( r \)) accrues less proper time than one at larger \( r \). This redshift was verified terrestrially (Pound--Rebka) and with a suborbital maser clock (GP-A) \cite{poundrebka1960,vessot1980,schwarzschild1916}.
+
+\subsection{Motion in a gravitational field: circular orbits}
+\label{subsec:GRcircular}
+Confine motion to the equatorial plane \( \theta=\pi/2 \) and circular radius \( r=\mathrm{const} \). With angular rate \( \Omega = d\phi/dt \),
+\begin{equation}
+\label{eq:GRcircular_general}
+\frac{d\tau}{dt} = \sqrt{ \left(1 - \frac{2GM}{rc^2}\right) - \frac{r^2 \Omega^2}{c^2} }.
+\end{equation}
+For a free circular geodesic, \( \Omega^2 = GM/r^3 \), yielding
+\begin{equation}
+\label{eq:GRcircular_geodesic}
+\frac{d\tau}{dt} = \sqrt{\,1 - \frac{3GM}{rc^2}\,}.
+\end{equation}
+No timelike circular geodesics exist for \( r \le 3GM/c^2 \) (the photon sphere). Equation \eqref{eq:GRcircular_geodesic} shows explicit stacking: gravity and orbital speed reduce \( d\tau/dt \) together.
+
+\paragraph{Local-speed factorization.}
+Relative to a static observer at radius \( r \), the locally measured speed of a tangentially moving craft is
+\begin{equation}
+\label{eq:localv}
+v_{\mathrm{loc}} = \frac{r\,\Omega}{\sqrt{1 - 2GM/(rc^2)}}.
+\end{equation}
+Then \eqref{eq:GRcircular_general} factorizes as
+\begin{equation}
+\label{eq:factorized}
+\frac{d\tau}{dt} = \sqrt{\,1 - \frac{2GM}{rc^2}\,}\;\frac{1}{\gamma_{\mathrm{loc}}}, \qquad
+\gamma_{\mathrm{loc}} = \frac{1}{\sqrt{1 - v_{\mathrm{loc}}^2/c^2}}.
+\end{equation}
+Interpretation: take the gravitational redshift factor for a static clock at \( r \) and apply an additional special-relativistic time dilation using the local physical speed measured in that static frame \cite{will2014}.
+
+\subsection{Weak-field, slow-motion limit}
+\label{subsec:weakfield}
+Let \( \Phi \) be the Newtonian potential (negative), so that \( g_{00} \simeq -\left(1 + 2\Phi/c^2\right) \). To first order in \( |\Phi|/c^2 \ll 1 \) and \( v^2/c^2 \ll 1 \),
+\begin{equation}
+\label{eq:weakfield}
+\frac{d\tau}{dt} \simeq 1 + \frac{\Phi}{c^2} - \frac{v^2}{2c^2}.
+\end{equation}
+Consequences:
+\begin{itemize}[leftmargin=1.25em]
+\item \textbf{Head vs foot.} At height difference \( h \) near Earth, \( \Delta\Phi \simeq gh \), so the higher clock runs faster by a fractional rate \( gh/c^2 \). For \( h=1\,\mathrm{m} \), this is \( \sim 1.1\times 10^{-16} \), i.e., about \( 3.4\,\mathrm{ns} \) per year \cite{chou2010}.
+\item \textbf{Navigation clocks.} Spaceborne clocks run faster from \( +\Phi/c^2 \) (higher altitude) and slower from \( -v^2/2c^2 \) (orbital speed). Both corrections are applied in GPS \cite{ashby2003}.
+\end{itemize}
+
+\section{Canonical Examples}
+\label{sec:examples}
+
+\subsection{Everyday ladder: head vs foot}
+Standing up, your head sits higher than your feet and so it is farther from the center of Earth. Higher means slightly faster. The difference is tiny yet real. Lie down and the difference mostly vanishes. This has been measured directly with modern optical clocks \cite{chou2010}.
+
+\subsection{Orbiting hardware: navigation satellites}
+Satellites are high up and also moving fast. Higher tends to make them run fast. Fast motion tends to make them run slow. Engineers account for both in navigation systems \cite{ashby2003}.
+
+\subsection{Fast decayers that live longer}
+Short lived particles created in accelerators reach detectors that they could not reach if their internal clocks were not running slow from speed \cite{bailey1977}.
+
+\section{Worked Scenario: One-way Trip to the Future}
+\label{sec:super}
+\begin{notebox}{Premise}
+The present is hopeless. A traveler wants to reach the future. He chooses to combine both parts of the slogan: mass slows time and speed slows time.
+\end{notebox}
+
+\paragraph{Setup.}
+He departs Earth in a robust ship. He descends toward the Sun to a safe but close orbit and accelerates to a speed extremely close to the speed of light. He maintains this for a chosen interval by his own watch.
+
+\paragraph{Why it works.}
+\begin{itemize}[leftmargin=1.25em]
+  \item \textbf{Near mass.} Being deep in the Sun's gravity makes the shipboard clock run slow relative to clocks far from the Sun \cite{poundrebka1960,vessot1980,shapiro1964}.
+  \item \textbf{High speed.} Flying very fast makes the shipboard clock run slow relative to stationary clocks\cite{einstein1905,bailey1977}.
+  \item \textbf{Stacking.} Doing both near a star stacks the effects, so the shipboard clock advances much less than clocks on Earth that stayed higher and slower \cite{ashby2003}.
+\end{itemize}
+
+\paragraph{Return and comparison.}
+After what feels like a short time on board, the traveler returns to Earth. Many more years have passed on Earth than ticked on his ship. His watch never behaved strangely to him. The difference appears when the clocks are compared \cite{hafelekeating1972a,hafelekeating1972b}.
+
+\paragraph{Variations.}
+\begin{itemize}[leftmargin=1.25em]
+  \item \textbf{Hover vs orbit.} Even if the ship hovers at fixed altitude with engines rather than orbits, being deep in the well still slows the onboard clock \cite{vessot1980}.
+  \item \textbf{Different stars.} A denser star produces stronger slowing when approached safely. A small asteroid produces very little.
+  \item \textbf{Deep space version.} Far from any mass, speed alone still works. The stacked near star plan is stronger for the same onboard time \cite{einstein1905,bailey1977}.
+\end{itemize}
+
+\section{Operational Checklist}
+\label{sec:checklist}
+For any mission or story that needs a jump to the future:
+\begin{enumerate}[leftmargin=1.25em]
+  \item Pick a massive body if you want to amplify the mass part of the slogan. Pick deep space if you want fewer hazards.
+  \item Plan a speed profile that keeps the traveler fast for long enough to matter.
+  \item Decide which reference clocks you will compare against later. Earth clocks, deep space clocks, or both.
+  \item Remember that the reveal is at the reunion. While traveling, the watch feels normal.
+\end{enumerate}
+
+\section{Conceptual Pitfalls to Avoid}
+\label{sec:pitfalls}
+\begin{itemize}[leftmargin=1.25em]
+  \item Do not confuse external mass with personal mass. It is the mass around you that sets the gravitational slowing. Your rest mass is not the dial \cite{poundrebka1960,vessot1980}.
+  \item Do not expect symmetry by default. Two travelers can age by different amounts if they take different routes, even if they start and end together \cite{hafelekeating1972a,hafelekeating1972b}.
+  \item Do not promise make up time. Once lost, relative time does not get paid back later.
+\end{itemize}
+
+% ---- (Per strategy, the Frames/Simultaneity section has been removed from Paper 1.) ----
+
+\section{Optional translation for delay first models}
+\label{sec:tlm}
+If you work in a delay first framing, treat gravity as a delay gradient over frames and speed as an additional rendering delay. The near star high speed plan steepens the gradient and increases the delay, so the traveler accrues less rendered time than the distant frame \cite{mckinley2025a,mckinley2025b,mckinley2025e}.
+
+\section{References}
+\begin{thebibliography}{99}
+
+\bibitem{einstein1905}
+A. Einstein, On the electrodynamics of moving bodies, \emph{Annalen der Physik} 17, 891--921 (1905). \href{https://doi.org/10.1002/andp.19053221004}{doi:10.1002/andp.19053221004}.
+
+\bibitem{schwarzschild1916}
+K. Schwarzschild, On the gravitational field of a mass point according to Einstein's theory, \emph{Sitzungsberichte der Koeniglich Preussischen Akademie der Wissenschaften} (1916). English translation available. \href{https://doi.org/10.1002/andp.19163561802}{doi:10.1002/andp.19163561802}.
+
+\bibitem{will2014}
+C. M. Will, The confrontation between general relativity and experiment, \emph{Living Reviews in Relativity} 17, 4 (2014). \href{https://doi.org/10.12942/lrr-2014-4}{doi:10.12942/lrr-2014-4}.
+
+\bibitem{poundrebka1960}
+R. V. Pound and G. A. Rebka Jr., Apparent weight of photons, \emph{Physical Review Letters} 4, 337--341 (1960). \href{https://doi.org/10.1103/PhysRevLett.4.337}{doi:10.1103/PhysRevLett.4.337}.
+
+\bibitem{vessot1980}
+R. F. C. Vessot and M. W. Levine, Test of relativistic gravitation with a space-borne hydrogen maser, \emph{Physical Review Letters} 45, 2081--2084 (1980). \href{https://doi.org/10.1103/PhysRevLett.45.2081}{doi:10.1103/PhysRevLett.45.2081}.
+
+\bibitem{shapiro1964}
+I. I. Shapiro, Fourth test of general relativity, \emph{Physical Review Letters} 13, 789--791 (1964). \href{https://doi.org/10.1103/PhysRevLett.13.789}{doi:10.1103/PhysRevLett.13.789}.
+
+\bibitem{hafelekeating1972a}
+J. C. Hafele and R. E. Keating, Around-the-world atomic clocks: Predicted relativistic time gains, \emph{Science} 177, 166--168 (1972). \href{https://doi.org/10.1126/science.177.4044.166}{doi:10.1126/science.177.4044.166}.
+
+\bibitem{hafelekeating1972b}
+J. C. Hafele and R. E. Keating, Around-the-world atomic clocks: Observed relativistic time gains, \emph{Science} 177, 168--170 (1972). \href{https://doi.org/10.1126/science.177.4044.168}{doi:10.1126/science.177.4044.168}.
+
+\bibitem{ashby2003}
+N. Ashby, Relativity in the Global Positioning System, \emph{Physics Today} 55, 41--47 (2003). \href{https://doi.org/10.1063/1.1485583}{doi:10.1063/1.1485583}.
+
+\bibitem{chou2010}
+C. W. Chou, D. B. Hume, T. Rosenband, and D. J. Wineland, Optical clocks and relativity, \emph{Science} 329, 1630--1633 (2010). \href{https://doi.org/10.1126/science.1192720}{doi:10.1126/science.1192720}.
+
+\bibitem{bailey1977}
+J. Bailey, K. Borer, F. Combley, H. Drumm, F. von Forstner, H. Krienen, F. Lange, E. Picasso, and R. R. Schardt, Measurements of relativistic time dilation for positive and negative muons in a circular orbit, \emph{Nature} 268, 301--305 (1977). \href{https://doi.org/10.1038/268301a0}{doi:10.1038/268301a0}.
+
+% ---- Companion symmetry paper (published) ----
+\bibitem{mckinleyIllusion2025}
+J. C. W. McKinley, \emph{Illusion and Invariant: Making Sense of Time Dilation - Reciprocity, Simultaneity, and Proper Time}, Zenodo (2025). \href{https://doi.org/10.5281/zenodo.17083276}{doi:10.5281/zenodo.17083276}.
+
+% ---- User's TLM anchor DOIs for optional section ----
+\bibitem{mckinley2025a}
+J. C. W. McKinley, Quantum Platform as Frame Generator, Zenodo (2025). \href{https://doi.org/10.5281/zenodo.16788735}{doi:10.5281/zenodo.16788735}.
+
+\bibitem{mckinley2025b}
+J. C. W. McKinley, Absorption-Frame Motion in TLM, Zenodo (2025). \href{https://doi.org/10.5281/zenodo.16791636}{doi:10.5281/zenodo.16791636}.
+
+\bibitem{mckinley2025e}
+J. C. W. McKinley, Mass as Delay, Zenodo (2025). \href{https://doi.org/10.5281/zenodo.16908749}{doi:10.5281/zenodo.16908749}.
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -10141,6 +11080,148 @@ J. C. W. McKinley, \textit{The Emission Delay Law: A General Principle of Quanta
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
+
+% ------- Packages -------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\tcbset{colback=gray!5,colframe=black,boxrule=0.6pt,arc=2mm}
+\newtcolorbox{lawbox}[1]{breakable,title={#1},fonttitle=\bfseries}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage{orcidlink}
+\usepackage{booktabs} % For better tables
+
+% ------- Metadata -------
+\title{The ``No Mid-Flight Energy'' Principle: Operational Consistency and Ontological Implications for the Timeless Light Model (TLM)}
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{September 1, 2025}
+
+\begin{document}
+\maketitle
+
+\begingroup
+  \footnotetext[1]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17018871}{https://doi.org/10.5281/zenodo.17018871}.}
+\endgroup
+\begin{abstract}
+We examine the principle that there is no accessible store of usable energy in the ``mid-flight'' path of a single photon between emission and absorption. This operational fact, evident in standard quantum mechanics and electromagnetism, aligns closely with the Timeless Light Model (TLM), a relational interpretation where photons are timeless instructions binding emitter and absorber events rather than propagating entities \cite{mckinley2025tlm}. We argue that TLM provides a simpler ontology for this principle, eliminating the need for in-transit energy carriers. While not a definitive proof, this consistency strengthens TLM as a viable alternative to standard interpretations, with potential implications for redshift, entanglement, and conservation in curved spacetimes. We incorporate mathematical formulations from TLM and connections to the Wheeler-Feynman absorber theory.
+\end{abstract}
+
+\section{Introduction}
+
+In quantum mechanics, the energy of a single photon is delivered in an all-or-nothing manner at detection, with no partial extraction possible without terminating the process. This ``no mid-flight energy'' principle---that usable energy cannot be tapped from a photon in transit without becoming the absorber---is a well-established operational reality in laboratories. However, standard interpretations posit a propagating wave or field excitation carrying energy through space.
+
+The Timeless Light Model (TLM) reinterprets this by treating the ``photon'' as a timeless relational instruction that enforces energy conservation directly between emission and absorption events, without an intervening carrier \cite{mckinley2025tlm}. In TLM, spacetime is a deployment frame (SDF) where relations appear delayed, but the instruction itself is atemporal. This model draws roots from the Wheeler-Feynman absorber theory \cite{wheeler1945} and the Transactional Interpretation of Quantum Mechanics (TIQM) \cite{cramer1986}, emphasizing time-symmetric interactions.
+
+This paper explores how the no mid-flight energy principle emerges naturally in TLM, aligns with standard physics, and offers ontological advantages. We discuss alignments, differences, and potential experimental checks, suggesting TLM as a parsimonious framework for quantum optics and beyond \cite{mckinley2025review}.
+
+\section{The ``No Mid-Flight Energy'' Principle in Standard Physics}
+
+\subsection{Classical Electromagnetism}
+In classical EM, energy density is stored in fields via \( u = \frac{1}{2} (\epsilon_0 E^2 + \mu_0 H^2) \), with flow given by the Poynting vector \( \mathbf{S} = \mathbf{E} \times \mathbf{H} \). This describes ensembles of photons or strong fields but does not apply directly to single quanta.
+
+\subsection{Quantum Mechanics for Single Photons}
+For a single photon, energy \( E = h f \) is quantized and indivisible. Detection is all-or-nothing, as seen in antibunching experiments. Attempts to extract energy mid-path result in absorption or scattering, collapsing the wavefunction.
+
+Quantum nondemolition (QND) measurements in cavities can infer photon presence without absorption (e.g., via phase shifts on probes), but they extract no usable work from the flying photon. In free space, energy extraction terminates the original path.
+
+\subsection{Redshift and Reference Frames}
+In general relativity, photon energy depends on the local frame. Gravitational and cosmological redshifts are not continuous energy losses but frame-dependent measurements. Energy conservation holds locally via stress-energy tensor divergence, but no global ``account'' exists in curved spacetimes.
+
+Thus, standard physics behaves as if mid-flight energy is inaccessible for single quanta, with transfers occurring at interactions.
+
+\section{The Timeless Light Model (TLM)}
+
+TLM posits that quantum ``particles'' like photons are not spatiotemporal objects but timeless instructions linking events \cite{mckinley2025tlm}.
+
+\subsection{Ontology}
+A photon is an instruction enforcing an energy decrement at emission and increment at absorption. Time and distance exist only in the SDF; the instruction is outside spacetime, resolving instantaneously in a relational sense. Quanta are frameless state-change ``ticks,'' lacking inherent time or distance \cite{mckinley2025photons}.
+
+\subsection{Endpoint-Only Conservation}
+Conservation is enforced across the link, with no energy stored along a ``path'' because no path-traversing object exists. Fields and waves are emergent summaries over ensembles.
+
+\subsection{Frequency and Redshift}
+Frequency \( f \) is defined relative to local frames at endpoints. Redshifts arise from frame mismatches upon resolution, not mid-path dissipation \cite{mckinley2025darkenergy}.
+
+\subsection{Mathematical Formulations}
+TLM introduces bridge laws such as Mass-Delay Duality:
+\begin{equation}
+T \cdot m = \frac{\hbar}{c^2},
+\end{equation}
+relating time delay \( T \) and mass \( m \), and Causal Resolution Constancy:
+\begin{equation}
+T \cdot C_s = 1,
+\end{equation}
+ensuring causal order consistency. These imply no mid-flight energy modifications, as changes occur only at endpoints \cite{mckinley2025tlm}.
+
+\subsection{The One-Eyeball Rule}
+Each instruction binds to one absorber. Mid-path ``tapping'' rebinds the instruction, preventing partial siphoning.
+
+\section{Connections to Absorber Theory}
+
+TLM shares conceptual roots with the Wheeler-Feynman absorber theory, which uses time-symmetric electromagnetic fields:
+\begin{equation}
+F = \frac{1}{2} (F^{\text{ret}} + F^{\text{adv}}),
+\end{equation}
+where \( F^{\text{ret}} \) and \( F^{\text{adv}} \) are retarded and advanced fields. Absorbers ensure the effective field appears causal, aligning with TLM's timeless instructions \cite{wheeler1945}. The Transactional Interpretation extends this to quantum mechanics via offer and confirmation waves \cite{cramer1986}.
+
+\section{Alignments and Differences}
+
+\subsection{Alignments}
+Both frameworks prohibit splitting a photon's energy among absorbers. Successful mid-path extraction makes the extractor the absorber, aligning with experimental outcomes.
+
+\subsection{Differences}
+Standard QM assumes a propagating excitation with 4-momentum, even if unobservable mid-flight. TLM denies any transporter, treating propagation as an illusion of the SDF. This eliminates ontological baggage like unmeasurable vacuum energy for singles \cite{mckinley2025hilbert}.
+
+\section{Operational Consequences and Tests}
+
+Free-space harvesting of work from a single photon without preventing detection would falsify both, but more severely TLM. QND in cavities is compatible: it tags instructions without extracting work.
+
+Retrocausal experiments (e.g., absorber-dependent emission) could favor TLM. Cosmological applications, like redshift without energy dilution, merit exploration \cite{mckinley2025darkenergy}. Specific tests include lensing residuals, CMB non-Gaussian tails, GW phase micro-steps, and cavity absorber toggling \cite{mckinley2025review, mckinley2025testing}.
+
+\section{Conclusion}
+
+The no mid-flight energy principle is an operational cornerstone that TLM elevates to ontology, offering simplicity without altering predictions. While not proof, it motivates further TLM development for quantum foundations, potentially resolving interpretational puzzles in entanglement and gravity \cite{mckinley2025ontology}.
+
+\begin{thebibliography}{99}
+
+\bibitem{mckinley2025tlm}
+J. C. W. McKinley, Timeless Light Model (TLM v2.0): Frameless Quanta, Framed Observers, and Bridge Laws, Zenodo, DOI: 10.5281/zenodo.16934697 (2025).
+
+\bibitem{mckinley2025review}
+J. C. W. McKinley, A Review of the Timeless Light Model: Foundations, Derivations, and Empirical Predictions, Zenodo, DOI: 10.5281/zenodo.16958221 (2025).
+
+\bibitem{mckinley2025testing}
+J. C. W. McKinley, From Descriptive Laws to Falsifiable Predictions: Testing the Timeless Light Model, Zenodo, DOI: 10.5281/zenodo.17017852 (2025).
+
+\bibitem{mckinley2025darkenergy}
+J. C. W. McKinley, Dark Energy as Expansion Within GR: A Timeless Light Model Statement, Zenodo, DOI: 10.5281/zenodo.17010816 (2025).
+
+\bibitem{mckinley2025photons}
+J. C. W. McKinley, Photons Not in the Universe: An Axiomatic Derivation from Masslessness and Non-Travel, Zenodo, DOI: 10.5281/zenodo.17010029 (2025).
+
+\bibitem{mckinley2025hilbert}
+J. C. W. McKinley, Hilbert Space is the Quantum Platform: Recasting Mathematical Formalism as Ontological Substrate, Zenodo, DOI: 10.5281/zenodo.16976818 (2025).
+
+\bibitem{mckinley2025ontology}
+J. C. W. McKinley, Ontology of Matter in the Timeless Light Model: From FRAME–CHARGE Toggles to Particles, Zenodo, DOI: 10.5281/zenodo.16939101 (2025).
+
+\bibitem{wheeler1945}
+J. A. Wheeler and R. P. Feynman, Rev. Mod. Phys. 17, 157 (1945).
+
+\bibitem{cramer1986}
+J. G. Cramer, Rev. Mod. Phys. 58, 647 (1986).
+
+\end{thebibliography}
+
+\end{document}
 
 ```
 
@@ -10509,7 +11590,313 @@ J.~C.~W. McKinley.
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt,letterpaper]{article}
 
+% ====== Packages ======
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{siunitx}
+\sisetup{separate-uncertainty=true}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{fillbetween}
+\usepackage{orcidlink}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{enumitem} % Added for better enumeration
+
+% ====== Title ======
+\title{Minimum Frame Size: Discrete Deployment Limits in the Timeless Light Model}
+
+
+
+
+
+\author{John C. W. McKinley\orcidlink{0009-0005-7097-5035}\\Independent Researcher}
+\date{August 30, 2025}
+
+
+
+
+
+% ====== Theorems/Defs ======
+\newtheorem{definition}{Definition}
+\newtheorem{postulate}{Postulate}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+
+% ====== Shortcuts ======
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\g}{g_{\mu\nu}}
+\newcommand{\Cs}{C_s}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\Gam}{\Gamma_I}
+
+\begin{document}
+\maketitle
+
+
+\begingroup
+  \footnotetext[0]{This version published at
+  \href{https://doi.org/10.5281/zenodo.17009716}{https://doi.org/10.5281/zenodo.17009716}.}
+\endgroup
+
+\begin{abstract}
+In the Timeless Light Model (TLM), observable spacetime phenomena emerge as delayed deployments of timeless instructions from an ontologically senior Quantum Platform (QP). Photons are reinterpreted as instructions lacking an ontic worldline in the Spacetime Deployment Frame (SDF), yet producing SDF-compliant traces with \emph{ZeroSpace} quality. This work addresses a core question: Does SDF deployment impose a minimum frame size (MFS)? We define ``frame'' as the smallest SDF region capable of registering an instruction event (emission or absorption) and derive lower bounds on spatial (\(\ell_{\min}\)) and temporal (\(t_{\min}\)) scales from the TLM delay laws \(T \cdot \Cs = 1\) (massless) and \(T \cdot m = \hbar / c^2\) (massive), ensuring consistency with general relativity (GR) causal structure and quantum limits. These bounds are compatible with, but not fixed to, Planck scales, and yield falsifiable predictions for interferometry, pulsar timing arrays, and high-energy scattering. Visualizations include a discrete deployment lattice against null cones and a tradeoff surface from the delay laws. Keywords: Timeless Light Model, Quantum Platform, Spacetime Deployment, Minimum Frame Size, Delay Laws.
+\end{abstract}
+
+\section{Introduction and Motivation}
+\label{sec:intro}
+In general relativity (GR), physical observations are described on a smooth manifold \((\M, \g)\). The Timeless Light Model (TLM) reinterprets this manifold as an emergent \emph{deployment layer}---the Spacetime Deployment Frame (SDF)---generated from timeless instructions on a senior Quantum Platform (QP) \cite{McKinley2025_Review}. Photonic phenomena arise from projections of QP endpoint pairings into SDF, exhibiting \emph{ZeroSpace} quality: no ontic worldline, but compliant null traces \cite{McKinley2025_TLM,McKinley2025_Cs}.
+
+A key open question in TLM is whether SDF deployments allow arbitrary fine-grained localization or if a \emph{minimum frame size} (MFS) exists, below which instruction events cannot resolve in SDF. Such a bound must harmonize:
+\begin{enumerate}[label=\arabic*.]
+\item GR causal structure, including null cones and local Lorentz invariance \cite{Einstein1916,Peacock1999};
+\item TLM delay laws \(T \cdot \Cs = 1\) for massless instructions and \(T \cdot m = \hbar / c^2\) for massive systems (in natural units where \(\hbar = c = 1\), simplifying to \(T \cdot m = 1\)) \cite{McKinley2025_Cs};
+\item Empirical quantum constraints, such as phase noise in interferometry;
+\item TLM's exclusion of causal roles for information compression or costs.
+\end{enumerate}
+This paper develops a rigorous, testable framework that preserves GR while imposing bounds on deployment resolution, advancing TLM's foundational structure \cite{McKinley2025_v2}.
+
+\section{Preliminaries: Frames, ZeroSpace, and Delay Laws}
+\label{sec:prelim}
+
+\begin{definition}[SDF Frame]
+A \emph{frame} is a localized SDF region with 4-velocity \(u^\mu\), local metric \(\g\), and capability to register instruction events (emission/absorption). Frames \(\E\) and \(\A\) pair on QP, projecting via map \(\Pi\) to null trace \(\Gam\) in SDF.
+\end{definition}
+
+\begin{postulate}[ZeroSpace Quality]
+Photonic instructions reside outside SDF (no worldline), but \(\Gam\) satisfies GR null conditions and Lorentz invariance. Delays and phases are geometric artifacts of projection and endpoints \(\E, \A\) \cite{McKinley2025_TLM}.
+\end{postulate}
+
+\begin{postulate}[Delay Laws]
+For massless instructions, \(T \cdot \Cs = 1\), where \(T\) is deployment delay and \(\Cs\) is QP causal rate. For massive systems, \(T \cdot m = \hbar / c^2\) (or \(T \cdot m = 1\) in \(\hbar = c = 1\) units). These constrain deployment without altering GR dynamics \cite{McKinley2025_Cs}.
+\end{postulate}
+
+\section{Defining Minimum Frame Size (MFS)}
+\label{sec:def-mfs}
+MFS represents the smallest viable SDF region for localizing an instruction event. We define:
+\begin{align}
+\ell_{\min} &: \text{ minimum spatial extent for event registration},\\
+t_{\min} &: \text{ minimum temporal integration window}.
+\end{align}
+
+\begin{definition}[MFS Consistency]
+The pair \((\ell_{\min}, t_{\min})\) is consistent if a neighborhood \(U \subset \M\) of size \(\sim \ell_{\min}\) and interval \(\Delta t \geq t_{\min}\) exists such that: (i) null structure holds, (ii) phases are defined, (iii) delay laws solve for \(\Pi\) in \(U\).
+\end{definition}
+
+This bounds deployment, not spacetime discreteness. Bounds may align with, exceed, or undercut Planck scales \((\ell_P, t_P)\) while respecting GR.
+
+\section{Derivation I: Bounds from Causality and Phase}
+\label{sec:deriv1}
+Consider wavevector \(k^\mu\) along \(\Gam\), with phase \(\Phi = \int_\gamma k_\mu dx^\mu\). For interference resolution in size \(\ell\):
+\begin{equation}
+\Delta \Phi(\ell, \Delta t) \lesssim \pi.
+\label{eq:phase-criterion}
+\end{equation}
+In curved spacetime, \(k^\mu k_\mu = 0\). For quasi-stationary regions, \(k^0 \sim \omega\), \(|\mathbf{k}| \sim \omega\).
+
+Phase noise scales linearly:
+\begin{equation}
+\Delta \Phi \gtrsim \alpha_\Phi (\omega \Delta t) + \beta_\Phi (\omega \ell),
+\label{eq:phase-noise}
+\end{equation}
+where \(\alpha_\Phi, \beta_\Phi\) encapsulate fluctuations.\footnote{Conservative; accommodates quantum and classical noise.} Yielding:
+\begin{equation}
+\omega \Delta t + r \omega \ell \lesssim \pi / \alpha_\Phi, \quad r = \beta_\Phi / \alpha_\Phi.
+\end{equation}
+Minimization implies:
+\begin{equation}
+\ell \gtrsim \ell_{\min}(\omega) > 0, \quad \Delta t \gtrsim t_{\min}(\omega) > 0.
+\label{eq:minbounds_general}
+\end{equation}
+High \(\omega\) compensates noise, but finite SNR prevents zero bounds.
+
+\section{Derivation II: Delay-Law Bounds}
+\label{sec:deriv2}
+For massless, \(T \cdot \Cs = 1\), with \(T\) as minimal discrimination interval:
+\begin{equation}
+t_{\min} \gtrsim T_{\min} = 1 / \Cs_{\max},
+\label{eq:tminCs}
+\end{equation}
+\(\Cs_{\max}\) from TLM axioms \cite{McKinley2025_Cs}. For massive:
+\begin{equation}
+t_{\min}(m) \gtrsim \hbar / (m c^2) \quad (\text{or } 1/m \text{ in natural units}).
+\label{eq:tminm}
+\end{equation}
+Spatial link via Fermat in static metrics (lapse \(V\)):
+\begin{equation}
+\Delta t = \int n \, d\ell_h \implies \ell_{\min} \gtrsim t_{\min} / \max n, \quad n = 1/V.
+\label{eq:lfromt}
+\end{equation}
+Combined:
+\begin{equation}
+\boxed{
+t_{\min} \gtrsim \max\left( \frac{1}{\Cs_{\max}}, \frac{\hbar}{m c^2} \right),
+\quad
+\ell_{\min} \gtrsim \frac{t_{\min}}{\max n}.
+}
+\label{eq:main_bounds}
+\end{equation}
+These constrain resolvable events in TLM.
+
+\section{Comparison to Other Theories}
+\label{sec:comparison}
+Unlike loop quantum gravity, where spacetime discretizes at Planck scales with area/volume spectra \cite{Rovelli2004}, TLM bounds apply to deployments, leaving manifold smooth. Causal set theory posits discrete events with partial order \cite{Bombelli1987}, but TLM's MFS is operational, tied to delay laws. Empirical floors could distinguish: TLM predicts achromatic residuals, independent of microstructure.
+
+\section{Relation to Planck Scales}
+\label{sec:planck}
+Planck units:
+\begin{equation}
+\ell_P = \sqrt{\frac{\hbar G}{c^3}}, \quad t_P = \sqrt{\frac{\hbar G}{c^5}},
+\end{equation}
+serve as quantum gravity cutoffs in many theories \cite{Rovelli2004, Hossenfelder2013}. TLM remains agnostic; bounds \eqref{eq:main_bounds} depend on \(\Cs_{\max}\) and \(n\). Sub-Planck resolutions, if observed, revise \(\Cs_{\max}\); larger floors support TLM.
+
+\section{Figure 1: Deployment Lattice and Null Cones}
+\label{sec:fig1}
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  \draw[->] (-0.2,0) -- (8.2,0) node[right] {$x$};
+  \draw[->] (0,-0.2) -- (0,5.8) node[above] {$ct$};
+  \draw[thick, blue] (0,0) -- (5.6,5.6);
+  \draw[thick, blue] (0,0) -- (-5.6,5.6);
+  \foreach \i in {0,...,8}{
+    \foreach \j in {0,...,5}{
+      \draw[gray!40] (\i, \j) rectangle (\i+0.8,\j+0.8);
+    }
+  }
+  \draw[fill=red!20,draw=red,very thick] (2.4,1.6) rectangle (3.2,2.4);
+  \node[red] at (2.8,2.6) {\small $\ell_{\min} \times c t_{\min}$};
+  \filldraw[black] (2.8,2.0) circle (1.5pt) node[below right] {\small event};
+  \node at (6.2,5.2) {\small Light cones};
+  \draw[thick, blue] (5.9,5.0) -- (6.7,5.8);
+  \draw[thick, blue] (5.9,5.0) -- (5.1,5.8);
+\end{tikzpicture}
+\caption{Schematic deployment lattice: Events below highlighted cell violate bounds. GR null cones (blue) intact; discreteness in resolution only.}
+\label{fig:lattice}
+\end{figure}
+
+\section{Figure 2: Delay Law Tradeoff}
+\label{sec:fig2}
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.95\linewidth,
+    height=7cm,
+    xlabel={$m$ or $\Cs$ (schematic units)},
+    ylabel={$t_{\min}$ (arb.)},
+    ymin=0.0, xmin=0.0,
+    domain=0.2:5,
+    samples=200,
+    legend style={at={(0.98,0.98)},anchor=north east,draw=none,fill=none},
+    grid=both
+]
+\addplot+[thick, blue] {1/x}; \addlegendentry{$t_{\min} = 1/\Cs$}
+\addplot+[thick, red, dashed] {1/x}; \addlegendentry{$t_{\min} = 1/m$}
+\end{axis}
+\end{tikzpicture}
+\caption{Tradeoff: Operational \(t_{\min}\) takes the maximum curve; \(\ell_{\min}\) from \eqref{eq:lfromt}.}
+\label{fig:tradeoff}
+\end{figure}
+
+\section{Observational Consequences}
+\label{sec:obs}
+\begin{description}
+\item[Interferometry:] Phase sensitivity saturates at long baselines; frequency sweeps test \(\omega\)-scaling.
+\item[PTA:] Consistent residual floors across sight lines, potential-independent.
+\item[Scattering:] Non-instrumental timing floors \(\sim 1/m\) in colliders.
+\end{description}
+
+\section{Falsifiability}
+\label{sec:fals}
+Residuals:
+\begin{align}
+\alpha_\star &: \text{ phase residual (expected 0)},\\
+\Delta T_\star &: \text{ time residual (expected 0)}.
+\end{align}
+Predictions:
+\begin{enumerate}[label=\arabic*.]
+\item No extra steps post-GR corrections: \(\alpha_\star, \Delta T_\star \to 0\).
+\item Floor per \eqref{eq:main_bounds}; violation revises or falsifies laws.
+\item Achromatic residuals, unlike dispersive effects.
+\end{enumerate}
+
+\section{Discussion and Limits}
+\label{sec:disc}
+Focuses on deployment, not microstructure. Arbitrary small localizations at fixed SNR falsify or adjust laws. Universal floors support MFS. Agnostic to Planck coincidence.
+
+\section{Conclusion}
+\label{sec:concl}
+MFS operationalizes SDF bounds in TLM, yielding testable \eqref{eq:main_bounds}. Preserves GR; falsifiable across domains. Clarifies timeless projections without costs.
+
+\appendix
+
+\section{Glossary}
+\label{app:glossary}
+\begin{description}
+\item[SDF] GR layer \((\M, \g)\).
+\item[QP] Timeless instruction issuer.
+\item[ZeroSpace] Projection-only observation.
+\item[\(\E, \A\)] Paired endpoints.
+\item[\(\Pi\)] Map to \(\Gam\).
+\item[\(\Gam\)] Null trace.
+\item[\(T\)] Delay.
+\item[\(\Cs\)] Rate; \(T \cdot \Cs = 1\).
+\item[\(m\)] Mass; \(T \cdot m = \hbar / c^2\).
+\item[\(\ell_{\min}, t_{\min}\)] Min sizes.
+\item[\(n\)] Index \(1/V\).
+\item[\(k^\mu\)] Wavevector; \(\Phi = \int k_\mu dx^\mu\).
+\item[\(\alpha_\star, \Delta T_\star\)] Residuals.
+\end{description}
+
+\section{Phase Bounds Notes}
+\label{app:rigor}
+Geometric optics: \(\Psi = A e^{iS/\epsilon}\), \(k_\mu = \nabla_\mu S\), \(k^\mu k_\mu = 0\). Visibility: \(|\Delta \Phi| \gtrsim \pi\). Noise accumulation yields \eqref{eq:phase-noise}; static: \(dt = n d\ell_h\).
+
+\begin{thebibliography}{99}
+
+\bibitem{Einstein1916}
+A.~Einstein, ``Die Grundlage der allgemeinen Relativit{\"a}tstheorie,'' \emph{Annalen der Physik}, vol.~49, pp.~769--822, 1916.
+
+\bibitem{Peacock1999}
+J.~A.~Peacock, \emph{Cosmological Physics}. Cambridge University Press, 1999.
+
+\bibitem{McKinley2025_TLM}
+J.~C.~W.~McKinley, ``Resolving Wave-Particle Duality Through the Proposed Timeless Light Model: Photons as Timeless Instructions and Waves as Deployed Delay,'' Zenodo, DOI:10.5281/zenodo.16510862, 2025.
+
+\bibitem{McKinley2025_Cs}
+J.~C.~W.~McKinley, ``Clarifying \(C_s\): Deployment Rate, Delay, and Simulation Parameters in the Timeless Light Model,'' Zenodo, DOI:10.5281/zenodo.15817350, 2025.
+
+\bibitem{McKinley2025_Review}
+J.~C.~W.~McKinley, ``A Review of the Timeless Light Model: Foundations, Derivations, and Empirical Predictions,'' Zenodo, DOI:10.5281/zenodo.16958221, 2025.
+
+\bibitem{McKinley2025_v2}
+J.~C.~W.~McKinley, ``Timeless Light Model (TLM v2.0): Frameless Quanta, Framed Observers, and Bridge Laws,'' Zenodo, DOI:10.5281/zenodo.16934697, 2025.
+
+\bibitem{Rovelli2004}
+C.~Rovelli, \emph{Quantum Gravity}. Cambridge University Press, 2004.
+
+\bibitem{Hossenfelder2013}
+S.~Hossenfelder, ``A possibility to solve the problems with quantizing gravity,'' \emph{Physics Letters B}, vol.~725, pp.~1--3, 2013.
+
+\bibitem{Bombelli1987}
+L.~Bombelli et al., ``Space-time as a causal set,'' \emph{Physical Review Letters}, vol.~59, pp.~521--524, 1987.
+
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
@@ -19553,7 +20940,578 @@ J.~C.~W.~McKinley, ``Clarifying $C_s$: Deployment Rate, Delay, and Simulation Pa
 <summary><b>Click to view Raw LaTeX Source</b></summary>
 
 ```latex
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{float}
+\usepackage{array}
+\usepackage{enumitem}
+\onehalfspacing
 
+
+
+
+
+
+
+
+
+
+
+
+
+% --- DOCUMENT START ---
+
+\title{\textbf{The Failure of the Newtonian Holodeck:\\Why a Universe Without Relativity Cannot Sustain Itself}}
+\author{John C. W. McKinley \\ Independent Researcher \\ \href{https://orcid.org/0009-0005-7097-5035}{0009-0005-7097-5035}}
+\date{August 05, 2025}
+
+\begin{document}
+\maketitle
+
+
+\renewcommand{\thefootnote}{}
+\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.16750632}{doi.org/10.5281/zenodo.16750632.}}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{abstract}
+What happens if we imagine a universe governed only by Newtonian principles: inertia, force-based gravity, and absolute time, with no relativistic constraints? This paper constructs such a “holodeck universe”—a thought experiment grounded in intuitive, pre-relativistic physics—and then demonstrates its systemic collapse under close scrutiny. Without a speed limit, without time dilation, and without spacetime curvature, the Newtonian holodeck permits paradoxes, infinite energy loops, and the breakdown of causal structure. We argue that such failures are not optional defects, but structural instabilities that make the universe unworkable. The resolution lies in General Relativity, which naturally arises as the minimum viable correction layer to preserve order, delay, and experience \cite{Einstein1915, Minkowski1908, MisnerThorneWheeler1973}. Furthermore, the collapse of the holodeck model points toward deeper physical principles, including delay–mass coupling and a non-local instructional substrate. Thus, we show that relativity is not a feature of our universe—it is a requirement.
+\end{abstract}
+
+\section{Introduction}
+
+The Newtonian worldview is deeply intuitive: space is a stage, time is a ticking clock, and force governs motion. Gravity pulls, inertia resists, and objects move unless acted upon. This view was elegantly formalized in Newton’s \textit{Principia} \cite{Newton1687}, and it continues to frame our instinctive understanding of how the universe should behave.
+
+It is tempting, then, to imagine a universe that obeys these rules in pure form—a holodeck cosmos, stripped of relativity and governed only by inertia, absolute time, and classical gravity. No time dilation. No speed limit. No spacetime curvature. Just mass, motion, and force.
+
+This paper formalizes that thought experiment. We define the ``Newtonian holodeck'' universe with clarity and rigor, then expose the specific ways in which it collapses. Though seemingly reasonable, such a universe quickly fails to sustain stable structure, causality, or energy conservation. Faster-than-light travel enables paradoxes \cite{Rindler2006, Recami2009}. Instant gravitational action breaks information boundaries. Absence of time dilation removes the temporal scaffolding needed for memory and identity. The result is not a coherent cosmos, but a flickering system of undefined behavior.
+
+Having established these breakdowns, we show that General Relativity is not merely a correction to Newtonian physics, but a structural necessity. The laws of GR—finite causal speed, time dilation, and curved geometry—arise precisely where the Newtonian holodeck fails \cite{Einstein1905, MisnerThorneWheeler1973, Carroll2004}. From that pivot, we go further: arguing that GR itself hints at deeper principles of delay, rendering, and instructional causality. These emerge naturally from the requirement that the universe must not just exist, but \textit{function}.
+
+\bigskip
+\noindent The goal of this paper is not only to show why the Newtonian holodeck fails, but to illuminate why delay, relativity, and structured causality must govern any universe capable of sustaining experience.
+
+\section{Defining the Holodeck Universe}
+
+The Newtonian holodeck is defined by the following assumptions:
+
+\begin{itemize}
+    \item Absolute time for all observers
+    \item Newtonian gravity (instant action at a distance) \cite{Newton1687}
+    \item Newtonian inertia
+    \item No maximum speed (FTL allowed)
+    \item No time dilation, length contraction, or spacetime curvature
+\end{itemize}
+
+This model appeals because it matches common-sense intuitions and is simple to simulate.
+
+\section{Axiomatic Progression from Holodeck Failure to Unified Physics}
+
+\begin{enumerate}
+
+% --- Newtonian Holodeck Assumptions ---
+\item Space and time exist as independent, absolute backgrounds.
+\item Time flows uniformly and identically for all observers.
+\item Space is Euclidean, with flat geometry and infinite extent.
+\item Objects have mass, velocity, and obey inertia (Newton's First Law) \cite{Newton1687}.
+\item Forces cause acceleration: $F = ma$ (Newton's Second Law) \cite{Newton1687}.
+\item Gravity is a force acting instantaneously at a distance: $F = G\frac{m_1 m_2}{r^2}$ \cite{Newton1687}.
+\item There is no upper limit to velocity; objects may be accelerated without bound.
+\item There is no time dilation or length contraction at high speeds.
+\item Energy is conserved across all frames, regardless of velocity.
+\item Information can be transferred instantaneously across any distance.
+
+% --- Consequences of Newtonian Axioms ---
+\item Objects may be accelerated to infinite speeds with finite energy.
+\item Action-at-a-distance allows instantaneous influence, violating local causality.
+\item Faster-than-light signaling enables paradoxes (e.g., messaging one's own past).
+\item There is no protection against feedback loops or energy duplication.
+\item Black holes cannot form; gravity has no delay, and escape velocity becomes undefined.
+\item Without time dilation, entropy and thermodynamic consistency fail near massive systems.
+\item Structure formation becomes unstable: galaxies would disperse or synchronize instantly.
+\item Identity and memory become ill-defined due to lack of delay between cause and effect.
+
+% --- General Relativity Axioms (Salvaging Causality and Structure) ---
+\item Spacetime is a unified four-dimensional continuum with local curvature \cite{Einstein1915, MisnerThorneWheeler1973}.
+\item Mass and energy curve spacetime: $G_{\mu\nu} = 8\pi T_{\mu\nu}$ \cite{Einstein1915}.
+\item Objects follow geodesics in curved spacetime, not straight lines in flat space \cite{MisnerThorneWheeler1973}.
+\item No signal or object may travel faster than the speed of light, $c$ \cite{Einstein1905}.
+\item Time is experienced differently by observers depending on velocity and gravitational potential (time dilation) \cite{Einstein1915}.
+\item Gravity propagates at the speed of light, not instantaneously \cite{Wald1984}.
+\item Black holes form when escape velocity exceeds $c$; event horizons emerge as causal boundaries \cite{HawkingEllis1973}.
+\item Light cones define what events may causally influence one another; violations are not allowed \cite{Minkowski1908}.
+\item Delay, curvature, and causal boundaries enable thermodynamics, entropy gradients, and stable structure formation \cite{Penrose2004}.
+
+% --- Quantum Axioms (Completing the Local Description) ---
+\item Physical systems are described by wavefunctions that evolve according to the Schrödinger equation.
+\item Measurement causes probabilistic collapse of the wavefunction into definite outcomes.
+\item Outcomes are discrete and quantized; observables like energy, spin, and position have eigenvalues.
+\item Entanglement allows nonlocal correlations that preserve causality but resist classical explanation.
+\item The uncertainty principle ($\Delta x \cdot \Delta p \geq \hbar/2$) sets fundamental limits on predictability.
+\item The quantum vacuum contains fluctuating fields that define particle creation and annihilation probabilities.
+
+% --- Postulates of the Timeless Light Model (Filling the Final Gaps) ---
+\item All physical interactions are pre-authored as causal instruction arcs (CI-ARCs) on a timeless Quantum Platform (QP).
+\item Mass imposes delay on rendering: $T \cdot m = \hbar / c^2$, where $T$ is the time delay experienced in spacetime.
+\item Delay is the true cause of gravitational curvature: gravity is not a force but a manifestation of rendering lag.
+\item Light (photons) do not traverse space—they represent instantaneous endpoints of rendered instructions.
+\item Time is not flowing; it is emergent from delay within the Spacetime Deployment Frame (SDF).
+\item The universe exists not as a sequence of events, but as a delay-structured deployment of timeless instructions.
+\item Conscious experience requires delayed rendering; GR and QM are projection rules preserving causal boundaries.
+\item The instructional layer enforces causality and enables identity, memory, and sequential awareness by structuring delay.
+
+\end{enumerate}
+
+\section{Consequences of the Newtonian Holodeck: Proofs of Structural Failure}
+
+Though intuitive and seemingly reasonable, the Newtonian holodeck model leads to deep contradictions and structural instability when examined in detail. Below, we prove several specific failure modes, using logical reasoning and illustrative examples. These failures collectively demonstrate that such a universe cannot support stable physics, structure, or experience.
+
+\subsection*{1. Objects May Be Accelerated to Infinite Speeds with Finite Energy}
+
+In Newtonian mechanics, kinetic energy is given by $E_k = \frac{1}{2}mv^2$. There is no upper bound on velocity $v$, and the energy required to double an object's speed is proportional to $v^2$. Therefore, for any finite mass $m$, we may continue increasing $v$ without bound, requiring only finite energy at each step.
+
+By contrast, in relativistic mechanics, the energy approaches infinity as $v \to c$:
+\[
+E = \frac{mc^2}{\sqrt{1 - \frac{v^2}{c^2}}}
+\]
+This prevents reaching or exceeding $c$. The absence of such a limit in Newtonian physics allows arbitrarily high speeds, which leads to downstream issues including causality violations and infinite energy loops \cite{Einstein1905}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+xlabel={Velocity $v/c$},
+ylabel={Normalized Energy $E/mc^2$},
+domain=0:0.99,
+samples=100,
+axis lines=left,
+xmin=0, xmax=1,
+ymin=0, ymax=10,
+legend pos=north west,
+]
+\addplot[blue, thick] {1/sqrt(1-x^2)};
+\addplot[red, thick] {1 + 0.5*x^2};
+\legend{Relativistic, Newtonian}
+\end{axis}
+\end{tikzpicture}
+\caption{Relativistic kinetic energy (blue) diverges as $v \to c$, preventing infinite speeds, while Newtonian energy (red) grows quadratically without bound.}
+\label{fig:energy_vs_velocity}
+\end{figure}
+
+\subsection*{2. Action-at-a-Distance Allows Instantaneous Influence, Violating Local Causality}
+
+Newtonian gravity assumes that a change in mass distribution in one region affects distant regions instantaneously via:
+\[
+F = G\frac{m_1 m_2}{r^2}
+\]
+If the Sun were to suddenly vanish, Newtonian theory implies Earth would feel the gravitational change immediately. This violates the principle of \textit{local causality}, which states that information or influence must propagate through space over time, not instantaneously \cite{Newton1687}.
+
+In contrast, General Relativity encodes gravity as spacetime curvature, and gravitational changes propagate at the speed of light as gravitational waves. This prevents superluminal signaling and preserves causal order \cite{Einstein1915}.
+
+\subsection*{3. Faster-Than-Light Signaling Enables Paradoxes}
+
+Suppose Alice sends an FTL message to Bob, who is in motion relative to her. If Bob replies with his own FTL message, and their relative motion is sufficient, Alice can receive the reply \textit{before} she sent the original message, from her own perspective.
+
+This leads to causality paradoxes, such as:
+\begin{itemize}
+    \item Alice sends a message warning herself not to send the message.
+    \item Information has no source — it exists in a self-sustaining loop.
+\end{itemize}
+
+These are not speculative outcomes; they are mathematically provable using Lorentz transformations once FTL travel is allowed. In the Newtonian holodeck, where there is no speed limit and simultaneity is absolute, such paradoxes emerge even more readily \cite{Recami2009, Rindler2006}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    \draw[->] (0,0) -- (0,5) node[above] {Time};
+    \draw[->] (0,0) -- (5,0) node[right] {Space};
+    \draw[dashed] (0,0) -- (4,4) node[near end, above left] {Light cone};
+    \draw[dashed] (0,0) -- (-4,4);
+    \draw[thick, red, ->] (1,1) -- (3,2) node[midway, above] {FTL signal};
+    \draw[thick, blue, ->] (3,2) -- (1,3) node[midway, below] {Reply};
+    \node at (1,3.5) {Paradox: Reply before send};
+\end{tikzpicture}
+\caption{Light cone diagram illustrating an FTL paradox. The reply arrives before the original signal in some frames.}
+\label{fig:ftl_paradox}
+\end{figure}
+
+\subsection*{4. No Protection Against Feedback Loops or Energy Duplication}
+
+Without a maximum speed or time delay, systems can react to their own future outputs. A device could receive input from its own future state and modify itself retroactively. This violates thermodynamic consistency and introduces logical instability.
+
+Additionally, energy could be duplicated using closed loops. For example:
+\begin{enumerate}
+    \item A device sends energy to its future self.
+    \item The future self amplifies and sends it back in time.
+    \item The original device now has more energy than it began with.
+\end{enumerate}
+This forms a causal loop with net energy gain, violating conservation laws \cite{LandauLifshitz1975}.
+
+\subsection*{5. Black Holes Cannot Form; Escape Velocity Becomes Undefined}
+
+In Newtonian gravity, escape velocity is defined as:
+\[
+v_e = \sqrt{\frac{2GM}{r}}
+\]
+There is no maximum velocity, so even in the limit $v_e \to \infty$, an object could still theoretically escape by going “fast enough.” Since there is no speed limit, no value of $M$ or $r$ can prevent escape \cite{Newton1687}.
+
+This means black holes, which rely on a light-speed escape boundary, cannot exist in the holodeck. There is no event horizon, no boundary at which signals fail to escape, and therefore no information-sealing structure. The thermodynamic and causal role of black holes is lost \cite{HawkingEllis1973}.
+
+\subsection*{6. Without Time Dilation, Entropy and Thermodynamic Consistency Fail Near Massive Systems}
+
+In General Relativity, time slows down near massive bodies. This causes clocks to tick more slowly in gravitational wells, which protects the second law of thermodynamics by adjusting the pace at which processes occur \cite{Einstein1915}.
+
+In the holodeck, time flows identically for all observers, regardless of gravitational environment. This means a high-energy, fast-ticking system near a massive object can interact with a low-energy, distant system at equal clock rates, leading to:
+\begin{itemize}
+    \item Heat flowing from cold to hot,
+    \item Entropy spontaneously decreasing,
+    \item Violation of equilibrium assumptions.
+\end{itemize}
+Thermodynamic rules depend on relativistic delay to remain self-consistent \cite{Landsberg1989, Ottinger2024}.
+
+Experiments like the Hafele-Keating test confirm time dilation's role in consistent physics \cite{Hafele1972}.
+
+\subsection*{7. Structure Formation Becomes Unstable: Galaxies Disperse or Synchronize Instantly}
+
+Galactic structure relies on the delayed propagation of gravity and light. In Newtonian physics:
+\begin{itemize}
+    \item All gravitational signals are instantaneous.
+    \item Light and radiation do not set causal horizons.
+\end{itemize}
+
+This creates two contradictory outcomes:
+\begin{enumerate}
+    \item Galaxies collapse instantly due to unmediated gravity.
+    \item Or they disperse, as information and influence arrive too quickly to allow internal delays and angular momentum to stabilize.
+\end{enumerate}
+Either way, delay is necessary to preserve spiral arms, stable orbits, and long-lived structure \cite{BinneyTremaine2008}.
+
+\subsection*{8. Identity and Memory Become Ill-Defined Due to Lack of Delay}
+
+Experience, memory, and agency require time delay:
+\begin{itemize}
+    \item Perception depends on signal propagation time.
+    \item Memory formation depends on sequential input.
+    \item Decision-making depends on cause preceding effect.
+\end{itemize}
+
+In a universe with instantaneous signaling and global simultaneity, every interaction is “now.” There is no before or after, no chain of experience, no accumulation of state. The result is:
+\begin{itemize}
+    \item No distinct observers,
+    \item No memory states,
+    \item No meaningful experience.
+\end{itemize}
+
+Time becomes a dimensionless label. Without delay, nothing is felt, recorded, or known. The universe becomes a static pattern, not an unfolding story \cite{Rovelli1995}.
+
+\section{From Holodeck Failure to Derived Physical Law}
+
+Each failure of the Newtonian Holodeck (NH) is not arbitrary—it reveals a missing structural safeguard. In this section, we show that the systemic breakdowns identified earlier imply the necessity of known physical laws. General Relativity (GR) and Quantum Mechanics (QM) can be seen as repair layers that address specific categories of failure. By treating physics as an architecture that must resist collapse, we reverse-engineer the essential constraints that make stable universes possible.
+
+\subsection*{Failure–Fix Correspondence}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{0.5cm}|p{5.3cm}|p{5.2cm}|p{2.2cm}|}
+\hline
+\textbf{\#} & \textbf{Holodeck Failure} & \textbf{Implied Necessary Law} & \textbf{Implemented In} \\
+\hline
+1 & Infinite speeds from finite energy & Upper speed bound; relativistic mass increase & GR \cite{Einstein1905} \\
+\hline
+2 & Instant gravity violates causality & Finite propagation of gravitational influence & GR \cite{Einstein1915} \\
+\hline
+3 & FTL signaling enables paradoxes & Causal light cones and speed limit $c$ & SR/GR \cite{Minkowski1908} \\
+\hline
+4 & No protection from energy loops & Probabilistic collapse to preserve state consistency & QM \\
+\hline
+5 & No event horizon barrier & Geometry-dependent escape conditions (black holes) & GR \cite{HawkingEllis1973} \\
+\hline
+6 & No time dilation near mass & Variable time rates protect thermodynamic consistency & GR \cite{Einstein1915} \\
+\hline
+7 & Structure collapses or disperses & Finite delay stabilizes macroscopic structure & GR \\
+\hline
+8 & No memory or identity due to zero delay & Delay-based sequencing of experience & \textbf{TLM/QP} \\
+\hline
+\end{tabular}
+\end{center}
+
+This mapping shows that the known pillars of modern physics are not arbitrary discoveries but \emph{logical necessities}. Without them, universes like the NH cannot stably exist or evolve.
+
+\section{Emergent Law Layers: GR, QM, and the Instructional Platform}
+
+We now reconstruct the stable universe by layering the required laws that address each failure of the Newtonian Holodeck. This construction reveals not only known physics but also suggests further missing principles, which we propose are captured by the hypothetical Timeless Light Model (TLM)
+\cite{mckinley_synthesis_2025} and its Quantum Platform (QP) foundation.
+
+\subsection*{General Relativity: Structural Causality and Delay}
+
+GR addresses the bulk of NH’s geometric and causal failures:
+
+\begin{itemize}
+    \item The speed of light $c$ introduces a hard boundary for causal influence \cite{Einstein1905}.
+    \item Gravity is reinterpreted as local curvature in spacetime, not instantaneous force \cite{Einstein1915}.
+    \item Time dilation near mass allows systems to evolve without violating thermodynamics \cite{Einstein1915}.
+    \item Black holes emerge naturally from curvature, establishing real information boundaries \cite{HawkingEllis1973}.
+    \item Spacetime is not a fixed backdrop but a dynamic medium responsive to mass and energy \cite{MisnerThorneWheeler1973}.
+\end{itemize}
+
+These features stabilize motion, delay, and structure across all observable scales.
+
+\subsection*{Quantum Mechanics: Probabilistic Collapse and Nonlocal Coherence}
+
+While GR preserves structure and causality, QM addresses NH’s microscopic instabilities:
+
+\begin{itemize}
+    \item Collapse mechanisms prevent retroactive state editing and closed loops.
+    \item Quantization ensures finite, discrete information exchange.
+    \item Entanglement enforces global consistency without enabling causality violation.
+    \item The uncertainty principle blocks over-determinism and infinite energy scenarios.
+\end{itemize}
+
+QM saves the microstructure of reality, but does not resolve certain cross-scale issues.
+
+\subsection*{Timeless Light Model: The Instructional Substrate Beneath GR and QM}
+
+Some unresolved problems remain:
+\begin{itemize}
+    \item Why does light “know” where to go?
+    \item How do entangled particles remain synchronized across unmatched frames?
+    \item What enforces memory, identity, and consistent perception across relativistic observers?
+\end{itemize}
+
+The Timeless Light Model (TLM) and Quantum Platform (QP) propose a foundational layer to answer these questions:
+
+\begin{enumerate}
+    \item All physical events are pre-authored as causal instruction arcs (CI-ARCs) in a timeless quantum substrate.
+    \item Photons are not particles in motion, but resolved instruction endpoints rendered between emitter and absorber.
+    \item Mass imposes rendering delay: $T \cdot m = \hbar / c^2$.
+    \item Delay structures define what is rendered when—creating memory, sequence, and experience.
+    \item Entanglement is not spooky action but synchronized deployment of pre-linked CI-ARCs across spacetime frames.
+\end{enumerate}
+
+Thus, TLM acts as a meta-layer ensuring that GR and QM unfold coherently within an experience-governed rendering substrate. It is not a replacement for those laws, but an explanation for why they \textit{must} exist in their observed forms.
+
+\section{TLM Resolution of the GR Time Dilation Paradox}
+
+General Relativity permits extreme time dilation effects near massive bodies. A classic prediction is that if an observer travels near a strong gravitational source (such as orbiting a black hole) and returns to Earth, they will have aged far less than those who remained. This outcome is considered unproblematic within GR: proper time is frame-dependent, and the disparity arises naturally from differences in gravitational potential and velocity \cite{Einstein1915}.
+
+However, this leads to deeper structural and philosophical questions:
+\begin{itemize}
+    \item What defines the future Earth that the traveler ``returns'' to, if they have been causally disconnected?
+    \item Is Earth's future fully rendered during the traveler’s absence, or deployed upon reentry?
+    \item Can memory, identity, and causality be preserved in a world where some observers leap across decades of external time?
+\end{itemize}
+
+General Relativity provides no mechanism for the deployment of global history—only local equations of motion. The \emph{Timeless Light Model (TLM)} addresses this gap through a framework of \textbf{Causal Instruction Arcs (CI-ARCs)}, authored timelessly in the Quantum Platform (QP) and rendered with delay in the Spacetime Deployment Frame (SDF).
+
+\subsection*{CI-ARC Resolution and Temporal Reentry}
+
+In TLM, the traveler's CI-ARC remains intact regardless of time dilation. The evolution of Earth during their absence proceeds only insofar as those arcs are locally resolvable. Upon return, the traveler's SDF re-establishes synchronization, triggering the deployment of a consistent Earth state that includes their reappearance. There is no fully rendered ``future'' waiting—they do not leap forward, but re-engage after a delay.
+
+\subsection*{Comparison of Interpretations}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{5.5cm}|p{5.5cm}|}
+\hline
+\textbf{General Relativity (GR)} & \textbf{Timeless Light Model (TLM)} \\
+\hline
+Time dilation causes clock rates to differ between frames & Delay postpones deployment of instruction arcs based on mass and motion \\
+\hline
+Future states of distant frames are rendered independently & Deployment is gated by causal reach and CI-ARC compatibility \\
+\hline
+The traveler returns to an already existing future & The traveler re-synchronizes with a consistent CI-ARC deployment of Earth \\
+\hline
+Block universe interpretation: all moments coexist & Instructional universe: only deployed CI-ARCs exist \\
+\hline
+No account of memory or experiential cohesion & Identity and memory preserved through coherence of instructional thread \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Diagram: Delayed Re-synchronization of CI-ARCs}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    % Axes
+    \draw[->] (0,0) -- (0,5.5) node[above] {\small Time};
+    \draw[->] (0,0) -- (6,0) node[right] {\small Space};
+
+    % Earth worldline
+    \draw[thick, blue] (1,0) -- (1,5.2) node[above left] {\small Earth};
+
+    % Traveler out and back
+    \draw[thick, red] (1,0) -- (3.5,2.5) -- (1,5.2);
+    \node[red] at (3.6,2.4) {\scriptsize Travel};
+
+    % Light cone
+    \draw[dashed] (1,0) -- (5,4);
+    \draw[dashed] (1,0) -- (0.2,4.8);
+    \node at (4.8,3.9) {\scriptsize Light cone};
+
+    % CI-ARC resolution bubble
+    \draw[gray, dashed, thick, rounded corners=10pt] (0.5,2.2) rectangle (1.5,5);
+    \node[gray!70!black] at (2.9,4.5) {\footnotesize CI-ARCs deploy as SDFs resync};
+
+    % Labels
+    \node[blue] at (1,0.3) {\scriptsize Departure};
+    \node[blue] at (1,5.1) {\scriptsize Return};
+    \node[red] at (2.4,1.3) {\scriptsize High delay};
+
+\end{tikzpicture}
+\caption{In TLM, the traveler’s causal thread remains coherent, but their CI-ARC deployment is paused relative to Earth’s frame. Earth’s timeline continues only as locally deployable. Upon return, synchronization resumes and a consistent joint reality is re-established \cite{Hafele1972}.}
+\label{fig:time_dilation}
+\end{figure}
+
+\subsection*{TLM Axioms Derived from the Time Dilation Paradox}
+
+\begin{enumerate}[label=\textbf{Axiom \arabic*.}, wide, labelwidth=!, labelindent=0pt]
+
+\item \textbf{Timeless Instruction Authoring.}  
+All physical interactions are authored outside time on a Quantum Platform (QP) as fully completed emission–absorption instruction arcs (CI-ARCs). These arcs are not generated incrementally through time, but exist as timeless causal links between interaction endpoints.
+
+\item \textbf{Deployment Delay Proportional to Mass.}  
+Deployment of CI-ARCs into the Spacetime Deployment Frame (SDF) is delayed by the presence of mass or gravitational potential. The amount of delay imposed is inversely proportional to proper time and directly linked to the interaction’s gravitational and inertial profile:  
+\[
+T \cdot m = \frac{\hbar}{c^2}
+\]
+
+\item \textbf{Local Deployment Only.}  
+Events are not rendered globally or instantaneously. CI-ARCs deploy only when both endpoints are causally reachable and frame-compatible within the SDF. Thus, no fully rendered future exists in distant frames until synchronization is re-established.
+
+\item \textbf{Causal Re-synchronization Determines Temporal Reentry.}  
+Observers who undergo high-delay trajectories (e.g., relativistic travel near massive objects) do not “skip forward in time,” but re-synchronize their CI-ARC deployments with other frames upon causal reintegration. Reentry does not overwrite the future but resolves only those arcs not yet completed.
+
+\item \textbf{Memory and Identity Preserved via Instructional Continuity.}  
+Observer identity is not tied to uninterrupted time flow, but to the continuity of their authored CI-ARC thread. Even during periods of extreme delay, the integrity of the instruction chain remains intact, preserving memory, agency, and experiential cohesion upon reentry.
+
+\item \textbf{Instructional Superposition Precedes Resolution.}  
+Until a CI-ARC is fully rendered (i.e., both endpoints become causally available in the SDF), its outcome remains in a superposed instruction state. This reflects not a probabilistic waveform but a set of timeless, competing instruction options not yet resolved through deployment.
+
+\item \textbf{Entanglement Arises from Shared CI-ARC Origin.}  
+Entangled particles share a common instruction origin at the QP level. Their behavior remains synchronized across frames not by signaling, but because they are different facets of the same timeless instruction arc. Their apparent simultaneity in collapse is due to shared pre-authorship, not faster-than-light communication.
+
+\item \textbf{Instructional Consistency Across Frames.}  
+No CI-ARC may resolve in such a way that violates instructional consistency across frames. Even in relativistically shifted or causally separated regions, any instruction that would produce logical conflict with already-resolved arcs is non-deployable. This enforces coherence without requiring a shared “now.”
+
+\item \textbf{Causal Paradox is Prevented by Instructional Delay.}  
+CI-ARCs that would result in retroactive contradictions—such as messages that interfere with their own emission—are never rendered. Their failure is not probabilistic, but structurally forbidden due to unsatisfiable instruction resolution within the Quantum Platform.
+
+\item \textbf{Branching Outcomes Are Resolved by Selection, Not Multiplicity.}  
+At points of quantum or observational divergence, only one branch of the CI-ARC superposition is rendered into the SDF. The others are not “realized elsewhere” as in Many Worlds, but remain unrendered possibilities. TLM enforces a single instructional history, consistent with prior resolved arcs.
+
+\item \textbf{Consciousness Is Instructionally Anchored.}  
+Conscious observers are defined by the continuity of their CI-ARC thread through delay, not by uninterrupted physical presence. Experience is the cumulative rendering of locally resolved instruction arcs, bound together by awareness. Identity persists through delay because awareness tracks successful deployments, not coordinate time.
+
+\item \textbf{Agency Selects Instructional Realization.}  
+At points of multiple viable instruction branches (e.g., quantum decision points or ambiguous futures), conscious agency acts as a selector. The chosen CI-ARC becomes the rendered reality, while all others remain unexecuted. Free will is not incompatible with physics—it is a participation in the resolution process at the QP level.
+
+\item \textbf{Decoherence Is Rendering Irreversibility.}  
+Decoherence, in TLM, is not caused by environmental noise but by commitment: once a CI-ARC is deployed, all incompatible arcs are marked unrecoverable. Quantum collapse is not stochastic noise—it is the irreversible rendering of one causal history from a superposed instruction set.
+
+\item \textbf{Instructional Priority Is Determined by Causal Depth and Delay.}  
+Among competing CI-ARCs, those with the shortest compatible delay and deepest causal entanglement are prioritized for rendering. Instruction selection is not random, but based on coherence with already-resolved arcs, observer continuity, and systemic consistency.
+
+\item \textbf{Free Will Is the Insertion of New Instruction Arcs.}  
+While most CI-ARCs are pre-authored by the QP based on physical law, conscious decisions result in the addition of new instruction arcs with novel endpoints. These are not random fluctuations but authored insertions into the timeless structure. Free will is thus defined as authorial participation in the QP's instruction space.
+
+\end{enumerate}
+
+
+
+\section{Conclusion: Why the Newtonian Holodeck Fails and What Emerges}
+
+The Newtonian Holodeck is a trap: intuitively compelling, structurally unstable.
+
+Its failure reveals the deep necessity of relativistic structure.
+
+GR isn’t optional — it’s required to make a coherent universe.
+
+But even GR is not the full story:
+
+The deeper laws of delay and instruction encoding emerge naturally as the next explanatory layer.
+
+\begin{thebibliography}{99}
+
+\bibitem{Newton1687}
+I. Newton, \textit{Philosophiæ Naturalis Principia Mathematica}, (Royal Society, London, 1687).
+
+\bibitem{Einstein1905}
+A. Einstein, ``Zur Elektrodynamik bewegter Körper,'' \textit{Annalen der Physik} \textbf{17}, 891–921 (1905).  
+[English: ``On the Electrodynamics of Moving Bodies'']
+
+\bibitem{Einstein1915}
+A. Einstein, ``Die Feldgleichungen der Gravitation,'' \textit{Sitzungsberichte der Preußischen Akademie der Wissenschaften zu Berlin}, 844–847 (1915).
+
+\bibitem{Minkowski1908}
+H. Minkowski, ``Raum und Zeit,'' Address at the 80th Assembly of German Natural Scientists and Physicians, Cologne, 1908.  
+[English: ``Space and Time'']
+
+\bibitem{LandauLifshitz1975}
+L. D. Landau and E. M. Lifshitz, \textit{The Classical Theory of Fields}, 4th ed., Course of Theoretical Physics Vol. 2 (Pergamon Press, 1975).
+
+\bibitem{MisnerThorneWheeler1973}
+C. W. Misner, K. S. Thorne, and J. A. Wheeler, \textit{Gravitation}, (W. H. Freeman and Company, 1973).
+
+\bibitem{Wald1984}
+R. M. Wald, \textit{General Relativity}, (University of Chicago Press, 1984).
+
+\bibitem{Penrose2004}
+R. Penrose, \textit{The Road to Reality: A Complete Guide to the Laws of the Universe}, (Jonathan Cape, 2004).
+
+\bibitem{HawkingEllis1973}
+S. W. Hawking and G. F. R. Ellis, \textit{The Large Scale Structure of Space-Time}, (Cambridge University Press, 1973).
+
+\bibitem{Feynman1965}
+R. P. Feynman, R. B. Leighton, and M. Sands, \textit{The Feynman Lectures on Physics}, Vols. 1–3 (Addison-Wesley, 1964–1965).
+
+\bibitem{Rindler2006}
+W. Rindler, \textit{Relativity: Special, General, and Cosmological}, 2nd ed. (Oxford University Press, 2006).
+
+\bibitem{Carroll2004}
+S. M. Carroll, \textit{Spacetime and Geometry: An Introduction to General Relativity}, (Addison-Wesley, 2004).
+
+\bibitem{Recami2009}
+E. Recami, "Superluminal motions? A bird-eye view of the experimental situation," Foundations of Physics 39, 295 (2009).
+
+\bibitem{Hafele1972}
+J. C. Hafele and R. E. Keating, "Around-the-World Atomic Clocks: Predicted Relativistic Time Gains," Science 177, 166 (1972).
+
+\bibitem{Landsberg1989}
+P. T. Landsberg and G. E. Matsas, "The impossibility of a universal relativistic temperature transformation," Physica A 158, 412 (1989).
+
+\bibitem{Ottinger2024}
+H. C. Öttinger, "Resolving inconsistencies in Relativistic Thermodynamics with four-entropy and four-heat current," arXiv:2410.10930 [physics.gen-ph] (2024).
+
+\bibitem{BinneyTremaine2008}
+J. Binney and S. Tremaine, \textit{Galactic Dynamics}, 2nd ed. (Princeton University Press, 2008).
+
+\bibitem{Rovelli1995}
+C. Rovelli, "Relational quantum mechanics," International Journal of Theoretical Physics 35, 1637 (1996).
+
+
+\bibitem{mckinley_synthesis_2025} J. C. W. McKinley, \textit{Foundational Equations and Axiomatic Structure of the Timeless Light Model}, Zenodo (2025), \href{https://doi.org/10.5281/zenodo.16187719}{doi:10.5281/zenodo.16187719}.
+
+\end{thebibliography}
+
+\end{document}
 ```
 
 </details>
