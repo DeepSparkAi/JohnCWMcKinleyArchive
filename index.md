@@ -564,3 +564,177 @@ Wald, R. M.
 ```
 
 </details>
+
+### [2026] Timelessness Is the General Condition: Spacetime Is the Special Case
+*Argues for an ontological inversion: timelessness is the general condition, spacetime the special regime in which order, geometry, and measured duration appear.*
+*   **DOI:** [10.5281/zenodo.19771925](https://doi.org/10.5281/zenodo.19771925)
+*   **Date:** 25 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] If a New Causal Chain Begins, a Non-Internal Contribution Exists
+*If a new causal chain begins, a non-internal contribution to its onset exists.*
+*   **DOI:** [10.5281/zenodo.19752798](https://doi.org/10.5281/zenodo.19752798)
+*   **Date:** 24 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] Retrocausal Objections Are Disallowed for the Photon
+*Retrocausal objections require a timed intermediate subject; the photon has no such time-bearing middle.*
+*   **DOI:** [10.5281/zenodo.19648209](https://doi.org/10.5281/zenodo.19648209)
+*   **Date:** 18 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] Iron Filings Do Not Prove Field Substance — A Short Interpretive No-Go
+*Visible aggregation of iron filings into spatial patterns does not license the conclusion that the patterned region is materially occupied by a persisting substance.*
+*   **DOI:** [10.5281/zenodo.19639455](https://doi.org/10.5281/zenodo.19639455)
+*   **Date:** 17 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] Wavefunction Prediction Does Not License a Photon Path — A Short Interpretive No-Go
+*The mathematical success of the wavefunction in predicting absorption outcomes does not license the conclusion that a photon follows an intermediate spacetime path.*
+*   **DOI:** [10.5281/zenodo.19504772](https://doi.org/10.5281/zenodo.19504772)
+*   **Date:** 12 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain
+*No closed system defined within a 4D Minkowski spacetime can internally determine the onset and direction of a new causal sequence.*
+*   **DOI:** [10.5281/zenodo.19464781](https://doi.org/10.5281/zenodo.19464781)
+*   **Date:** 7 April 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2026] A Minimal Structural Statement of the Timeless Light Model (v3.921)
+*Restates the minimal core of the TLM: null status of the photon as ontological constraint, with no transit-based intermediate history.*
+*   **DOI:** [10.5281/zenodo.19167403](https://doi.org/10.5281/zenodo.19167403)
+*   **Date:** 22 March 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Null Curves Without Carriers: Resolving an Ontological Tension in Relativistic Geometry
+*Null curves represent direct lightlike relations in spacetime, not the histories of persisting carriers.*
+*   **DOI:** [10.5281/zenodo.18028886](https://doi.org/10.5281/zenodo.18028886)
+*   **Date:** 22 December 2025 [CONFIRM]
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] Taking Null Proper Time Seriously: An Interpretive Clarification of Null Proper Time
+*Null proper time is to be read as an ontological constraint, not as a mathematical limit to be narrated around.*
+*   **DOI:** [10.5281/zenodo.18004632](https://doi.org/10.5281/zenodo.18004632)
+*   **Date:** 22 December 2025 [CONFIRM]
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] No Rest Frame, No Persistence: A Kinematic Constraint on Photon Interpretation
+*The absence of a photon rest frame withholds the ordinary kinematic resources for identity-through-time and forbids a persisting-traveler interpretation.*
+*   **DOI:** [10.5281/zenodo.18005884](https://doi.org/10.5281/zenodo.18005884)
+*   **Date:** 21 December 2025 [CONFIRM]
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
+
+---
+
+### [2025] The Timeless Light Model: A Minimal Interpretive Completion of Relativistic Constraints
+*Introduces the TLM as an interpretive completion of standard relativistic structure rather than a replacement formalism.*
+*   **DOI:** [10.5281/zenodo.18012564](https://doi.org/10.5281/zenodo.18012564)
+*   **Date:** 21 December 2025 [CONFIRM]
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+
+```
+
+</details>
