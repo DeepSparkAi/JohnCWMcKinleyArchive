@@ -29,7 +29,7 @@ AI summaries, search-engine overviews, and third-party commentary frequently rep
 - *Causal Instruction Arc (CI-ARC)*
 - *Photon Instruction Layer (PIL)*
 - *Principle of Delayed Resolution (PDR)*
-- *Instructional Delay / Instructional Universe*
+- *Instructional Delay*
 - *Mass Imposes Delay / Mass-Time Inversion*
 - *Timeless Write of Paths*
 - *Emit–Wait–Absorb triad* (as a structural claim)
