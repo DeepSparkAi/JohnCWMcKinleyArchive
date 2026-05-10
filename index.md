@@ -64,6 +64,777 @@ The TLM is an interpretive framework that treats the null status of the photon a
 ## The Papers
 
 
+### [2026] Timebound Does Not Mean Traveler: A No-Go on Deriving Bead-Path Ontology from Quantum Admissibility
+* **DOI:** [10.5281/zenodo.20114078](https://doi.org/10.5281/zenodo.20114078)
+* **Date:** 12 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{remark}[proposition]{Remark}
+
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{Timebound Does Not Mean Traveler}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\title{\textbf{Timebound Does Not Mean Traveler}\\
+\large A No-Go on Deriving Bead-Path Ontology from Quantum Admissibility}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 10, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20114078}{10.5281/zenodo.20114078}.}
+
+\begin{abstract}
+A quantum system may be governed by temporal evolution and relativistic constraints without being licensed as a little object traveling along a hidden classical path. This note states a narrow interpretive no-go result: timebound admissibility does not imply traveler-bead ontology. The electron supplies the clean example. Unlike the photon, the electron has rest mass and may be counted as part of a physical system. But an electron in an atomic orbital is not licensed by standard quantum theory as a miniature planet orbiting a nucleus, and a free-electron state is not licensed as a bead secretly occupying a definite hidden route between records. Quantum theory supplies laws of admissible outcomes: states, amplitudes, conservation rules, transition rules, and detection probabilities. Relativity constrains admissible records by causal structure. Neither supplies a classical biography of a small object in transit. Detection gives a record. Quantum theory gives admissibility. Neither gives a travel diary.
+\end{abstract}
+
+\section{Introduction}
+
+The photon case removes the traveler most severely. A photon has null proper time and no rest frame. On the Timeless Light Model reading, those standard constraints block photon object-location, intermediate occupancy, trajectory, and transit~\cite{McKinleyBedrock}.
+
+The electron case is different. The electron has rest mass. The electron is countable. A neutral carbon atom contains six electrons. Electron number is part of ordinary physical accounting. The electron is therefore not a timeless null relation in the photon sense.
+
+But this does not restore the classical bead.
+
+The old picture says that the electron is a tiny thing moving around the nucleus, or a tiny thing moving through space along a hidden route until detection. Standard quantum mechanics does not supply that picture. An atomic orbital is not a planetary path. A quantum state is not a little object biography. A detector record is not a revelation of the route the electron secretly traveled.
+
+The present paper states a narrow no-go result:
+
+\begin{quote}
+Timebound does not mean traveler.
+\end{quote}
+
+The claim is not that no interpretation could add hidden path structure by additional postulate. The claim is that ordinary quantum admissibility does not supply such structure, and that time-governed behavior does not entail it.
+
+The point is not that massive quantum systems are timeless. The point is that temporal and relativistic constraint do not, by themselves, license a bead-path ontology. A quantum system may be governed by time-dependent law, may respect relativistic causal structure, and may yield countable records, without being licensed by those facts as a tiny object following a continuous classical route between those records.
+
+\section{Definitions}
+
+\begin{definition}[Timebound system]
+A timebound system is a physical system whose admissible descriptions, records, or state evolution are governed by temporal or relativistic structure.
+\end{definition}
+
+\begin{definition}[Traveler-bead ontology]
+Traveler-bead ontology is the interpretation according to which a quantum referent is a small persisting object occupying a continuous sequence of definite positions between records.
+\end{definition}
+
+\begin{definition}[Quantum admissibility]
+Quantum admissibility is the lawful structure governing possible outcomes: states, amplitudes, observables, conservation laws, transition rules, exclusion rules, and detection probabilities.
+\end{definition}
+
+\begin{definition}[Record]
+A record is a spacetime-side registration of an outcome, such as a detector event, measured transition, absorption event, scattering result, or other physical registration.
+\end{definition}
+
+\begin{definition}[Classical biography]
+A classical biography is a hidden object-story in which a quantum referent is assigned a continuous sequence of occupied positions, velocities, and intermediate states between records.
+\end{definition}
+
+\section{The Mistake}
+
+The mistake targeted here is the inference:
+
+\[
+\text{time-governed behavior}
+\quad \Rightarrow \quad
+\text{little traveler with a continuous path}.
+\]
+
+That inference is not licensed.
+
+Temporal structure can govern admissible records without supplying a bead-path. Relativistic structure can constrain possible outcomes without supplying a hidden route. Quantum theory can evolve a state without assigning the system a classical itinerary.
+
+This distinction matters because the rejection of traveler ontology is often treated as special to photons. It is not. The photon case is the strictest case because the photon has no proper time and no rest frame. But quantum theory already teaches a broader lesson: physical records do not automatically imply hidden classical object-biographies.
+
+\section{The Electron Case}
+
+An electron has rest mass. A free electron admits massive-particle descriptions. Electrons may be counted in atoms, ions, solids, currents, and scattering experiments. None of this is denied.
+
+What is denied is the extra claim that the electron must therefore be pictured as a small bead following a hidden classical route between records.
+
+In atomic physics, the electron in an orbital is not a tiny planet orbiting the nucleus. The orbital is a lawful quantum state structure. It fixes admissible energies, angular momentum structure, transition rules, amplitudes, and detection probabilities. It does not supply a little path around the nucleus.
+
+The same warning applies to a free electron. A free-electron state may be represented in different formal bases. Those representations are not themselves material waves, hidden bead-locations, or classical travel diaries. They are structures used to compute admissible records.
+
+Hidden-variable interpretations may add additional structure by postulate. That is not the target here. The target is the unlicensed inference from ordinary quantum admissibility to traveler-bead ontology. Quantum theory supplies the record structure; it does not, by itself, supply a bead-path.
+
+Thus the electron supports the following principle:
+
+\begin{quote}
+A countable massive quantum referent need not be a traveler-bead.
+\end{quote}
+
+\section{The No-Go Result}
+
+\begin{proposition}[Timebound does not mean traveler]
+A quantum system may be governed by temporal or relativistic constraints without being licensed as a persisting bead-like object traveling along a hidden classical path between records.
+\end{proposition}
+
+\begin{proof}
+Temporal and relativistic constraints govern admissible descriptions, state evolution, records, transitions, and causal relations. They restrict what outcomes may occur and how those outcomes may be related. But these constraints do not, by themselves, assign a continuous sequence of occupied positions to a quantum referent. A traveler-bead ontology requires more than temporal governance: it requires a licensed object occupying intermediate locations along a classical route. Quantum admissibility supplies possible records and probabilities, not a hidden classical biography. Therefore being timebound does not imply being a traveler.
+\end{proof}
+
+\begin{corollary}[Countability does not imply bead-path ontology]
+The fact that a quantum referent can be counted does not imply that it follows a hidden classical path.
+\end{corollary}
+
+\begin{proof}
+Counting establishes an inventory or record within a specified physical context. A hidden classical path requires a continuous sequence of definite intermediate positions. The former does not supply the latter. Electrons may be counted, but an electron in an orbital is not thereby licensed as a tiny object orbiting the nucleus. Therefore countability does not imply bead-path ontology.
+\end{proof}
+
+\begin{corollary}[Relativistic constraint does not imply classical itinerary]
+The fact that a quantum system respects relativistic causal structure does not imply that it possesses a classical itinerary between records.
+\end{corollary}
+
+\begin{proof}
+Relativistic causal structure constrains which records, transitions, and correlations are physically admissible. A classical itinerary is a further claim: that the system occupied a determinate sequence of intermediate positions. The causal constraint does not supply that sequence. Therefore relativistic constraint does not imply classical itinerary.
+\end{proof}
+
+\section{Detection Is Not Biography}
+
+A detection record is real. It is a physical event. It may be localized, time-stamped, measured, compared, and counted.
+
+But a detection record is not a biography.
+
+If an electron is detected at a location, the record does not establish that the electron was a tiny bead traveling along a hidden path to that point. If an electron is later detected elsewhere, the pair of records does not, by itself, fill in a classical route between them. Quantum theory supplies lawful transition amplitudes and admissible records. It does not supply a miniature travel diary unless an additional classical model is imposed.
+
+\begin{proposition}[Detection does not supply hidden route]
+A localized detection record does not, by itself, establish a hidden classical route prior to detection.
+\end{proposition}
+
+\begin{proof}
+A localized detection record establishes that a physical registration occurred under specified measurement conditions. It does not establish that the registered quantum referent occupied a continuous sequence of definite positions before the record. The route is an additional classical interpretation, not a consequence of the record itself. Therefore detection does not supply hidden route.
+\end{proof}
+
+\begin{remark}
+This point is familiar from atomic orbitals. The electron is detected through records and transitions, but the orbital is not a planetary track. The record is real; the classical path is not supplied.
+\end{remark}
+
+\section{Relation to Photon Ontology}
+
+The photon case remains stricter than the electron case.
+
+For the photon, standard relativity gives null proper time and no rest frame. The Timeless Light Model treats those facts as ontologically restrictive: no photon rest frame, no photon object-location, no intermediate location, no trajectory, no transit. The photon is a lawfully admissible charge-state relation whose spacetime appearance is a lawful change~\cite{McKinleyBedrock}.
+
+For the electron, the result is different. The electron has rest mass and may be counted. The no-go is not that electrons cannot be counted. The no-go is that counting, mass, temporal evolution, and relativistic constraint do not restore traveler-bead ontology.
+
+The two results therefore form an asymmetric hierarchy:
+
+\[
+\text{timebound}
+\not\Rightarrow
+\text{traveler-bead ontology},
+\]
+
+\[
+\text{null/timeless}
+\Rightarrow
+\text{traveler-bead ontology foreclosed}.
+\]
+
+The photon case removes the traveler by null structure. The electron case removes only the inference from timebound governance to traveler ontology: mass, countability, temporal evolution, and relativistic constraint do not themselves supply a hidden classical route. A further interpretation may add additional structure, but it is not delivered by quantum admissibility alone.
+
+\section{Admissibility Is Not Itinerary}
+
+Quantum admissibility is a rule-structure for outcomes. It is not an itinerary.
+
+An itinerary says where a thing went. An admissibility structure says which records are allowed, which transitions are possible, which amplitudes enter, and which conservation rules apply.
+
+The difference is decisive. A lawful outcome structure can be time-dependent without becoming a travel story. The Schrödinger equation, the Dirac equation, and path-integral formulations give lawful structure for state descriptions, amplitudes, and records~\cite{Schrodinger1926,Dirac1928,Feynman1948}. They do not, by themselves, turn the quantum referent into a bead occupying every intermediate step of a hidden route.
+
+\begin{proposition}[Admissibility is not itinerary]
+A law of admissible quantum outcomes is not a hidden itinerary of a traveling object.
+\end{proposition}
+
+\begin{proof}
+A law of admissible outcomes specifies the conditions under which records, transitions, interactions, or measurements may occur. A hidden itinerary specifies a continuous sequence of occupied positions by a persisting object. These are different structures. The first constrains possible records. The second narrates a classical path. The first does not entail the second. Therefore admissibility is not itinerary.
+\end{proof}
+
+\section{What Survives}
+
+The no-go removes only the traveler-bead inference. It leaves ordinary physics intact.
+
+\begin{enumerate}
+    \item Electrons remain countable.
+    \item Electron rest mass remains.
+    \item Atomic spectra remain.
+    \item Orbital state descriptions remain.
+    \item Detector records remain.
+    \item Relativistic causal constraints remain.
+    \item Quantum dynamics remains.
+\end{enumerate}
+
+What fails is the unauthorized extra picture:
+
+\begin{quote}
+Because the system is timebound, massive, countable, or detected, it must be a tiny traveler with a hidden path.
+\end{quote}
+
+That conclusion does not follow.
+
+\section{Main Result}
+
+\begin{proposition}[Timebound quantum systems do not require traveler-bead ontology]
+A timebound quantum system may possess mass, countability, temporal evolution, and relativistic constraint without being licensed as a bead-like traveler following a continuous classical route between records.
+\end{proposition}
+
+\begin{proof}
+Mass and countability establish physical features of the system. Temporal evolution and relativistic constraint establish lawful structure governing admissible descriptions and records. None of these establishes a continuous sequence of occupied intermediate positions. Traveler-bead ontology requires such a sequence. Therefore a timebound quantum system does not require traveler-bead ontology.
+\end{proof}
+
+\begin{corollary}[Electron orbital no-go]
+An electron in an atomic orbital is not licensed by standard quantum theory as a tiny object orbiting the nucleus along a hidden classical path.
+\end{corollary}
+
+\begin{proof}
+An atomic orbital supplies a quantum state structure governing admissible energies, amplitudes, transitions, and detection probabilities. A hidden classical orbit would require a definite path around the nucleus. The orbital structure does not supply such a path. Therefore the electron in an atomic orbital is not licensed by standard quantum theory as a tiny object orbiting the nucleus.
+\end{proof}
+
+\section{Conclusion}
+
+Timebound does not mean traveler.
+
+The electron is massive. The electron may be counted. The electron participates in time-governed quantum descriptions and relativistic causal structure. But none of this licenses, from standard quantum admissibility alone, the image of a tiny bead traveling along a hidden classical route between records.
+
+Quantum theory supplies laws of admissible outcomes. Relativity supplies causal constraint. Detection supplies records. None supplies a travel diary.
+
+The no-go is therefore simple:
+
+\[
+\text{timebound} \neq \text{traveler-bead}.
+\]
+
+The photon case forecloses the traveler through null structure. The electron case blocks the inference from timebound quantum admissibility to classical route. Together they show the same discipline: ordinary lawful physical structure is not a license for cartoon transit ontology.
+
+\begin{thebibliography}{9}
+
+\bibitem[McKinley(2026)]{McKinleyBedrock}
+J.~C.~W. McKinley.
+\newblock \emph{A Minimal Structural Statement of the Timeless Light Model}.
+\newblock Zenodo (2026).
+\newblock \doi{10.5281/zenodo.19167403}.
+
+\bibitem[Einstein(1905)]{Einstein1905}
+A.~Einstein.
+\newblock Zur Elektrodynamik bewegter K{\"o}rper.
+\newblock \emph{Annalen der Physik} \textbf{17}, 891--921 (1905).
+\newblock \doi{10.1002/andp.19053221004}.
+
+\bibitem[Schrödinger(1926)]{Schrodinger1926}
+E.~Schrödinger.
+\newblock Quantisierung als Eigenwertproblem.
+\newblock \emph{Annalen der Physik} \textbf{79}, 361--376 (1926).
+\newblock \doi{10.1002/andp.19263840404}.
+
+\bibitem[Dirac(1928)]{Dirac1928}
+P.~A.~M. Dirac.
+\newblock The quantum theory of the electron.
+\newblock \emph{Proceedings of the Royal Society A} \textbf{117}, 610--624 (1928).
+\newblock \doi{10.1098/rspa.1928.0023}.
+
+\bibitem[Feynman(1948)]{Feynman1948}
+R.~P. Feynman.
+\newblock Space-time approach to non-relativistic quantum mechanics.
+\newblock \emph{Reviews of Modern Physics} \textbf{20}, 367--387 (1948).
+\newblock \doi{10.1103/RevModPhys.20.367}.
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+
+### [2026] Spacetime Changes Can Be Counted; Photons Cannot: A No-Go Result on Photon-Object Inventory
+* **DOI:** [10.5281/zenodo.20113982](https://doi.org/10.5281/zenodo.20113982)
+* **Date:** 12 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{remark}[proposition]{Remark}
+
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{Spacetime Changes Can Be Counted; Photons Cannot}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\title{\textbf{Spacetime Changes Can Be Counted; Photons Cannot}\\
+\large A No-Go Result on Photon-Object Inventory}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 10, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20113982}{10.5281/zenodo.20113982}.}
+
+\begin{abstract}
+Spacetime-side changes are countable. Photon-objects are not. A detector may register events, an apparatus may record absorptions, and a field-state description may assign an occupation number. But these are counts of records, changes, or representation-relative quantities. They are not counts of persisting photon-objects. In standard relativistic physics, the photon has null proper time and no rest frame. The Timeless Light Model treats those standard constraints as ontologically restrictive rather than as harmless formal curiosities: no photon rest frame means no defined photon object-location, no intermediate location, no trajectory, and no transit. This paper states a narrow two-pronged no-go result: photon-object inventory is not licensed by the null constraints; and even if licensed, any closed photon-object quantity would import a census frame foreign to the null case. Ordinary photon-counting practice is preserved. Endpoint records remain countable. State-relative photon-number descriptions remain valid. What fails is the stronger claim that there exists a completed stock of photon-things in flight.
+\end{abstract}
+
+\section{Introduction}
+
+The phrase ``one photon'' is useful. The phrase ``two detector events'' is useful. The phrase ``an \(N\)-photon state'' is useful. None of these expressions should be erased from physics.
+
+The question is what these expressions count.
+
+This paper argues that spacetime-side changes may be counted, but photons are not countable as persisting objects. The distinction is not semantic. It follows from taking the standard null constraints seriously. In standard relativistic physics, a photon has null proper time and no rest frame~\cite{Einstein1905,Wald1984}. TLM refuses to treat those facts as decorative formalities. If the photon has no rest frame, then no photon object-location, intermediate position, trajectory, or transit is licensed. The photon is therefore not a particle in transit, but a lawfully admissible charge-state relation whose spacetime appearance is a lawful change~\cite{McKinleyBedrock}.
+
+The present paper does not modify Special Relativity, General Relativity, quantum mechanics, or quantum field theory. It imposes an interpretive restriction:
+
+\begin{quote}
+Do not convert countable spacetime-side changes into a completed inventory of photon-objects.
+\end{quote}
+
+The no-go result is narrow. It does not deny detections. It does not deny absorptions. It does not deny emission records. It does not deny state-relative photon-number descriptions. It denies only the extra ontology of a counted photon-stock in between.
+
+The purpose of this note is therefore to preserve ordinary photon-counting practice while blocking a stronger ontological inference. Detector records, absorption events, source-side changes, and state-relative occupation numbers may be counted. A persisting photon-object in spacetime may not be inventoried, because standard null constraints license no such object.
+
+\section{Definitions}
+
+\begin{definition}[Spacetime appearance]
+A spacetime appearance is the manifestation of a lawfully admissible charge-state relation as a lawful change within spacetime description.
+\end{definition}
+
+\begin{definition}[Spacetime-side change]
+A spacetime-side change is the emission-side, absorption-side, detector-side, or measured transition through which the spacetime appearance is described.
+\end{definition}
+
+\begin{definition}[Spacetime-side record]
+A spacetime-side record is a discrete registration of a spacetime-side change, including a detector click, absorption record, emission-side label, measured transition, or state-relative number assignment.
+\end{definition}
+
+\begin{definition}[Photon-object]
+A photon-object is a supposed persisting item located in spacetime, possessing intermediate presence between emission and absorption.
+\end{definition}
+
+\begin{definition}[Photon-object inventory]
+A photon-object inventory is a closed stock of persisting photon-things:
+\[
+|\Gamma|=N,
+\]
+where \(\Gamma\) is treated as a bounded set of photon-objects.
+\end{definition}
+
+\begin{definition}[Census frame]
+A census frame is the standpoint required to treat a domain as a completed inventory. It supplies a boundary, an inclusion rule, an exclusion rule, and a completed count condition.
+\end{definition}
+
+\begin{definition}[Charge-state relation]
+A charge-state relation is the lawful relation underlying what spacetime description renders process-wise as emission, absorption, or transfer.
+\end{definition}
+
+\section{Spacetime-Side Changes Are Countable}
+
+\begin{proposition}[Spacetime-side changes may be counted]
+Spacetime-side changes may be counted as detector records, endpoint events, or representation-relative state quantities.
+\end{proposition}
+
+\begin{proof}
+A detector record is a spacetime-side event. If an apparatus records \(N\) such events, then \(N\) records have occurred within the measurement arrangement. Likewise, a specified field-state description may assign an occupation number relative to its chosen representation. In both cases, the count attaches to a spacetime-side record, change, or formal state description. Therefore spacetime-side changes may be counted.
+\end{proof}
+
+\begin{remark}
+The claim is not that photon-counting language is useless. The claim is that one must identify what is being counted.
+\end{remark}
+
+\begin{proposition}[Counting spacetime-side changes does not imply counting photon-objects]
+A count of spacetime-side changes does not imply a count of persisting photon-objects.
+\end{proposition}
+
+\begin{proof}
+A spacetime-side change is a recorded event, measured transition, or state-relative description. A photon-object is a supposed persisting item located between endpoints. The first is supplied by spacetime-side measurement or representation. The second is an additional ontology. Therefore a count of spacetime-side changes does not imply a count of photon-objects.
+\end{proof}
+
+\section{The Null Constraint}
+
+The central physical point is not proprietary to TLM. Standard relativistic physics already assigns the photon null proper time and no rest frame. TLM's contribution is the interpretive discipline of refusing to reinsert an object-in-flight after those constraints have removed the conditions for one.
+
+The minimal chain is:
+
+\[
+\begin{aligned}
+d\tau=0 \;&\Rightarrow\; \text{no photon rest frame} \\
+&\Rightarrow\; \text{no defined photon object-location} \\
+&\Rightarrow\; \text{no intermediate location} \\
+&\Rightarrow\; \text{no trajectory} \\
+&\Rightarrow\; \text{no transit}.
+\end{aligned}
+\]
+
+The first two links are standard. The later links state the interpretive consequence enforced here. A located object requires location predicates. A persisting traveler requires intermediate states. A trajectory requires ordered occupancy. A transit story requires a carrier to be in transit. The null case supplies none of these for the photon as an object.
+
+\begin{proposition}[No located photon-object]
+The photon is not licensed as a located object in spacetime.
+\end{proposition}
+
+\begin{proof}
+A located object in spacetime requires spatial predicates sufficient for location, intermediate position, and persistence across a sequence of states. In standard relativity, the photon has null proper time and no rest frame. Without a rest frame, the photon does not possess object-location predicates in the sense required for a persisting item. Without object-location predicates, no intermediate location is licensed. Without intermediate location, no trajectory is licensed. Without trajectory, no transit is licensed. Therefore the photon is not licensed as a located object in spacetime.
+\end{proof}
+
+\begin{corollary}[What has no object-location is not here]
+If the photon has no defined location as an object in spacetime, then it is not a thing here, there, or halfway.
+\end{corollary}
+
+\begin{proof}
+The predicates ``here,'' ``there,'' and ``halfway'' are location predicates. If location is not defined for the photon as an object, those predicates do not apply to the photon as an object. Therefore the photon is not here, there, or halfway.
+\end{proof}
+
+\begin{remark}
+This does not deny that spacetime descriptions contain endpoint labels, null relations, field modes, detector records, or measured changes. It denies that such descriptions license an occupied intermediate history.
+\end{remark}
+
+\section{The First No-Go: No Photon-Object Count}
+
+\begin{proposition}[Photon-objects cannot be counted]
+Photon-objects cannot be counted because the photon-object is not licensed.
+\end{proposition}
+
+\begin{proof}
+To count photon-objects, there must be photon-objects. A photon-object, as defined here, is a persisting located item in spacetime. By the preceding result, the photon is not licensed as a located object in spacetime. Therefore the required object of the count is absent. Hence photon-objects cannot be counted.
+\end{proof}
+
+\begin{corollary}[There is no photon stock]
+There is no completed stock of photon-objects between emission and absorption.
+\end{corollary}
+
+\begin{proof}
+A stock is an inventory of persisting items. Photon-objects are not licensed as persisting located items. Therefore no photon stock exists between emission and absorption.
+\end{proof}
+
+\begin{remark}
+The point is stronger than saying that a photon stock is hard to observe. The point is that the photon-stock ontology is not licensed by the null constraints.
+\end{remark}
+
+\section{The Second No-Go: Closed Photon Quantity Imports a Census Frame}
+
+Even if the first no-go is ignored, a second no-go remains. A completed photon quantity imports a census frame. A census frame imports temporal or quasi-temporal structure.
+
+The problem appears whenever one says:
+
+\[
+|\Gamma|=N,
+\]
+where \(\Gamma\) is treated as the completed set of photon-things.
+
+That statement is not merely a count. It is a closed inventory. A closed inventory requires one of the following hidden structures.
+
+\subsection{Case 1: There are \(N\) photons now}
+
+If the claim means
+
+\[
+|\Gamma(t)|=N,
+\]
+then the count is explicitly indexed to a time \(t\). The word ``now'' supplies a census moment.
+
+\begin{quote}
+There are \(N\) photons now.
+\end{quote}
+
+This is a time-indexed inventory. It belongs to spacetime-side accounting, not to the photon as a null charge-state relation.
+
+\subsection{Case 2: There were \(N-1\) photons before}
+
+If the count changes from \(N-1\) to \(N\), then the account introduces before and after:
+
+\[
+|\Gamma(t_1)|=N-1,
+\qquad
+|\Gamma(t_2)|=N,
+\qquad
+t_1<t_2.
+\]
+
+This is not timeless. It is a temporal population history.
+
+\subsection{Case 3: There are always \(N\) photons}
+
+If the claim is that there are always \(N\) photons, then the claim becomes:
+
+\[
+\forall t,\ |\Gamma(t)|=N.
+\]
+
+The word ``always'' is not timeless. It quantifies across time. It treats the inventory as stable throughout a temporal range.
+
+\subsection{Case 4: A source produced \(N\) photons}
+
+If the claim is that a source produced \(N\) photons, then the account introduces production sequence:
+
+\[
+\text{not-yet-produced}
+\quad \longrightarrow \quad
+\text{produced}.
+\]
+
+This is again before/after structure. It may be acceptable as source-side spacetime description, but it does not define a photon-object in the middle.
+
+\begin{lemma}[Completed quantity imports a census frame]
+A completed quantity of photon-objects requires a census frame.
+\end{lemma}
+
+\begin{proof}
+A completed quantity says that the total inventory is \(N\), no more and no less. Such a claim requires a boundary around the relevant domain, an inclusion rule, an exclusion rule, and a condition under which the count is complete. These jointly form a census frame.
+\end{proof}
+
+\begin{lemma}[A census frame imports time-like structure]
+A census frame imports time-like structure through a census moment, a before/after comparison, an always-condition, or a production sequence.
+\end{lemma}
+
+\begin{proof}
+A completed inventory must be final relative to some standpoint. If the standpoint is ``now,'' a census moment is introduced. If the inventory changes, before/after comparison is introduced. If the inventory is said to be permanently fixed, an always-condition is introduced. If the inventory is produced, production sequence is introduced. Each route imports temporal or quasi-temporal structure.
+\end{proof}
+
+\begin{proposition}[Closed photon-object quantity is a category error]
+A closed quantity of photon-objects is a category error.
+\end{proposition}
+
+\begin{proof}
+A closed quantity of photon-objects requires photon-objects and a census frame. Photon-objects are not licensed, because the photon is not a persisting located item in spacetime. A census frame also imports temporal or quasi-temporal structure, which is incompatible with the photon understood as a null charge-state relation without internal time. Therefore a closed quantity of photon-objects is a category error.
+\end{proof}
+
+\section{What Is Counted Instead}
+
+The denial of photon-object count does not erase physics. It relocates the count to the correct level.
+
+\begin{enumerate}
+    \item Detector records may be counted.
+    \item Absorption-side changes may be counted.
+    \item Emission-side changes may be counted.
+    \item State-relative occupation numbers may be assigned.
+    \item Endpoint correlations may be described.
+    \item Lawful charge-state changes may be described in spacetime.
+\end{enumerate}
+
+These are all counts or descriptions of records, changes, events, or formal states. They are not inventories of photon-things.
+
+\begin{proposition}[Photon-counting is record-counting or state-relative number assignment]
+What is called photon-counting is, strictly, counting spacetime-side records or assigning state-relative photon-number quantities.
+\end{proposition}
+
+\begin{proof}
+A physical count occurs through records, detections, absorptions, emissions, or representation-relative state descriptions. None of these requires a persisting photon-object in the interval. Therefore photon-counting is strictly record-counting or state-relative number assignment, not photon-object inventory.
+\end{proof}
+
+\section{Endpoint Accounting}
+
+The clean description is endpoint accounting:
+
+\[
+\text{emission-side lawful change}
+\quad \longleftrightarrow \quad
+\text{absorption-side lawful change}.
+\]
+
+The photon is the name attached to the admissible charge-state relation. The relation has a spacetime appearance; the endpoint records are physical; the intermediate traveler is not added.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.05, font=\footnotesize]
+    % axes
+    \draw[->] (-0.2,0) -- (7,0) node[right] {$x$};
+    \draw[->] (0,-0.2) -- (0,4.5) node[above] {$ct$};
+
+    % null relation
+    \draw[thick,dashed] (0.9,0.7) -- (5.7,3.9);
+
+    % endpoints
+    \fill (0.9,0.7) circle (2.5pt);
+    \fill (5.7,3.9) circle (2.5pt);
+
+    \node[below right] at (0.6,0.7) {emission-side record};
+    \node[above left] at (6,3.9) {absorption-side record};
+
+    \node[above,rotate=34] at (3.2,2.25) {$ds^2=0,\ d\tau=0$};
+
+    % no object label
+    \node at (6.4,1.15) {null relation, not occupied history};
+    \draw[->] (6.4,1.35) -- (3.2,2.1);
+\end{tikzpicture}
+\end{center}
+
+\section{Relation to Photon Number in Quantum Theory}
+
+Quantum theory permits photon-number language. Quantum field theory permits occupation-number language. This paper does not dispute either practice.
+
+The restriction is ontological. A number in a specified state representation does not force a stock of tiny travelers. The formal count belongs to the formal context in which it is defined. It does not restore a photon rest frame, a photon location, a photon path, or a photon census in the middle.
+
+\begin{proposition}[Occupation number does not restore photon-object ontology]
+A photon-number state does not by itself establish a population of persisting photon-objects in spacetime.
+\end{proposition}
+
+\begin{proof}
+A photon-number state is a representation-relative formal description. A population of persisting photon-objects requires located items with intermediate presence. The formal description supplies the former. It does not supply rest-frame location, internal proper time, intermediate trajectory, or object persistence. Therefore occupation number does not restore photon-object ontology.
+\end{proof}
+
+\begin{remark}
+This is the same interpretive discipline applied elsewhere in the Timeless Light Model: successful formal representation does not license a forbidden middle.
+\end{remark}
+
+\section{Why the Distinction Matters}
+
+If one treats spacetime-side records as photon-objects, pseudo-questions appear:
+
+\begin{itemize}
+    \item Where is the photon halfway?
+    \item How does it know where to go?
+    \item Which route did it really take?
+    \item How many photon-things were in the interval?
+    \item Did the photon wait, choose, update, or correct its path?
+\end{itemize}
+
+Each question assumes a located traveler. The TLM answer is not to add hidden process. The answer is to reject the premise.
+
+The photon is not a thing traveling through spacetime. It is a lawful charge-state relation whose spacetime appearance is a lawful change. What is counted is the record, change, or representation-relative quantity, not a passenger.
+
+\section{Main Result}
+
+\begin{proposition}[Spacetime-side changes can be counted; photons cannot]
+Spacetime-side changes can be counted as records, endpoint events, or representation-relative quantities. Photons cannot be counted as photon-objects, because no photon-object is licensed by the standard null constraints.
+\end{proposition}
+
+\begin{proof}
+Spacetime-side changes are recorded or represented inside spacetime descriptions. They therefore admit counts relative to those descriptions. A photon-object would be a persisting located item in spacetime. But in standard relativistic physics, the photon has null proper time and no rest frame. Under the TLM interpretation, those constraints block photon object-location, intermediate location, trajectory, and transit. Therefore the photon-object is not licensed. Consequently spacetime-side changes can be counted, while photons cannot be counted as photon-objects.
+\end{proof}
+
+\begin{corollary}[No completed quantity for null charge-state relations]
+A null charge-state relation cannot be assigned a completed quantity as a stock of things.
+\end{corollary}
+
+\begin{proof}
+A completed stock of things requires countable objects. A null charge-state relation is not a persisting object in spacetime. Therefore it cannot be assigned a completed quantity as a stock of things.
+\end{proof}
+
+\section{Conclusion}
+
+Spacetime-side changes are countable. Photons are not countable as objects.
+
+A detector may count events. A field description may assign an occupation number. A source-side or absorption-side process may be described in ordinary spacetime language. But the photon itself is not a located item in spacetime. Standard relativity gives the photon null proper time and no rest frame. TLM takes those facts seriously: no photon rest frame means no photon object-location, no intermediate location, no trajectory, and no transit.
+
+Therefore the photon is not a tiny thing with unusual properties. It is not here. It is not halfway. It is not in the interval. It is a lawfully admissible charge-state relation whose spacetime appearance is a lawful change.
+
+The completed inventory question therefore fails twice. First, there is no photon-object to inventory. Second, any attempt to impose a closed photon quantity imports temporal structure through a census moment, a before/after comparison, an always-condition, or a production sequence.
+
+The clean result is:
+
+\[
+\text{countable spacetime-side change} \neq \text{countable photon-object}.
+\]
+
+Null means null. The photon is counted only where a record, change, or state-relative quantity is available in spacetime accounting. It is not counted as a thing in flight, because there is no thing in flight.
+
+\begin{thebibliography}{9}
+
+\bibitem[McKinley(2026)]{McKinleyBedrock}
+J.~C.~W. McKinley.
+\newblock \emph{A Minimal Structural Statement of the Timeless Light Model}.
+\newblock Zenodo (2026).
+\newblock \doi{10.5281/zenodo.19167403}.
+
+\bibitem[Einstein(1905)]{Einstein1905}
+A.~Einstein.
+\newblock Zur Elektrodynamik bewegter K{\"o}rper.
+\newblock \emph{Annalen der Physik} \textbf{17}, 891--921 (1905).
+\newblock \doi{10.1002/andp.19053221004}.
+
+\bibitem[Wald(1984)]{Wald1984}
+R.~M. Wald.
+\newblock \emph{General Relativity}.
+\newblock University of Chicago Press (1984).
+
+\end{thebibliography}
+
+\end{document}
+
+```
+
+</details>
+
+---
+
 ### [2026] Hawking Radiation Is an Exterior Result: A Short Interpretive No-Go on Interior Ontology
 *   **DOI:** [10.5281/zenodo.20100229](https://doi.org/10.5281/zenodo.20100229)
 *   **Date:** 12 May 2026
