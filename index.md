@@ -64,6 +64,837 @@ The TLM is an interpretive framework that treats the null status of the photon a
 ## The Papers
 
 
+### [2026] Hawking Radiation Is an Exterior Result: A Short Interpretive No-Go on Interior Ontology
+*   **DOI:** [10.5281/zenodo.20100229](https://doi.org/10.5281/zenodo.20100229)
+*   **Date:** 12 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs}
+\usepackage{float}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Hawking Radiation Is an Exterior Result}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{corollary}[proposition]{Corollary}
+
+\title{\textbf{Hawking Radiation Is an Exterior Result}\\
+\large A Short Interpretive No-Go on Interior Ontology}
+\author{John C. W. McKinley \orcidlink{0009-0005-7097-5035}}
+\date{May 12, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20100229}{10.5281/zenodo.20100229}.}
+
+\begin{abstract}
+Hawking radiation is a result about exterior observables. The standard derivation relates an initial vacuum state to late-time exterior particle content through quantum field modes on a collapsing black-hole spacetime. Its measurable outputs are the thermal flux detected at future infinity and the corresponding decrease of the black hole's asymptotic mass. This note states a narrow interpretive no-go result: the Hawking derivation does not, by itself, license an interior ontology. It does not establish what an infalling observer experiences, what localized field configuration exists behind the horizon, or whether a negative-energy particle literally falls inward and reduces the black hole's mass. Those are additional interpretive or theoretical claims. The exterior calculation licenses exterior radiation and exterior mass loss. It does not license interior narration.
+\end{abstract}
+
+\section{Introduction}
+
+Hawking radiation is commonly described as if the calculation tells a complete story about both sides of the event horizon. A virtual pair appears; one member escapes; the other falls into the black hole with negative energy; the black hole loses mass. This story is useful as a teaching image, but it says more than the standard derivation establishes.
+
+The standard Hawking result is formulated in terms of field modes, observer-relative particle content, thermal flux at future infinity, and mass measured by the asymptotic geometry. These are exterior or asymptotic quantities. They do not, by themselves, settle what occurs behind the horizon.
+
+This note states a narrow no-go result. The claim is not that black-hole interiors do not exist. The claim is not that no future theory can describe the interior. The claim is not that semiclassical gravity is false. The claim is narrower: the standard Hawking derivation does not license interior ontology. The issue here is not merely whether a particle travels from inside the black hole to the exterior; it is whether an exterior calculation licenses any interior story at all.
+
+An exterior derivation licenses exterior observables. It does not, by itself, license an interior story.
+
+\section{Exterior Structure of the Hawking Result}
+
+In the standard treatment, one studies a quantum field on a spacetime that begins with regular asymptotic structure and later forms a black hole by collapse. The field is assigned an initial vacuum state, usually described at past null infinity. Late-time observers at future null infinity decompose the field into outgoing modes and assign particle content to the state using the corresponding mode basis.
+
+The Hawking effect arises because the early and late mode decompositions do not match. A state that is vacuum relative to the early basis is not vacuum relative to the late exterior basis. The Bogoliubov transformation between the two descriptions yields nonzero late-time occupation numbers and a thermal spectrum.
+
+For a Schwarzschild black hole, the exterior temperature measured at infinity is
+\[
+T_H = \frac{\hbar c^3}{8\pi G M k_B}.
+\]
+The outgoing radiation carries positive energy to infinity. In the standard semiclassical extension of Hawking's result, the corresponding black-hole mass, as measured by the asymptotic geometry, decreases.
+
+These statements are physical. The radiation is real. The mass loss is real. The no-go concerns only the inference from these exterior facts to an interior ontology.
+
+\section{Definitions}
+
+\begin{definition}[Exterior observable]
+An exterior observable is a quantity defined for observers or measurements outside the black-hole horizon, especially at asymptotic infinity, such as outgoing flux, exterior particle content, and ADM mass.
+\end{definition}
+
+\begin{definition}[Interior ontology]
+Interior ontology is a claim about what exists, occurs, or is experienced behind the event horizon, including claims about localized particles, negative-energy objects, field configurations, or infalling-observer experience.
+\end{definition}
+
+\begin{definition}[Interior narration]
+Interior narration is the explanatory move of converting an exterior result into a story about events or objects behind the horizon.
+\end{definition}
+
+\begin{definition}[Frame restriction]
+Frame restriction is the interpretive rule that a result defined in one descriptive regime cannot be used, without additional argument, to assert ontology in another regime.
+\end{definition}
+
+\section{The No-Go Result}
+
+\begin{proposition}[The Hawking derivation is exterior-asymptotic]
+The standard Hawking derivation establishes late-time exterior radiation by relating early and late field-mode decompositions. It does not require an independently specified interior particle history.
+\end{proposition}
+
+\begin{proof}
+The derivation begins with an initial field state and compares mode decompositions associated with past and future asymptotic descriptions. The thermal result is read by late-time exterior observers, especially at future infinity. The calculation yields exterior particle content and outgoing flux. None of these steps requires the identification of a localized particle configuration behind the horizon. Therefore the standard derivation is exterior-asymptotic in its operative content.
+\end{proof}
+
+\begin{proposition}[ADM mass loss is an exterior statement]
+The decrease of black-hole mass in Hawking evaporation is a real physical statement about the asymptotic geometry, but it is not an interior narrative.
+\end{proposition}
+
+\begin{proof}
+The relevant black-hole mass in the standard evaporation statement is defined by the exterior spacetime, in particular by the mass parameter measured at infinity. In the standard semiclassical extension of Hawking's result, if outgoing radiation carries positive energy to infinity, then conservation requires a corresponding decrease in the mass attributed to the black hole by the asymptotic geometry. This establishes real exterior mass loss. It does not specify a localized interior mechanism, an infalling object, or an interior observer's account of that loss. Therefore ADM mass loss is an exterior statement, not an interior ontology.
+\end{proof}
+
+\begin{proposition}[Negative-energy infall is not licensed ontology]
+The common statement that a negative-energy particle falls into the black hole is not established as literal interior ontology by the Hawking derivation.
+\end{proposition}
+
+\begin{proof}
+The negative-energy-infall story is a heuristic device for representing energy conservation in the pair-creation picture. The standard field-theoretic result does not require a localized negative-energy particle behind the horizon. It requires an outgoing exterior flux and a corresponding decrease in the black hole's asymptotic mass. A bookkeeping narration that helps preserve conservation in a visual model does not establish the existence of the narrated interior object. Therefore negative-energy infall is not licensed ontology.
+\end{proof}
+
+\begin{proposition}[Interior experience is not determined by exterior flux]
+The exterior detection of Hawking radiation does not determine what an infalling observer experiences behind the horizon.
+\end{proposition}
+
+\begin{proof}
+Particle content is observer-relative in quantum field theory on curved spacetime. A late-time observer at infinity assigns particle content using an exterior mode decomposition. An infalling observer uses a different local description. In the standard semiclassical picture, an infalling observer crossing the horizon detects locally regular vacuum, not the thermal flux registered at infinity. The fact that radiation is detected at infinity therefore does not, by itself, determine the infalling observer's particle content, field description, or horizon-crossing experience. Thus exterior flux does not determine interior experience.
+\end{proof}
+
+\begin{proposition}[Interior ontology requires additional theory]
+Claims about the black-hole interior during evaporation require assumptions or formalisms beyond the standard exterior Hawking derivation.
+\end{proposition}
+
+\begin{proof}
+Questions about the interior include the field state behind the horizon, the fate of infalling information, the experience of an infalling observer, the role of backreaction, and the ultimate resolution of the singularity. The standard Hawking derivation supplies an exterior thermal flux and a corresponding asymptotic mass decrease. It does not resolve these interior questions. Therefore any determinate interior ontology requires additional theoretical commitments beyond the exterior derivation itself.
+\end{proof}
+
+\section{The Negative-Energy Story Revisited}
+
+The negative-energy story is the most common way interior ontology enters public explanations of Hawking radiation. The story says that a virtual pair appears at the horizon, the positive-energy member escapes, and the negative-energy member falls inward, reducing the black hole's mass.
+
+This narration is stronger than the derivation. The derivation requires an exterior flux and exterior mass loss. It does not require a literal interior particle doing the subtraction.
+
+The black hole's mass loss is real. The outgoing radiation is real. What is denied is the extra claim that the mass loss has been explained by a localized negative-energy object traveling inward behind the horizon.
+
+The clean statement is:
+
+\begin{quote}
+The black hole loses mass as measured from the exterior. The standard Hawking derivation does not convert that exterior fact into an interior particle story.
+\end{quote}
+
+\section{Relation to Interior Debates}
+
+The no-go stated here does not solve the black-hole information problem. It does not decide between complementarity, firewall proposals \cite{AMPS2013}, holographic reconstruction, entanglement-based interior proposals \cite{MaldacenaSusskind2013}, or other approaches to black-hole interiors. Its point is narrower and prior: the standard Hawking derivation itself does not supply the interior ontology that those debates contest.
+
+This is why the existence of those debates is significant. If the exterior Hawking calculation already fixed the interior story, there would be no need for competing accounts of horizon crossing, interior reconstruction, information recovery, or breakdown of semiclassical smoothness. The persistence of those disputes reflects the limited scope of the original result.
+
+The no-go is therefore conservative. It does not deny that interior questions matter. It denies only that the standard exterior calculation has already answered them.
+
+\section{Conclusion}
+
+Hawking radiation is an exterior result.
+
+The standard derivation establishes thermal radiation detected by late-time exterior observers and a corresponding decrease in black-hole mass as measured by the asymptotic geometry. These are real physical results. But they do not, by themselves, establish what exists, occurs, or is experienced inside the horizon.
+
+The negative-energy particle story is therefore not licensed as literal interior ontology. It is an explanatory narration attached to an exterior result.
+
+The no-go is simple: exterior radiation and exterior mass loss do not license interior narration.
+
+\begin{thebibliography}{9}
+
+\bibitem[Hawking(1975)]{Hawking1975}
+S.~W. Hawking.
+\newblock Particle creation by black holes.
+\newblock \emph{Communications in Mathematical Physics} \textbf{43}, 199--220 (1975).
+\newblock \doi{10.1007/BF02345020}.
+
+\bibitem[Unruh(1976)]{Unruh1976}
+W.~G. Unruh.
+\newblock Notes on black-hole evaporation.
+\newblock \emph{Physical Review D} \textbf{14}, 870--892 (1976).
+\newblock \doi{10.1103/PhysRevD.14.870}.
+
+\bibitem[Almheiri et al.(2013)]{AMPS2013}
+A.~Almheiri, D.~Marolf, J.~Polchinski, and J.~Sully.
+\newblock Black holes: complementarity or firewalls?
+\newblock \emph{Journal of High Energy Physics} \textbf{2013}, 62 (2013).
+\newblock \doi{10.1007/JHEP02(2013)062}.
+
+\bibitem[Maldacena and Susskind(2013)]{MaldacenaSusskind2013}
+J.~Maldacena and L.~Susskind.
+\newblock Cool horizons for entangled black holes.
+\newblock \emph{Fortschritte der Physik} \textbf{61}, 781--811 (2013).
+\newblock \doi{10.1002/prop.201300020}.
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+### [2026] Hawking Radiation Does Not License Transit Ontology: A Short Interpretive No-Go on Horizon-Conditioned Particle Appearance
+*   **DOI:** [10.5281/zenodo.20099664](https://doi.org/10.5281/zenodo.20099664)
+*   **Date:** 11 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs}
+\usepackage{float}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Hawking Radiation Does Not License Transit Ontology}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{corollary}[proposition]{Corollary}
+
+\title{\textbf{Hawking Radiation Does Not License Transit Ontology}\\
+\large A Short Interpretive No-Go on Horizon-Conditioned Particle Appearance}
+\author{John C. W. McKinley \orcidlink{0009-0005-7097-5035}}
+\date{May 11, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20099664}{10.5281/zenodo.20099664}.}
+
+\begin{abstract}
+Hawking radiation is often introduced through the heuristic image of virtual particle pairs forming near a black-hole horizon, with one particle falling inward and the other escaping outward. This note states a narrow interpretive no-go result: that narration does not license transit ontology. In the standard quantum-field-theoretic account, Hawking radiation arises from the mismatch between field-mode decompositions associated with the pre-collapse and late-time exterior descriptions. A late-time exterior observer detects a thermal flux because the in-vacuum is not empty relative to the exterior mode basis. This does not establish that a photon, particle, or quantum traveled from the black-hole interior to infinity. Lawful detection does not imply carrier history. The horizon licenses exterior appearance under horizon-conditioned field structure, not transit.
+\end{abstract}
+
+\section{Introduction}
+
+Hawking radiation is real physics. The common particle-pair story is not the ontology of that physics.
+
+The standard public description says that a virtual pair appears near the event horizon, one member falls into the black hole, and the other escapes as radiation. This image is pedagogically useful, but it invites the wrong interpretive conclusion. It suggests that a particle has a horizon-straddling history and that the escaping radiation is a traveler that originated behind, at, or just inside the horizon.
+
+This note rejects that conclusion. The claim is not that Hawking radiation is false. The claim is not that quantum field theory in curved spacetime fails. The claim is narrower: the detection of Hawking radiation does not license the assertion that a photon or particle traveled from the black-hole interior to the exterior.
+
+The present claim is independent of any proposed modification to physics. It is an interpretive restriction on what the standard account of Hawking radiation permits one to infer.
+
+
+\section{Background: The Standard Field-Theoretic Structure}
+
+In quantum field theory on curved spacetime, ``particle'' is not primitive in the same way as the field. Particle number is defined relative to a mode decomposition. That decomposition depends on the relevant time parameter and the observer's asymptotic description.
+
+For a collapsing spacetime that forms a black hole, the natural mode basis in the asymptotic past does not match the natural mode basis in the asymptotic future. A field state that is vacuum with respect to the early-time basis is not vacuum with respect to the late-time exterior basis. The Bogoliubov transformation between these bases mixes positive- and negative-frequency components. The late-time exterior observer therefore assigns nonzero occupation numbers to the field state.
+
+Hawking's result is that the exterior flux measured at future infinity is thermal, with temperature
+\[
+T_H = \frac{\hbar c^3}{8\pi G M k_B}.
+\]
+This result concerns field modes, horizon geometry, and observer-relative particle content. It does not require a localized particle-object to travel from the black-hole interior to the exterior.
+
+This is the crucial interpretive point. Particle content is derivative of the chosen mode decomposition; it is not a primitive inventory of localized objects. A particle count assigned by a late-time exterior observer is therefore a result of field-state representation relative to that observer's mode basis, not proof of an occupied route from the black-hole interior to the exterior.
+
+\section{Definitions}
+
+\begin{definition}[Transit ontology]
+Transit ontology is the claim that a detected quantum must be interpreted as a persisting object that occupied intermediate spacetime locations along a route between origin and detection.
+\end{definition}
+
+\begin{definition}[Horizon-conditioned particle appearance]
+A horizon-conditioned particle appearance is a detection event assigned particle content by an exterior observer because the field-mode decomposition appropriate to that exterior description differs from the mode decomposition associated with the initial state.
+\end{definition}
+
+\begin{definition}[Transit refusal]
+Transit refusal is the interpretive rule that a successful prediction of detection does not, by itself, establish a persisting carrier history, intermediate occupancy, route, or in-flight state.
+\end{definition}
+
+\section{The No-Go Result}
+
+\begin{proposition}[Pair narration does not establish particle ontology]
+The virtual-pair narration of Hawking radiation does not establish that two localized particle-objects literally appear at the horizon, with one falling inward and the other escaping outward.
+\end{proposition}
+
+\begin{proof}
+The virtual-pair narration is a heuristic rendering of a field-theoretic result. The actual derivation concerns the relation between early and late field-mode decompositions on a curved background. The thermal exterior flux follows from mode mixing and the observer-relative assignment of particle content. A heuristic story that assists visualization does not supply additional ontology beyond the derivation it summarizes. Therefore the pair narration does not establish literal horizon-straddling particle objects.
+\end{proof}
+
+\begin{proposition}[Mode mixing does not imply path occupancy]
+Bogoliubov mixing between early and late field modes predicts exterior particle content, but it does not identify an intermediate particle path.
+\end{proposition}
+
+\begin{proof}
+A Bogoliubov transformation relates one field-mode basis to another. Its coefficients determine how the vacuum of one basis is represented in another basis. The result is an exterior occupation number relative to the late-time observer's mode decomposition. A relation between mode bases is not a spacetime trajectory. It does not assign a photon rest frame, an internal clock, or a sequence of occupied intermediate locations. Hence mode mixing does not imply path occupancy.
+\end{proof}
+
+\begin{proposition}[Exterior detection does not imply interior transit]
+The exterior detection of a Hawking quantum does not entail that the detected quantum previously existed inside the black hole.
+\end{proposition}
+
+\begin{proof}
+Exterior detection establishes that the exterior field state contains detectable excitation relative to the observer's mode basis. It does not establish that the detected quantum possessed a prior localized identity in the black-hole interior. The field-theoretic account supplies an exterior flux and a corresponding energy balance. It does not supply a carrier history from the interior to infinity. Therefore exterior detection does not imply interior transit.
+\end{proof}
+
+\begin{proposition}[Tunneling language does not rescue transit ontology]
+The semiclassical tunneling formulation of Hawking radiation does not license the conclusion that a photon or particle has a continuous transit history through the horizon.
+\end{proposition}
+
+\begin{proof}
+The tunneling formulation computes an emission amplitude using a classical trajectory and the imaginary part of its action across the horizon pole. The classical path appearing in the calculation is a calculational object: it is the path along which the action is evaluated to extract a rate, not an experimentally licensed worldline of a persistent quantum carrier. The formulation gives an emission probability and a backreaction-corrected spectrum. It does not supply a photon rest frame, photon proper time, or a measurement-licensed continuous interior-to-exterior carrier history. A tunneling probability evaluated along a classical path is not a proof of persistent objecthood along that path. Therefore tunneling language does not rescue transit ontology.
+\end{proof}
+
+\section{The Negative-Energy Story}
+
+The common statement that a negative-energy particle falls into the black hole is also bookkeeping language. The physical conservation statement is that the outgoing flux carries positive energy to infinity, while the black hole's mass decreases. The geometry and global energy accounting balance the emission.
+
+Treating the inward member as a literal negative-energy object repeats the same error as the virtual-pair picture. It turns calculational bookkeeping into particle ontology. The no-go result applies equally here: energy balance does not license an interior particle story.
+
+
+\section{Conclusion}
+
+Hawking radiation is not evidence for a particle route out of a black hole.
+
+The rigorous account concerns quantum fields, curved spacetime, mode decompositions, and observer-relative particle content. The public pair-creation story is a teaching image. It does not establish that a photon or particle traveled from inside the black hole to the exterior. Even the tunneling formulation gives an emission probability, not a photon history.
+
+The no-go result is therefore simple: Hawking radiation licenses exterior appearance under horizon-conditioned field structure, not black-hole particle escape.
+
+\begin{thebibliography}{9}
+
+\bibitem[Hawking(1975)]{Hawking1975}
+S.~W. Hawking.
+\newblock Particle creation by black holes.
+\newblock \emph{Communications in Mathematical Physics} \textbf{43}, 199--220 (1975).
+\newblock \doi{10.1007/BF02345020}.
+
+\bibitem[Unruh(1976)]{Unruh1976}
+W.~G. Unruh.
+\newblock Notes on black-hole evaporation.
+\newblock \emph{Physical Review D} \textbf{14}, 870--892 (1976).
+\newblock \doi{10.1103/PhysRevD.14.870}.
+
+\bibitem[Parikh and Wilczek(2000)]{ParikhWilczek2000}
+M.~K. Parikh and F.~Wilczek.
+\newblock Hawking radiation as tunneling.
+\newblock \emph{Physical Review Letters} \textbf{85}, 5042--5045 (2000).
+\newblock \doi{10.1103/PhysRevLett.85.5042}.
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+### [2026] Unruh Radiation Does Not License Vacuum Substance Ontology: A Short Interpretive No-Go on Observer-Relative Particle Content
+*   **DOI:** [10.5281/zenodo.20100444](https://doi.org/10.5281/zenodo.20100444)
+*   **Date:** 10 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs}
+\usepackage{float}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Unruh Radiation Does Not License Vacuum Substance Ontology}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{corollary}[proposition]{Corollary}
+
+\title{\textbf{Unruh Radiation Does Not License Vacuum Substance Ontology}\\
+\large A Short Interpretive No-Go on Observer-Relative Particle Content}
+\author{John C. W. McKinley \orcidlink{0009-0005-7097-5035}}
+\date{May 10, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20100444}{10.5281/zenodo.20100444}.}
+
+\begin{abstract}
+The Unruh effect shows that a uniformly accelerated observer assigns thermal particle content to the Minkowski vacuum. This note states a narrow interpretive no-go result: Unruh radiation does not license vacuum substance ontology. The effect does not show that the inertial vacuum contains a hidden bath of localized particles. It shows that particle content is observer-relative when the field is decomposed with respect to inequivalent time descriptions. The accelerated observer's thermal response is real, but the inference from that response to a frame-independent inventory of vacuum particles is not licensed. The Unruh effect establishes observer-relative particle content, not hidden substance in empty space.
+\end{abstract}
+
+\section{Introduction}
+
+The Unruh effect is one of the cleanest demonstrations that particle content is not absolute.
+
+An inertial observer describes the Minkowski vacuum as empty. A uniformly accelerated observer assigns thermal particle content to that same state. The accelerated detector responds as if immersed in a thermal bath, with temperature proportional to its proper acceleration. This result is often described by saying that the accelerated observer sees particles in the vacuum.
+
+That phrase is useful, but it is dangerous if read ontologically. It can suggest that the vacuum contains a hidden substance or a reservoir of localized particles waiting to be revealed by acceleration. The formal lesson is different. The accelerated observer uses a different time parameter and therefore a different mode decomposition. Particle content is assigned relative to that decomposition.
+
+This note states a narrow no-go result. The claim is not that the Unruh effect is unreal. The claim is not that detector response is merely subjective. The claim is not that acceleration has no physical significance. The claim is narrower: Unruh radiation does not license the inference that the vacuum contains frame-independent particle substance.
+
+The no-go is simple:
+
+\begin{quote}
+Observer-relative detector response does not establish observer-independent vacuum substance.
+\end{quote}
+
+\section{The Standard Unruh Structure}
+
+In ordinary inertial quantization of a free field in Minkowski spacetime, the vacuum state is defined relative to inertial time translations. The corresponding annihilation operators annihilate the Minkowski vacuum.
+
+A uniformly accelerated observer follows a different class of worldlines and naturally uses Rindler time rather than inertial Minkowski time. The Rindler decomposition of the field is not the same as the inertial decomposition. The Minkowski vacuum, restricted to the right Rindler wedge and decomposed in Rindler modes, is a thermal state at the Unruh temperature; the accelerated observer's detector responds accordingly.
+
+The result is the Unruh temperature,
+\[
+T_U=\frac{\hbar a}{2\pi c k_B},
+\]
+where \(a\) is the observer's proper acceleration. A uniformly accelerated detector coupled to the field responds thermally.
+
+This detector response is physical. What is not licensed is the further claim that the inertial vacuum contains a frame-independent bath of particle substance. The effect is a statement about observer-relative particle content, not an absolute inventory hidden in empty space.
+
+\section{Definitions}
+
+\begin{definition}[Minkowski vacuum]
+The Minkowski vacuum is the vacuum state defined by inertial mode decomposition in flat spacetime.
+\end{definition}
+
+\begin{definition}[Rindler particle content]
+Rindler particle content is particle content assigned using the mode decomposition natural to uniformly accelerated observers.
+\end{definition}
+
+\begin{definition}[Vacuum substance ontology]
+Vacuum substance ontology is the claim that a particle assignment made by one observer licenses the existence of an observer-independent substance or inventory of localized particles in the vacuum.
+\end{definition}
+
+\begin{definition}[Observer-relative particle content]
+Observer-relative particle content is particle content defined relative to the mode decomposition and time parameter associated with a given observer or class of observers.
+\end{definition}
+
+\section{The No-Go Result}
+
+\begin{proposition}[The Unruh effect depends on inequivalent decompositions]\label{proposition:unruh-decomp}
+The Unruh effect arises from the inequivalence between inertial and uniformly accelerated mode decompositions.
+\end{proposition}
+
+\begin{proof}
+The inertial observer defines particle content using modes positive-frequency with respect to inertial time. The uniformly accelerated observer defines particle content using modes positive-frequency with respect to Rindler time. These are inequivalent decompositions of the same field. The Minkowski vacuum is not empty relative to the Rindler decomposition. Therefore the Unruh effect depends on inequivalent decompositions.
+\end{proof}
+
+\begin{proposition}[Thermal response does not imply hidden inertial particles]\label{proposition:hidden-particles}
+The thermal response of an accelerated detector does not establish that localized particles were already present in the inertial vacuum.
+\end{proposition}
+
+\begin{proof}
+The inertial vacuum is defined as vacuum relative to inertial annihilation operators. The accelerated detector's response is computed relative to its own trajectory and coupling to the field along that trajectory. The fact that the detector responds thermally establishes a real observer-relative response. It does not establish that inertial observers failed to notice a pre-existing bath of localized particles. Therefore thermal response does not imply hidden inertial particles.
+\end{proof}
+
+\begin{proposition}[Detector response does not fix absolute particle ontology]\label{proposition:absolute-ontology}
+A detector response associated with one observer class does not, by itself, fix a frame-independent particle ontology.
+\end{proposition}
+
+\begin{proof}
+A detector measures transitions along a particular worldline under a particular coupling to the field. The transition probabilities are physical predictions for that detector. But a particle ontology stronger than those transition probabilities would claim that particles exist as an observer-independent inventory. Since the Unruh effect arises from the relation between inequivalent observer descriptions, the detector response does not supply that stronger inventory. Thus detector response does not fix absolute particle ontology.
+\end{proof}
+
+\begin{proposition}[Acceleration does not reveal vacuum substance]\label{proposition:no-substance-revelation}
+Uniform acceleration changes the observer's description and detector response, but it does not reveal a hidden substance in the vacuum.
+\end{proposition}
+
+\begin{proof}
+The accelerated observer's particle content is defined using Rindler modes. The inertial observer's vacuum description is defined using Minkowski modes. The discrepancy between them follows from inequivalent time descriptions. A change in particle assignment caused by a change in observer structure does not establish that a hidden substance was present all along. It establishes that particle content is observer-relative. Therefore acceleration does not reveal vacuum substance.
+\end{proof}
+
+\begin{proposition}[Unruh radiation does not license vacuum substance ontology]\label{proposition:no-substance-ontology}
+The Unruh effect establishes observer-relative particle content, not observer-independent vacuum substance.
+\end{proposition}
+
+\begin{proof}
+By \Cref{proposition:unruh-decomp}, the Unruh effect depends on inequivalent decompositions. By \Cref{proposition:hidden-particles}, the accelerated detector's thermal response does not imply hidden inertial particles. By \Cref{proposition:absolute-ontology}, detector response does not fix absolute particle ontology. Therefore the Unruh effect does not license the claim that the vacuum contains observer-independent particle substance. It licenses observer-relative particle content, not observer-independent vacuum substance.
+\end{proof}
+
+\section{Relation to Hawking Radiation}
+
+The Unruh effect is often described as the cleaner cousin of Hawking radiation. The comparison is useful because the Unruh effect removes black-hole complications. There is no singularity, no collapsing star, no event horizon formed by gravitational collapse, and no black-hole interior. The spacetime is flat.
+
+Yet observer disagreement about particle content still appears. An inertial observer assigns vacuum. A uniformly accelerated observer assigns thermal content. The disagreement comes from inequivalent time descriptions and the mode decompositions built from them.
+
+Hawking radiation adds black-hole geometry. The mode mismatch occurs between early and late asymptotic descriptions in a collapsing spacetime. The Unruh effect shows the core interpretive point without that machinery:
+
+\begin{quote}
+Thermal particle content can arise from observer-relative field decomposition without licensing hidden particle substance.
+\end{quote}
+
+\section{Conclusion}
+
+Unruh radiation does not prove that empty space contains hidden particle substance.
+
+The accelerated detector's thermal response is real. The Unruh temperature is a real prediction of quantum field theory. But the response is not an observer-independent inventory of particles residing in the inertial vacuum. It is particle content assigned relative to the accelerated observer's time description and mode decomposition.
+
+The no-go result is therefore narrow and conservative. Unruh radiation licenses observer-relative detector response. It does not license vacuum substance ontology.
+
+The vacuum is not a hidden particle reservoir. It is a field state. Its particle content depends on the decomposition.
+
+\begin{thebibliography}{9}
+
+\bibitem[Fulling(1973)]{Fulling1973}
+S.~A. Fulling.
+\newblock Nonuniqueness of canonical field quantization in Riemannian space-time.
+\newblock \emph{Physical Review D} \textbf{7}, 2850--2862 (1973).
+\newblock \doi{10.1103/PhysRevD.7.2850}.
+
+\bibitem[Davies(1975)]{Davies1975}
+P.~C.~W. Davies.
+\newblock Scalar particle production in Schwarzschild and Rindler metrics.
+\newblock \emph{Journal of Physics A: Mathematical and General} \textbf{8}, 609--616 (1975).
+\newblock \doi{10.1088/0305-4470/8/4/022}.
+
+\bibitem[Unruh(1976)]{Unruh1976}
+W.~G. Unruh.
+\newblock Notes on black-hole evaporation.
+\newblock \emph{Physical Review D} \textbf{14}, 870--892 (1976).
+\newblock \doi{10.1103/PhysRevD.14.870}.
+
+\bibitem[Birrell and Davies(1982)]{BirrellDavies1982}
+N.~D. Birrell and P.~C.~W. Davies.
+\newblock \emph{Quantum Fields in Curved Space}.
+\newblock Cambridge University Press (1982).
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+### [2026] Vacuum Is Not Frame-Independent: A Short Interpretive No-Go on Absolute Emptiness in Quantum Field Theory
+*   **DOI:** [10.5281/zenodo.20100426](https://doi.org/10.5281/zenodo.20100426)
+*   **Date:** 9 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs}
+\usepackage{float}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Vacuum Is Not Frame-Independent}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{corollary}[proposition]{Corollary}
+
+\title{\textbf{Vacuum Is Not Frame-Independent}\\
+\large A Short Interpretive No-Go on Absolute Emptiness in Quantum Field Theory}
+\author{John C. W. McKinley \orcidlink{0009-0005-7097-5035}}
+\date{May 9, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20100426}{10.5281/zenodo.20100426}.}
+
+\begin{abstract}
+The vacuum of quantum field theory is often described as empty space. This note states a narrow interpretive no-go result: vacuum is not a frame-independent inventory of absence. In quantum field theory, particle content is defined relative to a mode decomposition, and the positive-frequency splitting that defines that decomposition depends on a time parameter. Observers with inequivalent time descriptions can therefore disagree about whether a field state is vacuum or thermally populated. The Unruh and Hawking effects make this structure explicit. This does not show that particles are secretly present in the vacuum; it shows that particle content is not absolute. Vacuum is a frame-relative field-state assignment, not an observer-independent ontology of emptiness.
+\end{abstract}
+
+\section{Introduction}
+
+Vacuum is often treated as the physical name for nothing being there. That description is too strong.
+
+In quantum field theory, vacuum is not an observer-independent inventory of absolute emptiness. It is the state annihilated by a chosen set of annihilation operators, and those operators are defined only after a field has been decomposed into modes. The mode decomposition depends on a positive-frequency splitting. The positive-frequency splitting depends on a time description.
+
+The claim of this note is narrow. It does not deny the usefulness of vacuum states. It does not deny the success of quantum field theory. It does not claim that vacuum is arbitrary. It denies only the stronger ontological inference that a vacuum assignment licenses an absolute statement that no particles are present, independent of frame, observer, or time parameter.
+
+This no-go matters because several central effects in quantum field theory on curved or non-inertial backgrounds depend precisely on the non-absoluteness of particle content. The Unruh effect shows that an accelerated observer assigns thermal particle content to the inertial vacuum. Hawking radiation shows that a state vacuum-like in an early description can appear thermally populated to late-time exterior observers. These are not anomalies. They are consequences of how particle content is defined.
+
+The no-go is simple:
+
+\begin{quote}
+No frame-relative vacuum definition licenses an observer-independent ontology of emptiness.
+\end{quote}
+
+\section{Field Modes and Vacuum}
+
+For a free scalar field, one commonly expands the field operator in a set of modes,
+\[
+\hat{\phi}(x)=\sum_k \left(a_k u_k(x)+a_k^\dagger u_k^*(x)\right),
+\]
+where the choice of mode functions \(u_k\) fixes the annihilation and creation operators associated with that decomposition.
+
+The vacuum associated with this decomposition is the state \(|0\rangle\) satisfying
+\[
+a_k |0\rangle = 0
+\]
+for all \(k\). This definition is precise. It is also basis-dependent. A different mode decomposition gives a different set of annihilation operators. A state annihilated by one set of operators need not be annihilated by another.
+
+This is not a technical nuisance. It is the central point. In quantum field theory, particle content is derivative of a chosen representation of the field. It is not a primitive inventory of localized objects.
+
+Positive-frequency modes are selected relative to a time parameter. If two observers, coordinate systems, or asymptotic regimes define inequivalent positive-frequency splittings, then they need not agree about particle content. A state described as vacuum in one decomposition can be described as populated in another.
+
+\section{Definitions}
+
+\begin{definition}[Mode decomposition]
+A mode decomposition is a representation of a quantum field in terms of a chosen set of mode functions together with associated creation and annihilation operators.
+\end{definition}
+
+\begin{definition}[Positive-frequency splitting]
+A positive-frequency splitting is the division of field modes into positive- and negative-frequency components relative to a chosen time parameter or time-translation structure.
+\end{definition}
+
+\begin{definition}[Vacuum state]
+A vacuum state is a state annihilated by the annihilation operators associated with a particular mode decomposition.
+\end{definition}
+
+\begin{definition}[Frame-independent emptiness]
+Frame-independent emptiness is the claim that a vacuum assignment establishes an observer-independent fact that no particles are present, independently of the mode decomposition or time description used.
+\end{definition}
+
+\section{The No-Go Result}
+
+\begin{proposition}[Vacuum requires a mode decomposition]\label{proposition:vacuum-mode}
+In quantum field theory, a vacuum state is defined relative to a chosen mode decomposition.
+\end{proposition}
+
+\begin{proof}
+A vacuum state is specified by the condition that it is annihilated by a set of annihilation operators. Those annihilation operators are obtained only after a field has been decomposed into modes. Without the chosen decomposition, there is no fixed set of annihilation operators relative to which the vacuum condition can be stated. Therefore vacuum requires a mode decomposition.
+\end{proof}
+
+\begin{proposition}[Mode decomposition requires a time description]\label{proposition:mode-time}
+A positive-frequency mode decomposition requires a time parameter or equivalent time-translation structure.
+\end{proposition}
+
+\begin{proof}
+The distinction between positive and negative frequency is a distinction concerning oscillation with respect to time. To say that a mode has positive frequency is to define its temporal behavior relative to a time parameter or time-translation symmetry. If the time description changes in an inequivalent way, the positive-frequency splitting can change as well. Therefore a mode decomposition that depends on positive frequency requires a time description.
+\end{proof}
+
+\begin{proposition}[Inequivalent time descriptions can produce inequivalent vacua]\label{proposition:inequivalent-vacua}
+Observers or regimes using inequivalent time descriptions need not agree on which state is vacuum.
+\end{proposition}
+
+\begin{proof}
+Let one observer define annihilation operators \(a_k\) from one positive-frequency splitting, and let another define annihilation operators \(b_j\) from an inequivalent splitting. The two sets of operators can be related by a Bogoliubov transformation,
+\[
+b_j = \sum_k \left(\alpha_{jk} a_k + \beta_{jk} a_k^\dagger\right).
+\]
+If any \(\beta_{jk}\) coefficient is nonzero, then the state annihilated by all \(a_k\) is not generally annihilated by all \(b_j\). Thus a state vacuum for one decomposition can contain particles relative to another. Therefore inequivalent time descriptions can produce inequivalent vacua.
+\end{proof}
+
+\begin{proposition}[Vacuum disagreement is not a contradiction]\label{proposition:disagreement-not-contradiction}
+If one observer assigns vacuum and another assigns particle content to the same field state, the disagreement is not a contradiction when their mode decompositions are inequivalent.
+\end{proposition}
+
+\begin{proof}
+The two assignments answer different decomposition-relative questions. One asks whether the state is annihilated by one set of annihilation operators. The other asks whether it is annihilated by another. If the two decompositions are inequivalent, the answers need not agree. Since the predicate ``vacuum'' is being applied relative to different structures, the disagreement is not a logical contradiction. It is a feature of the formalism.
+\end{proof}
+
+\begin{proposition}[Vacuum does not license absolute emptiness ontology]\label{proposition:no-absolute-emptiness}
+A vacuum assignment does not, by itself, establish frame-independent emptiness.
+\end{proposition}
+
+\begin{proof}
+By \Cref{proposition:vacuum-mode}, vacuum requires a mode decomposition. By \Cref{proposition:mode-time}, that decomposition depends on a time description. By \Cref{proposition:inequivalent-vacua}, inequivalent time descriptions can produce inequivalent vacuum assignments. Therefore the statement that a state is vacuum is not, by itself, an observer-independent statement that no particles are present absolutely. It is a statement made relative to a decomposition. Thus vacuum does not license absolute emptiness ontology.
+\end{proof}
+
+\section{Examples: Unruh and Hawking}
+
+The Unruh effect gives the cleanest example. An inertial observer describes the Minkowski vacuum as empty. A uniformly accelerated observer assigns thermal particle content to that same state, with temperature
+\[
+T_U=\frac{\hbar a}{2\pi c k_B}.
+\]
+The difference is not that one observer has found hidden particles sitting inside the vacuum. The difference is that the accelerated observer uses a different time description and therefore a different mode decomposition.
+
+Hawking radiation gives the curved-spacetime version. A field state that is vacuum relative to an early asymptotic description need not be vacuum relative to the late-time exterior mode basis of a black-hole spacetime. The mismatch between early and late mode decompositions produces the thermal exterior result,
+\[
+T_H=\frac{\hbar c^3}{8\pi G M k_B}.
+\]
+Again, the lesson is not that particles were secretly waiting in the vacuum as localized objects. The lesson is that particle content is assigned relative to the relevant mode decomposition.
+
+Both examples display the same interpretive restriction:
+
+\begin{quote}
+Vacuum is a frame-relative field-state assignment, not an absolute ontology of nothingness.
+\end{quote}
+
+\section{Conclusion}
+
+Vacuum is not frame-independent emptiness.
+
+Quantum field theory defines vacuum through annihilation operators, and annihilation operators are fixed by a mode decomposition. Since positive-frequency splitting depends on a time description, inequivalent time descriptions can yield inequivalent particle assignments. This is why one observer can describe a state as vacuum while another describes it as thermally populated.
+
+The no-go result is therefore narrow but important. A vacuum assignment is a legitimate statement within a chosen field representation. It is not, by itself, a license to infer observer-independent absence. Absolute emptiness is stronger than the formalism supplies.
+
+Vacuum is a frame-relative field-state assignment. It is not an absolute ontology of nothingness.
+
+\begin{thebibliography}{9}
+
+\bibitem[Fulling(1973)]{Fulling1973}
+S.~A. Fulling.
+\newblock Nonuniqueness of canonical field quantization in Riemannian space-time.
+\newblock \emph{Physical Review D} \textbf{7}, 2850--2862 (1973).
+\newblock \doi{10.1103/PhysRevD.7.2850}.
+
+\bibitem[Davies(1975)]{Davies1975}
+P.~C.~W. Davies.
+\newblock Scalar particle production in Schwarzschild and Rindler metrics.
+\newblock \emph{Journal of Physics A: Mathematical and General} \textbf{8}, 609--616 (1975).
+\newblock \doi{10.1088/0305-4470/8/4/022}.
+
+\bibitem[Hawking(1975)]{Hawking1975}
+S.~W. Hawking.
+\newblock Particle creation by black holes.
+\newblock \emph{Communications in Mathematical Physics} \textbf{43}, 199--220 (1975).
+\newblock \doi{10.1007/BF02345020}.
+
+\bibitem[Unruh(1976)]{Unruh1976}
+W.~G. Unruh.
+\newblock Notes on black-hole evaporation.
+\newblock \emph{Physical Review D} \textbf{14}, 870--892 (1976).
+\newblock \doi{10.1103/PhysRevD.14.870}.
+
+\bibitem[Birrell and Davies(1982)]{BirrellDavies1982}
+N.~D. Birrell and P.~C.~W. Davies.
+\newblock \emph{Quantum Fields in Curved Space}.
+\newblock Cambridge University Press (1982).
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+
 ### [2026] Fermion Fields Are Not Licensed as Things in Space: A Structural No-Go on Substrate Ontology in Quantum Field Theory
 *   **DOI:** [10.5281/zenodo.20092059](https://doi.org/10.5281/zenodo.20092059)
 *   **Date:** 14 May 2026
