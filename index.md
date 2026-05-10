@@ -64,6 +64,264 @@ The TLM is an interpretive framework that treats the null status of the photon a
 ## The Papers
 
 
+### [2026] *c* Is a Registration Bound, Not a Traveler's Speed: A Registration-Based Interpretation of the Information Speed Limit
+* **DOI:** [10.5281/zenodo.20114177](https://doi.org/10.5281/zenodo.20114177)
+* **Date:** 10 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\documentclass[12pt,onecolumn]{article}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{remark}[proposition]{Remark}
+
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{\(c\) Is a Registration Bound}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\title{\textbf{\(c\) Is a Registration Bound, Not a Traveler's Speed}\\
+\large A Registration-Based Interpretation of the Information Speed Limit}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 10, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20114177}{10.5281/zenodo.20114177}.}
+
+\begin{abstract}
+This paper makes one narrow interpretive claim: the information speed limit of spacetime, conventionally denoted \(c\), is naturally read as the structural bound on observer-perceivability of lawful state changes in the spacetime regime, not as the speed of a traveler. Here ``observer-perceivability'' includes any spacetime-side registration event, whether by a human observer, an instrument, a detector, or any other physical record-bearing system. The bound applies uniformly wherever registration occurs. At the photon scale, it bounds registration between paired endpoint events. At microscopic scales, it bounds registration within and between local record-bearing changes. At macroscopic scales, it bounds registration along extended cadences that observers interpolate as worldlines. In none of these cases is there a traveler whose speed the bound restrains. There are lawful state changes, spacetime-side registrations, and structural delays between registrations. The present claim introduces no new equations and alters no predictions of special relativity, general relativity, quantum mechanics, or quantum field theory. It is interpretive only.
+\end{abstract}
+
+\section{Introduction}
+
+The constant \(c\) is conventionally introduced as the speed of light. That description is operationally useful. It is also ontologically misleading if the photon is not treated as a particle traveling through spacetime.
+
+The Timeless Light Model has taken seriously the relativistic invariants associated with null structure. The Bedrock canon compresses the relevant photon-side result into the claim that the photon is not a particle in transit, but a lawfully admissible charge-state relation whose spacetime appearance is a lawful change~\cite{Bedrock}.
+
+Once the traveler is removed, the role of \(c\) should be stated without traveler language. This does not require revising the equations of relativity. It requires reading the constant without smuggling in a photon-object whose motion it measures.
+
+The phrase ``information speed limit'' is used here for the standard relativistic fact that causal signaling, information transfer, and record-bearing interaction are bounded by \(c\). The present paper does not introduce a new constant or a new physical limit.
+
+This paper states the role of \(c\) in registration terms. The information speed limit is read as the structural bound on observer-perceivability of lawful state changes in the spacetime regime. A lawful change may be registered in spacetime only under the structural conditions of spacetime. The constant \(c\) names the bound on that registration structure.
+
+The claim is narrow. It does not deny the usefulness of the phrase ``speed of light.'' It does not modify special relativity, general relativity, quantum mechanics, or quantum field theory. It denies only the extra ontological reading in which \(c\) is treated as the speed of a photon-object traveling through an occupied middle.
+\section{Registration and Observer-Perceivability}
+
+Before stating the central claim, the operative notion of perceivability must be made explicit.
+
+\begin{definition}[Registration]
+A registration is a spacetime-side event in which a lawful state change is physically recorded as a definite localized occurrence.
+\end{definition}
+
+\begin{definition}[Observer-perceivability]
+A lawful state change is observer-perceivable iff it is registrable in spacetime as a definite localized event. Registration includes any instrument recording or other physical record-bearing event, not merely registration by a human observer.
+\end{definition}
+
+\begin{remark}
+The term ``observer'' is operational rather than anthropic. A photographic plate, a detector circuit, a CCD, an antenna's voltage response, the heating of a surface under absorbed radiation, or the spin alignment of a measured system may all serve as registration events in this sense. Consciousness plays no role.
+\end{remark}
+
+The distinction matters because lawful state change and spacetime registration are not the same claim. The photon-side sequence has already argued that the lawful relation associated with emission and absorption is not itself a little process unfolding in the middle. What occurs in spacetime are endpoint records and registered changes. Observer-perceivability names this registration side.
+
+\section{The Information Speed Limit}
+
+\begin{definition}[Information speed limit]
+The information speed limit of spacetime is the invariant causal bound conventionally denoted \(c\).
+\end{definition}
+
+This definition does not change the numerical value of \(c\), nor does it alter the formal role \(c\) plays in relativity. It names the familiar invariant causal bound, leaving open the interpretive question of what that bound is a bound on.
+
+\begin{proposition}[\(c\) is a registration bound]
+The information speed limit is naturally read as the structural bound on spacetime-side registration of lawful state changes, rather than as the speed of a traveler.
+\end{proposition}
+
+\begin{proof}
+A lawful state change is observer-perceivable only insofar as it is registered in spacetime. Spacetime registration is governed by the causal and metric structure of spacetime. In relativity, the constant \(c\) bounds the relation between spatial separation and temporal registration for causal signaling and record-bearing interaction. Since the photon is not licensed as a traveler whose motion supplies the meaning of \(c\), the invariant is naturally read as a bound on the spacetime-side registration of lawful state changes. Therefore \(c\) functions as a registration bound rather than as a traveler's speed.
+\end{proof}
+
+\begin{remark}
+This is a reinterpretation of a standard role, not a new formal claim. Relativity already treats \(c\) as the invariant causal speed limiting signal propagation and causal influence. The present paper reads that invariant as a registration bound rather than as the speed of a traveling photon-object.
+\end{remark}
+
+\section{Invariance and Regime Status}
+
+\begin{proposition}[Invariance follows from regime status]
+The invariance of \(c\) is naturally explained by its status as a property of the spacetime registration regime rather than of any object within it.
+\end{proposition}
+
+\begin{proof}
+Every inertial observer and every recording instrument is situated within the spacetime regime. If \(c\) is the structural bound on registration in that regime, then every observer or instrument capable of registering events is already operating under the same bound. There is no registration standpoint outside the regime from which the bound could be measured as otherwise. The invariance of \(c\) is therefore naturally read as a consequence of its regime status.
+\end{proof}
+
+\begin{remark}
+The statement of regime status is interpretive. It does not modify the second postulate of special relativity, the metric structure of general relativity, or any empirical use of \(c\). It only relocates the ontological reading: \(c\) belongs to spacetime registration structure, not to a traveler.
+\end{remark}
+
+\section{The Bound at All Scales}
+
+The information speed limit applies wherever spacetime-side registration occurs. There is not one bound for photons and another for matter. There is one registration regime, and \(c\) is its structural bound.
+
+\begin{proposition}[Uniform application]
+The information speed limit bounds observer-perceivability uniformly across photon-scale, microscopic, and macroscopic registrations.
+\end{proposition}
+
+\begin{proof}
+At the photon scale, the bound applies to paired endpoint registrations: emission-side and absorption-side records stand in a spacetime relation constrained by \(c\). At microscopic scales, lawful state changes register as local events, transitions, scattering records, or other record-bearing changes; those registrations remain constrained by the same causal structure. At macroscopic scales, extended cadences of registration are interpolated as worldlines and motion; those cadences also remain constrained by \(c\). In all cases, what is bounded is spacetime-side registration of lawful state change. Therefore the bound applies uniformly.
+\end{proof}
+
+\begin{remark}
+The uniformity follows from the fact that \(c\) belongs to the regime, not to a selected class of objects. Anything registered in spacetime is registered under spacetime's structural conditions.
+\end{remark}
+
+\section{Status of \texorpdfstring{\(c\)}{c} as a Speed}
+
+The information speed limit is conventionally described as the speed of light. That terminology is serviceable for calculation and communication. It becomes misleading when read as the speed of a photon-object.
+
+\begin{proposition}[\(c\) is not a speed in the traveler sense]
+The information speed limit is not the speed of any object in transit.
+\end{proposition}
+
+\begin{proof}
+A speed in the ordinary traveler sense is the rate of position change of an object along a trajectory. The photon-side argument denies the needed object. The photon has no rest frame, no internal proper time, no object-location, no intermediate trajectory, and no transit~\cite{Bedrock}. There is therefore no photon-object for \(c\) to be the speed of. What \(c\) measures is the structural bound on registration in the spacetime regime, expressed in units of length per time. The dimensional form of \(c\) as a speed reflects spacetime geometry, not the kinematic property of a traveler.
+\end{proof}
+
+\begin{remark}
+Calling \(c\) ``the speed of light'' remains operationally harmless when used as shorthand. The error begins when the phrase is read as evidence for a photon-object traveling through an occupied middle.
+\end{remark}
+
+\section{Delay as Registration Bound}
+
+Once \(c\) is read as the bound on observer-perceivability, delay between registrations receives a structural interpretation. Delay is not the waiting time of a traveler. It is the spacing imposed by the registration regime.
+
+\begin{proposition}[Delay as registration bound]
+The temporal separation between registrations at distinct spacetime locations is bounded by the information speed limit.
+\end{proposition}
+
+\begin{proof}
+The information speed limit bounds observer-perceivability in spacetime. Registration at one spacetime location and registration at another are separate events in that regime. The structural bound on registration constrains the temporal relation between them. Therefore no registration sequence between distinct spatial locations can be tighter than the bound permits.
+\end{proof}
+
+\begin{remark}
+This restates standard relativistic signaling structure in registration-bound terms. The point is not that relativity was missing the rule. The point is that the rule does not require traveler ontology.
+\end{remark}
+
+\section{What This Does Not Change}
+
+The conservativeness of the proposal should be explicit.
+
+\begin{proposition}[No formal revision]
+The present proposal does not modify the equations of special relativity, general relativity, quantum mechanics, or quantum field theory.
+\end{proposition}
+
+\begin{proof}
+The proposal introduces no new equations, no new postulates, and no modifications to the metric structure of spacetime, the invariance of \(c\), the propagator structure of quantum field theory, or any predictive relation in standard physics. It concerns only the ontological reading attached to the constant \(c\). Therefore it introduces no formal revision.
+\end{proof}
+
+\begin{proposition}[No new empirical prediction]
+The present proposal makes no new empirical prediction.
+\end{proposition}
+
+\begin{proof}
+The reading of \(c\) as the bound on observer-perceivability does not predict new experimental outcomes. It gives a structural interpretation of the same constant already used in relativity and quantum theory. Therefore the proposal is interpretive only.
+\end{proof}
+
+\section{Discussion}
+
+The point of the present paper is not that physics lacked the relevant constant. Physics has long calculated with \(c\). The point is that once photon traveler ontology is removed, \(c\) should not continue to be read as the speed of a traveler.
+
+The better reading is that \(c\) is the rate at which lawful change is registrable in the spacetime regime. It governs the temporal structure of registration across spatial separation. It is a property of the regime in which records occur, not a property of a photon-object moving through that regime.
+
+This reading does not reduce \(c\). It clarifies its role. Relativity already uses \(c\) as the invariant causal speed. The present paper gives that role an ontological reading consistent with the no-traveler photon result. The traveler vanishes; the bound remains. The equations do not notice.
+
+\section{Conclusion}
+
+The information speed limit, conventionally denoted \(c\), is naturally read as the structural bound on observer-perceivability of lawful state changes in the spacetime regime. It is a property of the registration regime, not of any object within it.
+
+The effect of the limit is borne by spacetime-side observers, instruments, and record-bearing systems. They cannot register, compare, or receive lawful state changes outside the causal and metric structure bounded by \(c\). What is limited is not a photon-object moving through an occupied middle, but the observer-side availability of records in spacetime.
+
+Its invariance follows naturally from that status. Every observer and every instrument capable of registration is already inside the registration regime. Its dimensional form as a speed reflects the geometric structure of spacetime rather than the kinematic property of a traveler. The bound applies uniformly wherever registration occurs. In all cases, what is bounded is observer-perceivability: the registration of lawful state change by systems inside spacetime.
+
+Nothing in this paper alters standard predictive machinery. The contribution is interpretive only. The reading is conservative: it states the structural role of a constant relativity already retains, and removes a residual traveler narrative attached to it. The traveler vanishes; the observer-side bound remains.
+
+\section*{Glossary}
+
+\begin{description}
+    \item[Information speed limit] The invariant causal bound conventionally denoted \(c\), read here as the structural bound on the observer-perceivability of lawful state changes in the spacetime regime.
+
+    \item[Observer-perceivability] The registrability of a lawful state change in spacetime as a definite localized event. Includes any instrument recording or other physical record-bearing event, not merely registration by a human observer.
+
+    \item[Registration] A spacetime-side event in which a lawful state change is recorded as a definite localized occurrence.
+
+    \item[Spacetime regime] The domain in which temporal ordering, duration, geometry, and observer-side description appear.
+\end{description}
+
+\begin{thebibliography}{9}
+
+\bibitem[McKinley(2026)]{Bedrock}
+J.~C.~W.~McKinley.
+\newblock \emph{A Minimal Structural Statement of the Timeless Light Model}.
+\newblock Zenodo (2026).
+\newblock \doi{10.5281/zenodo.19167403}.
+
+\bibitem[Einstein(1905)]{Einstein1905}
+A.~Einstein.
+\newblock Zur Elektrodynamik bewegter K{\"o}rper.
+\newblock \emph{Annalen der Physik} \textbf{17}, 891--921 (1905).
+\newblock \doi{10.1002/andp.19053221004}.
+
+\bibitem[Wald(1984)]{Wald}
+R.~M.~Wald.
+\newblock \emph{General Relativity}.
+\newblock University of Chicago Press (1984).
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+
 ### [2026] Timebound Does Not Mean Traveler: A No-Go on Deriving Bead-Path Ontology from Quantum Admissibility
 * **DOI:** [10.5281/zenodo.20114078](https://doi.org/10.5281/zenodo.20114078)
 * **Date:** 12 May 2026
