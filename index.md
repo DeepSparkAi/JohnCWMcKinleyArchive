@@ -131,7 +131,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 \maketitle
 
-\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20175274}{10.5281/zenodo.20175274}.}
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20175517}{10.5281/zenodo.20175517}.}
 
 \begin{abstract}
 This paper makes one narrow interpretive claim. In any observer's own inertial frame, that observer is at rest. Motion appears only as the changing spatial relation between the observer's standpoint and other frames, systems, lightlike relations, or records.
@@ -149,6 +149,8 @@ The Timeless Light Model has taken the relativistic null invariants seriously. T
 Once the photon traveler is removed, the interpretive status of \(c\) should be restated without traveler vocabulary. The present paper states that restatement from the observer side.
 
 The starting point is standard special relativity: in an observer's own inertial frame, the observer's spatial coordinates are constant, and the observer's own velocity is zero. There is no frame-independent standpoint from which that observer is ``really'' moving. Motion is always assigned from one frame to another.
+
+The standard relativistic background is the invariance of \(c\) in inertial-frame descriptions~\cite{Einstein1905} and the metric treatment of causal structure in spacetime~\cite{Wald}.
 
 Accordingly, what an observer registers as motion is the changing relation between the observer's standpoint and other frames, systems, or records. The information speed limit bounds the registration of those relations. It is not a speed possessed by an object in its own frame, because no object has speed in its own frame. Thus \(c\) is not the maximum speed of a rocket in the rocket's own frame; in the rocket's own frame, the rocket is at rest. In the photon case, the point is stricter: the photon has no rest frame at all, so \(c\) cannot be the speed of a photon-object in the photon's own frame.
 
