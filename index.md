@@ -72,7 +72,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 
 ### [2026] *c* Is a Registration Bound, Not a Traveler's Speed: A Registration-Based Interpretation of the Information Speed Limit
-* **DOI:** [10.5281/zenodo.20114177](https://doi.org/10.5281/zenodo.20114177)
+* **DOI:** [10.5281/zenodo.20114176](https://doi.org/10.5281/zenodo.20114176)
 * **Date:** 10 May 2026
 
 <details markdown="1">
@@ -123,143 +123,168 @@ The TLM is an interpretive framework that treats the null status of the photon a
 \cfoot{\thepage}
 
 \title{\textbf{\(c\) Is a Registration Bound, Not a Traveler's Speed}\\
-\large A Registration-Based Interpretation of the Information Speed Limit}
+\large An Observer-Side Reading of the Information Speed Limit}
 \author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
-\date{May 10, 2026}
+\date{May 13, 2026}
 
 \begin{document}
 
 \maketitle
 
-\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20114177}{10.5281/zenodo.20114177}.}
+\blfootnote{\scriptsize This version prepared for Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.20175274}{10.5281/zenodo.20175274}.}
 
 \begin{abstract}
-This paper makes one narrow interpretive claim: the information speed limit of spacetime, conventionally denoted \(c\), is naturally read as the structural bound on observer-perceivability of lawful state changes in the spacetime regime, not as the speed of a traveler. Here ``observer-perceivability'' includes any spacetime-side registration event, whether by a human observer, an instrument, a detector, or any other physical record-bearing system. The bound applies uniformly wherever registration occurs. At the photon scale, it bounds registration between paired endpoint events. At microscopic scales, it bounds registration within and between local record-bearing changes. At macroscopic scales, it bounds registration along extended cadences that observers interpolate as worldlines. In none of these cases is there a traveler whose speed the bound restrains. There are lawful state changes, spacetime-side registrations, and structural delays between registrations. The present claim introduces no new equations and alters no predictions of special relativity, general relativity, quantum mechanics, or quantum field theory. It is interpretive only.
+This paper makes one narrow interpretive claim. In any observer's own inertial frame, that observer is at rest. Motion appears only as the changing spatial relation between the observer's standpoint and other frames, systems, lightlike relations, or records.
+The information speed limit, conventionally denoted \(c\), bounds the registration of those cross-frame relations. On this reading, \(c\) is not the speed of light as a thing; it is not a traveler-owned speed. Nor is \(c\) a maximum self-speed for rockets or other massive objects; in an object's own rest frame, its own speed is zero. It is the invariant causal bound governing how events, lightlike relations, and cross-frame relations are registered in spacetime description. This is especially important once the photon is no longer read as a little object traveling through space. The photon has no rest frame and no internally elapsed proper time; therefore \(c\) cannot be interpreted as the speed of a photon-object in its own frame. The claim introduces no new equations and alters no predictions of special relativity, general relativity, quantum mechanics, or quantum field theory. It is interpretive only.
 \end{abstract}
+
+\noindent\textbf{Keywords:} special relativity; speed of light; photon ontology; observer frame; causal structure; Timeless Light Model; registration bound.
 
 \section{Introduction}
 
-The constant \(c\) is conventionally introduced as the speed of light. That description is operationally useful. It is also ontologically misleading if the photon is not treated as a particle traveling through spacetime.
+The constant \(c\) is conventionally introduced as the speed of light. That phrase is operationally useful. It is also ontologically misleading when it is read as the speed of a little photon-object traveling through spacetime.
 
-The Timeless Light Model has taken seriously the relativistic invariants associated with null structure. The Bedrock canon compresses the relevant photon-side result into the claim that the photon is not a particle in transit, but a lawfully admissible charge-state relation whose spacetime appearance is a lawful change~\cite{Bedrock}.
+The Timeless Light Model has taken the relativistic null invariants seriously. The minimal Bedrock canon compresses the relevant result into the claim that a photon is not a particle in transit, but a lawfully admissible charge-state relation whose spacetime appearance is a lawful change~\cite{Bedrock}. The wavefunction's predictive success does not license an intermediate photon path either~\cite{Wavefunction}. The traveler is gone. What remains is the invariant causal structure of spacetime itself, viewed from local inertial standpoints.
 
-Once the traveler is removed, the role of \(c\) should be stated without traveler language. This does not require revising the equations of relativity. It requires reading the constant without smuggling in a photon-object whose motion it measures.
+Once the photon traveler is removed, the interpretive status of \(c\) should be restated without traveler vocabulary. The present paper states that restatement from the observer side.
 
-The phrase ``information speed limit'' is used here for the standard relativistic fact that causal signaling, information transfer, and record-bearing interaction are bounded by \(c\). The present paper does not introduce a new constant or a new physical limit.
+The starting point is standard special relativity: in an observer's own inertial frame, the observer's spatial coordinates are constant, and the observer's own velocity is zero. There is no frame-independent standpoint from which that observer is ``really'' moving. Motion is always assigned from one frame to another.
 
-This paper states the role of \(c\) in registration terms. The information speed limit is read as the structural bound on observer-perceivability of lawful state changes in the spacetime regime. A lawful change may be registered in spacetime only under the structural conditions of spacetime. The constant \(c\) names the bound on that registration structure.
+Accordingly, what an observer registers as motion is the changing relation between the observer's standpoint and other frames, systems, or records. The information speed limit bounds the registration of those relations. It is not a speed possessed by an object in its own frame, because no object has speed in its own frame. Thus \(c\) is not the maximum speed of a rocket in the rocket's own frame; in the rocket's own frame, the rocket is at rest. In the photon case, the point is stricter: the photon has no rest frame at all, so \(c\) cannot be the speed of a photon-object in the photon's own frame.
 
-The claim is narrow. It does not deny the usefulness of the phrase ``speed of light.'' It does not modify special relativity, general relativity, quantum mechanics, or quantum field theory. It denies only the extra ontological reading in which \(c\) is treated as the speed of a photon-object traveling through an occupied middle.
-\section{Registration and Observer-Perceivability}
+The claim is narrow. It does not deny that observers compute speeds for other systems. It does not deny that \(c\) is assigned to lightlike relations in inertial-frame descriptions. It does not deny the metric role of \(c\) in relativity. It denies only the residual traveler reading in which \(c\) is treated as the speed of a photon-object moving through spacetime, or as a maximum self-speed belonging to a massive object in its own frame.
 
-Before stating the central claim, the operative notion of perceivability must be made explicit.
+Terminology used in this paper is collected in the Glossary at the end.
+
+\section{The Observer's Standpoint}
+
+\begin{definition}[Standpoint]
+An observer's standpoint is the frame-relative position from which the observer registers events and assigns coordinates.
+\end{definition}
 
 \begin{definition}[Registration]
-A registration is a spacetime-side event in which a lawful state change is physically recorded as a definite localized occurrence.
+A registration is a spacetime-side record of an event, relation, signal, measurement, detection, or other physically definite occurrence in an observer's description.
 \end{definition}
 
-\begin{definition}[Observer-perceivability]
-A lawful state change is observer-perceivable iff it is registrable in spacetime as a definite localized event. Registration includes any instrument recording or other physical record-bearing event, not merely registration by a human observer.
-\end{definition}
+\begin{proposition}[Own-frame rest]
+In an observer's own inertial frame, the observer is at rest.
+\end{proposition}
+
+\begin{proof}
+An inertial frame assigns coordinates to events. In the observer's own inertial frame, the observer's spatial coordinate is fixed at the observer's standpoint. Therefore the observer's coordinate velocity in that frame is zero. Hence, in the observer's own inertial frame, the observer is at rest.
+\end{proof}
 
 \begin{remark}
-The term ``observer'' is operational rather than anthropic. A photographic plate, a detector circuit, a CCD, an antenna's voltage response, the heating of a surface under absorbed radiation, or the spin alignment of a measured system may all serve as registration events in this sense. Consciousness plays no role.
+This is standard special relativity. The point of foregrounding it is interpretive. The ordinary habit of saying that ``the observer is moving'' always suppresses the question: moving relative to what frame? In the observer's own frame, the observer is not moving. Motion enters as a relation between frames.
 \end{remark}
 
-The distinction matters because lawful state change and spacetime registration are not the same claim. The photon-side sequence has already argued that the lawful relation associated with emission and absorption is not itself a little process unfolding in the middle. What occurs in spacetime are endpoint records and registered changes. Observer-perceivability names this registration side.
+\begin{proposition}[Motion is cross-frame relation]
+What an observer registers as motion is the changing spatial relation between the observer's standpoint and other frames, systems, or records.
+\end{proposition}
+
+\begin{proof}
+In the observer's own inertial frame, the observer's own velocity is zero. Any nonzero velocity assigned in that frame is therefore assigned to another frame, system, signal, or record relative to the observer's standpoint. Such assigned motion is not absolute motion. It is the changing relation between the observer's frame and what is described from that frame. Therefore what the observer registers as motion is cross-frame relation.
+\end{proof}
+
+\begin{remark}
+The driving example illustrates the point. In the driver's frame, the driver and car are at rest, and the roadside trees are assigned motion relative to the car. In the roadside frame, the trees are at rest, and the car is assigned motion relative to the road. Both descriptions are frame-relative. Neither is an absolute motion story.
+\end{remark}
 
 \section{The Information Speed Limit}
 
 \begin{definition}[Information speed limit]
-The information speed limit of spacetime is the invariant causal bound conventionally denoted \(c\).
+The information speed limit is the invariant causal bound conventionally denoted \(c\).
 \end{definition}
 
-This definition does not change the numerical value of \(c\), nor does it alter the formal role \(c\) plays in relativity. It names the familiar invariant causal bound, leaving open the interpretive question of what that bound is a bound on.
+This definition does not change the numerical value of \(c\), nor does it alter the formal role \(c\) plays in relativity. It names the familiar invariant causal bound while refusing to interpret that bound as the speed of a traveler-object.
 
-\begin{proposition}[\(c\) is a registration bound]
-The information speed limit is naturally read as the structural bound on spacetime-side registration of lawful state changes, rather than as the speed of a traveler.
+\begin{proposition}[\(c\) bounds registration]
+The information speed limit bounds observer-side registration of cross-frame relations.
 \end{proposition}
 
 \begin{proof}
-A lawful state change is observer-perceivable only insofar as it is registered in spacetime. Spacetime registration is governed by the causal and metric structure of spacetime. In relativity, the constant \(c\) bounds the relation between spatial separation and temporal registration for causal signaling and record-bearing interaction. Since the photon is not licensed as a traveler whose motion supplies the meaning of \(c\), the invariant is naturally read as a bound on the spacetime-side registration of lawful state changes. Therefore \(c\) functions as a registration bound rather than as a traveler's speed.
+An observer registers events, lightlike relations, detections, and frame-relative relations from within the observer's own frame. Relativity imposes an invariant causal bound on such registrations: no causal update or information-bearing record is assigned superluminal propagation in local inertial description. That invariant bound is \(c\).  
+Since the observer's own motion is zero in the observer's own inertial frame, motion registered in that frame is motion assigned to other frames, systems, lightlike relations, or records relative to the observer's standpoint. Therefore \(c\) bounds observer-side registration of cross-frame relations.
 \end{proof}
 
 \begin{remark}
-This is a reinterpretation of a standard role, not a new formal claim. Relativity already treats \(c\) as the invariant causal speed limiting signal propagation and causal influence. The present paper reads that invariant as a registration bound rather than as the speed of a traveling photon-object.
+The rocket-and-planet case gives the clean symmetry. From the planet frame, the planet is at rest and the rocket is assigned motion. From the rocket frame, the rocket is at rest and the planet is assigned motion. Thus \(c\) is not the maximum speed of the rocket in the rocket's own frame. In the rocket's own frame, the rocket is at rest; the planet is assigned motion relative to the rocket. The bound \(c\) governs the rate at which each observer can register updates about the other's assigned motion, not a self-speed possessed by either. Each observer registers the other's cross-frame relation under the same invariant causal bound. Neither description requires an absolute moving object viewed from nowhere.
 \end{remark}
+
+\section{\(c\) Is Not a Traveler-Owned Speed}
+
+\begin{proposition}[\(c\) is not an object's speed in its own frame]
+The invariant \(c\) is not the speed of an object in that object's own frame.
+\end{proposition}
+
+\begin{proof}
+For any massive object with a rest frame, the object's velocity in its own rest frame is zero. Therefore \(c\) cannot be the speed of such an object in its own frame. For a photon, the situation is stricter: the photon has no rest frame. Therefore there is no photon-own-frame in which \(c\) could be interpreted as the speed of a photon-object. In both cases, \(c\) is not an object-owned speed. It is the invariant causal bound appearing in spacetime descriptions of lightlike relation, null structure, and observer-side registration.
+\end{proof}
+
+\begin{remark}
+This preserves ordinary operational language while disciplining its ontology. One may continue to say that light is measured at speed \(c\) in inertial-frame description. What does not follow is that there exists a photon-object possessing \(c\) as its traveler speed through an internally lived journey. Nor does it follow that a rocket possesses \(c\) as a maximum self-speed in its own frame. In the rocket's own frame, the rocket's own speed is zero. Even as a massive object's assigned speed in another frame approaches \(c\), the bound \(c\) continues to govern cross-frame registration rather than any self-speed in the object's own rest frame.
+\end{remark}
+
+\begin{remark}
+The photon case is the decisive application. A traveler-speed interpretation requires a traveler. A photon, on the minimal TLM reading, has null proper time, no rest frame, and no internally defined spatial traversal~\cite{Bedrock}. The wavefunction's predictive structure does not supply an intermediate photon route~\cite{Wavefunction}. Therefore the photon is not licensed as a traveler whose speed is \(c\). What remains is the spacetime-side invariant causal bound governing lightlike registration and null relation.
+\end{remark}
+
+\section{Why the Usual Phrase Survives Operationally}
+
+The phrase ``speed of light'' remains useful in ordinary calculation. A radar signal, a laser pulse, a null geodesic calculation, or an electromagnetic field solution all use \(c\) in standard ways. Nothing in this paper changes that usage.
+
+The correction is ontological. The phrase ``speed of light'' should not be inflated into the claim that a photon-object owns a speed while traveling through an internally unfolding route. The phrase ``maximum speed of a rocket'' should not be inflated into the claim that a rocket possesses such a speed in its own frame. In its own frame, the rocket is at rest. The operational phrases survive. The traveler picture does not.
+
+\begin{proposition}[Operational shorthand is not ontology]
+The operational use of the phrase ``speed of light'' does not license photon-traveler ontology, and the operational use of \(c\) as a speed limit does not make \(c\) a maximum self-speed.
+\end{proposition}
+
+\begin{proof}
+Operational shorthand identifies how a constant functions in measurement, calculation, and frame description. Ontology identifies what kind of thing is being claimed to exist. The fact that \(c\) appears as the invariant value assigned to lightlike relations in inertial-frame descriptions does not establish that a photon is a persisting object with an internal route. That further claim requires traveler ontology. Since the null photon lacks the rest-frame and proper-time structure required for such a traveler, the operational phrase does not license the ontological picture. Likewise, the fact that \(c\) bounds speeds assigned to massive objects from other frames does not make \(c\) a self-speed possessed by those objects. In an object's own rest frame, its own speed is zero. Therefore operational shorthand does not license traveler-owned speed ontology.
+\end{proof}
 
 \section{Invariance and Regime Status}
 
-\begin{proposition}[Invariance follows from regime status]
-The invariance of \(c\) is naturally explained by its status as a property of the spacetime registration regime rather than of any object within it.
+\begin{proposition}[Invariance supports the regime reading]
+The invariance of \(c\) is naturally read as a property of the spacetime registration regime rather than as a property owned by a traveler-object.
 \end{proposition}
 
 \begin{proof}
-Every inertial observer and every recording instrument is situated within the spacetime regime. If \(c\) is the structural bound on registration in that regime, then every observer or instrument capable of registering events is already operating under the same bound. There is no registration standpoint outside the regime from which the bound could be measured as otherwise. The invariance of \(c\) is therefore naturally read as a consequence of its regime status.
+The invariant \(c\) appears in the transformation structure relating inertial frames and in the causal structure of spacetime. It applies uniformly across inertial standpoints. No observer has privileged access to an absolute motion background. Since every observer registers events from within a frame-relative standpoint, and since the same invariant causal bound governs those registrations, \(c\) is naturally read as a regime property of spacetime description. It is not naturally read as a traveler-owned property of a photon-object, because the photon has no own-frame in which such ownership could be defined. It is not naturally read as a maximum self-speed for a massive object either, because a massive object with a rest frame has zero velocity in that frame.
 \end{proof}
 
 \begin{remark}
-The statement of regime status is interpretive. It does not modify the second postulate of special relativity, the metric structure of general relativity, or any empirical use of \(c\). It only relocates the ontological reading: \(c\) belongs to spacetime registration structure, not to a traveler.
+This is interpretive, not formal revision. The second postulate of special relativity remains untouched. The metric structure of general relativity remains untouched. Standard quantum and field-theoretic calculations remain untouched. What changes is the story attached to the constant: not traveler speed, not maximum self-speed, but registration bound.
 \end{remark}
 
-\section{The Bound at All Scales}
+\section{Symmetry Strengthens the Reading}
 
-The information speed limit applies wherever spacetime-side registration occurs. There is not one bound for photons and another for matter. There is one registration regime, and \(c\) is its structural bound.
-
-\begin{proposition}[Uniform application]
-The information speed limit bounds observer-perceivability uniformly across photon-scale, microscopic, and macroscopic registrations.
+\begin{proposition}[Symmetry of standpoint]
+For any two inertial observers, each is at rest in their own frame, and each registers the other under the same invariant causal bound.
 \end{proposition}
 
 \begin{proof}
-At the photon scale, the bound applies to paired endpoint registrations: emission-side and absorption-side records stand in a spacetime relation constrained by \(c\). At microscopic scales, lawful state changes register as local events, transitions, scattering records, or other record-bearing changes; those registrations remain constrained by the same causal structure. At macroscopic scales, extended cadences of registration are interpolated as worldlines and motion; those cadences also remain constrained by \(c\). In all cases, what is bounded is spacetime-side registration of lawful state change. Therefore the bound applies uniformly.
+Each inertial observer has zero velocity in their own inertial frame. Each assigns relative motion to the other. For each observer, records, lightlike relations, and frame-relative relations are registered under the same invariant causal bound \(c\). Therefore the symmetry holds: each observer is at rest from their own standpoint, and each registers the other under that same bound.
 \end{proof}
 
 \begin{remark}
-The uniformity follows from the fact that \(c\) belongs to the regime, not to a selected class of objects. Anything registered in spacetime is registered under spacetime's structural conditions.
+The symmetric application is the payoff. The two observers do not need a hidden third standpoint telling them who is really moving. Each is at rest in their own frame. Each assigns motion to the other. Each is governed by the same registration bound. That is exactly the structure a registration-bound reading expects.
 \end{remark}
 
-\section{Status of \texorpdfstring{\(c\)}{c} as a Speed}
+\section{Relation to the Timebound No-Go}
 
-The information speed limit is conventionally described as the speed of light. That terminology is serviceable for calculation and communication. It becomes misleading when read as the speed of a photon-object.
+The companion timebound no-go result blocks a broader mistake: temporal governance does not imply traveler-bead ontology~\cite{Timebound}. A massive quantum system may be time-governed, countable, detectable, and relativistically constrained without being licensed as a little bead carrying a travel diary between records.
 
-\begin{proposition}[\(c\) is not a speed in the traveler sense]
-The information speed limit is not the speed of any object in transit.
-\end{proposition}
-
-\begin{proof}
-A speed in the ordinary traveler sense is the rate of position change of an object along a trajectory. The photon-side argument denies the needed object. The photon has no rest frame, no internal proper time, no object-location, no intermediate trajectory, and no transit~\cite{Bedrock}. There is therefore no photon-object for \(c\) to be the speed of. What \(c\) measures is the structural bound on registration in the spacetime regime, expressed in units of length per time. The dimensional form of \(c\) as a speed reflects spacetime geometry, not the kinematic property of a traveler.
-\end{proof}
-
-\begin{remark}
-Calling \(c\) ``the speed of light'' remains operationally harmless when used as shorthand. The error begins when the phrase is read as evidence for a photon-object traveling through an occupied middle.
-\end{remark}
-
-\section{Delay as Registration Bound}
-
-Once \(c\) is read as the bound on observer-perceivability, delay between registrations receives a structural interpretation. Delay is not the waiting time of a traveler. It is the spacing imposed by the registration regime.
-
-\begin{proposition}[Delay as registration bound]
-The temporal separation between registrations at distinct spacetime locations is bounded by the information speed limit.
-\end{proposition}
-
-\begin{proof}
-The information speed limit bounds observer-perceivability in spacetime. Registration at one spacetime location and registration at another are separate events in that regime. The structural bound on registration constrains the temporal relation between them. Therefore no registration sequence between distinct spatial locations can be tighter than the bound permits.
-\end{proof}
-
-\begin{remark}
-This restates standard relativistic signaling structure in registration-bound terms. The point is not that relativity was missing the rule. The point is that the rule does not require traveler ontology.
-\end{remark}
+The present paper applies the same discipline to \(c\). A causal bound in spacetime description does not automatically identify a traveler who owns that bound as its speed. Relativity supplies frame structure and causal constraint. Quantum theory supplies admissibility and records. Neither supplies a little photon traveler whose internal story is a trip at speed \(c\). Nor does either supply a frame-independent rocket speed belonging to the rocket itself. Massive objects are assigned speeds relative to other frames; in their own rest frames, they are at rest. The invariant bound belongs to the registration structure, not to a traveler-object.
 
 \section{What This Does Not Change}
-
-The conservativeness of the proposal should be explicit.
 
 \begin{proposition}[No formal revision]
 The present proposal does not modify the equations of special relativity, general relativity, quantum mechanics, or quantum field theory.
 \end{proposition}
 
 \begin{proof}
-The proposal introduces no new equations, no new postulates, and no modifications to the metric structure of spacetime, the invariance of \(c\), the propagator structure of quantum field theory, or any predictive relation in standard physics. It concerns only the ontological reading attached to the constant \(c\). Therefore it introduces no formal revision.
+The proposal introduces no new equations, no new observables, and no modifications to the metric structure of spacetime, the invariance of \(c\), the propagator structure of quantum field theory, or any predictive relation in standard physics. It concerns only the ontological reading attached to \(c\). Therefore it introduces no formal revision.
 \end{proof}
 
 \begin{proposition}[No new empirical prediction]
@@ -267,46 +292,70 @@ The present proposal makes no new empirical prediction.
 \end{proposition}
 
 \begin{proof}
-The reading of \(c\) as the bound on observer-perceivability does not predict new experimental outcomes. It gives a structural interpretation of the same constant already used in relativity and quantum theory. Therefore the proposal is interpretive only.
+Reading \(c\) as the bound on observer-side registration does not change the formulas in which \(c\) appears. The same constant remains in the same equations with the same numerical value and the same empirical role. Therefore the proposal is interpretive only.
 \end{proof}
 
 \section{Discussion}
 
-The point of the present paper is not that physics lacked the relevant constant. Physics has long calculated with \(c\). The point is that once photon traveler ontology is removed, \(c\) should not continue to be read as the speed of a traveler.
+The point of this paper is not that physics lacked \(c\). Physics has long calculated with \(c\). The point is that the traveler interpretation of \(c\) should not survive the removal of the photon traveler.
 
-The better reading is that \(c\) is the rate at which lawful change is registrable in the spacetime regime. It governs the temporal structure of registration across spatial separation. It is a property of the regime in which records occur, not a property of a photon-object moving through that regime.
+In that precise sense, \(c\) is not the speed of light. It is the invariant registration bound under which lightlike relations appear in spacetime description. The ordinary phrase survives as operational shorthand, but its traveler ontology does not.
 
-This reading does not reduce \(c\). It clarifies its role. Relativity already uses \(c\) as the invariant causal speed. The present paper gives that role an ontological reading consistent with the no-traveler photon result. The traveler vanishes; the bound remains. The equations do not notice.
+Nor is \(c\) the maximum speed of a rocket in the rocket's own frame. In the rocket's own frame, the rocket is at rest. The bound applies to the rate at which another observer registers the rocket's frame-relative motion, and reciprocally to the rate at which the rocket observer registers the other frame's assigned motion. Thus \(c\) is not a maximum self-speed. It is the invariant bound on cross-frame registration.
+
+In an observer's own inertial frame, the observer is at rest. Motion is assigned to other frames, systems, lightlike relations, or records relative to that standpoint. Records, lightlike relations, and frame-relative relations are registered under the invariant causal bound \(c\). That is the observer-side reading.
+
+The driving example remains useful when stated carefully. In the driver's frame, the driver and car are at rest, and the roadside trees are assigned motion relative to the car. In the roadside frame, the trees are at rest, and the car is assigned motion relative to the road. Neither description has a privileged absolute standpoint. The registration of cross-frame relation is what each observer has.
+
+The photon case sharpens the point. The photon has no rest frame. It has null proper time. It has no internally lived middle. A speed normally belongs to a thing as described in some frame, but the photon has no own-frame in which a traveler-speed story could be grounded. Thus the phrase ``speed of light'' remains an operational shorthand, while the traveler ontology attached to that phrase is refused.
+
+The rocket case generalizes the point to massive systems. A rocket has a rest frame, and in that rest frame the rocket's own speed is zero. Other observers assign speed to the rocket from their frames; the rocket assigns speed to them from its frame. What is bounded is not a self-speed owned by the rocket, but the cross-frame registration of relative motion. Even in the ultra-relativistic limit, the assigned speed belongs to another frame's description; the rocket's own rest-frame speed remains zero.
+
+The astounding feature of relativity, on this reading, is not that objects become strange at high speed. It is that speed itself is frame-relative registration, while \(c\) is the invariant bound governing that registration. The bound is real. The traveler story is not required.
 
 \section{Conclusion}
 
-The information speed limit, conventionally denoted \(c\), is naturally read as the structural bound on observer-perceivability of lawful state changes in the spacetime regime. It is a property of the registration regime, not of any object within it.
+In an observer's own inertial frame, the observer is at rest. Motion appears as the changing relation between that observer's standpoint and other frames, systems, lightlike relations, or records. The information speed limit, conventionally denoted \(c\), bounds the registration of those relations.
 
-The effect of the limit is borne by spacetime-side observers, instruments, and record-bearing systems. They cannot register, compare, or receive lawful state changes outside the causal and metric structure bounded by \(c\). What is limited is not a photon-object moving through an occupied middle, but the observer-side availability of records in spacetime.
+This does not change the equations. It changes the ontology attached to the usual phrase. In the precise ontological sense defended here, \(c\) is not the speed of light. It is not the speed of a photon traveler. The photon has no rest frame, no internal proper time, and no internally traversed route. Nor is \(c\) the maximum self-speed of a rocket or other massive object. In a massive object's own rest frame, its own speed is zero. Therefore \(c\) is better read as the invariant causal bound of spacetime registration: the limit governing how lightlike relations, null structure, and cross-frame motion appear in observer-side description.
 
-Its invariance follows naturally from that status. Every observer and every instrument capable of registration is already inside the registration regime. Its dimensional form as a speed reflects the geometric structure of spacetime rather than the kinematic property of a traveler. The bound applies uniformly wherever registration occurs. In all cases, what is bounded is observer-perceivability: the registration of lawful state change by systems inside spacetime.
-
-Nothing in this paper alters standard predictive machinery. The contribution is interpretive only. The reading is conservative: it states the structural role of a constant relativity already retains, and removes a residual traveler narrative attached to it. The traveler vanishes; the observer-side bound remains.
+The traveler is gone; the registration bound remains. The bound is real and invariant. The traveler story was never required.
 
 \section*{Glossary}
 
 \begin{description}
-    \item[Information speed limit] The invariant causal bound conventionally denoted \(c\), read here as the structural bound on the observer-perceivability of lawful state changes in the spacetime regime.
+    \item[Information speed limit] The invariant causal bound conventionally denoted \(c\), read here as the bound on observer-side registration.
 
-    \item[Observer-perceivability] The registrability of a lawful state change in spacetime as a definite localized event. Includes any instrument recording or other physical record-bearing event, not merely registration by a human observer.
+    \item[Registration] A spacetime-side record of an event, relation, signal, measurement, detection, or other physically definite occurrence in an observer's description.
 
-    \item[Registration] A spacetime-side event in which a lawful state change is recorded as a definite localized occurrence.
+    \item[Standpoint] The frame-relative position from which an observer registers events and assigns coordinates.
 
-    \item[Spacetime regime] The domain in which temporal ordering, duration, geometry, and observer-side description appear.
+    \item[Cross-frame relation] The relation between one observer's standpoint and another frame, system, signal, or record as described from that observer's frame.
+
+    \item[Traveler-owned speed] A speed interpreted as belonging to a persisting object moving through an internally lived route. This paper denies that \(c\) has this status for the photon.
+
+    \item[Maximum self-speed] A speed interpreted as belonging to an object in its own rest frame. This paper denies that \(c\) has this status for massive objects; in a massive object's own rest frame, its own speed is zero.
 \end{description}
 
 \begin{thebibliography}{9}
 
-\bibitem[McKinley(2026)]{Bedrock}
+\bibitem[McKinley(2026a)]{Bedrock}
 J.~C.~W.~McKinley.
 \newblock \emph{A Minimal Structural Statement of the Timeless Light Model}.
 \newblock Zenodo (2026).
 \newblock \doi{10.5281/zenodo.19167403}.
+
+\bibitem[McKinley(2026b)]{Wavefunction}
+J.~C.~W.~McKinley.
+\newblock \emph{Wavefunction Prediction Does Not License a Photon Path}.
+\newblock Zenodo (2026).
+\newblock \doi{10.5281/zenodo.19504772}.
+
+\bibitem[McKinley(2026c)]{Timebound}
+J.~C.~W.~McKinley.
+\newblock \emph{Timebound Does Not Mean Traveler: A No-Go on Deriving Bead-Path Ontology from Quantum Admissibility}.
+\newblock Zenodo (2026).
+\newblock \doi{10.5281/zenodo.20114078}.
 
 \bibitem[Einstein(1905)]{Einstein1905}
 A.~Einstein.
