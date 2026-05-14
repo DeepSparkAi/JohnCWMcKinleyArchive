@@ -73,7 +73,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 ### [2026] *c* Is a Registration Bound, Not a Traveler's Speed: A Registration-Based Interpretation of the Information Speed Limit
 * **DOI:** [10.5281/zenodo.20114176](https://doi.org/10.5281/zenodo.20114176)
-* **Date:** 10 May 2026
+* **Date:** 13 May 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
