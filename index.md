@@ -70,6 +70,1072 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 ## The Papers
 
+### [2026] Worldlines Produce; Dilation Reports: A No-Go on Treating Consequence-Reality as Evidence of Intrinsic Dilation
+
+DOI: [10.5281/zenodo.20225757](https://doi.org/10.5281/zenodo.20225757)
+
+Date: 2026-05-17
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\newcommand{\blfootnote}[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\title{Worldlines Produce; Dilation Reports\\
+\large A No-Go on Treating Consequence-Reality as Evidence of Intrinsic Dilation}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 17, 2026}
+
+\begin{document}
+\maketitle
+\blfootnote{\scriptsize This version published at DOI: \doi{10.5281/zenodo.20225757}.}
+
+\begin{abstract}
+Relativistic worldline differences produce real, measurable, decision-relevant physical consequences. Muons reach the ground. The traveling twin is younger at reunion. GPS clocks require correction. These consequences are facts, not appearances. They are commonly described in the language of time dilation, and the reality of the consequences is sometimes treated as evidence that the dilated frame's clock has been slowed in itself --- that dilation is therefore an intrinsic property of the frame after all. This paper states a narrow no-go: the inference from consequence-reality to intrinsicness is not licensed. Consequences follow from the structure of worldline-internal accruals together with between-frames registration relations; neither component requires an intrinsic dilation of any frame's clock. The reality of dilation as a registration relation is fully preserved. What is denied is the further claim that the relation must be located inside one of the parties to it.
+\end{abstract}
+
+\section{Introduction}
+
+A standing objection to the registration-interface treatment of dilation runs as follows. If dilation were merely a between-frames relation and not a property of either frame, then dilation would be a kind of appearance. But the consequences of dilation are real: muons reach the ground, the twin ages asymmetrically, GPS depends on the correction. Real consequences require a real underlying cause. Therefore dilation must be intrinsic to the frame whose clock has been slowed.
+
+The objection is intuitive and wrong. It rests on a buried inference from ``real consequence'' to ``intrinsic property of one party.'' The inference is unlicensed.
+
+This paper states the no-go: the reality of the consequences does not entail that any frame's clock has been slowed in itself. Consequences in relativity follow from the joint structure of worldline-internal proper-time accruals and between-frames registration relations~\cite{einstein1905,taylor_wheeler,wald}. The same structural decomposition appears in the conventional-vocabulary treatments of dilation~\cite{mckinley_illusion,mckinley_massspeed}: in-flight reciprocity is a frame-dependent comparison; the reunion difference is a frame-invariant path integral; environmental conditions (mass, speed) act on the integrand rather than on any clock in itself. Neither component is an intrinsic dilation of any frame.
+
+The complementary results are stated separately. The negative no-go on intrinsic dilation~\cite{mckinley_nointrinsic} rules out the claim that a frame's clock is slowed in itself. The positive structural claim~\cite{mckinley_accrual} identifies locally accrued proper time as the only intrinsic time-quantity associated with a massive object. The general registration framing~\cite{mckinley_creg} establishes the regime-level reading of $c$ as a registration bound. The null-case companion~\cite{mckinley_nocount} states the corresponding photon-side result. The present paper closes the standing objection by showing that consequence-reality does not reopen the intrinsic-dilation reading.
+
+\section{Definitions}
+
+\begin{definition}[Physical consequence of dilation]
+\label{def:consequence}
+A physical consequence of dilation is an outcome in spacetime --- a survival event, an age difference, a clock offset, a phase shift --- whose occurrence and magnitude depend on relativistic-kinematic quantities. The consequence is registrable by appropriate apparatus in at least one frame.
+\end{definition}
+
+\begin{definition}[Real, in the relevant sense]
+\label{def:real}
+A consequence is real when it is a fact in spacetime: a registration occurs, an outcome obtains, an integrated quantity has the value it has. Reality in this sense is opposed to subjective impression. A real consequence is not abolished by changing frames; what changes between frames is the registration of the consequence, not the consequence itself.
+\end{definition}
+
+\begin{definition}[Intrinsic dilation]
+\label{def:intrinsic-dilation}
+An intrinsic dilation of frame $B$'s clock would be a modification of $B$'s clock's accrual rate definable without reference to any frame other than $B$. That is, $B$'s clock would tick more slowly than $\int d\tau$ along $B$'s worldline.
+\end{definition}
+
+\begin{definition}[Consequence-from-intrinsicness inference]
+\label{def:inference}
+The consequence-from-intrinsicness inference is the move from the premise ``dilation produces real consequences'' to ``therefore $B$'s clock is intrinsically dilated.'' Schematically:
+\[
+\text{Real consequence } \Rightarrow \text{ intrinsic property of one frame.}
+\]
+\end{definition}
+
+\begin{definition}[Worldline-internal quantity]
+\label{def:worldline-internal}
+A worldline-internal quantity is one defined using only the worldline geometry and the local metric along the worldline, with no reference to a second frame, coordinate system, synchronization convention, or external apparatus.
+\end{definition}
+
+\begin{definition}[Between-frames registration relation]
+\label{def:between-frames}
+A between-frames registration relation is the quantitative mapping between proper-time accruals on one worldline and coordinate-time separations assigned by another frame's apparatus. For dilation, this is $\Delta t_A = \gamma\, \Delta \tau_B$ with $\gamma = (1 - v^2/c^2)^{-1/2}$.
+\end{definition}
+
+\section{The Structure of a Dilation Consequence}
+
+A dilation consequence has two structural components. The first is a worldline-internal accrual. The second is a between-frames registration relation. The consequence emerges from their joint operation.
+
+\begin{lemma}[Two-component structure]
+\label{lem:two-component}
+Every standardly cited consequence of dilation decomposes into (i) a worldline-internal accrual along one or more worldlines and (ii) a between-frames registration relation describing how the accruals are reported across frames.
+\end{lemma}
+
+\begin{proof}
+Consider the standard cases.
+
+\emph{Muon survival.} The muon's worldline accrues proper time from production to either decay or ground impact, whichever event occurs first along the worldline. Whether the muon decays before reaching the ground is determined by comparison of two worldline-internal quantities: the proper time accrued and the proper time required for decay. This is component (i). Component (ii) is the Earth frame's registration of the muon's flight as taking longer than the proper lifetime, which is the dilation relation $\Delta t_{\text{Earth}} = \gamma\, \Delta \tau_{\text{muon}}$.
+
+\emph{Asymmetric twin aging.} Each twin's worldline accrues its own proper time between departure and reunion. The age at reunion is the worldline-internal accrual on that twin's worldline up to the reunion event. This is component (i). Component (ii) is the dilation relation each twin's apparatus would register were either to track the other's clock during separation.
+
+\emph{GPS clock correction.} The GPS satellite's worldline accrues proper time in its orbital trajectory; the ground clock's worldline accrues proper time at the surface. The two accruals differ. This is component (i). The metrology-side correction --- the formula by which ground observers translate satellite signals into consistent positional data --- is the registration relation, accounting for both special-relativistic and gravitational components. This is component (ii)~\cite{ashby}.
+
+In each case, the consequence emerges from worldline-internal accruals together with the registration relation. Neither component supplies an intrinsic dilation.
+\end{proof}
+
+\begin{proposition}[Consequences are worldline-internal facts]
+\label{prop:consequences-internal}
+The occurrence and magnitude of every standardly cited consequence of dilation is determined by worldline-internal quantities. The registration relation reports the consequence across frames; it does not produce the consequence.
+\end{proposition}
+
+\begin{proof}
+By \cref{lem:two-component}, each consequence decomposes into a worldline-internal component and a between-frames component. Component (i) supplies the values: the integrated proper time on each worldline, the proper time required for decay, the age accrued. Component (ii) supplies the mapping by which these values are translated into the coordinate-time language of a chosen frame.
+
+The mapping does not produce the values. The values are fixed by the worldline geometry and the local metric. A different frame applying a different mapping would assign different coordinate-time separations to the same events but would not alter the worldline-internal accruals. The consequence --- the muon's arrival, the twin's age, the GPS clock offset --- is determined by component (i) regardless of which frame's mapping is used to describe it.
+
+Therefore consequences are worldline-internal facts. The registration relation is how they are reported; it is not their cause.
+\end{proof}
+
+\section{The No-Go}
+
+\begin{proposition}[Consequence-reality does not license intrinsicness]
+\label{prop:no-go}
+The reality of the consequences does not license the inference to intrinsic dilation of any frame.
+\end{proposition}
+
+\begin{proof}
+By \cref{prop:consequences-internal}, every standardly cited consequence of dilation is determined by worldline-internal accruals together with the between-frames registration relation. The worldline-internal component is, by \cref{def:worldline-internal}, defined without reference to any other frame; it is not an intrinsic dilation of a frame's clock, since it is precisely $\int d\tau$ along the worldline, with no modification. The between-frames component is, by \cref{def:between-frames}, a relation between two frames; it is not a property of either frame alone.
+
+Suppose, for contradiction, that the reality of the consequences licenses the inference to intrinsic dilation of some frame $B$. Then there would exist an intrinsic dilation of $B$'s clock --- a modification of $B$'s accrual rate definable without reference to any other frame --- whose existence is required to explain the consequences. But the consequences are already fully explained by component (i) together with component (ii), neither of which is such an intrinsic dilation. The supposed intrinsic dilation does no explanatory work. Its addition is redundant with the worldline-internal accrual it would supposedly correct.
+
+Therefore the inference from consequence-reality to intrinsicness is not licensed.
+\end{proof}
+
+\begin{corollary}[The objection fails]
+\label{cor:objection-fails}
+The standing objection that real consequences require an intrinsic underlying dilation fails.
+\end{corollary}
+
+\begin{proof}
+The objection assumes that real consequences require a real underlying property of one frame. By \cref{prop:no-go}, this is not the structure of dilation consequences in relativity. The consequences are real; the worldline-internal accruals are real; the registration relations are real; but no frame's clock is intrinsically dilated. The reality of the consequences is fully accounted for without the intrinsicness assumption. The objection therefore fails.
+\end{proof}
+
+\section{Why the Inference Is Tempting}
+
+The consequence-from-intrinsicness inference is tempting because it tracks a sound pattern in non-relativistic settings. If a chemical reaction produces a real outcome, one looks for a real property of the reagents that explains it. If a mechanical collision produces a real momentum change, one looks for real masses and velocities. The pattern --- real consequence implies real underlying property --- works in regimes where the relevant properties are intrinsic to single objects.
+
+The pattern breaks in relativity because the relevant properties are partly relational. The dilation relation is real; it is not intrinsic to either frame. Relativistic consequences are produced by joint operations on intrinsic worldline data and relational registration data. The pattern that worked for chemistry and Newtonian mechanics, transferred to relativity unmodified, mislocates the relational component as intrinsic.
+
+The misreading is not a failure to take consequences seriously. It is a failure to recognize that some real components of the explanation are not properties of single objects. Once the structural distinction in \cref{lem:two-component} is in view, the temptation dissipates: the relational component supplies what the supposedly intrinsic dilation was being recruited to supply, and the recruitment becomes unnecessary.
+
+\section{Standard Cases Reread}
+
+The standard cases are reread without loss.
+
+\emph{Muon survival.} The muon's clock ticks at its proper rate along its worldline. The muon's proper lifetime is what it is. The muon's worldline reaches the ground event with less proper time accrued than the proper-lifetime threshold; the muon arrives intact. The Earth frame's apparatus registers the muon's flight using the dilation relation, but the survival outcome itself is fixed by the muon's worldline-internal accrual. No intrinsic dilation of the muon's clock is required.
+
+\emph{Asymmetric twin aging.} Each twin's clock ticks at its proper rate along its worldline. The two worldlines have different geometric shapes between the common departure and reunion events. The two integrated proper times accordingly differ. At reunion, the difference manifests as a difference in biological age, atomic clock reading, or any other proper-time-driven process. No twin's clock has been slowed in itself. The age asymmetry is a difference between two worldline-internal accruals.
+
+\emph{GPS clock correction.} The satellite's clock and the ground clock each tick at their proper rates along their respective worldlines. The two worldlines differ in altitude (gravitational potential) and in velocity (orbital speed). The two integrated proper times accordingly differ, with both special-relativistic and gravitational components. The metrological correction is a between-frames registration mapping that translates satellite-clock readings into a frame the ground apparatus can use. The system works because the worldline-internal accruals are what they are and the registration mapping is correctly specified. Neither clock has been intrinsically dilated.
+
+In all three cases, the consequences are real and the standard predictive machinery is correct~\cite{einstein1905,wald,ashby,mckinley_massspeed}. The intrinsic-dilation interpretive overlay is not required, and adding it is structurally redundant.
+
+\section{What Is Real, Clarified}
+
+Five distinct things are real in any dilation case. Distinguishing them removes the residual force of the standing objection.
+
+\begin{enumerate}
+\item Each worldline's locally accrued proper time. Real, intrinsic, worldline-internal.
+\item The proper-time-required threshold for any internal process, such as particle decay. Real, intrinsic, worldline-internal.
+\item The geometric shape of each worldline. Real, intrinsic, worldline-internal.
+\item The between-frames registration relation. Real, relational, between-frames.
+\item The spacetime-side registration events themselves: detector clicks, timestamps, comparisons at meeting events. Real, registration-side.
+\end{enumerate}
+
+What is \emph{not} on the list, and is not real, is intrinsic dilation: a modification of any frame's accrual rate definable without reference to any other frame. Its absence does not subtract from the reality of items 1 through 5. Each of those is fully present in the standard formalism. The consequence-from-intrinsicness inference treated intrinsic dilation as a sixth real item, supposedly required to explain the others. It is not required, and it is not licensed~\cite{mckinley_nointrinsic}.
+
+\section{Conservativeness}
+
+The present paper introduces no new formal content. Special Relativity, General Relativity, and the standard predictive machinery are preserved. No new equation, constant, or postulate is introduced.
+
+The contribution is interpretive: the reality of the consequences is reconciled with the no-go on intrinsic dilation by showing that the structure of relativistic consequences does not require intrinsicness. Worldline-internal accruals and between-frames registration relations jointly suffice. The standard cases are recovered without modification.
+
+\section{Conclusion}
+
+Relativistic worldline differences produce real consequences. Muons reach the ground. The traveling twin ages asymmetrically. GPS depends on the correction. These are facts in spacetime, not appearances. They are commonly described in the language of time dilation, but the consequences themselves are produced by worldline geometry and proper-time accrual, not by any intrinsic slowing inside a clock.
+
+The reality of the consequences does not license the inference to intrinsic dilation of any frame. Consequences decompose into worldline-internal accruals together with between-frames registration relations. The worldline-internal component is each clock ticking at its proper rate along its worldline; the between-frames component is the registration relation by which one frame's apparatus reports another frame's accrual. Neither component is an intrinsic dilation, and no intrinsic dilation is required to produce the consequences.
+
+The standing objection --- that real consequences must be backed by a real intrinsic property of one frame --- transfers a sound non-relativistic pattern to a regime where some real components of the explanation are not properties of single objects. Once the two-component structure is recognized, the objection dissolves.
+
+Dilation is not the physical cause; it is the registration description. The physical difference is the worldline difference. What is real is the accrual, the worldline, the registration relation, and the registration events. What is not real, and not required, is a slowed clock in itself.
+
+\begin{thebibliography}{9}
+
+\bibitem{einstein1905}
+A.~Einstein. Zur Elektrodynamik bewegter K\"orper. \textit{Annalen der Physik} \textbf{17}, 891--921 (1905). \doi{10.1002/andp.19053221004}.
+
+\bibitem{taylor_wheeler}
+E.~F.~Taylor and J.~A.~Wheeler. \textit{Spacetime Physics: Introduction to Special Relativity} (2nd ed.). W.~H.~Freeman (1992).
+
+\bibitem{wald}
+R.~M.~Wald. \textit{General Relativity}. University of Chicago Press (1984).
+
+\bibitem{ashby}
+N.~Ashby. Relativity in the Global Positioning System. \textit{Living Reviews in Relativity} \textbf{6}, 1 (2003). \doi{10.12942/lrr-2003-1}.
+
+\bibitem{mckinley_creg}
+J.~C.~W.~McKinley. \textit{c Is a Registration Bound, Not a Traveler's Speed: A Registration-Based Interpretation of the Information Speed Limit}. Zenodo (2026). \doi{10.5281/zenodo.20114176}.
+
+\bibitem{mckinley_nocount}
+J.~C.~W.~McKinley. \textit{Spacetime Changes Can Be Counted; Photons Cannot: A No-Go Result on Photon-Object Inventory}. Zenodo (2026). \doi{10.5281/zenodo.20113982}.
+
+\bibitem{mckinley_accrual}
+J.~C.~W.~McKinley. \textit{Local Accrual as the Only Intrinsic Time-Quantity: A Positive Structural Statement for the Massive Regime}. Zenodo (2026). \doi{10.5281/zenodo.20225645}.
+
+\bibitem{mckinley_nointrinsic}
+J.~C.~W.~McKinley. \textit{Dilation Is Not a Property of the Object: A No-Go Result on Intrinsic Time-Dilation}. Zenodo (2026). \doi{10.5281/zenodo.20225720}.
+
+\bibitem{mckinley_illusion}
+J.~C.~W.~McKinley. \textit{Illusion and Invariant: Making Sense of Time Dilation --- Reciprocity, Simultaneity, and Proper Time}. Zenodo (2025). \doi{10.5281/zenodo.17083276}.
+
+\bibitem{mckinley_massspeed}
+J.~C.~W.~McKinley. \textit{Mass Slows Time. Speed Slows Time. Concept, Derivations, and Evidence}. Zenodo (2025). \doi{10.5281/zenodo.17083288}.
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+### [2026] Dilation Is Not a Property of the Object: A No-Go Result on Intrinsic Time-Dilation
+
+DOI: [10.5281/zenodo.20225720](https://doi.org/10.5281/zenodo.20225720)
+
+Date: 2026-05-16
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\newcommand{\blfootnote}[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\title{Dilation Is Not a Property of the Object\\
+\large A No-Go Result on Intrinsic Time-Dilation}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 16, 2026}
+
+\begin{document}
+\maketitle
+\blfootnote{\scriptsize This version published at DOI: \doi{10.5281/zenodo.20225720}.}
+
+\begin{abstract}
+Relativistic worldline differences produce real, measurable physical consequences. These consequences are commonly described in the language of time dilation, and time dilation as a between-frames registration relation is real, but the consequences themselves are not produced by an intrinsic slowing of any clock. A massive object's proper time accrues locally along its worldline at its own proper rate, always. Dilation is the between-frames relation by which one frame's accumulated proper time is registered through another frame's measurement apparatus. The relation is genuine; the registration is genuine; the consequences are genuine. What is absent is any modification of either frame's intrinsic proper time. This paper states a narrow no-go: there is no such thing as a frame's own dilated time. Dilation lives at the registration interface, not inside the object. Standard Special Relativity is preserved throughout. The only claim is that the dilation relation is not licensed as an intrinsic property of either party to it.
+\end{abstract}
+
+\section{Introduction}
+
+The phrase ``time dilation'' is unavoidable in relativistic physics. It names a real measurement relation: when frame $A$ registers frame $B$'s clock through its own apparatus, frame $A$ registers $B$'s clock ticks as separated by $\gamma$ times the proper interval of $B$'s clock. The relation is symmetric. Each frame, registering the other, finds the other's clock to register as dilated.
+
+The relation is real. The muons created in the upper atmosphere really do reach the ground; their reaching is a fact in the Earth frame. The traveling twin really is younger at reunion; the age difference is a fact in any frame. The GPS clocks really do require correction; the correction is a fact in the operational metrology.
+
+None of those facts requires that frame $B$'s own clock has been slowed in itself. Each frame's clock ticks at its own proper rate, locally. The clock has no internal awareness of, and no internal modification by, the frame from which it is being registered. What changes between frames is the registration relation, not the intrinsic accrual.
+
+This paper states that distinction as a narrow no-go: a frame's own dilated time is not licensed. There is no such thing as $B$'s clock running slow from $B$'s own standpoint. There is only the between-frames registration relation by which $A$ registers $B$'s clock through $A$'s apparatus.
+
+The argument uses only Special Relativity~\cite{einstein1905}. The positive structural companion --- that locally accrued proper time along a worldline is the only intrinsic time-quantity for a massive object --- has been stated separately~\cite{mckinley_accrual}. The general registration framing on which the present no-go depends has been stated separately~\cite{mckinley_creg}. The null-case companion has been stated separately~\cite{mckinley_nocount}. The same structural claim --- that reciprocal in-flight dilation statements are frame-dependent comparisons while the reunion difference is a frame-invariant path integral --- has been stated in conventional Special Relativity vocabulary in an earlier work~\cite{mckinley_illusion}. The present paper restates that result as a registration-interface no-go anchored to~\cite{mckinley_creg}, in the vocabulary used throughout the Timeless Light Model corpus.
+
+\section{Definitions}
+
+\begin{definition}[Proper time]
+\label{def:proper-time}
+The proper time $\tau$ of a timelike worldline $\mathcal{W}$ is the quantity
+\[
+\tau(\mathcal{W}) = \int_{\mathcal{W}} d\tau,
+\]
+where $d\tau$ is the local clock-tick interval along $\mathcal{W}$. Proper time is reparametrization-invariant and is the time read by a clock following $\mathcal{W}$.
+\end{definition}
+
+\begin{definition}[Local accrual]
+\label{def:local-accrual}
+A frame's proper time accrues locally along its worldline: each segment of the worldline contributes $d\tau$ to the integrated total. The accrual is intrinsic to the worldline. It is computed without reference to any other frame.
+\end{definition}
+
+\begin{definition}[Registration]
+\label{def:registration}
+A registration is a spacetime-side event in which a lawful state change is physically recorded as a definite localized occurrence by a measurement apparatus~\cite{mckinley_creg}.
+\end{definition}
+
+\begin{definition}[Between-frames registration relation]
+\label{def:between-frames}
+The between-frames registration relation is the quantitative mapping by which frame $A$'s apparatus registers frame $B$'s state. For time-dilation in Special Relativity, the relation is
+\[
+\Delta t_A = \gamma\, \Delta \tau_B,
+\]
+where $\Delta \tau_B$ is $B$'s locally accrued proper time between two events on $B$'s worldline, $\Delta t_A$ is the coordinate-time separation $A$ assigns to those events using $A$'s apparatus, and $\gamma = (1 - v^2/c^2)^{-1/2}$ with $v$ the relative velocity.
+\end{definition}
+
+\begin{definition}[Intrinsic property of a frame]
+\label{def:intrinsic}
+A property is intrinsic to a frame if it is defined without reference to any other frame. A property is non-intrinsic, or relational, if its definition requires a second frame or a measurement standpoint outside the frame.
+\end{definition}
+
+\begin{definition}[Intrinsically dilated time]
+\label{def:intrinsic-dilated}
+An intrinsically dilated time would be a time-quantity belonging to a frame whose rate of accrual is modified by something other than the frame's own worldline. That is, it would be a $\tau'$ assigned to a worldline such that $\tau' \neq \int d\tau$ along that worldline.
+\end{definition}
+
+\section{The Two Distinct Quantities}
+
+The argument turns on keeping two distinct quantities cleanly separated. They have been used loosely in pedagogical exposition for over a century, and the looseness underwrites the misreading this paper aims to foreclose.
+
+The first quantity is $\tau$, the proper time of a worldline, defined in \cref{def:proper-time}. It is intrinsic to the worldline. It is what the worldline's own clock reads, integrated along its actual history. Different worldlines through the same pair of events give different values of $\tau$. The famous twin-paradox asymmetry at reunion is the statement that the two twins' worldlines, having different shapes, accrue different integrated $\tau$ values.
+
+The second quantity is $\Delta t_A$, the coordinate-time separation that frame $A$ assigns, using $A$'s apparatus, to two events on another worldline. It is not intrinsic to either worldline. It is a registration relation between two frames, defined only in the presence of both.
+
+Standard Special Relativity is explicit on this distinction. $\tau$ is reparametrization-invariant; it is the same value computed in any coordinate system. $\Delta t_A$ depends on the choice of frame; a different $A$ assigns a different $\Delta t_A$ to the same pair of events on $B$'s worldline.
+
+\section{The No-Go}
+
+\begin{proposition}[Proper time is unaffected by registration]
+\label{prop:tau-unaffected}
+The proper time accrued along a worldline is unaffected by any other frame's registration of that worldline.
+\end{proposition}
+
+\begin{proof}
+By \cref{def:proper-time}, proper time is the integral of $d\tau$ along the worldline. The integral is determined by the worldline's own geometry. No quantity defined on another worldline, and no measurement performed in another frame, appears in the integrand. Therefore the value of $\tau$ along $\mathcal{W}$ is independent of whether any other frame registers $\mathcal{W}$, and independent of how any such registration is performed.
+\end{proof}
+
+\begin{proposition}[Dilation is a between-frames relation]
+\label{prop:dilation-relational}
+The dilation factor $\gamma$ is defined only between two frames in relative motion. It is not defined for a single frame in isolation.
+\end{proposition}
+
+\begin{proof}
+The factor $\gamma = (1 - v^2/c^2)^{-1/2}$ contains the relative velocity $v$. Velocity is a relation between two frames~\cite{einstein1905,taylor_wheeler}. A single frame in isolation has no $v$ and therefore no $\gamma$. The factor exists only when two frames are specified. Therefore dilation is a between-frames relation, not a property of a single frame.
+\end{proof}
+
+\begin{proposition}[Intrinsically dilated time is not licensed]
+\label{prop:no-intrinsic-dilation}
+A frame's intrinsically dilated time, in the sense of \cref{def:intrinsic-dilated}, is not licensed.
+\end{proposition}
+
+\begin{proof}
+Suppose, for contradiction, that a frame $B$ possesses an intrinsically dilated time $\tau'_B$, defined as in \cref{def:intrinsic-dilated}: a time-quantity belonging to $B$ such that $\tau'_B \neq \int d\tau$ along $B$'s worldline.
+
+By \cref{def:intrinsic}, an intrinsic property is defined without reference to any other frame. So $\tau'_B$ must be definable using only quantities belonging to $B$.
+
+The only time-quantity defined using only quantities belonging to $B$ is $\int d\tau$ along $B$'s worldline. Any modification of this quantity must come from outside $B$: from a relative velocity to some second frame, from a coordinate choice external to $B$, or from a registration by another apparatus. Each of these requires reference to a frame other than $B$, violating intrinsicness.
+
+Therefore $\tau'_B$ cannot be both intrinsic to $B$ and different from $\int d\tau$. The supposed intrinsically dilated time is not licensed.
+\end{proof}
+
+\begin{corollary}[A frame does not register its own time as dilated]
+\label{cor:no-self-dilation}
+No frame registers its own clock as dilated.
+\end{corollary}
+
+\begin{proof}
+By \cref{prop:tau-unaffected}, a frame's proper time is unaffected by registration. By \cref{prop:dilation-relational}, dilation is a between-frames relation. A frame registering its own clock is not in a between-frames relation; it is in a self-registration relation. Therefore no dilation factor applies to its own clock from its own standpoint. The clock registers at its proper rate.
+\end{proof}
+
+\section{What Is Real}
+
+The no-go denies the licensing of intrinsic dilation. It does not deny the reality of the between-frames relation, the reality of the registration, or the reality of the physical consequences. Each of these is preserved.
+
+The between-frames relation $\Delta t_A = \gamma\, \Delta \tau_B$ is real in the sense that it is the correct quantitative mapping. Any operationally adequate apparatus in $A$, registering events on $B$'s worldline, will register coordinate-time separations consistent with this relation.
+
+The registration itself is real. The detector clicks, the timestamps, the recorded data --- all are spacetime-side facts. They are not subjective impressions.
+
+The physical consequences are real. When a muon is produced in the upper atmosphere and reaches the ground, the reaching is a fact in the Earth frame. When the traveling twin returns younger, the age difference is a fact at the reunion event. The integrated proper times along the two twins' worldlines differ; this is a consequence of geometry, not of anyone's perception.
+
+What is absent in all of this is intrinsic dilation. The muon's clock is not running slow from the muon's standpoint; the muon decays at its own proper rate along its own worldline. The Earth frame registers the muon's flight as taking longer than the muon's proper lifetime, and this registration is the dilation relation. The decay-versus-survival outcome at the ground is determined by integrated proper time along the muon's worldline relative to the integrated proper time required for decay --- a worldline-internal quantity. The dilation language describes the registration; the worldline integrals determine the consequences.
+
+\section{Relation to the Twin Paradox}
+
+The twin paradox is often presented as if it required selecting between symmetric dilation claims, one twin or the other being the one whose clock is ``actually'' running slow. The no-go forecloses that framing.
+
+Neither twin's clock runs slow from its own standpoint. Each twin's clock ticks at its proper rate. Each twin's apparatus, registering the other, registers the other's clock as dilated. Both registrations are correct between-frames relations. Neither is an intrinsic statement.
+
+The asymmetric aging at reunion is not produced by one twin's clock having been slowed in itself. It is produced by the two worldlines having different geometric shapes. The traveling twin's worldline is longer in space but, because of the Minkowski signature, shorter in integrated proper time. The asymmetry is a fact about the worldlines, not about any clock having been slowed by motion.
+
+This reframing dissolves the apparent paradox. The paradox depends on the assumption that one twin's clock must ``really'' have been running slow. The no-go denies that anyone's clock was ever running slow in itself. There is no real underlying dilation to assign to a winner. There are only worldline integrals and registration relations, both of which behave as Special Relativity says.
+
+\section{Standard Physics Preserved}
+
+The present paper does not modify Special Relativity, the Lorentz transformations, the velocity-addition law, or any predictive content of standard relativistic physics. It does not introduce a new equation, a new constant, or a new postulate.
+
+What it does is decline an interpretive overlay. The overlay says: ``and therefore $B$'s clock is really running slow.'' The no-go says: $B$'s clock is registering at its proper rate from $B$'s standpoint; what is registered as slow is registered as slow by $A$'s apparatus, through the between-frames relation. The equations do not require the overlay. The overlay was a verbal convenience that has been mistaken for a physical claim.
+
+\section{Conclusion}
+
+Time dilation is a real, measurable, consequential between-frames registration relation. It is not a property of any frame.
+
+A frame's proper time accrues locally along its worldline. The accrual is the only intrinsic time-quantity belonging to the frame. Dilation, defined as the registration of one frame's clock by another frame's apparatus, is a relation between two frames; it is not a quantity belonging to either frame alone.
+
+The familiar physical consequences described in the language of dilation --- muon survival, asymmetric aging, GPS corrections --- are determined by integrated proper times along worldlines and by the correct between-frames registration relation. They are not consequences of any frame's clock being slowed in itself.
+
+Therefore: a frame's intrinsically dilated time is not licensed. There is no such thing as the frame's own slowed time. The clock ticks at its proper rate. The dilation lives at the registration interface, and the interface is between frames, not inside the object.
+
+\begin{thebibliography}{9}
+
+\bibitem{einstein1905}
+A.~Einstein. Zur Elektrodynamik bewegter K\"orper. \textit{Annalen der Physik} \textbf{17}, 891--921 (1905). \doi{10.1002/andp.19053221004}.
+
+\bibitem{taylor_wheeler}
+E.~F.~Taylor and J.~A.~Wheeler. \textit{Spacetime Physics: Introduction to Special Relativity} (2nd ed.). W.~H.~Freeman (1992).
+
+\bibitem{mckinley_creg}
+J.~C.~W.~McKinley. \textit{c Is a Registration Bound, Not a Traveler's Speed: A Registration-Based Interpretation of the Information Speed Limit}. Zenodo (2026). \doi{10.5281/zenodo.20114176}.
+
+\bibitem{mckinley_nocount}
+J.~C.~W.~McKinley. \textit{Spacetime Changes Can Be Counted; Photons Cannot: A No-Go Result on Photon-Object Inventory}. Zenodo (2026). \doi{10.5281/zenodo.20113982}.
+
+\bibitem{mckinley_accrual}
+J.~C.~W.~McKinley. \textit{Local Accrual as the Only Intrinsic Time-Quantity: A Positive Structural Statement for the Massive Regime}. Zenodo (2026). \doi{10.5281/zenodo.20225645}.
+
+\bibitem{mckinley_illusion}
+J.~C.~W.~McKinley. \textit{Illusion and Invariant: Making Sense of Time Dilation --- Reciprocity, Simultaneity, and Proper Time}. Zenodo (2025). \doi{10.5281/zenodo.17083276}.
+
+\end{thebibliography}
+
+\appendix
+\section{Worked Case: Rocket and Passed Planet}
+
+Consider a rocket under constant proper acceleration and a planet at rest in some chosen inertial frame. The rocket's apparatus registers the planet's clock as dilated; the planet's apparatus registers the rocket's clock as dilated.
+
+Both registrations are correct between-frames relations. Neither corresponds to anyone's clock being slowed in itself. The rocket's clock continues to accrue at its proper rate along the rocket's worldline; the planet's clock continues to accrue at its proper rate along the planet's worldline.
+
+The two registrations report each worldline's accrual through the other's apparatus. No reunion event occurs in this scenario, so the question of which clock ``really'' ran slow has no answer to give; what is asymmetric in the twin case (worldline shapes meeting at a common event) is simply absent here. The symmetry of registration, with no preferred frame, is the structurally honest picture.
+
+The rocket case is the cleanest illustration of \cref{prop:no-intrinsic-dilation}. Where the twin case can mislead by suggesting that one twin's clock must ``really'' have been slowed by motion, the rocket-and-passed-planet case has no reunion to anchor such an inference. Each apparatus registers the other's clock through the standard between-frames relation, both registrations are correct, and there is nothing further to say. The supposed intrinsic dilation has no referent.
+
+\end{document}
+```
+
+</details>
+
+---
+
+### [2026] Local Accrual as the Only Intrinsic Time-Quantity: A Positive Structural Statement for the Massive Regime
+
+DOI: [10.5281/zenodo.20225645](https://doi.org/10.5281/zenodo.20225645)
+
+Date: 2026-05-15
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\newcommand{\blfootnote}[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\title{Local Accrual as the Only Intrinsic Time-Quantity\\
+\large A Positive Structural Statement for the Massive Regime}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 15, 2026}
+
+\begin{document}
+\maketitle
+\blfootnote{\scriptsize This version published at DOI: \doi{10.5281/zenodo.20225645}.}
+
+\begin{abstract}
+For a massive object, the locally accrued proper time along its worldline is the only time-quantity intrinsic to it. Coordinate time, registered dilation, simultaneity assignments, and any other time-like quantity associated with the object are between-frames relations, not intrinsic properties. This paper states that distinction as a positive structural claim. The accrual is the integral of the local clock-tick interval along the worldline; it requires no second frame, no coordinate choice, and no apparatus external to the worldline. Every other time-quantity standardly associated with the object requires such an external reference and is therefore relational. The claim is conservative with respect to Special and General Relativity: it states what the formalism already entails about which time-quantities are worldline-internal and which are between-frames. The contribution is interpretive only.
+\end{abstract}
+
+\section{Introduction}
+
+Time-quantities associated with a massive object come in two structurally distinct kinds. The first is the proper time accrued along the object's worldline. The second is any time-quantity that requires a second frame, a coordinate choice, or an external apparatus to define. The two kinds are routinely conflated in expository physics. The conflation is harmless for calculation and harmful for interpretation.
+
+This paper states the structural distinction as a positive claim. The locally accrued proper time is the only time-quantity intrinsic to the object. Everything else --- coordinate time, registered dilation, simultaneity assignments, retardation labels, frame-dependent timestamps --- is a between-frames relation.
+
+The present paper makes the positive structural claim: what \emph{is} intrinsic is the local accrual along the worldline, and only that. The general registration framing on which this claim depends has been stated separately~\cite{mckinley_creg}. The null-case companion, in which no intrinsic time-quantity exists at all, has been stated separately~\cite{mckinley_nocount}.
+
+The same positive content --- proper time as the worldline-internal path integral, environmental factors (mass, speed) as conditions on the integrand, the watch always feeling normal locally, the difference appearing only at comparison --- has been stated in conventional Special Relativity and General Relativity vocabulary in earlier work~\cite{mckinley_massspeed}. The present paper restates that result as a registration-interface structural claim anchored to~\cite{mckinley_creg}, in the vocabulary used throughout the Timeless Light Model corpus, and adds the explicit no-go on competing candidate intrinsic time-quantities.
+
+The argument uses only standard relativistic kinematics~\cite{einstein1905,taylor_wheeler,wald}. No new equations, constants, or postulates are introduced. The claim is interpretive: it states which of the time-quantities licensed by the standard formalism are intrinsic, and which are relational.
+
+\section{Definitions}
+
+\begin{definition}[Worldline]
+\label{def:worldline}
+A worldline $\mathcal{W}$ is a timelike curve through spacetime, parametrized smoothly, representing the spacetime history of a massive object.
+\end{definition}
+
+\begin{definition}[Local clock-tick interval]
+\label{def:dtau}
+The local clock-tick interval $d\tau$ along $\mathcal{W}$ is the proper-time differential, defined as
+\[
+d\tau = \sqrt{-g_{\mu\nu}\, dx^\mu\, dx^\nu}\,/\,c
+\]
+in a metric signature where timelike intervals are negative. The differential is a property of $\mathcal{W}$ and the local metric. It is the interval read by an ideal co-moving clock following $\mathcal{W}$.
+\end{definition}
+
+\begin{definition}[Locally accrued proper time]
+\label{def:accrual}
+The locally accrued proper time of a worldline segment is
+\[
+\tau(\mathcal{W}) = \int_{\mathcal{W}} d\tau.
+\]
+The accrual is computed along the worldline using only $d\tau$ along that worldline. No second frame, no external coordinate system, and no apparatus outside the worldline is required for its definition.
+\end{definition}
+
+\begin{definition}[Intrinsic time-quantity]
+\label{def:intrinsic}
+A time-quantity associated with an object is intrinsic if its definition refers only to quantities defined on the object's worldline together with the local metric along that worldline. A time-quantity is relational, or between-frames, if its definition requires reference to a frame, coordinate system, or apparatus external to the object's worldline.
+\end{definition}
+
+\begin{definition}[Coordinate time]
+\label{def:coord-time}
+The coordinate time $t$ assigned to an event by an observer is the time-component of the event's coordinates in the observer's chosen coordinate system. Coordinate time is defined relative to the chosen system; a different system assigns a different coordinate time to the same event.
+\end{definition}
+
+\begin{definition}[Registered dilation]
+\label{def:dilation}
+The registered dilation of frame $B$'s clock by frame $A$'s apparatus is the relation $\Delta t_A = \gamma\, \Delta \tau_B$, where $\Delta \tau_B$ is the proper time accrued on $B$'s worldline between two events and $\Delta t_A$ is the coordinate-time separation $A$'s apparatus assigns to those events, with $\gamma = (1 - v^2/c^2)^{-1/2}$ and $v$ the relative velocity. The relation is defined only when both frames are specified.
+\end{definition}
+
+\begin{definition}[Simultaneity assignment]
+\label{def:simultaneity}
+A simultaneity assignment is a rule by which events at spatially distinct locations are labeled as occurring ``at the same time.'' The rule depends on the choice of reference frame and on the convention used to synchronize distant clocks. Different frames and different conventions yield different simultaneity assignments for the same set of events.
+\end{definition}
+
+\section{The Positive Claim}
+
+\begin{proposition}[Local accrual is intrinsic]
+\label{prop:accrual-intrinsic}
+The locally accrued proper time $\tau(\mathcal{W})$ of an object's worldline is intrinsic to the object.
+\end{proposition}
+
+\begin{proof}
+By \cref{def:accrual}, $\tau(\mathcal{W})$ is the integral of $d\tau$ along $\mathcal{W}$. By \cref{def:dtau}, $d\tau$ is a property of $\mathcal{W}$ and the local metric along $\mathcal{W}$. Both quantities are defined without reference to any frame, coordinate system, or apparatus external to $\mathcal{W}$. By \cref{def:intrinsic}, the resulting integrated quantity is intrinsic to the object.
+\end{proof}
+
+\begin{proposition}[Local accrual is reparametrization-invariant]
+\label{prop:reparam}
+The value of $\tau(\mathcal{W})$ for a given worldline segment is independent of the coordinate system used to compute it.
+\end{proposition}
+
+\begin{proof}
+The proper-time differential $d\tau = \sqrt{-g_{\mu\nu}\, dx^\mu\, dx^\nu}/c$ is a scalar under coordinate transformations: $g_{\mu\nu}\, dx^\mu\, dx^\nu$ is constructed from contractions of tensors and is therefore coordinate-invariant. The integral of a scalar along a curve is independent of the coordinate parametrization of the curve. Therefore $\tau(\mathcal{W})$ has the same value in any coordinate system~\cite{wald}.
+\end{proof}
+
+\begin{proposition}[Coordinate time is relational]
+\label{prop:coord-relational}
+The coordinate time $t$ assigned to events on $\mathcal{W}$ is not intrinsic to the object.
+\end{proposition}
+
+\begin{proof}
+By \cref{def:coord-time}, coordinate time depends on the choice of coordinate system. The coordinate system is external to $\mathcal{W}$: different systems assign different $t$ values to the same event on $\mathcal{W}$. By \cref{def:intrinsic}, a quantity whose definition requires a choice external to the worldline is relational, not intrinsic.
+\end{proof}
+
+\begin{proposition}[Registered dilation is relational]
+\label{prop:dilation-relational}
+The dilation registered for an object's clock is not intrinsic to the object.
+\end{proposition}
+
+\begin{proof}
+By \cref{def:dilation}, registered dilation is defined only when two frames are specified: the frame $B$ whose clock is being registered and the frame $A$ whose apparatus performs the registration. The factor $\gamma$ contains the relative velocity, which is a between-frames quantity. Therefore the registered dilation is defined only in the presence of a second frame. By \cref{def:intrinsic}, it is relational.
+\end{proof}
+
+\begin{proposition}[Simultaneity is relational]
+\label{prop:simultaneity-relational}
+A simultaneity assignment for events including events on $\mathcal{W}$ is not intrinsic to the object.
+\end{proposition}
+
+\begin{proof}
+By \cref{def:simultaneity}, a simultaneity assignment depends on the choice of frame and synchronization convention. Both are external to $\mathcal{W}$. Different frames and conventions produce different simultaneity assignments for the same events on $\mathcal{W}$. By \cref{def:intrinsic}, simultaneity is relational.
+\end{proof}
+
+\section{The Main Result}
+
+\begin{proposition}[Local accrual is the only intrinsic time-quantity]
+\label{prop:main}
+Among the time-quantities standardly associated with a massive object, the locally accrued proper time along its worldline is the only one intrinsic to the object. All other standardly associated time-quantities --- coordinate time, registered dilation, simultaneity assignments, retardation labels, frame-dependent timestamps --- are relational.
+\end{proposition}
+
+\begin{proof}
+By \cref{prop:accrual-intrinsic}, local accrual is intrinsic. By \cref{prop:reparam}, its value is independent of coordinate choice, confirming worldline-internal definition. By \cref{prop:coord-relational}, \cref{prop:dilation-relational}, and \cref{prop:simultaneity-relational}, coordinate time, registered dilation, and simultaneity are each relational. The same reasoning extends to any standardly associated time-quantity whose definition includes a frame choice, coordinate choice, synchronization convention, or external apparatus: each such quantity is, by \cref{def:intrinsic}, relational.
+
+What remains is to verify that no further intrinsic time-quantity is available. An intrinsic time-quantity would have to be definable using only quantities on $\mathcal{W}$ and the local metric. The available constructions from those ingredients are: $d\tau$ itself; integrals of $d\tau$ over worldline segments, which reduce to $\tau(\mathcal{W})$ values; and functions of $\tau$ such as $\tau^2$ or $f(\tau)$, which are reparametrizations of the same underlying quantity. No structurally distinct intrinsic time-quantity is constructible from worldline-internal ingredients alone.
+
+Therefore the locally accrued proper time is the only intrinsic time-quantity.
+\end{proof}
+
+\begin{corollary}[Asymmetric aging is a worldline-internal fact]
+\label{cor:aging}
+The age difference between two objects that meet at a common event after following different worldlines is a difference in their respective locally accrued proper times.
+\end{corollary}
+
+\begin{proof}
+The age of each object at a given event on its worldline is the locally accrued proper time from a reference event on the same worldline to that event. By \cref{prop:main}, this is an intrinsic worldline-internal quantity. When two worldlines meet at a common terminal event, the difference between their accrued proper times is a difference between two worldline-internal quantities. The asymmetry is determined entirely by the shapes of the two worldlines and the local metric along them. No frame choice, registered dilation, or simultaneity assignment is required to define the difference.
+\end{proof}
+
+\begin{corollary}[Decay outcomes are worldline-internal]
+\label{cor:decay}
+Whether an unstable particle decays before reaching a given event is determined by the proper time accrued along the particle's worldline relative to the proper time required for decay.
+\end{corollary}
+
+\begin{proof}
+The decay process of an unstable particle is governed by quantities defined on the particle's worldline: its proper lifetime and its locally accrued proper time. By \cref{prop:main}, both are intrinsic worldline-internal quantities. The decay-or-survival outcome at a given event is determined by the comparison of these two intrinsic quantities. No registration by an external frame is required for the outcome itself, though external frames may register the outcome through their own apparatus.
+\end{proof}
+
+\section{The Standard Twin and Muon Cases}
+
+The framework is conservative with respect to the standard relativistic results~\cite{mckinley_massspeed}.
+
+In the twin scenario, the traveling twin's worldline and the staying twin's worldline meet at the reunion event. Each worldline has accrued its own locally accrued proper time between the departure event and the reunion event. The traveling twin's worldline has accrued less. The age difference is a fact about the two integrated proper times. By \cref{cor:aging}, the asymmetry is intrinsic to the worldlines and requires no frame-dependent claim about ``whose clock was really running slow.''
+
+In the muon case, the muon's worldline accrues proper time from production in the upper atmosphere to either decay or ground impact, whichever occurs first along the worldline. If the worldline reaches the ground event before the proper-time-required-for-decay has accrued, the muon arrives. By \cref{cor:decay}, the outcome is determined worldline-internally. The Earth frame registers the muon's flight as taking longer than its proper lifetime, which is the standard dilation relation; but the survival outcome is fixed by the muon's own integrated proper time, not by any registration.
+
+Both standard results emerge from the worldline-internal accrual together with the local metric. The registration relations are consistent with the results but do not produce them.
+
+\section{Why the Distinction Matters}
+
+If local accrual is conflated with the relational time-quantities, two errors follow.
+
+The first error is the assumption that a frame's clock has been slowed in itself when registered as dilated by another frame. The present positive claim explains what remains: each frame's clock continues to accrue at its proper rate along its worldline, regardless of how it is registered.
+
+The second error is the assumption that asymmetric outcomes --- aging at reunion, particle survival, GPS clock offsets --- require selecting a privileged frame whose dilation reading is ``correct.'' The present claim removes the need for privilege selection. Asymmetric outcomes are produced by differences between worldline-internal accruals. Different frames register the same outcomes through their respective between-frames relations, all of which are consistent with the worldline-internal facts.
+
+Removing both errors leaves the standard formalism intact and clarifies which quantities in it are properties of objects and which are relations between frames.
+
+\section{Relation to the Null Regime}
+
+The present claim concerns the massive regime. It does not extend without modification to the null regime.
+
+In the null regime, the proper-time differential along a photon-associated null relation vanishes: $d\tau = 0$ everywhere along the relation. The integral of $d\tau$ along such a relation is zero, and no clock can be associated with it. The construction by which an intrinsic time-quantity is defined for a massive object --- integration of $d\tau$ along a timelike worldline --- has no analog. The null companion result~\cite{mckinley_nocount} accordingly states that no intrinsic time-quantity exists for the null case at all; only spacetime-side endpoint registrations are available.
+
+The structural asymmetry between the regimes is therefore: in the massive regime, one intrinsic time-quantity exists (local accrual) and all other time-quantities are relational; in the null regime, no intrinsic time-quantity exists and all available time-related descriptions are between endpoint registrations. The general registration framing~\cite{mckinley_creg} accommodates both cases.
+
+\section{Conservativeness}
+
+The present paper introduces no new formal content. It does not modify Special Relativity, General Relativity, quantum mechanics, or quantum field theory. It does not modify the metric structure of spacetime, the invariance of $c$, or any predictive relation. The proper-time integral is the standard one; the dilation relation is the standard one; the coordinate-time and simultaneity definitions are the standard ones.
+
+The contribution is interpretive: it states which of the standardly recognized time-quantities are worldline-internal and which are between-frames, and it identifies the locally accrued proper time as the unique member of the first category. The empirical content of relativity is unaffected.
+
+\section{Conclusion}
+
+For a massive object, the locally accrued proper time along its worldline is the only time-quantity intrinsic to it. The accrual is computed from $d\tau$ along the worldline and the local metric, using nothing external. Every other time-quantity standardly associated with the object --- coordinate time, registered dilation, simultaneity, frame-dependent timestamps --- requires reference to a frame, coordinate system, synchronization convention, or external apparatus, and is therefore a between-frames relation.
+
+The asymmetric outcomes that relativity correctly predicts --- different ages at reunion, particle survival across long flight paths, GPS clock offsets --- are determined by differences between worldline-internal accruals. Registration relations describe how these worldline-internal facts are reported across frames; they do not produce the facts.
+
+The clean partition is: one intrinsic time-quantity per massive worldline, namely its locally accrued proper time; everything else, relational.
+
+\begin{thebibliography}{9}
+
+\bibitem{einstein1905}
+A.~Einstein. Zur Elektrodynamik bewegter K\"orper. \textit{Annalen der Physik} \textbf{17}, 891--921 (1905). \doi{10.1002/andp.19053221004}.
+
+\bibitem{taylor_wheeler}
+E.~F.~Taylor and J.~A.~Wheeler. \textit{Spacetime Physics: Introduction to Special Relativity} (2nd ed.). W.~H.~Freeman (1992).
+
+\bibitem{wald}
+R.~M.~Wald. \textit{General Relativity}. University of Chicago Press (1984).
+
+\bibitem{mckinley_creg}
+J.~C.~W.~McKinley. \textit{c Is a Registration Bound, Not a Traveler's Speed: A Registration-Based Interpretation of the Information Speed Limit}. Zenodo (2026). \doi{10.5281/zenodo.20114176}.
+
+\bibitem{mckinley_nocount}
+J.~C.~W.~McKinley. \textit{Spacetime Changes Can Be Counted; Photons Cannot: A No-Go Result on Photon-Object Inventory}. Zenodo (2026). \doi{10.5281/zenodo.20113982}.
+
+\bibitem{mckinley_massspeed}
+J.~C.~W.~McKinley. \textit{Mass Slows Time. Speed Slows Time. Concept, Derivations, and Evidence}. Zenodo (2025). \doi{10.5281/zenodo.17083288}.
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
+
+### 2026 Light Has No Speed, You Have No Speed, Speed Is What Other Objects Have As They Pass You: A Declarative Restatement of Existing Physics
+
+*   **DOI:** [10.5281/zenodo.20225300](https://doi.org/10.5281/zenodo.20225300)
+*   **Date:** 15 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\title{Light Has No Speed, You Have No Speed, Speed Is What Other Objects Have As They Pass You\\
+\large A Declarative Restatement of Existing Physics}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 15, 2026}
+
+\begin{document}
+\maketitle
+
+\blfootnote{\scriptsize This version published at DOI: \doi{10.5281/zenodo.20225300}.}
+
+\begin{abstract}
+This paper introduces no new physics. It is a declarative summary
+of what standard relativity already says about ``the speed of light,''
+sorted into three cases.
+
+\medskip
+
+\noindent\textbf{Plainly:}
+1. Light has no speed. 2. You have no speed. 3. Speed is what
+other objects have as they pass you, and the fastest they can pass you
+is $c$.
+
+\medskip
+
+\noindent\textbf{Technically:}
+For the photon, the kinematic notion of speed is inapplicable, since
+the photon has null proper time, no rest frame, and no licensed
+intermediate spacetime history. For any massive object, the
+coordinate velocity in its own rest frame is zero. The invariant
+constant $c$ bounds the relative velocity that any inertial observer
+may assign to another inertial frame from that observer's standpoint.
+
+\medskip
+
+\noindent No equations are altered. The content is drawn from standard
+special relativity and from prior papers in this series.
+\end{abstract}
+
+\section{What This Paper Is}
+
+This paper states a simple clarification.
+
+The phrase ``the speed of light'' is useful shorthand in ordinary
+physics language, but it hides three different cases. Once those cases
+are separated, the familiar slogan becomes clearer. The photon case,
+the massive-object case, and the observer-relative case do not say the
+same thing.
+
+Plainly, light has no speed. You have no speed. Speed is what
+other objects have as they pass you.
+
+That sounds strange only because ordinary speech treats speed as
+something an object carries around, like weight, color, or charge. But
+speed is not like that. Speed is not sitting inside the object. Speed
+is what appears when one thing is described from the place of another.
+You are not moving from your own point of view. A rocket is not moving
+from the rocket's point of view. A planet is not moving from the
+planet's point of view. What has speed is the other thing, as seen
+from where you are.
+
+Technically, the photon has null proper time, no rest frame, and no
+licensed intermediate spacetime history. A massive object has zero
+coordinate velocity in its own rest frame. The constant $c$ bounds the
+relative velocity assignable from one inertial standpoint to another
+inertial frame.
+
+No equation is changed. The Lorentz transformations remain. The
+metric structure of relativity remains. The operational role of $c$
+remains. The correction is interpretive: $c$ is not the private speed
+of a photon traveler. It is the invariant causal and registration
+bound appearing in relativistic descriptions.
+
+The technical background is developed in prior papers in this series:
+the minimal statement of the Timeless Light Model~\cite{tlmBedrock},
+the null-proper-time restriction~\cite{nullProperTime}, the no-rest-frame
+restriction~\cite{noRestFrame}, the null-curve clarification~\cite{nullCurves},
+the wavefunction no-path result~\cite{wavefunctionNoGo}, the timebound
+no-traveler result~\cite{timeboundNoGo}, the registration-bound
+restatement of $c$~\cite{cRegBound}, the linguistic verdict on
+speed-talk for the null case~\cite{soCalledSpeed}, and the observational
+no-go on seeing a photon in flight~\cite{seeingNoGo}. The present
+paper gives the plain declarative version.
+
+\section{Case 1: Light Has No Speed}
+
+\subsection*{Plainly}
+
+Light has no speed.
+
+The speed of light is not really the speed of light.
+
+That sentence sounds wrong because the phrase is familiar. But the
+plain picture is simple. Speed belongs to a thing that is traveling.
+Light is not a little object taking a trip from one place to another.
+There is no passenger. There is no clock for the passenger. There is
+no route the passenger experiences.
+
+So the famous phrase should be read carefully. It names the constant
+that governs lightlike appearances in spacetime. It does not name the
+speed of a traveling light-object.
+
+\subsection*{Technically}
+
+A speed is the magnitude of a change of position with respect to time
+in a specified frame. The expression \emph{the speed of $X$} therefore
+requires a referent $X$, a frame in which $X$ is assigned positions,
+and a time parameter with respect to which those positions change.
+
+The photon does not satisfy those requirements. It has null proper
+time, no rest frame, and no licensed intermediate spacetime
+history~\cite{tlmBedrock,nullProperTime,noRestFrame,nullCurves}. The
+wavefunction's predictive success does not supply an intermediate
+photon path~\cite{wavefunctionNoGo}. Nor does lawful temporal
+governance license recovery of a hidden traveler-bead
+ontology~\cite{timeboundNoGo}. The linguistic verdict that follows
+from these constraints is given in~\cite{soCalledSpeed}: the
+self-frame reading of speed fails for the photon because no photon
+rest frame exists, and the other-frame traveler reading fails because
+no persisting photon-referent in transit is licensed.
+
+The observational side is just as restrictive. No photon has been
+seen in flight; every observation of light is a registration at a
+detector, never an observation of a photon between
+emission and absorption~\cite{seeingNoGo}.
+
+Accordingly, the kinematic notion of speed is inapplicable to the
+photon. The constant $c$ remains fully operative. What is denied is
+only that $c$ names a self-owned kinematic property of a photon-object.
+
+\section{Case 2: You Have No Speed}
+
+\subsection*{Plainly}
+
+You have no speed.
+
+Neither does anything else. A rocket has no speed. A planet has no
+speed. An electron has no speed.
+
+That sounds strange because ordinary speech says things like ``the
+rocket is moving fast.'' But the rocket is not moving from the
+rocket's point of view. The same is true of every object, including
+you. From its own point of view, every object is standing still.
+
+Speed appears only when something else is described from where you
+are. From Earth, the rocket is moving. From the rocket, Earth is
+moving. Neither one owns the speed as a private property. Speed is the
+description of one thing from the place of another.
+
+\subsection*{Technically}
+
+For any massive system with a rest frame, the coordinate velocity of
+that system in its own rest frame is zero. This is not an additional
+postulate. It is the definition of a rest frame.
+
+Ordinary language often suppresses the relevant frame. It says that
+an object ``is moving'' as though motion were a frame-independent
+property of the object. Relativity does not say that. Motion is
+assigned from one frame to another~\cite{cRegBound}.
+
+Therefore, a massive object does not possess an absolute self-speed.
+Its own-frame coordinate velocity is zero. Other observers may assign
+it a nonzero relative velocity, including a velocity arbitrarily close
+to $c$, but the object's velocity in its own rest frame remains zero.
+
+\section{Case 3: Speed Is What Other Objects Have As They Pass You}
+
+\subsection*{Plainly}
+
+Speed is what other objects have as they pass you.
+
+From your own point of view, you are standing still. Other objects
+pass you. Rockets pass you. Planets pass you. Signals and records are
+described from where you are. That is where speed shows up.
+
+The fastest anything can pass you is $c$.
+
+That is the right home of the famous constant. It is not the speed of
+a photon traveler. It is the limit on how fast anything can be seen to
+pass from where you are.
+
+\subsection*{Technically}
+
+From any inertial standpoint, the relative velocity assigned to
+another inertial frame is bounded above by $c$. This bound is not a
+traveler-owned property. It is a structural feature of relativistic
+spacetime and of the transformations relating inertial descriptions.
+
+The bound is symmetric. If observer $A$ assigns observer $B$ a relative
+velocity below $c$, observer $B$ assigns observer $A$ a corresponding
+relative velocity below $c$. Neither observer possesses an absolute
+motion through spacetime. Each is at rest in its own inertial frame;
+each registers the other under the invariant bound~\cite{cRegBound}.
+
+Thus $c$ is best read here as a causal and registration bound. It
+limits cross-frame assignment. It does not describe the private speed
+of a photon-object.
+
+\section{Summary}
+
+The phrase ``the speed of light'' compresses three cases that should
+be kept separate.
+
+Plainly:
+
+\begin{enumerate}
+  \item Light has no speed.
+  \item You have no speed.
+  \item Speed is what other objects have as they pass you, and the
+  fastest they can pass you is $c$.
+\end{enumerate}
+
+Technically:
+
+\begin{enumerate}
+  \item For the photon, the kinematic notion of speed is inapplicable
+  because the photon has null proper time, no rest frame, and no
+  licensed intermediate spacetime history.
+  \item For any massive object, the coordinate velocity in its own
+  rest frame is zero.
+  \item For any inertial observer, the relative velocity assignable to
+  another inertial frame is bounded by the invariant constant $c$.
+\end{enumerate}
+
+No physics is changed. The clarification is verbal and ontological.
+The constant $c$ keeps its full operational role. What is rejected is
+the misleading image of a photon-object carrying $c$ as its own
+travel-speed.
+
+\section{What This Does Not Change}
+
+This paper does not alter special relativity, general relativity,
+quantum mechanics, or quantum field theory. It changes no equation,
+no prediction, no measurement rule, and no experimental expectation.
+
+The Lorentz transformations remain. The relativistic metric remains.
+The null structure of lightlike intervals remains. The invariant
+constant $c$ remains exactly where standard physics places it.
+
+The only change is disciplinary. The familiar phrase ``the speed of
+light'' is retained as operational shorthand, but denied as literal
+ontology. In the photon case, speed-talk is inapplicable. In the
+massive case, own-frame speed is zero. In the observer-relative case,
+$c$ is the invariant bound on cross-frame registration.
+
+\begin{thebibliography}{9}
+
+\bibitem{tlmBedrock}
+J. C. W. McKinley.
+\emph{A Minimal Structural Statement of the Timeless Light Model}.
+Zenodo (2026). \doi{10.5281/zenodo.19167403}.
+
+\bibitem{nullProperTime}
+J. C. W. McKinley.
+\emph{Taking Null Proper Time Seriously: An Interpretive
+Clarification of Null Proper Time}.
+Zenodo (2025). \doi{10.5281/zenodo.18004632}.
+
+\bibitem{noRestFrame}
+J. C. W. McKinley.
+\emph{No Rest Frame, No Persistence: A Kinematic Constraint on
+Photon Interpretation}.
+Zenodo (2025). \doi{10.5281/zenodo.18005884}.
+
+\bibitem{nullCurves}
+J. C. W. McKinley.
+\emph{Null Curves Without Carriers: Resolving an Ontological
+Tension in Relativistic Geometry}.
+Zenodo (2025). \doi{10.5281/zenodo.18028886}.
+
+\bibitem{wavefunctionNoGo}
+J. C. W. McKinley.
+\emph{Wavefunction Prediction Does Not License a Photon Path}.
+Zenodo (2026). \doi{10.5281/zenodo.19504772}.
+
+\bibitem{timeboundNoGo}
+J. C. W. McKinley.
+\emph{Timebound Does Not Mean Traveler: A No-Go on Deriving
+Bead-Path Ontology from Quantum Admissibility}.
+Zenodo (2026). \doi{10.5281/zenodo.20114078}.
+
+\bibitem{cRegBound}
+J. C. W. McKinley.
+\emph{c Is a Registration Bound, Not a Traveler's Speed}.
+Zenodo (2026). \doi{10.5281/zenodo.20175517}.
+
+\bibitem{soCalledSpeed}
+J. C. W. McKinley.
+\emph{The So-Called Speed of Light Is Not the Speed of Light: A
+No-Go on Speed-Talk for the Null Case}.
+Zenodo (2026). \doi{10.5281/zenodo.20193205}.
+
+\bibitem{seeingNoGo}
+J. C. W. McKinley.
+\emph{No-Go on Seeing a Photon Cross the Sky}.
+Zenodo (2026). \doi{10.5281/zenodo.20225004}.
+
+\end{thebibliography}
+
+\end{document}
+```
+
+</details>
+
+---
+
 
 ### [2026] No-Go on Seeing a Photon Cross the Sky
 
