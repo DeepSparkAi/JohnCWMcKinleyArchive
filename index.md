@@ -75,7 +75,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 **DOI:** [10.5281/zenodo.20114822](https://doi.org/10.5281/zenodo.20114822)
 
-**Date:** May 14, 2026
+**Date:** May 16, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
