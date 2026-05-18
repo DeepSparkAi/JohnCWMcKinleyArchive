@@ -71,6 +71,109 @@ The TLM is an interpretive framework that treats the null status of the photon a
 ## The Papers
 
 
+### [2026] No Causal Chain Proceeds Among Multiple Lawful Alternatives Without Selection: A Structural No-Go Result
+
+*   **DOI:** [10.5281/zenodo.20264520](https://doi.org/10.5281/zenodo.20264520)
+*   **Date:** 18 May 2026
+
+<details markdown="1">
+<summary><b>Click to view Raw LaTeX Source</b></summary>
+
+```latex
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+
+\usepackage{fancyhdr}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{No Causal Chain Proceeds Without Selection}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+\title{\textbf{No Causal Chain Proceeds Among Multiple Lawful Alternatives Without Selection:\\ A Structural No-Go Result}}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{May 18, 2026}
+
+\begin{document}
+\maketitle
+
+\blfootnote{\scriptsize This version published at \url{https://doi.org/10.5281/zenodo.20264521}.}
+
+\begin{abstract}
+This note states a structural no-go. No causal chain proceeds among multiple lawful alternatives without selection: the taking of one alternative within the admissible set as the continuation actually realized. Admissibility presents possibilities; it does not actualize them.
+\end{abstract}
+
+\section{Definitions}
+
+\begin{definition}[Causal chain]
+A \emph{causal chain} is a sequence of events in which each event's occurrence is derived from the occurrence of its predecessor in the chain.
+\end{definition}
+
+\begin{definition}[Admissible alternatives]
+At a point in a causal chain, the \emph{admissible alternatives} are the lawful continuations available from that point. Admissibility is the standing of a possibility as lawfully open; it is not actualization.
+\end{definition}
+
+\begin{definition}[Selection]
+\emph{Selection} at a point in a causal chain with multiple admissible alternatives is the taking of one alternative within the admissible set as the continuation actually realized.
+\end{definition}
+
+\section{The Structural Claim}
+
+\begin{quote}
+\textbf{Core Thesis.} No causal chain proceeds among multiple lawful alternatives without selection.
+\end{quote}
+
+\begin{proposition}[No-go on selection-free chains]
+No causal chain proceeds among multiple lawful alternatives without one alternative being selected.
+\end{proposition}
+
+\begin{proof}
+Assume for contradiction that a causal chain proceeds through a point at which multiple lawful alternatives are admissible, and no alternative is selected. For the chain to proceed through that point, an event must occur in sequence after that point. That event is either among the admissible alternatives or it is not. If it is, one alternative within the admissible set has been taken as the continuation actually realized; that is selection, contradicting the assumption. If it is not, the chain has not proceeded lawfully, contradicting the claim that it is a causal chain.
+
+Therefore no causal chain proceeds among multiple lawful alternatives without selection.
+\end{proof}
+
+\section{Falsifier}
+The claim fails only if a causal chain is exhibited whose events occur in sequence through a point at which multiple lawful alternatives are admissible, yet no alternative within the admissible set is the one taken.
+
+\section{Conclusion}
+
+No causal chain proceeds among multiple lawful alternatives without selection. Admissibility presents possibilities; proceeding requires one to be taken.
+
+\end{document}
+```
+
+</details>
+
+---
+
+
 
 ### 2026 No Causal Chain Proceeds Without Initiation: A Structural No-Go Result
 
