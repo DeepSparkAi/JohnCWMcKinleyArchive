@@ -74,7 +74,7 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 ### [2026] General Timelessness and the Atom: Stable and Radioactive Bound Configurations as Two Presentations of Timeless Lawful Structure
 
-**DOI:** [10.5281/zenodo.20279574](https://doi.org/10.5281/zenodo.20279573)
+**DOI:** [10.5281/zenodo.20279574](https://doi.org/10.5281/zenodo.20279574)
 
 **Date:** May 20, 2026
 
