@@ -539,7 +539,7 @@ L.~Fonda, G.~C.~Ghirardi, and A.~Rimini.
 
 \begingroup
 \renewcommand{\thefootnote}{}
-\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.20253136}{https://doi.org/10.5281/zenodo.20253136}.}
+\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.20253135}{https://doi.org/10.5281/zenodo.20253135}.}
 \endgroup
 
 \begin{abstract}
@@ -548,7 +548,7 @@ A prior result is taken as proven \cite{mckinley_9A}: no closed physical system 
 
 \section{Introduction}
 
-The prior result establishes a structural no-go: no closed physical system internally fixes the onset and direction of a new causal chain among multiple lawful possibilities \cite{mckinley_9A}. That every causal chain has an onset is established in \cite{mckinley_2B}. That a causal chain proceeding among multiple lawful alternatives requires selection is established in \cite{mckinley_2C}. These results are taken as proven here.
+The prior result establishes a structural no-go: no closed physical system internally fixes the onset and direction of a new causal chain among multiple lawful possibilities \cite{mckinley_9A}. This result is taken as proven here.
 
 The present paper develops the prior result. It distinguishes propagation, admissibility, and redescription from internal fixation, and it establishes a reassignment lemma covering both onset and direction.
 
@@ -598,7 +598,7 @@ A redescription, in the sense of \cref{def:redescription}, may express the actua
 
 \section{The Reassignment Lemma}
 
-Let $S(t)$ be a closed physical description of a new causal chain over an interval during which multiple lawful continuations remain open. By \cite{mckinley_2B}, any proceeding causal chain has an initiation; by \cite{mckinley_2C}, a chain proceeding among multiple lawful continuations requires selection. Denote its onset by $t^\ast$ and its realized path by the continuation actually taken.
+Let $S(t)$ be a closed physical description of a new causal chain over an interval during which multiple lawful continuations remain open. Denote its onset by $t^\ast$ and its realized path by the continuation actually taken.
 
 \begin{lemma}[Prior-step reassignment does not determine onset or direction]
 \label{lemma:reassignment}
@@ -632,12 +632,6 @@ A closed physical description does not internally fix both the onset and directi
 
 \bibitem{mckinley_9A}
 J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain}, Zenodo, \href{https://doi.org/10.5281/zenodo.19464780}{10.5281/zenodo.19464780} (2026).
-
-\bibitem{mckinley_2B}
-J. C. W. McKinley, \emph{No Causal Chain Proceeds Without Initiation: A Structural No-Go Result}, Zenodo, \href{https://doi.org/10.5281/zenodo.20263607}{10.5281/zenodo.20263607} (2026).
-
-\bibitem{mckinley_2C}
-J. C. W. McKinley, \emph{No Causal Chain Proceeds Among Multiple Lawful Alternatives Without Selection: A Structural No-Go Result}, Zenodo, \href{https://doi.org/10.5281/zenodo.20264521}{10.5281/zenodo.20264521} (2026).
 
 \end{thebibliography}
 
