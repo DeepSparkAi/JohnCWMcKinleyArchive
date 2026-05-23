@@ -631,7 +631,7 @@ A closed physical description does not internally fix both the onset and directi
 \begin{thebibliography}{9}
 
 \bibitem{mckinley_9A}
-J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain}, Zenodo, \href{https://doi.org/10.5281/zenodo.19464781}{10.5281/zenodo.19464781} (2026).
+J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain}, Zenodo, \href{https://doi.org/10.5281/zenodo.19464780}{10.5281/zenodo.19464780} (2026).
 
 \bibitem{mckinley_2B}
 J. C. W. McKinley, \emph{No Causal Chain Proceeds Without Initiation: A Structural No-Go Result}, Zenodo, \href{https://doi.org/10.5281/zenodo.20263607}{10.5281/zenodo.20263607} (2026).
@@ -5617,7 +5617,7 @@ chain requires some non-internal contribution.
 \begin{thebibliography}{1}
 
 \bibitem{McKinley2026Closed}
-J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain: A Structural No-Go Result}, Zenodo (2026). DOI:\,\href{https://doi.org/10.5281/zenodo.19464781}{10.5281/zenodo.19464781}.
+J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain: A Structural No-Go Result}, Zenodo (2026). DOI:\,\href{https://doi.org/10.5281/zenodo.19464780}{10.5281/zenodo.19464780}.
 
 \end{thebibliography}
 
@@ -6327,7 +6327,7 @@ DOI: \href{https://doi.org/10.5281/zenodo.19167403}{10.5281/zenodo.19167403}.
 ---
 
 ### [2026] No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain
-*   **DOI:** [10.5281/zenodo.19464781](https://doi.org/10.5281/zenodo.19464781)
+*   **DOI:** [10.5281/zenodo.19464780](https://doi.org/10.5281/zenodo.19464780)
 *   **Date:** 7 April 2026
 
 <details markdown="1">
@@ -6370,7 +6370,7 @@ DOI: \href{https://doi.org/10.5281/zenodo.19167403}{10.5281/zenodo.19167403}.
 
 \title{\Large\textbf{No Closed Physical System Internally Fixes the Onset and Direction of a New Causal Chain}\\
 \large A Structural No-Go Result}
-\author{John C. W. McKinley\,\orcidlink{0009-0001-0878-8047}}
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
 \date{7 April 2026}
 
 
@@ -6383,7 +6383,7 @@ DOI: \href{https://doi.org/10.5281/zenodo.19167403}{10.5281/zenodo.19167403}.
 \begingroup
 \renewcommand{\thefootnote}{}
 
-\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.19464781}{\color{blue}https://doi.org/10.5281/zenodo.19464781}.}
+\footnotetext{This version published at \href{https://doi.org/10.5281/zenodo.19464780}{\color{blue}https://doi.org/10.5281/zenodo.19464780}.}
  
 \endgroup
 
