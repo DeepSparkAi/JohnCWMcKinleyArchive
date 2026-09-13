@@ -1020,7 +1020,7 @@ NobelPrize.org, 2022.
 
 ### [2026] Cosmogenesis Requires an Initiating Increment
 
-[https://doi.org/10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
+*   **DOI:** [https://doi.org/10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
 
 May 27, 2026
 
@@ -1867,7 +1867,7 @@ NobelPrize.org, 2022.
 
 ### [2026] Cosmogenesis Requires an Initiating Increment
 
-[https://doi.org/10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
+*   **DOI:**[https://doi.org/10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
 
 May 27, 2026
 
@@ -2021,7 +2021,7 @@ J. C. W. McKinley, \emph{The Initiating Increment: Why the Beginning of a New Ca
 
 ### [2026] The Initiating Increment: Why the Beginning of a New Causal Chain Requires an Actual Added Increment of Energy
 
-[https://doi.org/10.5281/zenodo.20369221](https://doi.org/10.5281/zenodo.20369221)
+*   **DOI:**[https://doi.org/10.5281/zenodo.20369221](https://doi.org/10.5281/zenodo.20369221)
 
 May 25, 2026
 
@@ -2186,7 +2186,7 @@ J. C. W. McKinley, \emph{An Inert Contribution Does Not Begin a Causal Chain: A 
 
 ### [2026] An Inert Contribution Does Not Begin a Causal Chain: A Structural No-Go Result
 
-[https://doi.org/10.5281/zenodo.20351786](https://doi.org/10.5281/zenodo.20351786)
+*   **DOI:**[https://doi.org/10.5281/zenodo.20351786](https://doi.org/10.5281/zenodo.20351786)
 
 May 23, 2026
 
