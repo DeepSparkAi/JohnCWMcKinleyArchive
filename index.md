@@ -1866,7 +1866,7 @@ NobelPrize.org, 2022.
 
 ### [2026] Cosmogenesis Requires an Initiating Increment
 
-*   **DOI:**[10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
+*   **DOI:** [10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
 *   **Date:** May 27, 2026
 
 <details markdown="1">
@@ -2019,7 +2019,7 @@ J. C. W. McKinley, \emph{The Initiating Increment: Why the Beginning of a New Ca
 
 ### [2026] The Initiating Increment: Why the Beginning of a New Causal Chain Requires an Actual Added Increment of Energy
 
-*   **DOI:**[10.5281/zenodo.20369221](https://doi.org/10.5281/zenodo.20369221)
+*   **DOI:** [10.5281/zenodo.20369221](https://doi.org/10.5281/zenodo.20369221)
 *   **Date:** May 25, 2026
 
 <details markdown="1">
@@ -2183,7 +2183,7 @@ J. C. W. McKinley, \emph{An Inert Contribution Does Not Begin a Causal Chain: A 
 
 ### [2026] An Inert Contribution Does Not Begin a Causal Chain: A Structural No-Go Result
 
-*   **DOI:**[10.5281/zenodo.20351786](https://doi.org/10.5281/zenodo.20351786)
+*   **DOI:** [10.5281/zenodo.20351786](https://doi.org/10.5281/zenodo.20351786)
 *   **Date:** May 23, 2026
 
 <details markdown="1">
@@ -3021,9 +3021,9 @@ No causal chain proceeds without an initiation. A chain of pure transmission sup
 
 ### [2026] The Atom Is Available When Called On: Stationary States as the Matter-Side Instance of General Timelessness
 
-**DOI:** [10.5281/zenodo.20114822](https://doi.org/10.5281/zenodo.20114822)
+* **DOI:** [10.5281/zenodo.20114822](https://doi.org/10.5281/zenodo.20114822)
 
-**Date:** May 16, 2026
+* **Date:** May 16, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -3595,7 +3595,7 @@ J.~C.~W.~McKinley. \textit{Mass Slows Time. Speed Slows Time. Concept, Derivatio
 
 ### [2026] Dilation Is Not a Property of the Object: A No-Go Result on Intrinsic Time-Dilation
 
-* **DOI:**  [10.5281/zenodo.20225720](https://doi.org/10.5281/zenodo.20225720)
+* **DOI:** [10.5281/zenodo.20225720](https://doi.org/10.5281/zenodo.20225720)
 
 * **Date:**  2026-05-16
 
