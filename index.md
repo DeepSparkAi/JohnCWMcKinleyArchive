@@ -1020,9 +1020,8 @@ NobelPrize.org, 2022.
 
 ### [2026] Cosmogenesis Requires an Initiating Increment
 
-*   **DOI:** [https://doi.org/10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
-
-May 27, 2026
+*   **DOI:** [10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
+*   **Date:** May 27, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -1867,9 +1866,8 @@ NobelPrize.org, 2022.
 
 ### [2026] Cosmogenesis Requires an Initiating Increment
 
-*   **DOI:**[https://doi.org/10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
-
-May 27, 2026
+*   **DOI:**[10.5281/zenodo.20405016](https://doi.org/10.5281/zenodo.20405016)
+*   **Date:** May 27, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -2021,9 +2019,8 @@ J. C. W. McKinley, \emph{The Initiating Increment: Why the Beginning of a New Ca
 
 ### [2026] The Initiating Increment: Why the Beginning of a New Causal Chain Requires an Actual Added Increment of Energy
 
-*   **DOI:**[https://doi.org/10.5281/zenodo.20369221](https://doi.org/10.5281/zenodo.20369221)
-
-May 25, 2026
+*   **DOI:**[10.5281/zenodo.20369221](https://doi.org/10.5281/zenodo.20369221)
+*   **Date:** May 25, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -2186,9 +2183,8 @@ J. C. W. McKinley, \emph{An Inert Contribution Does Not Begin a Causal Chain: A 
 
 ### [2026] An Inert Contribution Does Not Begin a Causal Chain: A Structural No-Go Result
 
-*   **DOI:**[https://doi.org/10.5281/zenodo.20351786](https://doi.org/10.5281/zenodo.20351786)
-
-May 23, 2026
+*   **DOI:**[10.5281/zenodo.20351786](https://doi.org/10.5281/zenodo.20351786)
+*   **Date:** May 23, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -2342,9 +2338,8 @@ J. C. W. McKinley, \emph{If a New Causal Chain Begins, a Non-Internal Contributi
 
 ### [2026] General Timelessness and the Atom: Stable and Radioactive Bound Configurations as Two Presentations of Timeless Lawful Structure
 
-**DOI:** [10.5281/zenodo.20279574](https://doi.org/10.5281/zenodo.20279574)
-
-**Date:** May 20, 2026
+* **DOI:** [10.5281/zenodo.20279574](https://doi.org/10.5281/zenodo.20279574)
+* **Date:** May 20, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -2914,9 +2909,9 @@ J. C. W. McKinley, \emph{No Closed Physical System Internally Fixes the Onset an
 
 ### 2026 No Causal Chain Proceeds Without Initiation: A Structural No-Go Result
 
-[https://doi.org/10.5281/zenodo.20263606](https://doi.org/10.5281/zenodo.20263606)
+* **DOI:** [10.5281/zenodo.20263606](https://doi.org/10.5281/zenodo.20263606)
 
-May 17, 2026
+* **Date:** May 17, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -3357,9 +3352,9 @@ D.~J.~Griffiths and D.~F.~Schroeter.
 
 ### [2026] Worldlines Produce; Dilation Reports: A No-Go on Treating Consequence-Reality as Evidence of Intrinsic Dilation
 
-DOI: [10.5281/zenodo.20225757](https://doi.org/10.5281/zenodo.20225757)
+* **DOI:**[10.5281/zenodo.20225757](https://doi.org/10.5281/zenodo.20225757)
 
-Date: 2026-05-17
+* **Date:** 2026-05-17
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -3600,9 +3595,9 @@ J.~C.~W.~McKinley. \textit{Mass Slows Time. Speed Slows Time. Concept, Derivatio
 
 ### [2026] Dilation Is Not a Property of the Object: A No-Go Result on Intrinsic Time-Dilation
 
-DOI: [10.5281/zenodo.20225720](https://doi.org/10.5281/zenodo.20225720)
+* **DOI:**  [10.5281/zenodo.20225720](https://doi.org/10.5281/zenodo.20225720)
 
-Date: 2026-05-16
+* **Date:**  2026-05-16
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -3833,9 +3828,9 @@ The rocket case is the cleanest illustration of \cref{prop:no-intrinsic-dilation
 
 ### [2026] Local Accrual as the Only Intrinsic Time-Quantity: A Positive Structural Statement for the Massive Regime
 
-DOI: [10.5281/zenodo.20225645](https://doi.org/10.5281/zenodo.20225645)
+* **DOI:**  [10.5281/zenodo.20225645](https://doi.org/10.5281/zenodo.20225645)
 
-Date: 2026-05-15
+* **Date:**  2026-05-15
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -4424,9 +4419,9 @@ Zenodo (2026). \doi{10.5281/zenodo.20225004}.
 
 ### [2026] No-Go on Seeing a Photon Cross the Sky
 
-[https://doi.org/10.5281/zenodo.20225004](https://doi.org/10.5281/zenodo.20225004)
+* **DOI:** [10.5281/zenodo.20225004](https://doi.org/10.5281/zenodo.20225004)
 
-May 15, 2026
+* **Date:** May 15, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
@@ -4656,9 +4651,9 @@ Zenodo (2026). \doi{10.5281/zenodo.19167403}.
 
 ### [2026] The So-Called Speed of Light Is Not the Speed of Light: A No-Go on Speed-Talk for the Null Case
 
-[DOI: 10.5281/zenodo.20193205](https://doi.org/10.5281/zenodo.20193205)
+* **DOI:** [10.5281/zenodo.20193205](https://doi.org/10.5281/zenodo.20193205)
 
-May 14, 2026
+* **Date:** May 14, 2026
 
 <details markdown="1">
 <summary><b>Click to view Raw LaTeX Source</b></summary>
