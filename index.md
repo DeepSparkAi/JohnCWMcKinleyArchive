@@ -67,6 +67,17 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 ---
 
+## Working Drafts
+
+Working drafts are posted here for public access before permanent archival deposit. They may be revised and are deliberately kept separate from the DOI-bearing publications below.
+
+### [\[2026 Working Draft\] Time Is Not Global: Disambiguating the Timeless Light Model from Wheeler--DeWitt, Page--Wootters, and Relational Quantum Time](/papers/time-is-not-global/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** 22 September 2026
+* **Files:** [PDF](/assets/papers/time-is-not-global-working-draft.pdf) · [LaTeX source](/assets/papers/time-is-not-global-working-draft.tex)
+
+---
+
 ## The Papers
 
 Each paper now has its own page containing its publication metadata and archived raw LaTeX source.
