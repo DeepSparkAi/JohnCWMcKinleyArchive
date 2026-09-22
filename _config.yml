@@ -1,4 +1,7 @@
 theme: jekyll-theme-minimal
+title: "John Christian William McKinley LaTeX Archive"
+description: "Canonical archive of the published research of John C. W. McKinley, including the Timeless Light Model corpus."
+url: "https://johncwmckinley.com"
 markdown: kramdown
 kramdown:
   input: GFM
