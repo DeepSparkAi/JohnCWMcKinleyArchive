@@ -1,0 +1,330 @@
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,backgrounds,arrows.meta}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{mdframed}
+\usepackage{xurl}
+
+% ------------------------------------------------------------
+% Basic formatting
+% ------------------------------------------------------------
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\lhead{Radio Reception as Local Registration}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcommand{\defterm}[2]{%
+#1\textsuperscript{\textcolor{gray}{\hyperref[#2]{\scriptsize$\dagger$}}}%
+}
+
+% ------------------------------------------------------------
+% Theorem environments
+% ------------------------------------------------------------
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+
+\crefname{proposition}{Proposition}{Propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{definition}{Definition}{Definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{Remark}{Remarks}
+\Crefname{remark}{Remark}{Remarks}
+
+% ------------------------------------------------------------
+% Title
+% ------------------------------------------------------------
+
+\title{\textbf{Radio Reception as Local Registration:\\
+A Device-Scale Instance of the Timeless Light Model}\\[0.4em]
+\large\textit{Why Successful Propagation Calculations Do Not License Intermediate Life}}
+
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+\date{September 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize
+Working draft published at
+\href{https://johncwmckinley.com}{johncwmckinley.com}.
+This draft has not been deposited on Zenodo and may be revised.
+}
+
+% ------------------------------------------------------------
+% Abstract
+% ------------------------------------------------------------
+
+\begin{abstract}
+
+This paper gives a device-scale account of radio reception under the clarified architecture of the Timeless Light Model (TLM). The canonical photon result denies a persisting intermediate photon history between registered endpoints. The broader architecture distinguishes timeless lawful structure from relativistic registration: quantum mechanics describes lawful eligibility, while relativity governs the coherent spacetime organization of registered outcomes. Applied to radio, this means that reception is not fundamentally the interception of a temporally persisting signal-object that has crossed the intervening space. A transmitter-side event and a receiver-side event are lawfully related under Maxwellian and relativistic structure, but the received electrical outcome is realized locally in the receiver. The antenna, tuning stages, demodulator, and output circuitry register and transform local voltages and currents according to that lawful source--receiver relation. Standard electromagnetic propagation calculations, antenna theory, filtering, modulation, and demodulation remain unchanged. What is removed is only the additional ontology of a signal-object enduring through intermediate locations. Radio reception is therefore a clear everyday instance of the clarified architecture: lawful structure specifies the admissible relation; relativistic registration governs its spacetime appearance; and the receiver registers the outcome locally.
+
+\end{abstract}
+
+\noindent{\small\textcolor{gray}{
+Technical terms marked with a superscript dagger
+(\textsuperscript{\scriptsize$\dagger$})
+link to their formal definitions in \Cref{sec:definitions}.
+}}
+
+\vspace{0.8em}
+
+\begin{center}
+
+\textit{The calculation spans the interval.}
+
+\vspace{0.4em}
+
+\textit{The registered events occur locally.}
+
+\vspace{0.4em}
+
+\textit{The calculation does not license an intermediate life.}
+
+\end{center}
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+Radio is commonly described in traveler language.
+
+A transmitter emits a signal. The signal travels through space. The
+signal reaches an antenna. The receiver catches it, extracts its
+information, and produces sound, data, or another output.
+
+That language is extraordinarily useful in engineering practice. It
+compresses a large body of electromagnetic calculation into an intuitive
+story.
+
+The Timeless Light Model asks a narrower question:
+
+\begin{quote}
+What ontology is actually licensed by the successful calculation?
+\end{quote}
+
+The minimal photon-side canon of TLM begins with the null case. Along a
+null worldline,
+
+\[
+d\tau = 0.
+\]
+
+No proper-time sequence accumulates for the photon. There is also no
+photon rest frame from which an ordinary timelike persistence story can
+be constructed. TLM therefore declines to add an internally lived
+sequence of intermediate locations to the photon description
+\cite{bedrock,retrocausality}.
+
+This is the \defterm{refusal of transit}{def:refusal}.
+
+The refusal of transit does not reject the null relation between source
+and detector. It does not reject Maxwell's equations. It does not reject
+retarded solutions, phase delay, diffraction, interference, attenuation,
+antenna theory, or finite causal delay. It does not alter a radio
+engineer's calculations.
+
+It rejects one further step:
+
+\begin{quote}
+Because a mathematical solution assigns structured relations across
+spacetime, there must therefore exist a persisting physical carrier whose
+biography occupies those intermediate locations.
+\end{quote}
+
+That inference is not required by the formalism.
+
+Radio provides an unusually clear application because the measurable
+receiver-side event is plainly local. A voltage appears at the receiving
+antenna. Currents change in the receiver's conductors. Filters, mixers,
+demodulators, amplifiers, processors, and speakers undergo local state
+changes.
+
+Whatever the complete source--receiver relation may be, the electrical
+quantity actually registered by the radio is the radio's own local
+physical state.
+
+The central claim of this paper is therefore:
+
+\begin{mdframed}[
+linewidth=0.8pt,
+innertopmargin=10pt,
+innerbottommargin=10pt,
+innerrightmargin=14pt,
+innerleftmargin=14pt,
+backgroundcolor=gray!15,
+leftmargin=0.33in,
+rightmargin=0.33in
+]
+\normalsize\itshape
+
+Standard electrodynamics lawfully relates transmitter-side and
+receiver-side events. The receiver realizes its electrical outcome
+locally. The success of the propagation formalism does not require a
+persisting signal-object with an intermediate life between those
+registrations.
+
+\end{mdframed}
+
+This is an interpretive restriction, not a revision of radio physics.
+
+% ============================================================
+\section{The Scope of the Claim}
+% ============================================================
+
+The argument is easiest to evaluate if its scope is kept narrow.
+
+This paper does \emph{not} claim that radio reception is instantaneous.
+
+It does \emph{not} claim that distance is irrelevant.
+
+It does \emph{not} claim that shielding, geometry, antenna orientation,
+frequency, phase, attenuation, reflection, refraction, diffraction, or
+interference cease to matter.
+
+It does \emph{not} claim that Maxwellian propagation calculations may be
+discarded.
+
+It does \emph{not} propose new radio equations.
+
+It makes only the following ontological restriction.
+
+\begin{proposition}[No-intermediate-life restriction]
+\label{prop:nointermediatelife}
+
+A successful formal description relating a transmitter-side event to a
+receiver-side event does not by itself license a temporally persisting
+signal-object whose identity occupies successive intermediate locations.
+
+\end{proposition}
+
+\begin{proof}
+
+The formalism determines relations among sources, admissible
+electromagnetic configurations, causal structure, detector conditions,
+and measurable outcomes.
+
+To infer from those relations the additional existence of one persisting
+carrier requires an ontological premise not supplied merely by the
+mathematical success of the relation.
+
+In the photon case, null proper time and the absence of a rest frame
+supply positive reason not to import the ordinary timelike persistence
+template.
+
+Therefore the successful source--receiver calculation remains intact,
+while the additional carrier biography is withheld.
+
+\end{proof}
+
+\begin{remark}
+
+The proposition does not say that the mathematical description of the
+intermediate region is useless, fictitious, or dispensable.
+
+It says that mathematical description and ontological biography are not
+the same assertion.
+
+\end{remark}
+
+% ============================================================
+\section{Lawful Relation and Registered Outcome}
+% ============================================================
+
+The clarified TLM architecture distinguishes lawful structure from the
+registered physical outcomes governed by that structure
+\cite{unified,generaltimelessness}.
+
+The laws are not travelers.
+
+Boundary conditions are not travelers.
+
+A Maxwellian solution is not made into a traveler merely because its
+variables possess spacetime dependence.
+
+A wave equation may correctly determine what is registered at a later
+location without thereby requiring the mathematical wave description to
+be reified as one persisting thing living through each point of the
+interval.
+
+The transmitter contributes to the lawful physical conditions under
+which later receiver-side registrations are possible.
+
+The receiver then realizes a local physical result.
+
+Schematically,
+
+\[
+\boxed{\text{transmitter-side registration}}
+\]
+
+\[
+\Downarrow
+\]
+
+\[
+\boxed{
+\begin{array}{c}
+\text{lawful source--receiver relation}\\
+\text{described by Maxwellian and relativistic structure}
+\end{array}}
+\]
+
+\[
+\Downarrow
+\]
+
+\[
+\boxed{\text{receiver-side registration}}.
+\]
+
+The middle term is indispensable.
+
+But indispensability of the relation does not imply the existence of an
+additional enduring object in the relation.
+
+\begin{definition}[Lawful source--receiver relation]
+\label{def:lawfulrelation}
+
+A lawful source--receiver relation is the complete physical relation
+specified by the governing laws, source conditions, boundary conditions,
+geometry, and admissibility structure linking source-side conditions to
+possible detector-side registrations.
+
+\end{definition}
+
+\begin{definition}[Intermediate life]
+\label{def:intermediatelife}
+
+Intermediate life is the attributed persistence of one physical
+signal-object, photon-object, wave-object, or carrier-object through a
+sequence of intermediate spacetime locations between registered
+endpoints.
+
+\end{definition}
+
