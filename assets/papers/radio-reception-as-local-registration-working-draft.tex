@@ -328,3 +328,333 @@ endpoints.
 
 \end{definition}
 
+\begin{definition}[Refusal of transit]
+\label{def:refusal}
+
+The refusal of transit is the TLM restriction against inferring an
+intermediate life merely from the successful formal relation between
+registered endpoints.
+
+\end{definition}
+
+The refusal is therefore not a refusal of relation.
+
+It is a refusal to turn relation into biography.
+
+% ============================================================
+\section{What the Receiver Actually Registers}
+% ============================================================
+
+At the device level, radio reception is local.
+
+A receiving antenna develops measurable electrical conditions at its own
+terminals.
+
+Its conductors contain charges belonging to the receiving apparatus.
+
+Those charges participate in local electrical state changes.
+
+The receiver's front end then amplifies, filters, mixes, or otherwise
+transforms locally available electrical quantities.
+
+A demodulator produces another local electrical state.
+
+An output stage produces still further local changes: speaker motion,
+stored data, display output, or control action.
+
+\begin{proposition}[Locality of the received electrical outcome]
+\label{prop:localoutcome}
+
+The quantity called the received radio signal is realized as local
+voltages, currents, and state changes in the receiving apparatus.
+
+\end{proposition}
+
+\begin{proof}
+
+Every directly processed quantity in the receiver is instantiated in the
+receiver's own physical components.
+
+The antenna voltage is the voltage at the antenna.
+
+The receiver current is the current in the receiver.
+
+The demodulated voltage is produced by the receiver's own circuitry.
+
+The speaker motion is produced by the receiver's own output stage.
+
+The distant source enters through the lawful physical relation governing
+which local responses are realized, but the measured electrical
+quantities themselves are local properties of the receiving system.
+
+\end{proof}
+
+\begin{definition}[Local receiver realization]
+\label{def:localrealization}
+
+Local receiver realization is the physical registration within the
+receiver of the electrical state changes constituting reception.
+
+\end{definition}
+
+This point does not depend upon any older TLM account of matter as a
+special ``cadence,'' recurrence rhythm, or continuously self-generated
+signal.
+
+The claim is simpler.
+
+The receiver is a physical system.
+
+Its registered electrical state is local.
+
+That local state is lawfully related to remote source conditions.
+
+Nothing further is required for the present argument.
+
+% ============================================================
+\section{Definitions}
+\label{sec:definitions}
+% ============================================================
+
+\begin{definition}[Lawful structure]
+\label{def:lawfulstructure}
+
+Lawful structure is the set of physical laws, constraints, symmetries,
+conservation requirements, coupling rules, boundary conditions, and
+mathematical relations determining which physical relations and outcomes
+are admissible.
+
+Lawful structure is not itself a temporal traveler.
+
+\end{definition}
+
+\begin{definition}[Lawful qualification]
+\label{def:qualification}
+
+Lawful qualification is the admissibility structure under which a
+physical outcome or relation is permitted by the governing laws,
+including conservation conditions, coupling conditions, boundary
+conditions, and, where applicable, quantum amplitude and probability
+structure.
+
+\end{definition}
+
+\begin{definition}[Registration]
+\label{def:registration}
+
+Registration is a physically realized outcome possessing definite
+participation in spacetime description, including localization, temporal
+ordering, causal relation, and the possibility of physical record or
+receipt.
+
+\end{definition}
+
+\begin{definition}[Relativistic registration]
+\label{def:relregistration}
+
+Relativistic registration is registration organized according to the
+causal, geometric, and temporal structure of special or general
+relativity.
+
+\end{definition}
+
+\begin{definition}[Transit ontology of radio]
+\label{def:transit}
+
+Transit ontology of radio is the additional interpretation according to
+which successful radio propagation requires one persisting
+signal-bearing entity to occupy successive intermediate locations between
+transmitter and receiver.
+
+\end{definition}
+
+\begin{definition}[Received signal]
+\label{def:receivedsignal}
+
+The received signal is the structured local electrical outcome
+registered and processed by the receiving apparatus under the lawful
+conditions relating it to the source.
+
+\end{definition}
+
+% ============================================================
+\section{The Engineering Sequence}
+% ============================================================
+
+Nothing in the refusal of transit changes the engineering sequence.
+
+\subsection*{Source}
+
+A transmitter undergoes local time-dependent electrical changes.
+
+Those changes serve as source conditions in the standard electromagnetic
+formalism.
+
+Modulation schemes alter the relevant source-side structure in precisely
+the way described by conventional engineering.
+
+\subsection*{Source--receiver calculation}
+
+Maxwell's equations and the relevant boundary conditions determine the
+lawful electromagnetic relation among the source, environment, and
+possible receiving locations.
+
+The resulting mathematics contains spatial and temporal dependence.
+
+It supports calculations of radiation pattern, phase, attenuation,
+reflection, diffraction, polarization, delay, and interference.
+
+TLM retains all of these calculations.
+
+What TLM does not add is:
+
+\begin{quote}
+There must therefore exist one signal-object possessing an ongoing
+identity and living through each intermediate spacetime point described
+by the solution.
+\end{quote}
+
+\subsection*{Antenna}
+
+At a receiving location, an antenna may undergo a local electrical
+response.
+
+That response is a new registration.
+
+It is not necessary to describe the event as the capture of an enduring
+object that has survived an intermediate journey.
+
+\subsection*{Filtering and tuning}
+
+A tuned circuit or digital filter preferentially responds to selected
+features of the local input.
+
+Tuning is therefore a property of the receiver's local response.
+
+It need not be interpreted as selecting one traveler from a collection
+of travelers moving through space.
+
+\subsection*{Demodulation}
+
+Demodulation transforms one local electrical pattern into another.
+
+Amplitude, frequency, phase, or digitally encoded structure can thereby
+be converted into baseband electrical information.
+
+Again, the operation is local.
+
+\subsection*{Output}
+
+Amplifiers, speakers, displays, memory devices, and control systems
+produce further local state changes.
+
+The complete device-side process can therefore be represented as
+
+\[
+\text{local antenna response}
+\rightarrow
+\text{local selection}
+\rightarrow
+\text{local demodulation}
+\rightarrow
+\text{local output}.
+\]
+
+% ============================================================
+\section{A Diagram of the Distinction}
+% ============================================================
+
+\begin{figure}[ht]
+\centering
+
+\begin{tikzpicture}[
+node distance=0.85cm and 0.65cm,
+box/.style={
+draw,
+rounded corners,
+align=center,
+minimum height=1.05cm,
+minimum width=2.55cm,
+fill=gray!8
+},
+arrow/.style={-{Latex[length=2.2mm]},thick}
+]
+
+\node[box] (source) {
+Transmitter-side\\
+registration
+};
+
+\node[box,right=of source] (law) {
+Maxwellian / relativistic\\
+lawful relation
+};
+
+\node[box,right=of law] (receive) {
+Receiver-side\\
+registration
+};
+
+\node[box,right=of receive] (process) {
+Local processing\\
+and output
+};
+
+\draw[arrow] (source) -- (law);
+\draw[arrow] (law) -- (receive);
+\draw[arrow] (receive) -- (process);
+
+\begin{scope}[on background layer]
+\node[
+draw,
+dashed,
+rounded corners,
+fit=(source)(law)(receive)(process),
+inner sep=9pt,
+label=below:{
+\small
+The arrows denote lawful and engineering relations, not an occupied
+biography of a persisting carrier.
+}
+] {};
+\end{scope}
+
+\end{tikzpicture}
+
+\caption{
+Radio reception under the no-intermediate-life reading.
+The source--receiver relation remains fully calculable.
+The diagram does not assign a persisting signal-object to intermediate
+locations.
+}
+
+\label{fig:radiochain}
+
+\end{figure}
+
+% ============================================================
+\section{Finite Delay Without Intermediate Life}
+% ============================================================
+
+The refusal of intermediate life does not imply instantaneous reception.
+
+Source-side and receiver-side registrations occupy different spacetime
+locations.
+
+The causal relation between them is constrained by relativistic
+structure.
+
+The receiver cannot register a source-related outcome arbitrarily early.
+
+The relevant distance, geometry, and causal structure remain part of the
+physical description.
+
+\begin{proposition}[Delay does not imply biography]
+\label{prop:delay}
+
+A nonzero temporal separation between source-side and receiver-side
+registrations does not by itself establish that a persisting
+signal-object possesses an intermediate life during that interval.
+
+\end{proposition}
+
