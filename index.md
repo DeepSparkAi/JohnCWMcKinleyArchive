@@ -76,6 +76,11 @@ Working drafts are posted here for public access before permanent archival depos
 * **Date:** 22 September 2026
 * **Files:** [PDF](/assets/papers/time-is-not-global-working-draft.pdf) · [LaTeX source](/assets/papers/time-is-not-global-working-draft.tex)
 
+### [\[2026 Working Draft\] Radio Reception as Local Registration: A Device-Scale Instance of the Timeless Light Model](/papers/radio-reception-as-local-registration/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** 22 September 2026
+* **Files:** [PDF](/assets/papers/radio-reception-as-local-registration-working-draft.pdf) · [LaTeX source](/assets/papers/radio-reception-as-local-registration-working-draft.tex)
+
 ---
 
 ## The Papers
