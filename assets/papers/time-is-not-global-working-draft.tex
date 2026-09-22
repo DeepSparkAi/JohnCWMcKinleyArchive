@@ -1,0 +1,1414 @@
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,backgrounds}
+
+\newcommand\blfootnote[1]{%
+\begingroup
+\renewcommand\thefootnote{}\footnote{#1}%
+\addtocounter{footnote}{-1}%
+\endgroup
+}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{mdframed}
+\usepackage{xurl}
+
+% Clickable superscript link to definition
+\newcommand{\defterm}[2]{#1\textsuperscript{\textcolor{gray}{\hyperref[#2]{\scriptsize$\dagger$}}}}
+
+\crefname{proposition}{Proposition}{Propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{definition}{Definition}{Definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{Remark}{Remarks}
+\Crefname{remark}{Remark}{Remarks}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{Time Is Not Global}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newcounter{nogo}[section]
+\renewcommand{\thenogo}{\thesection.\arabic{nogo}}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\makeatletter
+\let\c@proposition\c@nogo
+\let\c@definition\c@nogo
+\let\c@remark\c@nogo
+\makeatother
+
+\renewcommand{\theproposition}{\thenogo}
+\renewcommand{\thedefinition}{\thenogo}
+\renewcommand{\theremark}{\thenogo}
+
+\title{\textbf{Time Is Not Global}\\
+\large\textit{Disambiguating the Timeless Light Model from
+Wheeler--DeWitt, Page--Wootters, and Relational Quantum Time}}
+
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+
+\date{September 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\scriptsize Working draft published at \href{https://johncwmckinley.com}{johncwmckinley.com}. This draft has not been deposited on Zenodo and may be revised.}
+
+\begin{abstract}
+
+Several approaches to quantum gravity and quantum foundations remove,
+internalize, or reconstruct the ordinary time parameter. The
+Wheeler--DeWitt framework does not contain the ordinary external
+Schr\"odinger time parameter in its fundamental constraint. Page and
+Wootters showed that a globally stationary system can nevertheless exhibit
+clock-relative dynamics to an internal observer. Rovelli developed a
+framework for observable evolution in a regime in which a fundamental time
+variable is not defined. These approaches therefore should not be
+characterized as theories that simply retain a universal master time.
+
+The Timeless Light Model (TLM) makes a different claim. Its starting point
+is not the absence of a time symbol from an equation. Its starting point is
+the architecture of physical law. The laws of the universe determine which
+relations and interactions are allowed. They are not events occurring
+inside the universe and are not themselves subject to time. A mathematical
+expression of a law may contain a temporal parameter where the physical
+relation being described includes temporal structure; this does not make
+the law itself temporal.
+
+TLM therefore proposes that time is not global. Temporal structure applies
+only where the lawful physical relation possesses it. In particular,
+special and general relativity govern the temporal and geometric structure
+of spacetime registration. A massive timelike system may accumulate proper
+time. The photon relation does not: its proper-time interval is null.
+Under TLM this is not interpreted as zero elapsed time on an unseen
+universal clock. It means that no proper-time interior belongs to the
+photon relation itself. Likewise, an entanglement correlation need not be
+treated as a third time-bearing process traveling between two local
+registrations.
+
+The consequence is a domain restriction on temporal language. A phenomenon
+can violate temporal order only if temporal order applies to that relation
+in the first place. Expressions such as ``instantaneous,'' ``backward in
+time,'' or ``faster than light'' can otherwise import temporal or transit
+structure into a lawful relation that does not possess it.
+
+This paper compares TLM with Wheeler--DeWitt, Page--Wootters, and relational
+quantum time without treating those approaches as straw men. Considerable
+compatibility may exist among them. The distinctive TLM claim is narrower
+and architectural: lawful structure is prior to the physical relations it
+permits, time is not a universal variable of that structure, and temporal
+properties apply only within the lawful relations for which temporal
+structure is supplied.
+
+\end{abstract}
+
+\noindent{\small\textcolor{gray}{Technical terms marked with a superscript
+dagger (\textsuperscript{\scriptsize$\dagger$}) link to their formal
+definition in Section~\ref{sec:definitions}.}}
+
+\begin{center}
+
+\textit{The laws define what may occur.}
+
+\vspace{0.4em}
+
+\textit{The laws themselves do not occur in time.}
+
+\vspace{0.4em}
+
+\textit{Time is not global.}
+
+\vspace{0.4em}
+
+\textit{A temporal violation requires a relation to which time applies.}
+
+\end{center}
+
+\vspace{0.7em}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+
+\section{Introduction}
+
+The Timeless Light Model makes a simple claim that can become obscured when
+it is placed beside the sophisticated literature on the problem of time.
+
+Time is not global.
+
+This does not mean that physics contains no temporal variables. It does
+not mean that clocks are unreal, that duration is unreal, or that equations
+containing \(t\) are mistaken. It means that temporal structure should not
+be presumed to apply to every lawful physical relation merely because it
+applies to some.
+
+The distinction begins with physical law.
+
+The laws of the universe specify the boundaries of allowed physical
+relation and interaction. In the terminology of the Timeless Light Model,
+the coordinated set of those laws is
+\defterm{lawful structure}{def:lawfulstructure}.
+
+The familiar analogy is a lawbook. The analogy should not be taken to mean
+that a literal book exists outside the universe. Its purpose is to make the
+logical hierarchy clear. The rules determine what physical relations are
+permitted. The rules are not themselves physical events occurring under
+those same relations.
+
+The laws are therefore architecturally prior to the events and relations
+they govern.
+
+``Prior'' here does not mean earlier in time.
+
+There can be no temporal claim that the laws existed for some duration and
+then the universe began. Rather, the statement is one of logical
+dependence: whatever physical interactions occur must be lawful in order to
+occur at all.
+
+Thus,
+
+\[
+\boxed{
+\text{law}
+\longrightarrow
+\text{boundary of permitted physical relation}
+}
+\]
+
+does not mean
+
+\[
+\text{law first in time}
+\longrightarrow
+\text{physical event later in time}.
+\]
+
+The distinction matters because a mathematical law may contain a temporal
+quantity without the law itself becoming temporal.
+
+A law governing a relation involving \(t\) does not age as \(t\) changes.
+It does not wait for the next value of \(t\). It continuously specifies the
+allowed relation.
+
+The Timeless Light Model therefore separates two propositions:
+
+\[
+\boxed{
+\text{a lawful physical relation contains temporal structure}
+}
+\]
+
+and
+
+\[
+\boxed{
+\text{law itself is subject to time}.
+}
+\]
+
+The first may be true.
+
+The second does not follow.
+
+This architecture was developed in the published TLM corpus and stated
+directly in \textit{Physics Has Always Been Unified: General Timelessness,
+Null Proper Time, and the Clarified Architecture}
+\cite{unified2026}.
+
+The purpose of the present paper is narrower. Several important approaches
+to quantum gravity also use the language of timelessness. It is therefore
+necessary to determine whether TLM merely restates those approaches, differs
+from them, or is substantially compatible with them while making an
+additional architectural distinction.
+
+That inquiry should begin without caricaturing the neighboring theories.
+
+
+\section{The Lawbook and the Domain of Time}
+
+\label{sec:lawbook}
+
+The central TLM hierarchy is:
+
+\[
+\boxed{\text{LAWFUL STRUCTURE}}
+\]
+
+followed not temporally, but logically, by
+
+\[
+\boxed{\text{THE PHYSICAL RELATIONS IT PERMITS}.}
+\]
+
+Some of those lawful relations possess temporal structure.
+
+Others do not.
+
+This suggests a useful concept: the \emph{domain of time}.
+
+\section{Definitions}
+\label{sec:definitions}
+
+\begin{definition}[Lawful structure]
+\label{def:lawfulstructure}
+Lawful structure is the coordinated specification of the physical laws,
+relations, constraints, conservation principles, symmetries, selection
+rules, boundary conditions, and coupling structure governing what physical
+relations and outcomes are admissible. It is not an event, object, region,
+or medium within spacetime.
+\end{definition}
+
+\begin{definition}[Architectural priority]
+\label{def:architecturalpriority}
+Architectural priority is logical dependence rather than temporal
+precedence. The laws are architecturally prior to a physical relation in
+the sense that the relation must conform to the governing law in order to
+be physically admissible. Architectural priority makes no claim that the
+laws existed at an earlier time.
+\end{definition}
+
+\begin{definition}[Temporal domain]
+\label{def:temporaldomain}
+The temporal domain is the class of lawful physical relations to which
+temporal quantities such as temporal ordering, duration, causal ordering,
+or proper-time accumulation apply.
+\end{definition}
+
+\begin{definition}[Registration]
+\label{def:registration}
+Registration is the lawful participation of a physical outcome within
+spacetime such that it possesses geometric localization, causal and
+temporal relation, and the possibility of observation or interaction by
+other registered physical systems.
+\end{definition}
+
+\begin{definition}[No-global-time principle]
+\label{def:noglobaltime}
+The no-global-time principle is the TLM claim that temporal structure is
+not presumed to apply to every lawful physical relation. Time applies where
+the governing physical relation supplies temporal structure. The existence
+of timed relations does not imply a universal temporal variable governing
+all lawful structure.
+\end{definition}
+
+The last definition is the central claim of this paper.
+
+It can be stated more simply:
+
+\[
+\boxed{\text{Time applies where time applies.}}
+\]
+
+This statement is intentionally tautological in appearance because it
+removes an additional assumption usually inserted without notice: that if
+time applies to ordinary spacetime processes, then some form of time must
+also govern every physical relation whatsoever.
+
+TLM denies that inference.
+
+A relation possessing a temporal variable is temporal in that respect.
+
+A relation possessing proper time accumulates proper time.
+
+A relation possessing coordinate-time ordering can be described using that
+coordinate structure.
+
+But nothing follows about a separate universal variable that must also
+govern lawful relations lacking those properties.
+
+
+\section{A Law Can Contain Time Without Being in Time}
+
+An important source of confusion is the distinction between a law and the
+variables appearing in its mathematical representation.
+
+Consider schematically
+
+\[
+F(x,t)=0.
+\]
+
+The law describes an allowed relationship involving a temporal quantity
+\(t\).
+
+Nothing about this notation requires the law itself to pass from \(t_1\)
+to \(t_2\).
+
+The law is not younger at \(t_1\) and older at \(t_2\).
+
+It does not develop as the physical system develops.
+
+The relation described by the law may possess temporal structure. The law
+specifies the allowed relation.
+
+This distinction permits temporal variables wherever physics requires them
+without promoting time into a universal background governing the lawbook
+itself.
+
+\begin{proposition}[Law--variable distinction]
+\label{prop:lawvariable}
+The occurrence of a time variable in the mathematical representation of a
+physical law establishes that the represented relation has temporal
+structure in the relevant description. It does not establish that the law
+itself is subject to time.
+\end{proposition}
+
+This proposition is important for comparing TLM with ordinary quantum
+mechanics as well as relativity.
+
+The time-dependent Schr\"odinger equation, for example, contains \(t\):
+
+\[
+i\hbar\frac{\partial}{\partial t}\Psi
+=
+\hat H\Psi.
+\]
+
+TLM need not remove the variable.
+
+The equation may describe lawful relations involving temporal structure.
+
+The point is only that the law represented by the equation remains the rule
+specifying the allowed relation; it is not itself another time-evolving
+physical participant.
+
+Special and general relativity make the distinction particularly concrete
+because they supply the temporal and geometric organization of registered
+spacetime relations.
+
+Thus TLM does not say:
+
+\[
+t \text{ is forbidden}.
+\]
+
+It says:
+
+\[
+\boxed{
+t \text{ has a domain of application}.
+}
+\]
+
+
+\section{Null Proper Time Is the Diagnostic Case}
+
+The physical case that motivated the TLM reversal is the photon.
+
+For a timelike worldline,
+
+\[
+d\tau > 0
+\]
+
+and proper time accumulates along the worldline.
+
+For a null worldline,
+
+\[
+ds^2 = 0,
+\]
+
+and therefore
+
+\[
+d\tau = 0.
+\]
+
+For light in flat spacetime,
+
+\[
+c^2dt^2-dx^2=0.
+\]
+
+The usual interpretation notes correctly that a photon has no rest frame
+and that proper time along a null worldline is zero.
+
+TLM asks what ontological conclusion should follow.
+
+The conventional traveler picture easily encourages the following
+intuition:
+
+\begin{quote}
+A universal time still exists everywhere, but the photon's clock somehow
+reads zero while the photon travels through it.
+\end{quote}
+
+TLM rejects the need for that extra picture.
+
+There is no global temporal variable that must secretly remain attached to
+the photon relation.
+
+The emission event registers.
+
+The absorption event registers.
+
+Those endpoints possess coordinate relations within spacetime and are
+temporally ordered for registered observers according to relativity.
+
+But the lawful relation called the photon has
+
+\[
+\Delta\tau=0.
+\]
+
+Under TLM, this means exactly what the physical relation supplies: there is
+no accumulated proper-time interior belonging to that relation.
+
+It does not mean
+
+\[
+\text{zero units on an otherwise universal hidden clock}.
+\]
+
+It means
+
+\[
+\boxed{
+\text{no proper-time variable is supplied to the photon relation itself}.
+}
+\]
+
+\begin{proposition}[Null-domain result]
+\label{prop:nulldomain}
+Null proper time does not require the interpretation that a photon
+experiences zero elapsed time relative to a deeper universal time. Under
+TLM, the null relation simply lacks an intrinsic proper-time history.
+Temporal and geometric ordering belong to the registered endpoints and to
+the spacetime description supplied by relativity.
+\end{proposition}
+
+This is why null proper time is diagnostic rather than merely numerical.
+
+If time were necessarily global, every physical relation would require a
+time-bearing interior even where proper time is exactly zero.
+
+The null case shows that physics itself does not require such universality.
+
+
+\section{A Temporal Violation Requires a Temporal Domain}
+
+The no-global-time principle produces a simple test.
+
+Before describing a physical phenomenon as violating time, ask:
+
+\begin{quote}
+What law assigns temporal structure to the relation alleged to violate it?
+\end{quote}
+
+If the relation lies within the temporal domain, then temporal statements
+are meaningful.
+
+One can ask whether event \(A\) occurs before event \(B\), whether a signal
+travels faster than a permitted propagation speed, or whether a worldline
+accumulates a particular proper-time interval.
+
+But if the relation itself contains no corresponding temporal structure,
+then applying such language to it imports an additional variable not
+supplied by the physical description.
+
+\begin{proposition}[Temporal-violation criterion]
+\label{prop:violation}
+A lawful relation can violate a temporal constraint only if that temporal
+constraint applies to the relation in the first place.
+\end{proposition}
+
+This yields the compact TLM statement:
+
+\[
+\boxed{
+\text{A phenomenon that ``violates time'' may be violating nothing.}
+}
+\]
+
+The quotation marks are important.
+
+The proposition does not license violations of relativity within the domain
+where relativity applies.
+
+A massive object does not evade its timelike worldline.
+
+A controllable signal is not licensed to propagate outside the relativistic
+causal structure.
+
+Rather, TLM denies the prior move of assigning a propagation history or
+temporal variable to a relation that is not itself a spacetime
+transmission.
+
+
+\section{Retrocausality and the Photon}
+
+Retrocausal interpretations illustrate the importance of the domain test.
+
+To describe a physical influence as retrocausal ordinarily requires a
+temporal history within which something associated with a later condition
+acts backward toward an earlier condition.
+
+Schematically,
+
+\[
+t_2 \longrightarrow t_1,
+\qquad t_2>t_1.
+\]
+
+For ordinary time-bearing processes, such a proposition is intelligible
+whether or not it is correct.
+
+The photon relation presents a different case under TLM.
+
+Its registered endpoints may be ordered:
+
+\[
+E_{\mathrm{emit}}
+\prec
+E_{\mathrm{absorb}}
+\]
+
+within the spacetime description.
+
+But the lawful photon relation itself has no accumulated proper-time
+interior.
+
+Assigning to that relation a forward internal history and then reversing
+part of that history therefore introduces precisely the structure that the
+null case does not supply.
+
+Under TLM, the issue is not that the photon travels forward rather than
+backward through a hidden time.
+
+The claim is:
+
+\[
+\boxed{
+\text{there is no photon proper-time history available to reverse}.
+}
+\]
+
+The retrocausal problem is therefore dissolved rather than solved by a
+different causal mechanism \cite{retrocausality}.
+
+This does not erase the coordinate ordering of emission and absorption.
+
+It rejects the additional traveler history inserted between them.
+
+
+\section{Entanglement and the Absence of Temporal Transit}
+
+Quantum entanglement provides a second application.
+
+An entangled system produces correlated local outcomes.
+
+Each detector event is a registration.
+
+Each detector has a spacetime location.
+
+Each registered outcome participates in temporal and causal relations.
+
+Relativity applies to those registrations and to any ordinary physical
+signal exchanged between them.
+
+The entanglement correlation is different in kind.
+
+Under TLM, the joint correlation belongs to the lawful structure governing
+the pair.
+
+It is not a third detector event.
+
+It is not an object traveling from detector \(A\) to detector \(B\).
+
+It is not a signal whose speed must be calculated by
+
+\[
+v=\frac{\Delta x}{\Delta t}.
+\]
+
+Consequently, describing the correlation as ``instantaneous'' already
+risks assigning a temporal transit variable to something that is not a
+transit.
+
+The architecture is instead:
+
+\[
+\boxed{
+\text{one lawful relation}
+}
+\]
+
+with
+
+\[
+\boxed{
+\text{two local spacetime registrations}.
+}
+\]
+
+The registrations are timed.
+
+The lawful correlation need not be.
+
+\begin{proposition}[Entanglement-domain result]
+\label{prop:entanglement}
+Under TLM, the temporal and causal constraints of relativity govern the
+local registrations of an entangled system and any physical communication
+between them. The joint correlation is not thereby required to possess a
+propagation time between the registrations.
+\end{proposition}
+
+Thus the familiar question
+
+\begin{quote}
+How does the correlation travel between the detectors so quickly?
+\end{quote}
+
+contains a TLM category error.
+
+It assumes that there is a traveling correlation-bearing process to which
+speed and duration apply.
+
+If there is no such process, there is no superluminal temporal violation to
+explain.
+
+There is a lawful joint relation and there are relativistically organized
+local registrations \cite{unified2026}.
+
+
+\section{What Wheeler--DeWitt Actually Says}
+
+The preceding architecture should now be compared with the quantum-gravity
+literature without simplifying that literature into a foil.
+
+In canonical quantum gravity, the Wheeler--DeWitt constraint is written
+schematically as
+
+\[
+\hat{\mathcal H}\Psi=0.
+\]
+
+Unlike the ordinary Schr\"odinger equation, this expression contains no
+external time derivative of the familiar form
+
+\[
+i\hbar\frac{\partial}{\partial t}\Psi.
+\]
+
+DeWitt's canonical treatment makes the point more carefully than the common
+popular description of a ``timeless equation.'' For a finite world, the
+constraints govern the dynamics; the coordinate label \(x^0\) is irrelevant,
+and ``time'' must be determined intrinsically \cite{dewitt1967}.
+
+This already rejects a simple external universal clock.
+
+TLM should therefore not claim that Wheeler--DeWitt retains one.
+
+The difference lies elsewhere.
+
+The Wheeler--DeWitt problem is a problem within a physical formalism:
+
+\begin{quote}
+How is dynamical physics represented when ordinary external Schr\"odinger
+time is absent?
+\end{quote}
+
+The TLM question is architectural:
+
+\begin{quote}
+Which lawful relations possess temporal structure at all?
+\end{quote}
+
+The absence of \(t\) from an equation is neither necessary nor sufficient
+for the TLM conclusion.
+
+A law may contain \(t\) while the law itself remains timeless.
+
+A law may omit \(t\) without thereby proving anything about the global
+ontology of time.
+
+Thus,
+
+\[
+\boxed{
+\text{formal absence of external }t
+\neq
+\text{TLM no-global-time principle}.
+}
+\]
+
+The two claims may be compatible without being identical.
+
+
+\section{Page--Wootters: Clock Relations Without External Time}
+
+Page and Wootters begin even closer to the issue.
+
+They observe that the time parameter in the Schr\"odinger equation is not
+itself observable and show that it is consistent with observation to treat
+a closed system such as the universe as stationary. Observed dynamical
+evolution can then be described through dependence upon internal clock
+readings \cite{pagewootters1983}.
+
+Schematically, let the total system contain a clock subsystem \(C\) and
+another subsystem \(S\):
+
+\[
+\mathcal H
+=
+\mathcal H_C\otimes\mathcal H_S.
+\]
+
+The internal observer obtains relational structure such as
+
+\[
+C_i\leftrightarrow S_i.
+\]
+
+Page--Wootters therefore should not be presented as a theory in which a
+master external time continues to control the universe.
+
+It explicitly shows how ordinary dynamics can be represented without one.
+
+This creates a genuine point of contact with TLM.
+
+The TLM question becomes:
+
+\begin{quote}
+What ontological conclusion should be drawn from
+\(C_i\leftrightarrow S_i\)?
+\end{quote}
+
+One possible description is that time has emerged.
+
+TLM permits a more economical description:
+
+\[
+\boxed{
+\text{a clock-relative temporal relation has been established}.
+}
+\]
+
+The clock states and the compared system states provide registered physical
+relations.
+
+That is sufficient for ordering and temporal description.
+
+Nothing further requires lawful structure itself to acquire a global time
+variable.
+
+\begin{remark}[Compatibility with Page--Wootters]
+The present paper does not claim that Page--Wootters is incompatible with
+TLM. To the extent that Page--Wootters eliminates external time and treats
+observable dynamics relationally, the frameworks may be strongly
+compatible. The TLM contribution is the additional architectural claim
+that the clock-relative temporal structure should not automatically be
+promoted into a universal property of all lawful relations.
+\end{remark}
+
+
+\section{Moreva et al.: What the Experiment Shows}
+
+Moreva et al.\ experimentally illustrated the Page--Wootters mechanism
+using entangled photon polarizations \cite{moreva2014}.
+
+Their description is particularly useful because it cleanly distinguishes
+two viewpoints.
+
+An internal observer correlated with the clock subsystem sees the other
+subsystem evolve.
+
+An external observer considering the appropriate global properties can
+show that the joint state is static.
+
+The experiment therefore illustrates that clock-relative dynamics can
+exist within a globally stationary description.
+
+TLM need not dispute any part of this result.
+
+The question is instead how to name what has been established.
+
+The physical observations include:
+
+\[
+\text{clock states},
+\]
+
+\[
+\text{system states},
+\]
+
+and
+
+\[
+\text{correlations between them}.
+\]
+
+Those relations can supply an operational temporal description.
+
+Calling that description ``emergent time'' is unobjectionable if
+\emph{emergent time} means only that temporal ordering becomes available
+to an internal observer through physical clock relations.
+
+A stronger conclusion would be that a global physical constituent called
+time has thereby been created.
+
+That stronger conclusion is not required by the experiment itself.
+
+The TLM description is simply:
+
+\[
+\boxed{
+\text{clock-relative temporal structure appears where the physical relation
+supplies it}.
+}
+\]
+
+
+\section{Rovelli: Physics Without a Fundamental Time Variable}
+
+Rovelli comes still closer to the no-global-time question.
+
+He explicitly considers the hypothesis that time is not defined at the
+fundamental level and develops gauge-invariant observables capable of
+describing observable evolution in that regime \cite{rovelli1991}. Earlier
+work likewise studied quantum mechanics in a regime where unitary time
+evolution appears only as an approximation \cite{rovelli1990}.
+
+It would therefore be particularly misleading to characterize Rovelli as
+assuming that a universal time variable remains present underneath the
+theory.
+
+He explicitly investigates the opposite possibility.
+
+The proper comparison is consequently not
+
+\[
+\text{Rovelli has global time}
+\qquad\text{versus}\qquad
+\text{TLM does not}.
+\]
+
+It is:
+
+\[
+\boxed{
+\text{What does ``no fundamental time'' mean in each architecture?}
+}
+\]
+
+Rovelli develops a formalism for observable physics in the absence of a
+fundamental time variable.
+
+TLM develops an ontological classification of physical law and physical
+relation in which temporal structure has a restricted domain.
+
+These may be complementary statements.
+
+TLM adds the specific claim that relations such as the null photon relation
+and the entanglement correlation should not be assigned a temporal history
+merely because their registered endpoints or outcomes participate in
+spacetime.
+
+
+\section{The Difference Between Emergent Time and Domain-Limited Time}
+
+The comparison suggests that the phrase \emph{emergent time} can obscure
+two different ideas.
+
+The first is operational.
+
+A subsystem can serve as a clock.
+
+Correlated states can be ordered.
+
+An internal observer can describe evolution.
+
+A macroscopic description can contain durations and histories.
+
+TLM has no objection to calling this operational temporal emergence.
+
+The second idea is ontological:
+
+\begin{quote}
+A fundamentally timeless reality must somehow generate a new global
+physical factor called time.
+\end{quote}
+
+TLM does not require this step.
+
+The TLM architecture is not
+
+\[
+\text{timeless reality}
+\longrightarrow
+\text{time comes into existence}
+\longrightarrow
+\text{temporal universe}.
+\]
+
+Such a picture is already awkward because the arrow appears to describe a
+temporal transition occurring before time exists.
+
+The TLM architecture is instead domain-based:
+
+\[
+\boxed{
+\text{lawful structure}
+}
+\]
+
+contains lawful relations of different kinds.
+
+Some possess temporal structure.
+
+Some do not.
+
+Where spacetime registration occurs, temporal and geometric relations are
+governed by special and general relativity.
+
+Where a lawful relation contains no internal temporal variable, TLM does
+not add one.
+
+There is therefore no universal transition from timelessness into time.
+
+There is only a distinction between relations to which temporal structure
+applies and relations to which it does not.
+
+\section{The Central Comparison}
+
+The neighboring approaches can now be compared without assigning claims to
+them that they do not make.
+
+\begin{center}
+\begin{tabular}{p{0.20\linewidth}p{0.35\linewidth}p{0.34\linewidth}}
+\hline
+\textbf{Framework} &
+\textbf{Central time question} &
+\textbf{Relation to TLM}
+\\
+\hline
+
+Wheeler--DeWitt &
+How is quantum-gravitational dynamics represented when ordinary external
+Schr\"odinger time is absent? &
+Compatible with no external master clock. TLM additionally asks which
+lawful relations possess temporal structure at all.
+\\[0.8em]
+
+Page--Wootters &
+How can observed dynamics be described relationally using an internal
+physical clock while the closed global system is stationary? &
+Strongly compatible with relational temporal description. TLM does not
+infer from clock relations that time must be global.
+\\[0.8em]
+
+Moreva et al. &
+Can Page--Wootters clock-relative dynamics be experimentally illustrated? &
+The observed correlations demonstrate clock-relative temporal structure;
+they need not establish a new universal time constituent.
+\\[0.8em]
+
+Rovelli &
+How can observable evolution be described when a fundamental time variable
+is not defined? &
+Close conceptual neighbor. TLM adds a domain-based ontology connecting
+no-global-time to null proper time, photon interpretation, entanglement,
+and registration.
+\\[0.8em]
+
+Timeless Light Model &
+Which lawful relations possess temporal structure, and which do not? &
+Time is not global. Laws define the permitted relations; temporal structure
+applies only where the physical relation supplies it.
+\\
+
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{What TLM Adds}
+
+If Wheeler--DeWitt, Page--Wootters, and Rovelli already remove external or
+fundamental time in important respects, what remains distinctive about TLM?
+
+The answer is not that TLM discovered mathematical timelessness first.
+
+It did not.
+
+Nor is the answer that existing approaches secretly retain universal time.
+
+They need not.
+
+The TLM contribution proposed here consists of three connected claims.
+
+First, lawful structure is architecturally senior to the physical relations
+it permits. Laws determine the boundaries of admissible interaction and
+relation but are not themselves events passing through time.
+
+Second, temporal structure has a domain rather than universal scope.
+
+\[
+\boxed{
+\text{Time is not global.}
+}
+\]
+
+Third, this domain restriction is applied directly to physical puzzles
+normally formulated using global temporal language.
+
+For the photon:
+
+\[
+\Delta\tau=0
+\]
+
+is read as the absence of a proper-time interior rather than as zero
+progress on an unseen universal clock.
+
+For entanglement:
+
+\[
+\text{one lawful relation}
++
+\text{two timed local registrations}
+\]
+
+does not require a time-bearing signal crossing between the detectors.
+
+For retrocausality:
+
+\[
+\text{no internal photon time history}
+\]
+
+means that there is no such history to reverse.
+
+These are not three independent interpretive tricks.
+
+They are applications of one rule:
+
+\[
+\boxed{
+\text{Do not assign time to a lawful relation unless its governing
+physical structure supplies time.}
+}
+\]
+
+
+\section{What This Paper Does Not Claim}
+
+The distinction is intentionally narrow.
+
+\begin{remark}
+This paper does not claim that Wheeler--DeWitt, Page--Wootters, or Rovelli
+assume an external universal master clock. Their published work explicitly
+moves away from such a description.
+\end{remark}
+
+\begin{remark}
+This paper does not claim that equations containing a time parameter are
+incorrect or less fundamental merely because the parameter appears.
+\end{remark}
+
+\begin{remark}
+This paper does not claim that clocks, duration, temporal order, causal
+structure, or proper time are unreal.
+\end{remark}
+
+\begin{remark}
+This paper does not claim that the registered endpoints of a null relation
+lack coordinate-time ordering for ordinary spacetime observers.
+\end{remark}
+
+\begin{remark}
+This paper does not permit controllable signals to violate the relativistic
+causal structure. Its claim concerning entanglement is that the correlation
+itself should not first be assumed to be a propagating signal.
+\end{remark}
+
+\begin{remark}
+This paper does not provide a replacement quantum-gravity formalism.
+\end{remark}
+
+\begin{remark}
+This paper does not claim that all uses of the phrase ``emergent time'' are
+incompatible with TLM. If the phrase means the appearance of operational
+clock-relative temporal description, the two may be entirely compatible.
+\end{remark}
+
+
+\section{Discussion}
+
+The problem of time may contain more than one problem.
+
+There is a formal problem concerning the representation of dynamics when
+the ordinary external time parameter disappears.
+
+There is an operational problem concerning how internal observers construct
+clocks and temporal descriptions.
+
+There is a relational problem concerning how one physical quantity changes
+with respect to another.
+
+And there is an ontological question:
+
+\begin{quote}
+Must time be assigned globally to every lawful physical relation?
+\end{quote}
+
+TLM answers no.
+
+This answer is intentionally simple.
+
+The laws specify what may happen.
+
+They do not themselves happen in time.
+
+Some of the relations permitted by those laws participate within spacetime
+and possess temporal structure.
+
+Others do not contain an internal temporal variable.
+
+There is no requirement that a second hidden time continue running behind
+the relations for which the physical description supplies none.
+
+This is why null proper time matters so strongly.
+
+The equation
+
+\[
+\Delta\tau=0
+\]
+
+does not need to be translated into
+
+\begin{quote}
+zero elapsed units of a deeper time that still universally exists.
+\end{quote}
+
+It can be read literally as a limit on the temporal structure assigned to
+the null relation.
+
+The same discipline clarifies entanglement.
+
+The two registrations have temporal coordinates.
+
+The lawful correlation need not have a transit time.
+
+And it clarifies retrocausality.
+
+The registered endpoints have temporal order.
+
+The photon relation need not possess an intermediate proper-time history
+that can be made to run backward.
+
+Thus the TLM maxim can be stated:
+
+\[
+\boxed{
+\text{Temporal predicates apply only inside the temporal domain.}
+}
+\]
+
+The statement sounds modest.
+
+Its consequences are not.
+
+If correct, several phenomena described as challenging temporal order may
+instead expose the mistaken assumption that temporal order was universal.
+
+
+\section{Conclusion}
+
+The Timeless Light Model and the existing problem-of-time literature share
+substantial conceptual territory.
+
+Wheeler--DeWitt removes the ordinary external Schr\"odinger time parameter
+from the canonical quantum-gravity constraint and requires time to be
+treated intrinsically.
+
+Page and Wootters show that a closed stationary system can nevertheless
+support observed dynamics through internal clock readings.
+
+Moreva et al.\ experimentally illustrate such clock-relative dynamics.
+
+Rovelli explicitly develops quantum description in a regime where a
+fundamental time variable is not defined.
+
+TLM need not oppose any of these results.
+
+Its claim lies at another level.
+
+The laws of the universe define the boundaries of permitted interaction
+and relation.
+
+The laws are not themselves events.
+
+They do not wait, age, or evolve.
+
+A law may describe a relation containing temporal variables without the law
+itself becoming subject to time.
+
+Most importantly,
+
+\[
+\boxed{
+\text{time is not global}.
+}
+\]
+
+Temporal structure applies where the governing physical relation supplies
+it.
+
+For timelike spacetime relations, proper time applies.
+
+For registered spacetime events, temporal and causal ordering apply.
+
+For the null photon relation,
+
+\[
+\Delta\tau=0,
+\]
+
+and TLM adds no hidden proper-time history behind that result.
+
+For an entanglement correlation, the local outcomes register within
+spacetime, but the correlation need not be assigned a propagation time
+between them.
+
+The resulting principle is therefore:
+
+\[
+\boxed{
+\begin{minipage}{0.82\linewidth}
+A phenomenon can violate time only where time applies. If a lawful relation
+does not possess the relevant temporal structure, descriptions such as
+instantaneous, retrocausal, or faster than light may import a variable that
+the relation itself does not contain.
+\end{minipage}
+}
+\]
+
+Timelessness in TLM is therefore not the claim that the entire universe is
+frozen at zero time.
+
+It is not the claim that temporal variables should be removed from physics.
+
+It is not the claim that clocks are illusions.
+
+It is the simpler claim that the universe does not possess one global time
+variable that must govern every lawful relation.
+
+The laws define what is allowed.
+
+Where those laws supply time, time applies.
+
+Where they do not, nothing is missing.
+
+
+\begin{thebibliography}{99}
+
+\bibitem{unified2026}
+J.~C.~W.~McKinley,
+\textit{Physics Has Always Been Unified:
+General Timelessness, Null Proper Time, and the Clarified Architecture ---
+Why Quantum Mechanics and Relativity Were Never in Competition}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.20954931}
+{doi:10.5281/zenodo.20954931}.
+
+\bibitem{bedrock}
+J.~C.~W.~McKinley,
+\textit{A Minimal Structural Statement of the Timeless Light Model}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.18521383}
+{doi:10.5281/zenodo.18521383}.
+
+\bibitem{generaltimelessness}
+J.~C.~W.~McKinley,
+\textit{Timelessness Is the General Condition:
+Spacetime Is the Special Case}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.19771924}
+{doi:10.5281/zenodo.19771924}.
+
+\bibitem{nullpropertime}
+J.~C.~W.~McKinley,
+\textit{Taking Null Proper Time Seriously:
+An Interpretive Clarification of Null Proper Time}.
+Zenodo, 2025.
+\href{https://doi.org/10.5281/zenodo.18004632}
+{doi:10.5281/zenodo.18004632}.
+
+\bibitem{retrocausality}
+J.~C.~W.~McKinley,
+\textit{Retrocausal Objections Are Disallowed for the Photon}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.19648208}
+{doi:10.5281/zenodo.19648208}.
+
+\bibitem{dewitt1967}
+B.~S.~DeWitt,
+\textit{Quantum Theory of Gravity. I. The Canonical Theory}.
+Physical Review \textbf{160}, 1113--1148, 1967.
+\href{https://doi.org/10.1103/PhysRev.160.1113}
+{doi:10.1103/PhysRev.160.1113}.
+
+\bibitem{pagewootters1983}
+D.~N.~Page and W.~K.~Wootters,
+\textit{Evolution without evolution:
+Dynamics described by stationary observables}.
+Physical Review D \textbf{27}, 2885--2892, 1983.
+\href{https://doi.org/10.1103/PhysRevD.27.2885}
+{doi:10.1103/PhysRevD.27.2885}.
+
+\bibitem{moreva2014}
+E.~Moreva, G.~Brida, M.~Gramegna, V.~Giovannetti,
+L.~Maccone, and M.~Genovese,
+\textit{Time from quantum entanglement:
+An experimental illustration}.
+Physical Review A \textbf{89}, 052122, 2014.
+\href{https://doi.org/10.1103/PhysRevA.89.052122}
+{doi:10.1103/PhysRevA.89.052122}.
+
+\bibitem{rovelli1990}
+C.~Rovelli,
+\textit{Quantum mechanics without time: A model}.
+Physical Review D \textbf{42}, 2638--2646, 1990.
+\href{https://doi.org/10.1103/PhysRevD.42.2638}
+{doi:10.1103/PhysRevD.42.2638}.
+
+\bibitem{rovelli1991}
+C.~Rovelli,
+\textit{Time in quantum gravity: An hypothesis}.
+Physical Review D \textbf{43}, 442--456, 1991.
+\href{https://doi.org/10.1103/PhysRevD.43.442}
+{doi:10.1103/PhysRevD.43.442}.
+
+\end{thebibliography}
+
+\end{document}
