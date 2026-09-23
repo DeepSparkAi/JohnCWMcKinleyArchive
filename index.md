@@ -86,6 +86,11 @@ Working drafts are posted here for public access before permanent archival depos
 * **Date:** 13 September 2026
 * **Files:** [PDF](/assets/papers/electric-current-does-not-license-electron-energy-carrier-ontology-working-draft.pdf) · [LaTeX source](/assets/papers/electric-current-does-not-license-electron-energy-carrier-ontology-working-draft.tex)
 
+### [\[2026 Working Draft\] The Endpoints Are Timed; The Relation Is Not](/papers/the-endpoints-are-timed-the-relation-is-not/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** July 2026
+* **Files:** [PDF](/assets/papers/the-endpoints-are-timed-the-relation-is-not-working-draft.pdf) · [LaTeX source](/assets/papers/the-endpoints-are-timed-the-relation-is-not-working-draft.tex)
+
 ---
 
 ## The Papers
