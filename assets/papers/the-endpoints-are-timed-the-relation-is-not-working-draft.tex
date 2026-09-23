@@ -1,0 +1,330 @@
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,backgrounds}
+
+\newcommand\blfootnote[1]{%
+\begingroup
+\renewcommand\thefootnote{}\footnote{#1}%
+\addtocounter{footnote}{-1}%
+\endgroup
+}
+
+\PassOptionsToPackage{capitalise,nameinlink,noabbrev}{cleveref}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{mdframed}
+\usepackage{xurl}
+
+% Clickable superscript link to definition
+\newcommand{\defterm}[2]{#1\textsuperscript{\textcolor{gray}{\hyperref[#2]{\scriptsize$\dagger$}}}}
+
+\crefname{proposition}{Proposition}{Propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{definition}{Definition}{Definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{Remark}{Remarks}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{The Endpoints Are Timed; The Relation Is Not}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newcounter{nogo}[section]
+\renewcommand{\thenogo}{\thesection.\arabic{nogo}}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\makeatletter
+\let\c@proposition\c@nogo
+\let\c@definition\c@nogo
+\let\c@remark\c@nogo
+\makeatother
+
+\renewcommand{\theproposition}{\thenogo}
+\renewcommand{\thedefinition}{\thenogo}
+\renewcommand{\theremark}{\thenogo}
+
+\title{\textbf{The Endpoints Are Timed; The Relation Is Not}\\
+\large\textit{Light, Null Proper Time, and the Mistaken Traveler Picture}}
+
+\author{John C. W. McKinley,\orcidlink{0009-0005-7097-5035}}
+
+\date{July 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+A persistent confusion in the interpretation of light arises from grouping the photon with ordinary time-bearing motion. In that grouping, light is treated as a thing traveling through spacetime at the invariant speed $c$, and familiar puzzles follow: how does the photon know where it is going, how does it strike a moving absorber that enters position only later, and how can emission and absorption be related without retrocausality or endpoint foreknowledge? This paper argues that those puzzles arise from a classification error. A null relation does not mean that a photon-object travels with an unusual speed. It means that the photon relation contains no internal proper-time variable. The emitter-side downtick and absorber-side uptick are registered within spacetime, and those registrations are ordered by the invariant limit $c$. But the uptick-downtick relation itself has no internal time variable. The delay is a spacetime-registration experience. The relation is not. Once this distinction is made, the photon no longer requires a route, a target, a timed middle, or a hidden selection mechanism. The endpoints are timed; the relation is not.
+\end{abstract}
+
+\section{Introduction}
+
+The ordinary description of light is traveler language. Light leaves a source, crosses space, and hits an absorber. A photon is then pictured as a small object traveling through spacetime at speed $c$.
+
+That description is useful for everyday speech, but it becomes misleading when treated as ontology. If the photon is a traveler, then several puzzles immediately arise. How does it traverse the interval without internal time? How does it know where it is going? How can it strike a moving absorber that enters the relevant position only after the emission event? Does the later absorber somehow reach backward to determine the earlier emission?
+
+The present paper argues that these puzzles arise from a classification error. The photon has been grouped with time-bearing motion when it should be grouped with time-free lawful relations.
+
+The distinction is simple. Some lawful physical relations include an internal time variable. Massive bodies, clocks, observers, detectors, and ordinary material processes are described through proper-time accumulation, temporal order, and successive states. Other lawful relations do not include such an internal time variable. The photon relation belongs to this second class.
+
+This does not remove time from physics. Emission and absorption are registered within spacetime. Observers measure delay, distance, order, and causal availability. The invariant limit $c$ still governs what can be registered, received, or made available to observers. But the delay belongs to spacetime registration. It does not belong to a photon-object living through the interval.
+
+The central claim of this paper is therefore:
+
+\[
+\text{The endpoints are timed; the relation is not.}
+\]
+
+\section{The Classification Error in the Null Case}
+
+\begin{definition}[Time-bearing lawful relation]
+A time-bearing lawful relation is a lawful physical relation whose registered description includes an internal time variable, proper-time accumulation, temporal ordering, or a persisting subject that may be described as undergoing successive states.
+\end{definition}
+
+\begin{definition}[Time-free lawful relation]
+A time-free lawful relation is a lawful physical relation whose defining structure does not include an internal time variable, proper-time accumulation, or a persisting subject undergoing successive states.
+\end{definition}
+
+\begin{proposition}[Lawful relations divide by temporal structure]
+Lawful physical relations are not all of the same temporal kind. Some lawful relations include an internal time variable, while others do not.
+\end{proposition}
+
+\begin{proof}
+Massive bodies, clocks, detectors, observers, and ordinary material processes are described through proper-time accumulation, temporal ordering, and successive physical states. These relations are time-bearing. By contrast, the photon case is characterized by null proper time. The photon has no rest frame, no accumulated proper-time history, and no internally ordered sequence of states through which it persists as a massive object does. Therefore lawful physical relations divide, at minimum, into relations that include an internal time variable and relations that do not.
+\end{proof}
+
+\begin{proposition}[The photon relation is time-free]
+The photon relation is not a time-bearing spacetime process. It is a time-free lawful relation whose registered endpoints appear within spacetime.
+\end{proposition}
+
+\begin{proof}
+A time-bearing spacetime process requires a subject that persists through successive states. In the photon case, null proper time removes the internal temporal span required for such persistence. The emitting state change and absorbing state change are registered in spacetime, but the photon itself has no internal clock, no rest frame, and no lived middle between those registrations. Therefore the photon relation is not a time-bearing process. It is a time-free lawful relation whose endpoints are registered within spacetime.
+\end{proof}
+
+\begin{proposition}[Relativity governs registration, not photon persistence]
+Special relativity and general relativity govern the registered spacetime organization of physical relations, including temporal ordering, causal structure, null interval structure, finite information delay, and observer consistency. They do not require the photon relation to be interpreted as a persisting object traveling through an internal history.
+\end{proposition}
+
+\begin{proof}
+Relativity supplies the spacetime structure within which registered events are ordered and related. For massive systems, this includes proper-time accumulation and timelike histories. For light, the registered relation is null: the spacetime interval has no photon-side proper-time duration. Treating this null registration as though it were ordinary motion at an extreme speed adds a traveler ontology not supplied by the null structure itself. Therefore relativity governs the spacetime registration of the photon relation, but it does not require an internally persisting photon traveler.
+\end{proof}
+
+\begin{proposition}[The classification error]
+The longstanding confusion concerning light arises when the null case is grouped with time-bearing motion rather than with time-free lawful relations.
+\end{proposition}
+
+\begin{proof}
+If the photon is grouped with massive objects, then light is interpreted as a thing traveling through spacetime at speed $c$. Under that grouping, familiar puzzles arise: How does the photon traverse the interval without internal time? How does it know where it is going? How can an absorber that moves into place later be the endpoint without retrocausality or endpoint foreknowledge?
+
+These puzzles arise only because the null case has been placed in the wrong conceptual class. A photon does not possess the internal time variable required for ordinary travel, route-finding, waiting, updating, or destination selection. Once the photon relation is grouped instead with time-free lawful relations, the puzzles dissolve. The emitter-side and absorber-side state changes are registered within spacetime, and SR/GR governs the registered null relation between them. But the photon relation itself is not a time-bearing journey.
+\end{proof}
+
+\begin{corollary}[The role of $c$]
+The invariant limit $c$ is not best understood as the travel speed of a persisting photon-object through an internal photon history. It is the limiting structure governing spacetime registration, causal availability, and observer-side information receipt.
+\end{corollary}
+
+\begin{proof}
+For registered observers, light is received only according to the invariant spacetime limit $c$. This produces measured delay, causal order, and light-cone structure. But the photon relation itself has no internal time-bearing middle. Therefore $c$ constrains the observer-side registration of light, not the lived speed of a photon-object traveling through its own temporal history.
+\end{proof}
+
+\begin{remark}[The corrected grouping]
+The corrected grouping is therefore not:
+\[
+\text{massive objects travel through spacetime, and photons also travel through spacetime at } c.
+\]
+The corrected grouping is:
+\[
+\text{some lawful relations include an internal time variable, and some do not.}
+\]
+The photon belongs to the second class. Its registered appearance belongs to relativistic spacetime. The confusion arises when these two facts are collapsed into the traveler picture.
+\end{remark}
+
+\section{The Uptick-Downtick Relation}
+
+The prior section removes the traveler from the middle. But a sharper point remains. It is not only that the photon has no timed middle. The lawful relation between the emitting state change and absorbing state change has no internal time variable at all.
+
+For convenience, this paper calls the emitter-side state change a downtick and the absorber-side state change an uptick. The terms are not meant to introduce a new force or mechanism. They name the two registered energy-state changes that ordinary speech compresses into the phrase ``a photon was emitted and absorbed.''
+
+\begin{definition}[Downtick]
+A downtick is the registered emitter-side state change associated with photonic emission.
+\end{definition}
+
+\begin{definition}[Uptick]
+An uptick is the registered absorber-side state change associated with photonic absorption.
+\end{definition}
+
+\begin{definition}[Uptick-downtick relation]
+An uptick-downtick relation is the lawful photonic relation between an emitter-side downtick and an absorber-side uptick. The relation is not a persisting photon-object traveling between the two registrations.
+\end{definition}
+
+\begin{proposition}[The uptick-downtick relation has no internal time variable]
+In a photonic relation, the emitter-side downtick and absorber-side uptick may be registered at different spacetime times, but the lawful relation between them contains no internal time variable.
+\end{proposition}
+
+\begin{proof}
+The emitter-side downtick and absorber-side uptick are registered physical events. As registrations, they possess spacetime location, temporal ordering, and observer-side delay. An observer may therefore describe the emission as occurring two hours before the absorption.
+
+But the photonic relation itself is not a time-bearing process. The photon has no rest frame, no proper-time accumulation, and no internal sequence of states through which it persists between the downtick and the uptick. Therefore the two-hour delay belongs to spacetime registration, not to the uptick-downtick relation itself. The relation has no internal time variable.
+\end{proof}
+
+\begin{remark}[Delay is a registration-side fact]
+The delay is real for observers, clocks, detectors, and spacetime descriptions. It is not an illusion. But it is not a duration inside the photon relation. The observer waits. The detector receives only when the event is lawfully available within spacetime. The uptick-downtick relation itself does not wait.
+\end{remark}
+
+This is the central distinction:
+
+\[
+\text{downtick event: registered in spacetime}
+\]
+\[
+\text{uptick event: registered in spacetime}
+\]
+\[
+\text{uptick-downtick relation: no internal time variable}
+\]
+
+The clocks measure the delay between registrations. They do not measure a duration inside the photon relation.
+
+\section{How Does Light Know Where It Is Going?}
+
+A common question immediately arises: if light is not a little object traveling across space, then how does it know where it is going?
+
+The answer is that it does not know where it is going. The question assumes the very picture this paper rejects. It assumes that a photon is a small projectile that leaves a source, crosses the intervening space, and somehow aims itself toward a destination. Under that picture, the photon seems to need a route, a target, and perhaps even a way to update its path as the world changes around it.
+
+But the photon has no internal time in which any such process could occur. It does not wait, steer, search, adjust, or discover its destination. Those are time-bearing ideas. They require a persisting object with an internal sequence of moments. The photon relation has no such middle.
+
+What actually occurs is simpler. There is an emitter-side downtick and, if absorption occurs, an absorber-side uptick. These are registered spacetime events. The photon is the name given to the lawful relation between those registered state changes, not a traveler that lives through the interval between them.
+
+This is why the ordinary language of light can be misleading. We say that light ``goes'' from the source to the detector, or that a photon ``hits'' the screen. That language is useful for everyday description, but it should not be mistaken for the deeper ontology. The detector registers an absorption event. The screen registers a mark. The eye registers a signal. The photon does not experience a journey to those places.
+
+A better layman's statement is:
+
+\[
+\text{The photon does not know where it is going because it is not going anywhere as a traveler.}
+\]
+
+There is lawful eligibility, and there is registered outcome. Quantum mechanics specifies which absorption outcomes are admissible and with what probability relations. Relativity governs how the registered event appears within spacetime: delay, direction, causal order, light-cone structure, and observer receipt. No extra act of photon knowledge is involved.
+
+\section{The Moving Asteroid Objection}
+
+The same issue appears more sharply when the absorber is moving. Suppose an asteroid is far away and moving unpredictably. A source emits light. Much later, from the observer's point of view, the asteroid moves into the right position and absorbs the light. It looks as though the photon must have been traveling for a long time and somehow struck a target that only moved into place at the last moment.
+
+That picture is again the traveler picture. It imagines a photon projectile flying through space while the asteroid moves, and then asks how the projectile knew where the asteroid would be. But under the present architecture, there is no photon projectile with a long internal flight.
+
+The asteroid is not hit by a photon in the sense that a rock is hit by a bullet. Rather, an absorption event registers at the asteroid. The asteroid's motion belongs to spacetime registration. The source-side downtick and asteroid-side uptick stand in a lawful relation if the relevant physical conditions are satisfied: geometry, coupling, conservation laws, boundary conditions, final-state availability, and probability structure.
+
+The phrase ``at the last moment'' belongs to the observer's spacetime description. It describes when, according to registered clocks and positions, the asteroid occupies the relevant relation. It does not describe a moment inside the photon at which the photon changes course or learns the endpoint. There is no photon-side clock and no photon-side decision point.
+
+Thus the moving asteroid does not create a retrocausal problem. Nothing travels backward from the future asteroid to guide the photon. Nothing travels forward as a small object that must predict the asteroid. The registered absorption event is simply the absorber-side endpoint of a lawful photonic relation.
+
+A better layman's statement is:
+
+\[
+\text{The asteroid is not hit by a long-traveling photon.}
+\]
+
+It is more accurate to say:
+
+\[
+\parbox{0.8\linewidth}{\centering The asteroid registers an absorption event that stands in lawful relation to an emitter-side state change.}
+\]
+
+For observers inside spacetime, the news of that relation is delayed and ordered by the invariant limit $c$. The observer waits. The detector receives only when the event is lawfully available within spacetime. But the photon does not live through that waiting period. The waiting belongs to registered observers, clocks, and geometry. The photon relation itself has no internal time-bearing middle and no internal time variable.
+
+This removes the apparent puzzle. Light does not need to know where it is going. A moving asteroid does not need to be targeted in advance. The law does not send a tiny object across space and then solve a guidance problem. The law specifies admissible relations, and spacetime registration supplies the ordered appearance of their endpoints.
+
+\section{The Speed Limit and the News of Light}
+
+The preceding sections may be summarized in a simple way: the delay is a spacetime-registration experience, but the uptick-downtick relation has no time variable.
+
+This does not mean that absorption can be revealed to observers outside the lawful spacetime order. The invariant limit $c$ remains binding on registration and observer-side availability. No observer receives news of the absorption before that news is lawfully available within spacetime.
+
+The mistake is to treat that delay as the travel time of a photon-object. It is not. The delay is the spacetime order under which the relation becomes registered and available to observers.
+
+\begin{proposition}[The speed limit governs revelation, not photon travel]
+The invariant limit $c$ governs the spacetime registration and observer-side availability of photonic events. It does not describe the lived speed of a photon-object traveling through an internal history.
+\end{proposition}
+
+\begin{proof}
+If light is treated as a persisting photon-object, then the elapsed time between emission and absorption is interpreted as the duration of a trip. But the photon has no internal proper-time duration and no rest frame. Therefore the elapsed time cannot be photon-side lived travel time.
+
+The elapsed time instead belongs to spacetime registration. It is the order in which observers, clocks, detectors, and causal descriptions receive or reconstruct the relation. The invariant limit $c$ prevents the absorption-side event, or news of that event, from being registered outside the appropriate light-cone order. Thus $c$ governs revelation within spacetime, not the internal travel of a photon-object.
+\end{proof}
+
+\begin{remark}[The news travels; the photon does not]
+In ordinary language, one may say that light takes two hours to arrive. Under the present architecture, the more precise statement is that the news of the absorption-side relation is available to registered observers only according to the invariant limit $c$. The observer waits two hours. The photon relation does not.
+\end{remark}
+
+\section{Conclusion}
+
+The central error in the ordinary picture of light is a classification error. Light is grouped with ordinary time-bearing motion and then treated as a thing traveling through spacetime at speed $c$. From that grouping, familiar puzzles arise: how does the photon know where it is going, how does it strike a moving absorber, and how can a later absorption event be lawfully related to an earlier emission without retrocausality?
+
+Those puzzles dissolve once the photon relation is grouped correctly. The photon relation is time-free. The emitter-side downtick and absorber-side uptick are registered in spacetime, but their lawful relation contains no internal time variable. The delay between them belongs to spacetime registration, not to a photon-side journey.
+
+The endpoints are timed. The relation is not.
+
+\begin{thebibliography}{9}
+
+\bibitem{nullpropertime}
+J.~C.~W.~McKinley,
+\textit{Taking Null Proper Time Seriously: An Interpretive Clarification of Null Proper Time}.
+Zenodo, 2025.
+\href{https://doi.org/10.5281/zenodo.18004632}
+{doi:10.5281/zenodo.18004632}.
+
+\bibitem{norestframe}
+J.~C.~W.~McKinley,
+\textit{No Rest Frame, No Persistence: A Kinematic Constraint on Photon Interpretation}.
+Zenodo, 2025.
+\href{https://doi.org/10.5281/zenodo.18005884}
+{doi:10.5281/zenodo.18005884}.
+
+\bibitem{nullcurves}
+J.~C.~W.~McKinley,
+\textit{Null Curves Without Carriers: Resolving an Ontological Tension in Relativistic Geometry}.
+Zenodo, 2025.
+\href{https://doi.org/10.5281/zenodo.18028886}
+{doi:10.5281/zenodo.18028886}.
+
+\bibitem{wavefunctionpath}
+J.~C.~W.~McKinley,
+\textit{Wavefunction Prediction Does Not License a Photon Path}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.19504772}
+{doi:10.5281/zenodo.19504772}.
+
+\bibitem{minimal}
+J.~C.~W.~McKinley,
+\textit{A Minimal Structural Statement of the Timeless Light Model}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.19167403}
+{doi:10.5281/zenodo.19167403}.
+
+\bibitem{retrocausality}
+J.~C.~W.~McKinley,
+\textit{Retrocausal Objections Are Disallowed for the Photon}.
+Zenodo, 2026.
+\href{https://doi.org/10.5281/zenodo.19648209}
+{doi:10.5281/zenodo.19648209}.
+
+\end{thebibliography}
+
+\end{document}
