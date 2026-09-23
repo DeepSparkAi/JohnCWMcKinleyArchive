@@ -1,0 +1,619 @@
+% REV3, September 13, 2026: guarded hyperlink counters and corrected material-balance punctuation.
+\documentclass[12pt,onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{orcidlink}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{xurl}
+
+% Clickable superscript link to definition
+\newcommand{\defterm}[2]{#1\textsuperscript{\textcolor{gray}{\hyperref[#2]{\scriptsize$\dagger$}}}}
+
+\setstretch{1.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\lhead{Electric Current and Energy Transfer}
+\rhead{John C. W. McKinley}
+\cfoot{\thepage}
+
+\newcounter{nogo}[section]
+\renewcommand{\thenogo}{\thesection.\arabic{nogo}}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\makeatletter
+\let\c@proposition\c@nogo
+\let\c@definition\c@nogo
+\let\c@remark\c@nogo
+\makeatother
+
+\renewcommand{\theproposition}{\thenogo}
+\renewcommand{\thedefinition}{\thenogo}
+\renewcommand{\theremark}{\thenogo}
+\providecommand{\theHproposition}{}
+\providecommand{\theHdefinition}{}
+\providecommand{\theHremark}{}
+\renewcommand{\theHproposition}{\thenogo}
+\renewcommand{\theHdefinition}{\thenogo}
+\renewcommand{\theHremark}{\thenogo}
+
+\title{\textbf{Electric Current Does Not License\\
+Electron Energy-Carrier Ontology}\\[0.4em]
+\large\textit{A Short Interpretive No-Go on Charge Transport\\
+and Electromagnetic Power Transfer}}
+
+\author{John C. W. McKinley\,\orcidlink{0009-0005-7097-5035}}
+
+\date{September 13, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The ordinary circuit narrative treats conduction electrons as delivery vehicles: electrons leave a source carrying energy, travel through a wire, surrender that energy to a load, and return depleted. Standard electrodynamics does not license this ontology. Electric current and electromagnetic energy transfer are represented by different quantities, enter distinct local balance laws, and need not cross the same surfaces. Charge transport is described by the current density $\mathbf J$ and the continuity equation. Electromagnetic energy transfer is described by the Poynting vector $\mathbf S=\mathbf E\times\mathbf H$ and Poynting's theorem. The coupling term $\mathbf J\cdot\mathbf E$ specifies where energy is transferred between the electromagnetic field and matter. A separately proposed electron-sector energy flux does not follow from current either: charge current and carrier-energy current are different moments of the electron distribution.
+
+For a cylindrical resistor, the electric field at the surface is longitudinal, the magnetic field is circumferential, and the resulting Poynting vector points radially inward. Its flux through the lateral surface is exactly $VI$, equal to the electrical power dissipated in the resistor. In the standard Maxwell--Poynting accounting, the full electromagnetic power therefore crosses a boundary that conduction electrons do not cross. In an alternating-current resistor, the charge motion reverses every half-cycle while the average power delivered to the load remains positive. These standard results establish the interpretive no-go: the existence of electron current does not entail that electrons are persisting parcels carrying the circuit's energy from source to load along their charge-transport paths.
+
+Under the clarified architecture, conduction electrons participate in local registered charge motion, while Maxwellian field quantities describe the lawful spacetime organization of electromagnetic energy transfer. The success of that field description does not require the field to be reified as material substance. The correction is therefore exact and limited: electron motion is real, current is real, and energy transfer is real; the electron delivery-truck ontology does not follow.
+\end{abstract}
+
+\noindent{\small\textcolor{gray}{Technical terms marked with a superscript dagger (\textsuperscript{\scriptsize$\dagger$}) link to their formal definition in Section~3.}}
+
+\begin{center}
+\textit{Charge transport is not the same description as energy transfer.}
+
+\vspace{0.4em}
+
+\textit{Current identifies the motion of charge.}
+
+\vspace{0.4em}
+
+\textit{The Poynting vector identifies electromagnetic energy flux.}
+
+\vspace{0.4em}
+
+\textit{The first does not license an ontology for the second.}
+\end{center}
+
+\vspace{0.7em}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+
+The most familiar account of an electric circuit is a traveler narrative. A battery is pictured as a reservoir that loads electrons with energy. Those electrons leave one terminal, travel down the wire, pass through a lamp or resistor, deliver their energy, and return to the other terminal. The picture is attractive because it makes electric power resemble the transport of fuel by a stream of particles.
+
+Parts of the picture are correct. Conduction electrons participate in charge transport through a metallic conductor. A source maintains an electromotive force. A load receives energy and converts it into heat, light, mechanical work, or another registered form. A closed conducting path is required for steady direct current. The error lies in combining these facts into an additional ontological conclusion: that the conduction electrons are therefore the physical parcels that carry the delivered energy from source to load along the same paths by which charge is transported.
+
+Standard electrodynamics already separates the two descriptions. Charge transport is represented by the current density $\mathbf J$. Electromagnetic energy transfer is represented by the Poynting vector $\mathbf S$. Charge conservation and electromagnetic energy balance are expressed by distinct local equations. The coupling term $\mathbf J\cdot\mathbf E$ identifies the local rate at which the electromagnetic field transfers energy to matter or matter transfers energy to the field. Nothing in these equations identifies $\mathbf J$ with $\mathbf S$, and their dimensions, directions, and physical roles are different \cite{poynting1884,feynman,griffiths}.
+
+The distinction becomes visible in the simplest resistive example. At the surface of a current-carrying resistor, the electric field has a component along the resistor and the magnetic field circles it. Their cross product points into the resistor. Integrating this inward electromagnetic energy flux over the resistor's lateral surface gives $VI$, exactly the power converted into heat. In the standard Maxwell--Poynting accounting, the energy flux crosses the lateral surface from the surrounding electromagnetic field into the resistor. The conduction electrons do not cross that lateral surface. They move along the conductor.
+
+This result does not show that electrons are unreal, that current is unreal, or that electrons possess no energy. It shows something narrower and decisive: observing charge motion does not determine the path or ontology of electromagnetic energy transfer. The current is part of the complete electrodynamic relation, but it is not a license to turn the moving charge carriers into energy-delivery vehicles.
+
+The present paper states this result as a short \defterm{interpretive no-go}{def:interpretivenogo} and places it within the \defterm{clarified architecture}{def:clarifiedarchitecture}. Here ``no-go'' has a deliberately limited meaning. The argument blocks an inference from a successful physical description to a specified ontology; it does not prove that no independently supported ontology could ever be proposed. The underlying electrodynamics is standard. The contribution is the architectural conclusion: registered matter motion, mathematical field description, and energy transfer perform distinguishable explanatory roles. Following the little moving thing through space does not by itself reveal the physical organization of the effect.
+
+
+\section{Two Distinct Local Balance Laws}
+
+The distinction begins with two equations already contained in standard electrodynamics.
+
+Let $\rho$ denote charge density and let $\mathbf J$ denote electric current density. Local conservation of charge is expressed by
+\[
+\frac{\partial \rho}{\partial t}+\nabla\cdot\mathbf J=0.
+\]
+The equation states that a local decrease in charge density is accounted for by an outward flux of charge. The current density therefore answers a charge-transport question: how much charge crosses a unit area per unit time, and in what direction?
+
+Electromagnetic energy satisfies a different local balance law. In vacuum notation,
+\[
+u_{\mathrm{em}}=\frac{1}{2}\left(\epsilon_0\mathbf E^2+\frac{\mathbf B^2}{\mu_0}\right),
+\qquad
+\mathbf S=\frac{1}{\mu_0}\mathbf E\times\mathbf B
+=\mathbf E\times\mathbf H.
+\]
+The first expression is the microscopic vacuum-constant form. In macroscopic media one commonly writes $\mathbf S=\mathbf E\times\mathbf H$, with polarization and magnetization energy assigned consistently within the chosen field--matter partition. In the nonmagnetic space immediately outside the resistor used below, the two expressions coincide.
+Poynting's theorem is
+\[
+\frac{\partial u_{\mathrm{em}}}{\partial t}
++\nabla\cdot\mathbf S
+=-\mathbf J\cdot\mathbf E.
+\]
+Here $u_{\mathrm{em}}$ is electromagnetic energy density, $\mathbf S$ is electromagnetic energy flux, and $\mathbf J\cdot\mathbf E$ is the rate per unit volume at which the field does work on matter. When $\mathbf J\cdot\mathbf E>0$, electromagnetic energy is transferred locally to matter. In an ordinary resistor this registered transfer appears predominantly as heat. In a source region, matter may instead supply energy to the electromagnetic field, reversing the sign of the transfer term \cite{poynting1884,feynman,hausmelcher}.
+
+The equations are structurally parallel but physically distinct:
+\[
+\begin{array}{rcl}
+\text{charge density} &:& \rho,\\
+\text{charge flux} &:& \mathbf J,\\[0.3em]
+\text{electromagnetic energy density} &:& u_{\mathrm{em}},\\
+\text{electromagnetic energy flux} &:& \mathbf S.
+\end{array}
+\]
+The parallel does not make the fluxes identical. $\mathbf J$ carries units of charge per unit area per unit time. $\mathbf S$ carries units of energy per unit area per unit time. More importantly, the two vectors need not point in the same direction and need not cross the same surface. The governing mathematics therefore blocks the inference from charge path to energy path before any interpretation is added.
+
+\begin{mdframed}[linewidth=0.8pt, innertopmargin=10pt, innerbottommargin=10pt, innerrightmargin=14pt, innerleftmargin=14pt, backgroundcolor=gray!15, leftmargin=0.33in, rightmargin=0.33in]
+\normalsize\itshape
+Electric current answers: Where and how does charge move?
+
+\medskip
+
+The Poynting vector answers: Through which surfaces does electromagnetic energy flow?
+
+\medskip
+
+The coupling term $\mathbf J\cdot\mathbf E$ answers: Where is energy transferred between the electromagnetic field and matter?
+
+\medskip
+
+None of these questions is interchangeable with any of the others.
+\end{mdframed}
+
+
+\section{Definitions}
+
+The following definitions fix the limited claim of the no-go.
+
+\begin{definition}[Interpretive no-go]
+\label{def:interpretivenogo}
+An interpretive no-go is a demonstration that a specified physical description, formalism, or body of evidence does not entail a specified ontology. It blocks an inference of necessity. It does not establish that the ontology is logically impossible, nor does it exclude an ontology supported by additional independent evidence.
+\end{definition}
+
+\begin{definition}[Charge transport]
+\label{def:chargetransport}
+Charge transport is the local motion of electric charge represented macroscopically by the current density $\mathbf J$. In a metallic conductor, mobile conduction electrons contribute to $\mathbf J$. The conventional-current direction is opposite the average electron drift direction because the electron charge is negative.
+\end{definition}
+
+\begin{definition}[Electromagnetic energy flux]
+\label{def:energyflux}
+Electromagnetic energy flux is the directional rate of electromagnetic energy transfer per unit area represented in standard Maxwellian electrodynamics by the Poynting vector $\mathbf S=\mathbf E\times\mathbf H$.
+\end{definition}
+
+\begin{definition}[Matter--field energy transfer]
+\label{def:coupling}
+Matter--field energy transfer is the local conversion between electromagnetic energy and material energy represented in Poynting's theorem by $\mathbf J\cdot\mathbf E$. Positive $\mathbf J\cdot\mathbf E$ represents work done by the field on matter; negative $\mathbf J\cdot\mathbf E$ represents work done by matter on the field.
+\end{definition}
+
+\begin{definition}[Electron energy-carrier ontology]
+\label{def:carrierontology}
+Electron energy-carrier ontology is the claim that, because electrons constitute the conduction current in a metallic circuit, those electrons must also be persisting parcels that carry the circuit's delivered energy from source to load along the same paths by which charge is transported. The term does not deny that electrons possess energy or exchange energy locally. It identifies the stronger source-to-load delivery-truck inference addressed by this paper.
+\end{definition}
+
+\begin{definition}[Transport-path inference]
+\label{def:pathinference}
+The transport-path inference is the move from an observed or calculated path of one conserved quantity to the conclusion that another conserved quantity must be transferred along the same path by the same carriers. Such an inference requires an independent physical law identifying the two fluxes. Shared participation in one physical system is not sufficient.
+\end{definition}
+
+\begin{definition}[Registered charge motion]
+\label{def:registeredmotion}
+Registered charge motion is the spacetime participation of charged matter in a measurable current. It possesses temporal ordering, geometric localization, and causal relations within the circuit. The term distinguishes the observed or measurable motion of charge from any additional ontology assigned to what that motion carries.
+\end{definition}
+
+\begin{definition}[Clarified architecture]
+\label{def:clarifiedarchitecture}
+The clarified architecture is the descriptive organization of physical theory in which lawful structure governs physical admissibility, mathematics describes the governing lawful relations, and admissible outcomes register within spacetime under relativistic organization. A successful mathematical description does not by itself license the corresponding mathematical object as a material substance or persisting traveler \cite{unified,bedrock,fermion}.
+\end{definition}
+
+
+\section{The Cylindrical Resistor}
+
+Consider a cylindrical resistor of radius $a$ and length $L$ carrying a steady conventional current $I$. Let the voltage drop from one end to the other be $V$. Neglecting end effects, the electric field at the surface has a longitudinal component
+\[
+\mathbf E=\frac{V}{L}\,\hat{\mathbf z}.
+\]
+Amp\`ere's law gives the circumferential magnetic field at the surface,
+\[
+\mathbf H=\frac{I}{2\pi a}\,\hat{\boldsymbol\phi}.
+\]
+The Poynting vector at the surface is therefore
+\[
+\mathbf S=\mathbf E\times\mathbf H
+=-\frac{VI}{2\pi aL}\,\hat{\mathbf r}.
+\]
+The minus sign indicates that the standard Poynting flux is radially inward. In the steady state, $\partial u_{\mathrm{em}}/\partial t=0$, so Poynting's theorem integrated over the resistor volume gives
+\[
+-\oint_{\partial V_{\mathrm{res}}}\mathbf S\cdot d\mathbf A
+=\int_{V_{\mathrm{res}}}\mathbf J\cdot\mathbf E\,dV
+=VI.
+\]
+For the idealized cylinder, $\mathbf S$ is radial and its end-cap contributions vanish. The lateral surface area of the resistor is $2\pi aL$, so the total inward electromagnetic power is
+\[
+-\int_{\mathrm{side}}\mathbf S\cdot d\mathbf A
+=\frac{VI}{2\pi aL}(2\pi aL)
+=VI.
+\]
+Using Ohm's law, this is
+\[
+VI=I^2R=\frac{V^2}{R},
+\]
+exactly the rate at which the resistor converts electrical energy into heat.
+
+The geometry is decisive for the standard Maxwell--Poynting accounting. Charge current runs longitudinally through the conducting material, while the Poynting vector is radially inward through the lateral surface. No conduction electron crosses that lateral boundary from the surrounding space into the resistor. Nevertheless, the integrated Poynting flux accounts for the full power dissipated in the resistor \cite{feynman,griffiths}.
+
+The result is not an optional metaphor placed over the circuit. It follows from Maxwell's equations and local energy conservation. Nor does it require the claim that a material fluid called ``field energy'' pours into the resistor. The equations identify a lawful electromagnetic energy density, a lawful energy flux, and a local conversion term. The mathematical success of those quantities establishes the structure of the energy accounting. It does not require their reification as a new substance.
+
+The resistor therefore provides an explicit counterexample to the transport-path inference. A surface can satisfy
+\[
+\mathbf J\cdot\hat{\mathbf n}=0
+\]
+while simultaneously satisfying
+\[
+\mathbf S\cdot\hat{\mathbf n}\neq 0.
+\]
+No charge crosses that surface, while the standard Maxwell--Poynting energy flux does. Charge transport and electromagnetic energy transfer are not the same flux.
+
+
+\section{The Source and the Complete Circuit}
+
+A battery does not operate by accumulating a surplus of electrons and later releasing the stored pile. It converts chemical energy through electrochemical reactions. Electrons participate in the external conducting path, while ions participate within the electrolyte. Charge is conserved throughout the complete process. Charging reverses the relevant electrochemical direction by supplying energy from an external source; discharging converts stored chemical free energy into electrical work.
+
+In the Maxwell--Poynting description, the source establishes the electric and magnetic field configuration of the connected circuit. Energy is transferred from matter to the electromagnetic field in the source region and from the field to matter in the load region. The Poynting flux in the space surrounding the conductors provides the local spacetime accounting connecting those regions. Its detailed distribution depends on the complete geometry, conductor arrangement, dielectric environment, and boundary conditions of the circuit \cite{poynting1884,hausmelcher}.
+
+The resistor's lateral surface is therefore not an isolated boundary selected merely to force a directional contrast. In a complete steady circuit, a nonuniform distribution of surface charge maintains the longitudinal electric field that drives the current and also establishes electric fields outside the conductors. Along a connecting wire, an exterior electric-field component transverse to the wire combines with the circumferential magnetic field to give a Poynting component directed through the surrounding space toward the load. At the resistive element, the longitudinal electric field combines with that magnetic field to give the radially inward component calculated in Section~4. The inward lateral flux is the load-side part of a complete field solution extending through the space around the circuit, not an independently invented channel \cite{jackson1996,majcen2000,galili2005,davis2011}.
+
+This explains why the field configuration cannot be reconstructed merely by following one electron. A current value $I$ does not by itself specify the voltage, the circuit geometry, the surrounding dielectric, or the distribution of $\mathbf E$ and $\mathbf H$. Circuits with the same current may deliver different powers because
+\[
+P=VI.
+\]
+The current supplies only one part of that relation. Since $\mathbf S=\mathbf E\times\mathbf H$, the energy-flux structure depends on the electromagnetic configuration, not on charge flow considered in isolation.
+
+Closing a switch further exposes the inadequacy of the delivery-truck picture. The useful circuit response does not wait for a particular electron to complete a journey from the source to the load. In the clarified architecture, the source-side switching event changes the lawful electromagnetic conditions governing which later local circuit events are eligible. Maxwellian electrodynamics represents the finite dependence between those locations through retarded solutions governed by the circuit geometry and boundary conditions. Charges already present throughout the conductors respond locally when the changed conditions apply at their locations. The current is established through coordinated local charge motion; the load-side energy conversion is a locally registered outcome, not the arrival of an electron parcel or electromagnetic wave-object.
+
+This is not action at a distance. Changes in the electromagnetic conditions propagate finitely according to relativistic electrodynamics. Here ``propagate'' identifies the retarded spacetime dependence described by the equations; it does not independently establish a persisting wave-object crossing the interval. The distinction is instead between the local motion of material charge carriers and the spacetime energy-transfer structure represented in the standard Maxwell--Poynting accounting. Both belong to the same physical circuit. They are not the same description.
+
+
+\section{Alternating Current Removes the Grand Tour}
+
+Alternating current supplies a second clean case. In a purely resistive load, let
+\[
+i(t)=I_0\cos\omega t,
+\qquad
+v(t)=RI_0\cos\omega t.
+\]
+The instantaneous delivered power is
+\[
+p(t)=v(t)i(t)=RI_0^2\cos^2\omega t\geq 0,
+\]
+and the cycle-averaged power is
+\[
+\langle p\rangle=\frac{1}{2}RI_0^2.
+\]
+The conduction-electron drift reverses direction every half-cycle. The electrons do not make a one-way trip from generating station to appliance while the resistor continues to receive positive average power. Local charge motion remains essential to the current, but the grand-tour narrative disappears. The Maxwell--Poynting description accounts for energy transfer to the load while the charge carriers oscillate locally.
+
+The alternating-current case is not the foundation of the no-go; the Poynting theorem and resistor calculation already establish it. It is a particularly transparent illustration. If energy delivery required a particular conduction electron to depart the source, carry a parcel of energy to the load, and return depleted, ordinary alternating-current power could not be described in the form in which it is observed. The persistence of positive resistive power during oscillatory charge motion shows that source-to-load energy transfer is not identical to the net travel of the individual charge carriers.
+
+
+\section{The No-Go Result}
+
+Before stating the central result, one possible escape route must be separated from the inference actually at issue. A defender of electron-carrier ontology may accept the electromagnetic energy balance and then propose that electrons also transport a matter-side energy current. Poynting's theorem does not forbid a separately established material energy flux. But electric current does not establish such a flux either.
+
+\subsection{Matter-Side Energy Flux}
+
+For a carrier distribution $f(\mathbf p)$, the two currents may be written schematically as
+\[
+\mathbf J
+=q\int \mathbf v(\mathbf p)f(\mathbf p)\,d^3p,
+\qquad
+\mathbf S_{\mathrm e}
+=\int \varepsilon(\mathbf p)\mathbf v(\mathbf p)f(\mathbf p)\,d^3p.
+\]
+Band, spin, and normalization factors have been suppressed because the structural distinction is the point. The first moment weights carrier motion by charge $q$; the second weights it by the energy $\varepsilon$ assigned within a specified material model. They are not the same moment of the distribution. The same charge current can accompany different carrier-energy distributions, and therefore different matter-side energy currents. Knowledge of $\mathbf J$ alone does not determine $\mathbf S_{\mathrm e}$.
+
+Here $\mathbf S_{\mathrm e}$ denotes the conduction-electron contribution to the total material energy flux $\mathbf S_{\mathrm m}$ used below.
+
+More generally, in a consistent local field--matter partition one may write a complementary material energy balance in the schematic form
+\[
+\frac{\partial u_{\mathrm m}}{\partial t}
++\nabla\cdot\mathbf S_{\mathrm m}
+=\mathbf J\cdot\mathbf E.
+\]
+Summing the two complementary local balance laws gives
+\[
+\frac{\partial}{\partial t}
+\left(u_{\mathrm{em}}+u_{\mathrm m}\right)
++\nabla\cdot
+\left(\mathbf S+\mathbf S_{\mathrm m}\right)=0.
+\]
+The coupling term transfers energy between the chosen field and matter sectors; it does not identify their fluxes, and it does not make material energy flux a function of charge current. Nor does steady state by itself force $\mathbf S_{\mathrm e}$ to vanish: a time-independent distribution can support a constant nonzero flux. The decisive point is independence, not vanishing. Any claim that conduction electrons transport the delivered power as matter-side energy therefore requires an additional calculation and independent physical support. It cannot be inferred from the mere existence of electron current. The bulk drift-kinetic contribution is also far too small to supply ordinary circuit power.\footnote{In a simple drift model, the bulk drift-kinetic power crossing a conductor section is $P_{\mathrm{dk}}=(I/|q|)(m v_d^2/2)$. Relative to terminal power $VI$, this gives $P_{\mathrm{dk}}/(VI)=m v_d^2/(2|q|V)$. For $v_d=10^{-4}\,\mathrm{m\,s^{-1}}$ and $V=1\,\mathrm V$, the ratio is approximately $2.8\times10^{-20}$. This estimate addresses the bulk drift-kinetic term only; the no-go itself rests on the independent-flux and non-entailment argument.}
+
+\subsection{Formal Statement}
+
+\begin{proposition}[Electric current does not license electron energy-carrier ontology]
+\label{prop:nogo}
+The existence of electron charge current in a conductor does not by itself entail that conduction electrons are persisting parcels carrying the circuit's delivered energy from source to load along the charge-transport path.
+\end{proposition}
+
+\begin{proof}
+Local charge transport is represented by $\mathbf J$ and satisfies
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\mathbf J=0.
+\]
+Local electromagnetic energy transfer is represented by $\mathbf S$ and satisfies
+\[
+\frac{\partial u_{\mathrm{em}}}{\partial t}
++\nabla\cdot\mathbf S
+=-\mathbf J\cdot\mathbf E.
+\]
+The two vectors represent different physical fluxes within distinct local balance laws. The current density $\mathbf J$ represents charge flux, while the Poynting vector $\mathbf S$ represents electromagnetic energy flux. The latter exchanges energy with matter through the coupling term $\mathbf J\cdot\mathbf E$. The vectors possess different dimensions, perform different physical roles, and need not be parallel. A separately defined electron or material energy flux does not repair the inference: as shown above, it is not fixed by $\mathbf J$ and requires additional physical information.
+
+For the cylindrical resistor in Section~4, the standard Maxwell--Poynting accounting has longitudinal $\mathbf J$ and radially inward $\mathbf S$ at the resistor's lateral surface. Consequently, $\mathbf J\cdot\hat{\mathbf n}=0$ and $\mathbf S\cdot\hat{\mathbf n}\neq0$ on that surface. No conduction charge crosses the lateral boundary, while the integrated electromagnetic energy flux through it equals the entire dissipated power $VI$.
+
+The proof does not require the Maxwell--Poynting partition to be the uniquely privileged ontology, nor does it require every alternative convention to assign flux to the same open surface. The proposition concerns entailment. Standard electrodynamics supplies a complete, empirically successful energy accounting in which the full electromagnetic power $VI$ enters across a boundary crossed by no conduction charge, without representing that power as parcels attached to electron trajectories. The existence of this admissible accounting is sufficient to defeat the claim that electron current \emph{must} imply same-path electron energy-carrier ontology. A proposed additional matter-side electron flux would be a further premise to establish, not a consequence of current itself. Therefore electron charge current does not entail the carrier ontology defined in Section~3.
+\end{proof}
+
+\begin{remark}[What the no-go removes]
+The no-go removes an inference, not a physical component. It does not remove electrons, current, voltage, resistance, electromagnetic fields, chemical reactions, or energy conservation. It removes only the step from ``electrons participate in charge current'' to ``electrons are therefore the parcels that transport the circuit's delivered energy along that same route.''
+\end{remark}
+
+\begin{remark}[Electrons possess and exchange energy]
+An electron possesses energy and momentum and participates in local energy exchange. In a conductor, the electric field does work on charge, and scattering transfers energy to the material lattice. Electron-sector energy flux may also be nonzero in an appropriate material model. None of this follows from charge current alone, and none of it identifies a conduction electron as the necessary source-to-load carrier of the macroscopic power $VI$. Local participation in energy conversion is not equivalent to establishing the delivery ontology addressed here.
+\end{remark}
+
+\begin{remark}[The no-go does not require a unique microscopic partition]
+Electromagnetic energy density and flux admit representational rearrangements, and energy within matter can be partitioned in different useful ways. The no-go does not infer a uniquely privileged microscopic bookkeeping convention from the standard Poynting vector. Its claim is modal and limited: because a complete, physically successful account does not require the delivered power to be attached to electron paths, electron current cannot logically entail that attachment. Alternative partitions may be proposed, but they do not convert an optional additional premise into a consequence of charge transport \cite{feynman}.
+\end{remark}
+
+
+\section{The Clarified Architecture}
+
+The electrodynamic result is standard. The \defterm{clarified architecture}{def:clarifiedarchitecture} identifies what it means.
+
+Conduction electrons participate in \defterm{registered charge motion}{def:registeredmotion}. Their motion occurs locally within the conductor and possesses ordinary spacetime relations. Current meters, magnetic effects, voltage drops, heating, and other observations register within spacetime. Nothing in the present argument removes that matter-side registration.
+
+The electromagnetic field variables describe a different aspect of the same lawful order. The fields $\mathbf E$ and $\mathbf H$, their energy density, and the Poynting vector mathematically describe the lawful spacetime organization of force, energy storage, energy flux, and local energy exchange. In the resistor, the standard Maxwell--Poynting description represents the energy flux through the surrounding space and inward across the resistor's surface. The local registered heating conforms to $\mathbf J\cdot\mathbf E$.
+
+The mistake occurs when one registered feature of the system is promoted into the ontology of the whole relation. Because electrons move, the traveler narrative assigns them every transported property. It imagines that the visible or measurable moving constituent must be the thing carrying the effect. Standard electrodynamics rejects that simplification. Charge motion, electromagnetic energy flux, and local conversion are separately represented because they perform different explanatory work.
+
+The correction does not require a second reification. Rejecting electron energy-parcels does not compel a picture of material ``field-stuff'' flowing around the wire. The field formalism accurately describes the lawful electromagnetic relations without thereby licensing the mathematical field as a material substance occupying space. This is the same interpretive discipline established elsewhere in the Timeless Light Model corpus: predictive success licenses the accuracy of a lawful description, not every material ontology suggested by its mathematical objects \cite{fermion,unified}.
+
+Nor does the word ``wave'' add another physical entity to the account. To say that $\mathbf E$ and $\mathbf H$ exhibit wave behavior identifies the mathematical quantities that vary and the lawful relations governing that variation; it does not independently establish a persisting wave-object traveling through the circuit environment. Under the clarified architecture, Maxwellian wave solutions describe the lawful amplitude, phase, and finite spacetime relations governing eligible local physical events. The physical occurrences are the source-side change and the locally registered responses of matter, including current, voltage, heating, and light. No additional wave-entity is required between them.
+
+The correction also leaves no unnamed material carrier missing from the account. The demand to identify ``what carries the energy'' can already presuppose the parcel-and-traveler ontology under examination. A local balance law can specify energy density, flux, and conversion without assigning a conserved parcel to a persisting material bearer. Calling the electromagnetic field an energy ``carrier'' is harmless if it abbreviates the operational role of $\mathbf S$; it becomes an additional ontology only when that word is taken to imply material field-stuff. The category under challenge is therefore not transfer, flux, or conservation. It is the stronger claim that every transfer must be implemented by a material traveler possessing the delivered energy along its route.
+
+The circuit therefore fits the clarified architecture in four coordinated statements:
+
+\begin{enumerate}
+\item The governing lawful structure determines the admissible electromagnetic and material relations.
+
+\item Maxwellian electrodynamics mathematically describes the spacetime organization of electromagnetic energy density, flux, force, and matter--field transfer.
+
+\item Conduction electrons participate locally in registered charge motion within the conductor.
+
+\item The registered energy conversion at the load is governed by the lawful electromagnetic relation and is not ontologically reducible to an electron's imagined source-to-load journey.
+\end{enumerate}
+
+The important distinction is not electrons versus fields. It is description versus ontological license. Electron current licenses the conclusion that charge is transported. The Poynting relation licenses a field-based account of electromagnetic energy transfer. Neither mathematical success licenses an additional material story beyond what the physics establishes.
+
+\begin{mdframed}[linewidth=0.8pt, innertopmargin=10pt, innerbottommargin=10pt, innerrightmargin=14pt, innerleftmargin=14pt, backgroundcolor=gray!15, leftmargin=0.33in, rightmargin=0.33in]
+\noindent\textit{The electron is not erased. Its explanatory assignment is corrected. The electron participates in local charge transport. The governing electromagnetic lawful structure organizes power transfer, and Maxwellian field quantities describe that organization. The load registers the conversion. The delivery-truck story arose by forcing all three roles into the moving charge carrier.}
+\end{mdframed}
+
+
+\section{Why the Traditional Picture Persists}
+
+The delivery-truck picture persists because several quantities are tightly coupled in ordinary circuit operation. Increasing the voltage across a fixed resistor increases the current. Increasing the current increases the magnetic field. Increasing both changes the Poynting flux and the dissipated power. Since the relations vary together, it is easy to treat them as one physical stream.
+
+The everyday word ``current'' encourages the same compression. A water current transports water and carries the water's kinetic energy along the direction of bulk flow. Electrical current is then pictured as an analogous stream in which electrons carry electrical energy through a wire. But the analogy suppresses the electric and magnetic fields, the circuit boundary conditions, the source, and the independent energy-continuity equation. It replaces an electrodynamic system with a one-dimensional mechanical story.
+
+The story remains serviceable for elementary bookkeeping because Kirchhoff's circuit laws summarize terminal relationships without displaying the surrounding field geometry. One can calculate $P=VI$ without calculating $\mathbf S$ at every point in space. That computational economy does not establish an ontology. A lumped circuit model hides spatial structure by design. It cannot be used to prove that the hidden structure does not exist or that energy must instead reside in electron parcels.
+
+The mistaken inference is therefore understandable:
+\[
+\text{current is required for power delivery}
+\quad\nRightarrow\quad
+\begin{array}{c}
+\text{current carriers carry}\\
+\text{the delivered power}
+\end{array}
+\]
+The premise expresses physical coupling. The conclusion asserts ontological identity. Poynting's theorem shows why the implication fails.
+
+
+\section{Standard Electrodynamics and Prior Circuit Literature}
+
+The present paper changes no equation or prediction of electrodynamics. Maxwell's equations remain unchanged. The Lorentz force law remains unchanged. Charge conservation, energy conservation, Ohm's law, circuit theory, electronic band structure, and the electrochemistry of batteries remain unchanged.
+
+The distinction between charge flow and electromagnetic energy flow is not a speculative addition. Poynting introduced the electromagnetic energy-flux theorem in 1884 specifically to describe the transfer of energy through the electromagnetic field \cite{poynting1884}. Modern electrodynamics texts derive the same local energy-balance law from Maxwell's equations. Feynman's resistor example states the consequence plainly: the Poynting vector points inward toward a resistive wire, supplying the energy converted into heat \cite{feynman}. Field-theory treatments likewise show that the surface integral of electromagnetic energy flux into a circuit element equals the terminal power $VI$ \cite{hausmelcher}.
+
+The circuit-level field structure also has a substantial pedagogical literature. Jackson shows how surface charges on wires and resistors maintain the required potential distribution, produce electric fields outside the conductors, and organize Poynting flow from source to load \cite{jackson1996}. Majcen, Haaland, and Dudley calculate the Poynting vector and power in a simple circuit \cite{majcen2000}. Galili and Goihbarg develop a qualitative account of circuit energy transfer centered on the Poynting vector and surface-charge distribution \cite{galili2005}. Davis and Kaplan analyze the corresponding energy-flow geometry for a circular circuit \cite{davis2011}. These works establish that the surrounding-space account is standard electrodynamics, not a discovery claimed by this paper.
+
+The present contribution is narrower: it formulates the transport-path inference explicitly, shows why neither electromagnetic nor matter-side energy flux follows from charge current alone, and places that non-entailment within the clarified architecture. Standard theory and the existing circuit literature supply the equations and field structure. The no-go blocks an ontology those results do not require. The architectural interpretation then assigns the roles correctly: charge carriers account for charge transport; electromagnetic field relations account for the local organization of power transfer; registered load events account for the conversion of that energy into heat, light, motion, or another physical outcome.
+
+
+\section{What This Paper Does Not Claim}
+
+\begin{remark}
+The paper does not claim that electrons remain stationary in a conductor. Metallic current includes a nonzero average drift of conduction charge, superimposed on the electrons' microscopic motion and quantum state within the solid.
+\end{remark}
+
+\begin{remark}
+The paper does not claim that batteries require no electron transfer. Battery operation includes electron transfer through the external circuit and ionic transport within the electrochemical cell. The claim is that a battery does not function as a tank that fills with energy-loaded electrons and later empties them into the circuit.
+\end{remark}
+
+\begin{remark}
+The paper does not claim that electromagnetic influence is instantaneous. Changes in the field configuration propagate according to relativistic electrodynamics and the geometry of the circuit environment. Here ``propagate'' names the retarded dependence of field values on prior source conditions; the finite delay it describes does not by itself establish a persisting wave-object or field-configuration object traveling between the locations.
+\end{remark}
+
+\begin{remark}
+The paper does not claim that electrons possess no energy. It denies the stronger conclusion that the macroscopic energy delivered from source to load is thereby transported as a parcel attached to each conduction electron along the electron's charge-transport path.
+\end{remark}
+
+\begin{remark}
+The paper does not claim that the Poynting vector is material substance. $\mathbf S$ is the mathematical representation of electromagnetic energy flux. Its predictive and balance-law role establishes a lawful description, not a fluid ontology.
+\end{remark}
+
+\begin{remark}
+The paper does not replace circuit theory with a demand that every practical calculation resolve the full electromagnetic field. Lumped-element circuit theory remains an efficient and accurate approximation in its domain. The paper addresses the ontology inferred from that approximation, not its usefulness.
+\end{remark}
+
+
+\section{Discussion}
+
+Electric circuits provide an unusually clean demonstration of a broader interpretive mistake: following the moving material constituent does not necessarily identify the organization of the physical effect.
+
+The electron is the obvious moving constituent in a metallic conductor. It is therefore natural to assign the circuit's energy to the electron and picture the electron as its vehicle. Yet the complete theory refuses that compression. Charge density and current density satisfy the local charge-conservation law. Electromagnetic energy density and the Poynting vector enter a distinct local balance law containing the matter--field transfer term $\mathbf J\cdot\mathbf E$. Their coupling is exact, but coupling is not identity.
+
+The cylindrical resistor makes the distinction geometrically explicit. The current flows along the resistor. In the standard Maxwell--Poynting accounting, the energy flux enters through the side. The integral of that sideward flux is not a small correction to an electron-carried electromagnetic-power term; it is the full terminal power $VI$. The standard theory therefore contains its own corrective to the traveler narrative.
+
+Alternating current makes the same point dynamically. The local drift reverses, but average power continues to move from source to resistive load. A particular electron does not have to complete a source-to-load journey. Charges throughout the conductor respond locally as the electromagnetic configuration evolves. The circuit is a coordinated field-and-matter system, not a conveyor belt of energy parcels.
+
+The architectural lesson is precise. Matter motion, field description, and registered conversion are three aspects of one lawful process. Conduction electrons participate in the first. Maxwellian field relations describe the second. Heat, light, motion, and chemical change instantiate the third. No useful physics is gained by forcing all three into the ontology of the electron.
+
+Nor is anything gained by replacing electron-beads with field-stuff. The lesson of the clarified architecture is not to choose a better material metaphor. It is to distinguish what the equations establish from the ontology casually added to them. The fields need not be material substance for $\mathbf E\times\mathbf H$ to describe electromagnetic energy flux, just as the current density need not be a stream of energy-loaded particles for $\mathbf J$ to describe charge transport.
+
+The result belongs naturally beside the existing no-go cluster. Fermion-field mathematics does not license material field substance \cite{fermion}. Wavefunction prediction does not license a photon path \cite{wavefunctionnogo}. Electric current does not license electron energy-carrier ontology. In each case, a successful mathematical or macroscopic description is retained in full while an unwarranted traveler or substance inference is removed.
+
+
+\section{Conclusion}
+
+Electric current is real charge transport. In metallic conductors, electrons participate in that transport. It does not follow that those electrons are persisting delivery vehicles carrying the circuit's energy from source to load.
+
+Standard electrodynamics distinguishes the relevant quantities. The current density $\mathbf J$ describes charge flux. The Poynting vector $\mathbf S=\mathbf E\times\mathbf H$ describes electromagnetic energy flux. Poynting's theorem relates the change in field energy, the divergence of energy flux, and the local transfer $\mathbf J\cdot\mathbf E$ between field and matter. These quantities form one coordinated physical account without becoming identical.
+
+The cylindrical resistor supplies the decisive counterexample to entailment. Charge moves along the conductor, while the standard Poynting flux crosses the resistor's lateral surface from the surrounding field. The integrated inward flux is exactly $VI$, the full power converted into heat. Since the standard electrodynamic account locates the full electromagnetic power across a surface that conduction electrons do not cross, electron charge transport cannot by itself determine the energy-transfer path. A separately proposed matter-side energy current would likewise require independent support because it is not fixed by $\mathbf J$.
+
+Alternating current confirms the same separation. Electron drift reverses each half-cycle while a resistive load continues to receive positive average power. The load does not wait for electrons to complete a journey from the source. The governing electromagnetic relation organizes the transfer, Maxwellian field quantities describe it, and charges already present in the conductor respond locally.
+
+Under the clarified architecture, the assignments are straightforward. Electrons participate in local registered charge motion. Maxwellian field quantities mathematically describe the lawful spacetime organization of electromagnetic power transfer. The load registers the conversion. In TLM terms, the source-side event changes the lawful conditions governing which load-side events are eligible; the subsequent local conversion is the registered outcome, not the arrival of a wave. Neither the electron nor the mathematical field must be assigned an ontology beyond what the physics licenses.
+
+The ordinary story therefore fails at one exact point. It begins with the correct statement that electrons move and ends with the unsupported statement that the moving electrons must be the parcels carrying the delivered energy. The intervening inference is disallowed.
+
+\vspace{1em}
+
+\begin{center}
+\textit{Electrons carry charge through the conductor.}
+
+\vspace{0.5em}
+
+\textit{Current describes that charge transport.}
+
+\vspace{0.5em}
+
+\textit{Maxwellian electrodynamics describes the lawful organization of energy transfer.}
+
+\vspace{0.5em}
+
+\textit{The load registers the conversion.}
+
+\vspace{0.5em}
+
+\textit{Charge-carrier motion does not license energy-carrier ontology.}
+\end{center}
+
+
+\section*{Related Reading}
+
+Readers interested in the broader Timeless Light Model architecture and its interpretive no-go results may also consult the following publications.
+
+\begin{itemize}
+
+\item J.~C.~W.~McKinley,
+\textit{Physics Has Always Been Unified: General Timelessness, Null Proper Time, and the Clarified Architecture}.
+Zenodo, 2026.\\
+\href{https://doi.org/10.5281/zenodo.20954931}{doi:10.5281/zenodo.20954931}.
+
+\item J.~C.~W.~McKinley,
+\textit{Fermion Fields Are Not Licensed as Things in Space: A Structural No-Go on Substrate Ontology in Quantum Field Theory}.
+Zenodo, 2026.\\
+\href{https://doi.org/10.5281/zenodo.20092058}{doi:10.5281/zenodo.20092058}.
+
+\item J.~C.~W.~McKinley,
+\textit{Wavefunction Prediction Does Not License a Photon Path: A Short Interpretive No-Go}.
+Zenodo, 2026.\\
+\href{https://doi.org/10.5281/zenodo.19504771}{doi:10.5281/zenodo.19504771}.
+
+\end{itemize}
+
+\begin{thebibliography}{99}
+
+\bibitem{poynting1884}
+J.~H.~Poynting,
+``On the Transfer of Energy in the Electromagnetic Field,''
+\textit{Philosophical Transactions of the Royal Society of London} 175,
+343--361, 1884.\\
+\href{https://doi.org/10.1098/rstl.1884.0016}{doi:10.1098/rstl.1884.0016}.
+
+\bibitem{feynman}
+R.~P.~Feynman, R.~B.~Leighton, and M.~Sands,
+\textit{The Feynman Lectures on Physics}, Vol.~II, Chapter~27,
+``Field Energy and Field Momentum.''\\
+\href{https://www.feynmanlectures.caltech.edu/II_27.html}{The Feynman Lectures online edition}.
+
+\bibitem{griffiths}
+D.~J.~Griffiths,
+\textit{Introduction to Electrodynamics}, 4th ed.
+Pearson, 2013.
+
+\bibitem{hausmelcher}
+H.~A.~Haus and J.~R.~Melcher,
+\textit{Electromagnetic Fields and Energy}.
+Prentice Hall, 1989; Massachusetts Institute of Technology OpenCourseWare edition.
+
+\bibitem{jackson1996}
+J.~D.~Jackson,
+``Surface charges on circuit wires and resistors play three roles,''
+\textit{American Journal of Physics} 64,
+855--870, 1996.\\
+\href{https://doi.org/10.1119/1.18112}{doi:10.1119/1.18112}.
+
+\bibitem{majcen2000}
+S.~Majcen, R.~K.~Haaland, and S.~C.~Dudley,
+``The Poynting vector and power in a simple circuit,''
+\textit{American Journal of Physics} 68,
+857--859, 2000.\\
+\href{https://doi.org/10.1119/1.1302733}{doi:10.1119/1.1302733}.
+
+\bibitem{galili2005}
+I.~Galili and E.~Goihbarg,
+``Energy transfer in electrical circuits: A qualitative account,''
+\textit{American Journal of Physics} 73,
+141--144, 2005.\\
+\href{https://doi.org/10.1119/1.1819932}{doi:10.1119/1.1819932}.
+
+\bibitem{davis2011}
+B.~S.~Davis and L.~Kaplan,
+``Poynting vector flow in a circular circuit,''
+\textit{American Journal of Physics} 79,
+1155--1162, 2011.\\
+\href{https://doi.org/10.1119/1.3630927}{doi:10.1119/1.3630927}.
+
+\bibitem{unified}
+J.~C.~W.~McKinley,
+\textit{Physics Has Always Been Unified: General Timelessness, Null Proper Time, and the Clarified Architecture}.
+Zenodo, 2026.\\
+\href{https://doi.org/10.5281/zenodo.20954931}{doi:10.5281/zenodo.20954931}.
+
+\bibitem{bedrock}
+J.~C.~W.~McKinley,
+\textit{A Minimal Structural Statement of the Timeless Light Model}.
+Zenodo.\\
+\href{https://doi.org/10.5281/zenodo.19167403}{doi:10.5281/zenodo.19167403}.
+
+\bibitem{fermion}
+J.~C.~W.~McKinley,
+\textit{Fermion Fields Are Not Licensed as Things in Space: A Structural No-Go on Substrate Ontology in Quantum Field Theory}.
+Zenodo, 2026.\\
+\href{https://doi.org/10.5281/zenodo.20092058}{doi:10.5281/zenodo.20092058}.
+
+\bibitem{wavefunctionnogo}
+J.~C.~W.~McKinley,
+\textit{Wavefunction Prediction Does Not License a Photon Path: A Short Interpretive No-Go}.
+Zenodo, 2026.\\
+\href{https://doi.org/10.5281/zenodo.19504771}{doi:10.5281/zenodo.19504771}.
+
+\end{thebibliography}
+
+\end{document}
