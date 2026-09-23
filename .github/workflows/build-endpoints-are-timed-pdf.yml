@@ -1,0 +1,38 @@
+name: Build Endpoints Are Timed working draft PDF
+
+on:
+  push:
+    paths:
+      - 'assets/papers/the-endpoints-are-timed-the-relation-is-not-working-draft.tex'
+      - '.github/workflows/build-endpoints-are-timed-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: the-endpoints-are-timed-the-relation-is-not-working-draft.tex
+          working_directory: assets/papers
+
+      - name: Commit compiled PDF
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/papers/the-endpoints-are-timed-the-relation-is-not-working-draft.pdf
+          if git diff --cached --quiet; then
+            echo "PDF unchanged."
+            exit 0
+          fi
+          git commit -m "Build Endpoints Are Timed working draft PDF"
+          git pull --rebase origin main
+          git push
