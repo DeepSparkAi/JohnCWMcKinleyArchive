@@ -1,6 +1,6 @@
 ---
 layout: default
-title: '[2026 Working Draft] Does the Universe Have a Past?: Local Proper Time, Relativistic Registration, and the Absence of a Physical Past'
+title: '[2026 Working Draft] Does the Universe Have a Past? — Local Proper Time, Relativistic Registration, and the Absence of a Physical Past'
 description: 'Working draft by John C. W. McKinley, with downloadable PDF and archived LaTeX source.'
 permalink: /papers/does-the-universe-have-a-past/
 paper: true
