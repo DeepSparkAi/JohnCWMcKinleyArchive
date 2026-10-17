@@ -71,6 +71,11 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 Working drafts are posted here for public access before permanent archival deposit. They may be revised and are deliberately kept separate from the DOI-bearing publications below.
 
+### [\[2026 Working Draft\] Space Was Never a Completed Container: Quantum Eligibility, Relativistic Registration, and the Ordered Appearance of Extension](/papers/space-was-never-a-completed-container/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** 17 October 2026
+* **Files:** [PDF](/assets/papers/space-was-never-a-completed-container-working-draft.pdf) · [LaTeX source](/assets/papers/space-was-never-a-completed-container-working-draft.tex)
+
 ### [\[2026 Working Draft\] Does the Universe Have a Past? — Local Proper Time, Relativistic Registration, and the Absence of a Physical Past](/papers/does-the-universe-have-a-past/)
 * **Status:** Website working draft; not deposited on Zenodo
 * **Date:** 17 October 2026
