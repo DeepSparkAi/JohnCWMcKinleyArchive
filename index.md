@@ -92,6 +92,11 @@ Working drafts are posted here for public access before permanent archival depos
 * **Date:** 13 September 2026
 * **Files:** [PDF](/assets/papers/electric-current-does-not-license-electron-energy-carrier-ontology-working-draft.pdf) · [LaTeX source](/assets/papers/electric-current-does-not-license-electron-energy-carrier-ontology-working-draft.tex)
 
+### [\[2026 Working Draft\] The Present Was Never Universal: Local Registration and the Absence of a Universe-Wide Now](/papers/the-present-was-never-universal/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** July 2026
+* **Files:** [PDF](/assets/papers/the-present-was-never-universal-working-draft.pdf) · [LaTeX source](/assets/papers/the-present-was-never-universal-working-draft.tex)
+
 ### [\[2026 Working Draft\] The Endpoints Are Timed; The Relation Is Not](/papers/the-endpoints-are-timed-the-relation-is-not/)
 * **Status:** Website working draft; not deposited on Zenodo
 * **Date:** July 2026
