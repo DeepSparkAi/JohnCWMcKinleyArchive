@@ -71,6 +71,12 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 Working drafts are posted here for public access before permanent archival deposit. They may be revised and are deliberately kept separate from the DOI-bearing publications below.
 
+### [\[2026 Working Draft\] Does the Universe Have a Past? — Local Proper Time, Relativistic Registration, and the Absence of a Physical Past](/papers/does-the-universe-have-a-past/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** 17 October 2026
+* **Files:** [PDF](/assets/papers/does-the-universe-have-a-past-working-draft.pdf) · [LaTeX source](/assets/papers/does-the-universe-have-a-past-working-draft.tex)
+
+
 ### [\[2026 Working Draft\] Time Is Not Global: Disambiguating the Timeless Light Model from Wheeler--DeWitt, Page--Wootters, and Relational Quantum Time](/papers/time-is-not-global/)
 * **Status:** Website working draft; not deposited on Zenodo
 * **Date:** 22 September 2026
