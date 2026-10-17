@@ -18,6 +18,15 @@ paper: true
 
 > This paper is posted here for public access while it undergoes final technical and citation review. The website copy is deliberately revisable and should not be treated as a frozen Zenodo edition.
 
+### Infographic
+
+<figure style="margin: 1.5rem 0; text-align: center;">
+  <a href="/assets/papers/reality%20as%20interwoven%20registration.png" title="Open infographic at full size">
+    <img src="/assets/papers/reality%20as%20interwoven%20registration.png" alt="Reality as interwoven registration — accompanying infographic for Space Was Never a Completed Container" style="display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto;" loading="lazy">
+  </a>
+  <figcaption style="font-size: 0.9rem; margin-top: 0.5rem;">Reality as Interwoven Registration (click to view full size)</figcaption>
+</figure>
+
 ### Files
 
 **[Open / download the PDF](/assets/papers/space-was-never-a-completed-container-working-draft.pdf)**
