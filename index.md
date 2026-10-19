@@ -71,6 +71,12 @@ The TLM is an interpretive framework that treats the null status of the photon a
 
 Working drafts are posted here for public access before permanent archival deposit. They may be revised and are deliberately kept separate from the DOI-bearing publications below.
 
+
+### [\[2026 Working Draft\] Motion Is Relational: A No-Go on Independent Position and Substance Displacement — The Universal Present, Local Accrual, and Lawful Physical Relations](/papers/motion-is-relational/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** 18 October 2026
+* **Files:** [PDF](/assets/papers/motion-is-relational-working-draft.pdf) · [LaTeX source](/assets/papers/motion-is-relational-working-draft.tex)
+
 ### [\[2026 Working Draft\] Space Was Never a Completed Container: Quantum Eligibility, Relativistic Registration, and the Ordered Appearance of Extension](/papers/space-was-never-a-completed-container/)
 * **Status:** Website working draft; not deposited on Zenodo
 * **Date:** 17 October 2026
