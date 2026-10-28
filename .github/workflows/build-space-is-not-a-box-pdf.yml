@@ -1,4 +1,5 @@
 name: Build Space Is Not a Box working draft PDF
+# Rebuild revised memory-language edition after removing the previous PDF.
 
 on:
   push:
