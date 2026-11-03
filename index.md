@@ -486,8 +486,8 @@ Each paper now has its own page containing its publication metadata and archived
 *   **DOI:** [10.5281/zenodo.16871293](https://doi.org/10.5281/zenodo.16871293)
 *   **Date:** 14 August 2025
 
-### [\[2025\] From Endpoint Pairing to Frame Splitting: Absorption-Frame Motion in the Timeless Light Framework](/papers/from-endpoint-pairing-to-frame-splitting-absorption-frame-motion-in-the-timeless-light-framework/)
-*   **DOI:** [10.5281/zenodo.16791636](https://doi.org/10.5281/zenodo.16791636)
+### [\[2025\] From Endpoint Pairing to Absorption-Frame Motion in the Timeless Light Framework](/papers/from-endpoint-pairing-to-frame-splitting-absorption-frame-motion-in-the-timeless-light-framework/)
+*   **DOI:** [10.5281/zenodo.16791851](https://doi.org/10.5281/zenodo.16791851)
 *   **Date:** 10 August 2025
 
 ### [\[2025\] Gravitons as Quantum Platform Geometry Instructions: A Timeless-Light Interpretation of Gravitational Wave Quanta](/papers/gravitons-as-quantum-platform-geometry-instructions-a-timeless-light-interpretation-of/)
