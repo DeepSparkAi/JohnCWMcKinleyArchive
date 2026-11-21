@@ -72,6 +72,13 @@ The TLM is an interpretive framework that treats the null status of the photon a
 Working drafts are posted here for public access before permanent archival deposit. They may be revised and are deliberately kept separate from the DOI-bearing publications below.
 
 
+### [\[2026 Working Draft\] Why Space and Time Must Change: The Invariance of c](/papers/why-space-and-time-must-change-the-invariance-of-c/)
+* **Status:** Website working draft; not deposited on Zenodo
+* **Date:** 20 November 2026
+* **Files:** [PDF](/assets/papers/why-space-and-time-must-change-the-invariance-of-c-working-draft.pdf) · [LaTeX source](/assets/papers/why-space-and-time-must-change-the-invariance-of-c-working-draft.tex)
+
+
+
 ### [\[2026 Working Draft\] The Past Does Not Persist, but Its Consequences Do: Dynamical State, Ongoing Change, and the Sufficiency of the Present](/papers/the-past-does-not-persist-but-its-consequences-do/)
 * **Status:** Website working draft; not deposited on Zenodo
 * **Date:** 31 October 2026
